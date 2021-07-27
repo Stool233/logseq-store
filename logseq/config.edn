@@ -147,4 +147,5 @@
  :macros {}
 
  :markdown/version 2
- :feature/enable-encryption? false}
+ :feature/enable-encryption? false
+ :graph/settings {:journal? false, :orphan-pages? false, :builtin-pages? false}}
