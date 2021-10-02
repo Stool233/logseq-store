@@ -53,6 +53,8 @@
 	- 底线将王（back-rank mates）
 		- 有其他棋子挡住将王棋子的路线（interpose）
 			- 该棋子挡住路线后无其他棋子的保护（useless interposition）
-				-
+				- checkmate
+			- 该棋子挡住路线后有其他棋子的保护（useful interposition）
+				- 王逃逸成功
+	-
 		-
-			-
