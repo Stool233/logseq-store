@@ -14,6 +14,7 @@
 		- 王前兵（f2, g2, h2）通常就是移位后要保护王的兵。
 - checkmate整理
 	- 王的逃逸思路（一步杀分析）
+	  collapsed:: true
 		- 王吃掉将王的棋子
 			- 以王的能力吃不到
 				- checkmate
