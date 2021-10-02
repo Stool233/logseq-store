@@ -1,2 +1,2 @@
 - Introduce to the design and analysis of algorithms
-	-
+	- 作者提出了一种新的算法分离方法，不是从解决的问题种类上去分类，而是从
