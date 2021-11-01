@@ -1,3 +1,4 @@
+- **TAG:** [[Computer Science]]
 - Introduce to the design and analysis of algorithms
 	- 作者提出了一种新的算法分类教学方法，不是从解决的问题种类上去分类，而是从解决问题的思路去分类，这样的教学方式能让学生更好的掌握解决问题的方式，有助于解决新问题
 	- Introduction
