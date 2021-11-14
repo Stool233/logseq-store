@@ -73,8 +73,15 @@
 			- F.A.B
 				- F.A.B是什么?
 					- ![image.png](../assets/image_1636896083290_0.png){:height 266, :width 408}
-				- 演讲中的“Benifit”
-					-
+				- 演讲中的“Benefit”
+					- 有共鸣的痛点
+						- 原点
+					- 切实可行的办法
+					- 有数据支撑的成效
+				- 怎么找共鸣点
+					- 问人
+						- 问Kitty
+						- 问知乎 • 问听众
 					-
 	- 你也有这样的问题
 	  collapsed:: true
