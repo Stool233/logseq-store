@@ -111,10 +111,10 @@
 				- 演绎
 				- 归纳
 				- 溯因
-				- ![image.png](../assets/image_1636896486351_0.png)
+				- 「举例」
+					- ![image.png](../assets/image_1636896486351_0.png)
 				-
 	- 你也有这样的问题
-	  collapsed:: true
 		- 关于内容 - 90%的时间都在打磨内容
 			- Level 1 没废话
 				- 废话的后果是什么?
