@@ -110,5 +110,10 @@
 			- ⾃自⼰己能记得住
 			- 听众能记得住
 	- 失望期:暴露⾃己缺乏想法
-		-
+		- 只是引导⽽已
+			- 分类:MECE原则
+				- ![image.png](../assets/image_1636884828810_0.png){:height 252, :width 383}
+			- 因果:⼀波三折
+				- ![image.png](../assets/image_1636884839435_0.png){:height 191, :width 380}
+				-
 	- 转化期:把思维导图转化成ppt
