@@ -70,8 +70,12 @@
 					- 仪态端庄
 					- 内容重要
 					- 声音和蔼可亲
-				-
 			- F.A.B
+				- F.A.B是什么?
+					- ![image.png](../assets/image_1636896083290_0.png){:height 266, :width 408}
+				- 演讲中的“Benifit”
+					-
+					-
 	- 你也有这样的问题
 	  collapsed:: true
 		- 关于内容 - 90%的时间都在打磨内容
