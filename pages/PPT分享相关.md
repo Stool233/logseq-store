@@ -147,4 +147,5 @@
 					- FAB对应的是三个英文单词：Feature、Advantage和Benefit，按照这样的顺序来介绍，就是说服性演讲的结构，它达到的效果就是让客户相信你的是最好的。
 			- ![image.png](../assets/image_1636885463175_0.png){:height 317, :width 405}
 			-
+			-
 		-
