@@ -57,7 +57,6 @@
 						-
 	- A Fish and To Fish
 		- 怎么做好的干货
-		  collapsed:: true
 			- 先做厚
 				- 核心点，想到就记上去
 					- 案例/故事(图、对话)
