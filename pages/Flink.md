@@ -61,8 +61,8 @@
 			- ![image.png](../assets/image_1640446985031_0.png)
 		- Application Mode
 			- ![image.png](../assets/image_1640447099659_0.png)
-		- Flink on Standalone
-			- ![image.png](../assets/image_1646060031142_0.png)
+	- Flink on Standalone
+		- ![image.png](../assets/image_1646060031142_0.png)
 	-
 	-
 	-
