@@ -1,0 +1,68 @@
+- 流计算 在 大数据处理计算模式的位置
+  collapsed:: true
+	- ![image.png](../assets/image_1640442155728_0.png)
+- 流计算与批计算对比
+  collapsed:: true
+	- ![image.png](../assets/image_1640442206931_0.png)
+- 流计算将成为主流？
+  collapsed:: true
+	- ![image.png](../assets/image_1640442239126_0.png)
+- 适合流计算的场景
+  collapsed:: true
+	- ![image.png](../assets/image_1640442293703_0.png)
+	- ![image.png](../assets/image_1640442307570_0.png)
+- Flink作为流计算框架的优势
+  collapsed:: true
+	- ![image.png](../assets/image_1640442383954_0.png)
+	- ![image.png](../assets/image_1640442446213_0.png)
+- Flink
+  collapsed:: true
+	- 发展历史
+		- ![image.png](../assets/image_1640442505140_0.png)
+		- 学术项目的工业化
+	- 应用场景
+		- 实时监控的分析预警
+		- 实时报表
+		- 流数据分析 协助决策或个性化推荐
+		- 实时数据仓库的实时数据清洗等
+	- 核心特性
+		- 统一数据处理组件栈
+			- ![image.png](../assets/image_1640442697714_0.png)
+		- 支持多种时间概念
+			- ![image.png](../assets/image_1640442732175_0.png)
+		- 数据一致性的保证
+			- ![image.png](../assets/image_1640442774021_0.png)
+		- 支持有状态计算
+			- ![image.png](../assets/image_1640442800009_0.png)
+		- 支持高度灵活的窗口计算
+			- ![image.png](../assets/image_1640442830383_0.png)
+		- 带反压的连续流模型
+			- ![image.png](../assets/image_1640442866238_0.png)
+		- 独立的内存管理
+	- ![image.png](../assets/image_1640442907745_0.png)
+- 集群架构
+	- ![image.png](../assets/image_1640445591859_0.png){:height 410, :width 660}
+	-
+	- jobManager
+		- ![image.png](../assets/image_1640445758084_0.png)
+	- taskManager
+		- ![image.png](../assets/image_1640445901362_0.png)
+	- Client
+		- ![image.png](../assets/image_1640446053297_0.png)
+	- JobGraph
+		- ![image.png](../assets/image_1640446284929_0.png)
+	- 集群部署模式
+		- ![image.png](../assets/image_1640446532739_0.png)
+		- Session Mode
+			- ![image.png](../assets/image_1640446618797_0.png)
+		- Per-Job Mode
+			- ![image.png](../assets/image_1640446950679_0.png){:height 334, :width 660}
+		- Session与Per-Job Mode 问题
+			- ![image.png](../assets/image_1640446985031_0.png)
+		- Application Mode
+			- ![image.png](../assets/image_1640447099659_0.png)
+		- Flink on Standalone
+			- ![image.png](../assets/image_1646060031142_0.png)
+	-
+	-
+	-
