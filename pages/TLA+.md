@@ -1,3 +1,7 @@
 - TLA+的底层基本抽象
 	- An execution of a system is represented as a sequence of discrete steps
-	-
+		- 一个系统的执行被表示为一系列离散的步骤
+		- sequence
+		- discrete
+			- Digital
+		- step
