@@ -11,6 +11,6 @@
 				- 状态变化
 				- An execution is represented as a sequence of states
 				- A step is the change from one state to the next
-			- Science models systems by a state changing with time
-				- 科学通过随时间变化的状态来模拟系统
+			- Science models systems by a state changing with time, usually continuously
+				- 科学通过一种随时间变化的状态(通常是连续的)来模拟系统
 			-
