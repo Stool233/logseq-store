@@ -32,5 +32,6 @@
 			-
 			  1. Possible initial values of variables.
 			-
+			  2. A relation between their values in the current state and their possible values in the next state
 		-
 		-
