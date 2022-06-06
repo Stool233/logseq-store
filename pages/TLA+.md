@@ -69,5 +69,8 @@
 	- 记住转换后的这个是数学公式（formula），符合交换律等数学性质
 		- ![image.png](../assets/image_1654529983447_0.png)
 		- ![image.png](../assets/image_1654530003980_0.png)
-	-
+	- TLA+ 完整例子
+		- ![image.png](../assets/image_1654530134394_0.png)
+		- ![image.png](../assets/image_1654530152962_0.png)
+- decom
 	-
