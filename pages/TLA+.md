@@ -59,4 +59,5 @@
 	-
 	- ![image.png](../assets/image_1654529592063_0.png){:height 336, :width 393}
 	- ![image.png](../assets/image_1654529639541_0.png)
-	-
+		- The big difference between math and C :
+			- Math is much more expressive
