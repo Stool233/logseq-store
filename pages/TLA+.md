@@ -8,4 +8,6 @@
 					- 我们可以把它的 连续演变 抽象为一系列 离散事件
 		- step
 			- TLA+ describe a step as a state change
-				-
+				- 状态变化
+				- An execution is represented as a sequence of states
+				- A step is the change from one state to the
