@@ -50,3 +50,4 @@
 				- State machine eliminate those low-level implementation details
 					- They provide a single simple abstraction
 	- TLA+ is an elegant, expressive language for describing state machine.
+-
