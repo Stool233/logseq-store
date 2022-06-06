@@ -40,8 +40,10 @@
 		- In a state machine, all part of the state are represented as value of variables
 			- 在状态机中，状态的所有部分都表示为变量的值
 		- In programs, different parts of the state are represented differently
-			- The value of variables
-			- The control state
-			- The call stack
-			-
-			-
+			- example
+				- The value of variables
+				- The control state
+				- The call stack
+				- The heap
+				- ...
+			- They are represented differently because they are implement
