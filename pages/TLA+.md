@@ -25,8 +25,12 @@
 			  1. All possible initial states
 			-
 			  2. What next states can follow any given state
-		- It halts if there is no possible next state
+		- It halts if there is no possible next state.
 		- A state is an assignment of values to variables, so a state machine is described by
+			-
+			  0. What the variables are.
+			-
+			  1. Possible initial values of variables.
 			-
 		-
 		-
