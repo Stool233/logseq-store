@@ -66,6 +66,7 @@
 					- 他们缺乏的不仅仅是对非确定性的构想
 				- Programming languages don't abstract above the code level
 					- 他们不会在代码层之上进行抽象
+	- 记住转换后的这个是数学公式（formula），
 	- ![image.png](../assets/image_1654529983447_0.png)
 	- ![image.png](../assets/image_1654530003980_0.png)
 	-
