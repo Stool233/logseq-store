@@ -46,4 +46,5 @@
 				- The call stack
 				- The heap
 				- ...
-			- They are represented differently because they are implement
+			- They are represented differently because they are implemented differently
+				- State machine eliminate those low-level implementation details
