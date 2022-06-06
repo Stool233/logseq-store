@@ -36,5 +36,6 @@
 			-
 			  2. A relation between their values in the current state and their possible values in the next state
 				- 它们在当前状态下的值与它们在下一状态下可能的值之间的关系
-		-
+	- State machine are simpler than programs
+	- In a state machine, all part of the state are represented as value
 		-
