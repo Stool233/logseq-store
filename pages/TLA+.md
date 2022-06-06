@@ -55,5 +55,6 @@
 	- ![image.png](../assets/image_1654529370480_0.png)
 	- ![image.png](../assets/image_1654529400161_0.png){:height 322, :width 378}
 	- ![image.png](../assets/image_1654529474705_0.png){:height 299, :width 502}
+	- ![image.png](../assets/image_1654529556431_0.png){:height 365, :width 391}
 	-
 	-
