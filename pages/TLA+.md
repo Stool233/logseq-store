@@ -14,5 +14,6 @@
 			- Science models systems by a state changing with time, usually continuously
 				- 科学通过一种随时间变化的状态(通常是连续的)来模拟系统
 			- As in science, TLA+ describes a state as an assignment of values to variables
-				-
-			-
+				- 在科学中，TLA+将状态描述为对变量赋值
+- 状态机（state machine）
+	- An execution of a system is represented as a beha
