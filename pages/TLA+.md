@@ -19,3 +19,8 @@
 	- An execution of a system is represented as a behavior
 	- A behavior is a sequence of states
 	- We want to specify all possible of a system
+	- A state machine is described by
+		-
+		  1. All possible initial states
+		-
+		  2. What next state
