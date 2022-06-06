@@ -3,5 +3,6 @@
 		- 一个系统的执行被表示为一系列离散的步骤
 		- sequence
 		- discrete
-			- Digital
+			- Digital system
+				- We can abstract its continuous evolution as a sequence of discrete events
 		- step
