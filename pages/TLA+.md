@@ -16,4 +16,6 @@
 			- As in science, TLA+ describes a state as an assignment of values to variables
 				- 在科学中，TLA+将状态描述为对变量赋值
 - 状态机（state machine）
-	- An execution of a system is represented as a beha
+	- An execution of a system is represented as a behavior
+	- A behavior is a sequence of states
+	- We want to specify all possible of a system
