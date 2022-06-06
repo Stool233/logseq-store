@@ -61,4 +61,5 @@
 	- ![image.png](../assets/image_1654529639541_0.png)
 		- The big difference between math and C :
 			- Math is much more expressive
-		- Programming language
+			- Programming languages weren't designed to express nondeterminism
+				- They lack more than constructs for nonder
