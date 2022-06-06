@@ -51,21 +51,22 @@
 					- They provide a single simple abstraction
 	- TLA+ is an elegant, expressive language for describing state machine.
 - Describing a state machine with math (用数学描述状态机)
-	- ![image.png](../assets/image_1654529341200_0.png){:height 274, :width 397}
-	- ![image.png](../assets/image_1654529370480_0.png)
-	- ![image.png](../assets/image_1654529400161_0.png){:height 322, :width 378}
-	- ![image.png](../assets/image_1654529474705_0.png){:height 299, :width 502}
-	- ![image.png](../assets/image_1654529556431_0.png){:height 365, :width 391}
-	-
-	- ![image.png](../assets/image_1654529592063_0.png){:height 336, :width 393}
-	- ![image.png](../assets/image_1654529639541_0.png)
-		- The big difference between math and C :
-			- Math is much more expressive
-			- Programming languages weren't designed to express nondeterminism (编程语言不是为了表达非确定性而设计的)
-				- They lack more than constructs for nondeterminism
-					- 他们缺乏的不仅仅是对非确定性的构想
-				- Programming languages don't abstract above the code level
-					- 他们不会在代码层之上进行抽象
+	- 演进
+	  collapsed:: true
+		- ![image.png](../assets/image_1654529341200_0.png){:height 274, :width 397}
+		- ![image.png](../assets/image_1654529370480_0.png)
+		- ![image.png](../assets/image_1654529400161_0.png){:height 322, :width 378}
+		- ![image.png](../assets/image_1654529474705_0.png){:height 299, :width 502}
+		- ![image.png](../assets/image_1654529556431_0.png){:height 365, :width 391}
+		- ![image.png](../assets/image_1654529592063_0.png){:height 336, :width 393}
+		- ![image.png](../assets/image_1654529639541_0.png)
+			- The big difference between math and C :
+				- Math is much more expressive
+				- Programming languages weren't designed to express nondeterminism (编程语言不是为了表达非确定性而设计的)
+					- They lack more than constructs for nondeterminism
+						- 他们缺乏的不仅仅是对非确定性的构想
+					- Programming languages don't abstract above the code level
+						- 他们不会在代码层之上进行抽象
 	- 记住转换后的这个是数学公式（formula），符合交换律等数学性质
 		- ![image.png](../assets/image_1654529983447_0.png)
 		- ![image.png](../assets/image_1654530003980_0.png)
