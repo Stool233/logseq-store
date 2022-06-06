@@ -5,4 +5,5 @@
 		- discrete
 			- Digital system
 				- We can abstract its continuous evolution as a sequence of discrete events
+					- 我们可以把它的 连续演变 抽象为一系列 离散事件
 		- step
