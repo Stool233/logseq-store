@@ -72,5 +72,8 @@
 	- TLA+ 完整例子
 		- ![image.png](../assets/image_1654530134394_0.png)
 		- ![image.png](../assets/image_1654530152962_0.png)
-- decom
+- Decomposing large specs
+	- Using definitions（）
+		- ![image.png](../assets/image_1654530220178_0.png)
+	-
 	-
