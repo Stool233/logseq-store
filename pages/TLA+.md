@@ -61,6 +61,9 @@
 	- ![image.png](../assets/image_1654529639541_0.png)
 		- The big difference between math and C :
 			- Math is much more expressive
-			- Programming languages weren't designed to express nondeterminism
+			- Programming languages weren't designed to express nondeterminism (编程语言不是为了表达非确定性而设计的)
 				- They lack more than constructs for nondeterminism
+					- 他们缺乏的不仅仅是对非确定性的构想
 				- Programming languages don't abstract above the code level
+					- 他们不会在代码层之上进行抽象
+					-
