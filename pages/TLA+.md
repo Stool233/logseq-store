@@ -29,9 +29,12 @@
 		- A state is an assignment of values to variables, so a state machine is described by
 			-
 			  0. What the variables are.
+				- 变量是什么
 			-
 			  1. Possible initial values of variables.
+				- 变量可能的初始值。
 			-
 			  2. A relation between their values in the current state and their possible values in the next state
+				- 它们在当前状态下的值与它们在下一状态下可能的值之间的关系
 		-
 		-
