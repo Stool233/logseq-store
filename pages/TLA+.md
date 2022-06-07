@@ -84,4 +84,5 @@
 - The TLA+ proof system
 	- TLA+ has constructs for writing theorems and formal proofs of those theorems.
 		- TLA+构造了定理和这些定理的形式证明。
-	- TLAPS
+	- TLAPS is tool for checking those proofs.
+	-
