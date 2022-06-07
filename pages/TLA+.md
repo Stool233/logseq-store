@@ -97,6 +97,8 @@
 	- ![image.png](../assets/image_1654612529719_0.png){:height 328, :width 480}
 	- Many popular programming languages allow only index sets 0 .. n
 	- Math and TLA+ allow a function to have any set as its domain -- for example, the set of all integers.
+- Transaction Commit
+	- ![image.png](../assets/image_1654615309768_0.png){:height 493, :width 470}
 	- ![image.png](../assets/image_1654613325201_0.png){:height 353, :width 468}
-	- ![image.png](../assets/image_1654614341996_0.png){:height 167, :width 499}
+	- ![image.png](../assets/image_1654614341996_0.png){:height 163, :width 499}
 	-
