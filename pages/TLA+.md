@@ -86,4 +86,6 @@
 		- TLA+构造了定理和这些定理的形式证明。
 	- TLAPS is tool for checking those proofs.
 -
--
+- Getting Started on a Spec
+	- The best way
+		- Write a single correct behavior. Informally
