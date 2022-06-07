@@ -81,3 +81,5 @@
 		- Execution stopped when it wasn't supposed to.
 	- Termination
 		- Execution stopped when it was supposed to.
+- The TLA+ proof system
+	- TLA+ has constructs for writing theo
