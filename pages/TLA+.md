@@ -90,4 +90,5 @@
 	- The best way
 		- Write a single correct behavior. Informally
 -
-- In TLA+, every value is a set, B
+- In TLA+, every value is a set, But TLA+ doesn't say what their elements are.
+-
