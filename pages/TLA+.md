@@ -52,7 +52,6 @@
 	- TLA+ is an elegant, expressive language for describing state machine.
 - Describing a state machine with math (用数学描述状态机)
 	- 演进
-	  collapsed:: true
 		- ![image.png](../assets/image_1654529341200_0.png){:height 274, :width 397}
 		- ![image.png](../assets/image_1654529370480_0.png)
 		- ![image.png](../assets/image_1654529400161_0.png){:height 322, :width 378}
