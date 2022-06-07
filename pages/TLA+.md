@@ -91,4 +91,6 @@
 		- Write a single correct behavior. Informally
 -
 - In TLA+, every value is a set, But TLA+ doesn't say what their elements are.
-- The TLA+ syntax
+- The TLA+ syntax for an array expression
+	- ![image.png](../assets/image_1654612447477_0.png)
+-
