@@ -90,4 +90,4 @@
 	- The best way
 		- Write a single correct behavior. Informally
 -
-- In T
+- In TLA+, every value is a set, B
