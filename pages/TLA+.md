@@ -95,4 +95,5 @@
 	- ![image.png](../assets/image_1654612447477_0.png)
 - TLA+ Terminology
 	- ![image.png](../assets/image_1654612529719_0.png){:height 328, :width 480}
-	-
+	- Many popular programming languages allow only index sets 0 .. n
+	- Math and TLA+ allow
