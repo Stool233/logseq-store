@@ -116,5 +116,6 @@
 		- A simpler method
 			- Let *msgs* be the set of all messages ever sent.
 			- A single message can be received by multiple processes.
-			- A
+			- A process can receive the same messages multiple times.
+			- Two-Phase commit still works
 	-
