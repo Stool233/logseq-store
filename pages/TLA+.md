@@ -130,6 +130,7 @@
 		- After r has aborted, no RM can ever commit; and the TM should eventually take a TMAbort step.
 		- In practice, r would inform the TM that it has aborted so the TM knows it should abort the transaction.
 		- But the optimization isn't relevant for implementing TCommit.
+	- ![image.png](../assets/image_1654691116691_0.png)
 	-
 	-
 	-
