@@ -126,7 +126,9 @@
 	- ![image.png](../assets/image_1654689759657_0.png)
 	- ![image.png](../assets/image_1654690693818_0.png)
 	- ![image.png](../assets/image_1654690722731_0.png)
-	- A
+	- ![image.png](../assets/image_1654690895760_0.png)
+		- After r has aborted, no RM can ever commit; and the TM should eventually take a TMAbort step.
+		- In practice, r would inform the TM that
 	-
 	-
 	-
