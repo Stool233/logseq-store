@@ -140,7 +140,8 @@
 - Correctness of Two-Phase
 	- Two-phase commit doesn’t just maintain the invariance of TCConsistent.
 		- 两阶段提交不仅保持了TCConsistent的不变性。
-	- It implements the specification of
+	- It implements the specification of transaction commit.
+		- 它实现了transaction commit的规范。
 	-
 	-
 	-
