@@ -144,7 +144,9 @@
 		- It implements the specification of transaction commit.
 			- 它实现了transaction commit的规范。
 - Paxos Commit
-	- The problem with two-phase
+	- The problem with two-phase commit:
+		- It can hang forever if the TM fails.
+	-
 	-
 	-
 	-
