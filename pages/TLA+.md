@@ -137,7 +137,10 @@
 		- ![image.png](../assets/image_1654694014794_0.png)
 		- ![image.png](../assets/image_1654694057842_0.png)
 		- TLC will check fewer states if the model sets a symmetry set to a set of model values.
-		-
+- Correctness of Two-Phase
+	- Two-phase commit doesn’t just maintain the invariance of TCConsistent.
+		- 两阶段提交不仅保持了TCConsistent的不变性。
+	- It implements the specification of
 	-
 	-
 	-
