@@ -108,5 +108,6 @@
 	- ![image.png](../assets/image_1654617456634_0.png){:height 197, :width 496}
 - Two-Phase Commit
 	- A popular algorithm for implementing transaction commit
-	-
+	- Send Messages Spec
+		- The spec must describe
 	-
