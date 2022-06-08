@@ -109,5 +109,8 @@
 - Two-Phase Commit
 	- A popular algorithm for implementing transaction commit
 	- Send Messages Spec
-		- The spec must describe
+		- The spec must describe sending messages.
+		- It should specify only what's required of message passing.
+		- A simple method
+			-
 	-
