@@ -132,6 +132,8 @@
 		- But the optimization isn't relevant for implementing TCommit.
 	- ![image.png](../assets/image_1654691116691_0.png)
 	- ![image.png](../assets/image_1654691166876_0.png)
+- Model Value
+	-
 	-
 	-
 	-
