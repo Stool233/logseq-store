@@ -115,5 +115,6 @@
 			- Let *msgs* be the set of messages currently in transit
 		- A simpler method
 			- Let *msgs* be the set of all messages ever sent.
-		-
+			- A single message can be received by multiple processes.
+			- A
 	-
