@@ -107,5 +107,5 @@
 	- ![image.png](../assets/image_1654617425652_0.png)
 	- ![image.png](../assets/image_1654617456634_0.png){:height 197, :width 496}
 - Two-Phase Commit
-	-
+	- A popular algorithm for implementing
 	-
