@@ -112,5 +112,5 @@
 		- The spec must describe sending messages.
 		- It should specify only what's required of message passing.
 		- A simple method
-			-
+			- Let *msgs* be the set of messages currently in transit
 	-
