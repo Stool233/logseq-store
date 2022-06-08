@@ -118,4 +118,6 @@
 			- A single message can be received by multiple processes.
 			- A process can receive the same messages multiple times.
 			- Two-Phase commit still works
+	- ![image.png](../assets/image_1654688771400_0.png)
+	-
 	-
