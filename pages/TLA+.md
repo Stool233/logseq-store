@@ -136,6 +136,7 @@
 	- Symmetry Sets
 		- ![image.png](../assets/image_1654694014794_0.png)
 		- ![image.png](../assets/image_1654694057842_0.png)
+		- TLC will check fewer states if the model sets a symmetry set to a set of model values.
 		-
 	-
 	-
