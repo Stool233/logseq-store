@@ -128,7 +128,8 @@
 	- ![image.png](../assets/image_1654690722731_0.png)
 	- ![image.png](../assets/image_1654690895760_0.png)
 		- After r has aborted, no RM can ever commit; and the TM should eventually take a TMAbort step.
-		- In practice, r would inform the TM that
+		- In practice, r would inform the TM that it has aborted so the TM knows it should abort the transaction.
+		- But the optimization isn't relevant for implementing
 	-
 	-
 	-
