@@ -118,31 +118,32 @@
 			- A single message can be received by multiple processes.
 			- A process can receive the same messages multiple times.
 			- Two-Phase commit still works
-	- ![image.png](../assets/image_1654688771400_0.png)
-	- ![image.png](../assets/image_1654688808584_0.png)
-	- ![image.png](../assets/image_1654689105828_0.png)
-	- ![image.png](../assets/image_1654689294351_0.png)
-	- ![image.png](../assets/image_1654689389215_0.png)
-	- ![image.png](../assets/image_1654689759657_0.png)
-	- ![image.png](../assets/image_1654690693818_0.png)
-	- ![image.png](../assets/image_1654690722731_0.png)
-	- ![image.png](../assets/image_1654690895760_0.png)
-		- After r has aborted, no RM can ever commit; and the TM should eventually take a TMAbort step.
-		- In practice, r would inform the TM that it has aborted so the TM knows it should abort the transaction.
-		- But the optimization isn't relevant for implementing TCommit.
-	- ![image.png](../assets/image_1654691116691_0.png)
-	- ![image.png](../assets/image_1654691166876_0.png)
-- Model Values
-	- Symmetry Sets
-		- ![image.png](../assets/image_1654694014794_0.png)
-		- ![image.png](../assets/image_1654694057842_0.png)
-		- TLC will check fewer states if the model sets a symmetry set to a set of model values.
-- Correctness of Two-Phase
-	- Two-phase commit doesn’t just maintain the invariance of TCConsistent.
-		- 两阶段提交不仅保持了TCConsistent的不变性。
-	- It implements the specification of transaction commit.
-		- 它实现了transaction commit的规范。
-	-
+	- Spec
+		- ![image.png](../assets/image_1654688771400_0.png)
+		- ![image.png](../assets/image_1654688808584_0.png)
+		- ![image.png](../assets/image_1654689105828_0.png)
+		- ![image.png](../assets/image_1654689294351_0.png)
+		- ![image.png](../assets/image_1654689389215_0.png)
+		- ![image.png](../assets/image_1654689759657_0.png)
+		- ![image.png](../assets/image_1654690693818_0.png)
+		- ![image.png](../assets/image_1654690722731_0.png)
+		- ![image.png](../assets/image_1654690895760_0.png)
+			- After r has aborted, no RM can ever commit; and the TM should eventually take a TMAbort step.
+			- In practice, r would inform the TM that it has aborted so the TM knows it should abort the transaction.
+			- But the optimization isn't relevant for implementing TCommit.
+		- ![image.png](../assets/image_1654691116691_0.png)
+		- ![image.png](../assets/image_1654691166876_0.png)
+	- Model Values
+		- Symmetry Sets
+			- ![image.png](../assets/image_1654694014794_0.png)
+			- ![image.png](../assets/image_1654694057842_0.png)
+			- TLC will check fewer states if the model sets a symmetry set to a set of model values.
+	- Correctness of Two-Phase
+		- Two-phase commit doesn’t just maintain the invariance of TCConsistent.
+			- 两阶段提交不仅保持了TCConsistent的不变性。
+		- It implements the specification of transaction commit.
+			- 它实现了transaction commit的规范。
+-
 	-
 	-
 	-
