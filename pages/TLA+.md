@@ -148,6 +148,8 @@
 		- It can hang forever if the TM fails.
 	- In math, any expression equals itself.
 	- ![image.png](../assets/image_1654871227194_0.png)
+	- ![image.png](../assets/image_1654871457834_0.png)
+	- ![image.png](../assets/image_1654871495184_0.png)
 	-
 	-
 	-
