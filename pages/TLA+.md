@@ -171,6 +171,11 @@
 	-
 	- it’s ok to use elements of a symmetry set in an expression assigned to another constant if the expression is symmetric in the elements of the symmetry set.
 		- 如果表达式在对称集合的元素中是对称的，那么在赋给另一个常数的表达式中使用对称集的元素是可以的。
+	- There’s one additional condition for symmetry sets.
+		- Elements of a symmetry set, or a constant assigned elements of a symmetry set may not appear in a CHOOSE expression.
+			- 对称集还有一个附加条件。
+			  对称集的元素，或对称集的常量赋值元素不能出现在CHOOSE表达式中。
+	-
 	-
 	-
 	-
