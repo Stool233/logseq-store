@@ -181,7 +181,8 @@
 - Implementation
 	- Preliminaries
 		- Logical Implication
-			-
+			- ![image.png](../assets/image_1654876089759_0.png)
+		- Ordinary Expressions
 	-
 	-
 	-
