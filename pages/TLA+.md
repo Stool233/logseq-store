@@ -179,7 +179,8 @@
 	- What good is checking such small models
 		- Even a very small model can catch an error in an algorithm
 - Implementation
-	-
+	- Preliminaries
+		- Logical
 	-
 	-
 	-
