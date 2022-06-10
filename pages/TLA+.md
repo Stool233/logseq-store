@@ -180,7 +180,8 @@
 		- Even a very small model can catch an error in an algorithm
 - Implementation
 	- Preliminaries
-		- Logical
+		- Logical Implication
+			-
 	-
 	-
 	-
