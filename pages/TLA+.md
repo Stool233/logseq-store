@@ -161,10 +161,11 @@
 	- ![image.png](../assets/image_1654872341718_0.png)
 	- ![image.png](../assets/image_1654872397826_0.png)
 	- ![image.png](../assets/image_1654872437035_0.png)
-	- ![image.png](../assets/image_1654872872336_0.png)
-	- ![image.png](../assets/image_1654872884924_0.png)
+	- ![image.png](../assets/image_1654872900145_0.png)
+		- The LET Clause makes three definitions local to the LET IN expression
+	- ![image.png](../assets/image_1654872884924_0.png){:height 300, :width 682}
+		- The defined identifier can be only in the expression
 	-
-	- The LET Clause makes three definitions local to the LET IN expression, the defined identifier can be only in the expression
 	-
 	-
 	-
