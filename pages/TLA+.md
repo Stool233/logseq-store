@@ -176,6 +176,7 @@
 			- 对称集还有一个附加条件。
 			  对称集的元素，或对称集的常量赋值元素不能出现在CHOOSE表达式中。
 	- What good is checking such small models
+		- Even a very small model can catch an error in an algorithm
 	-
 	-
 	-
