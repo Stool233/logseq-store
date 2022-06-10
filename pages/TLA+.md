@@ -147,6 +147,7 @@
 	- The problem with two-phase commit:
 		- It can hang forever if the TM fails.
 	- In math, any expression equals itself.
+	- Spec
 	- ![image.png](../assets/image_1654871227194_0.png)
 	- ![image.png](../assets/image_1654871457834_0.png)
 	- ![image.png](../assets/image_1654871495184_0.png)
@@ -177,6 +178,7 @@
 			  对称集的元素，或对称集的常量赋值元素不能出现在CHOOSE表达式中。
 	- What good is checking such small models
 		- Even a very small model can catch an error in an algorithm
+-
 	-
 	-
 	-
