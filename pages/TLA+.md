@@ -166,6 +166,9 @@
 	- ![image.png](../assets/image_1654872884924_0.png){:height 300, :width 682}
 		- The defined identifier can be only in the expression
 	- ![image.png](../assets/image_1654872997609_0.png)
+	- ![image.png](../assets/image_1654873086380_0.png)
+	- ![image.png](../assets/image_1654873096250_0.png)
+	-
 	-
 	-
 	-
