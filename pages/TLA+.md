@@ -169,7 +169,8 @@
 	- ![image.png](../assets/image_1654873086380_0.png)
 	- ![image.png](../assets/image_1654873096250_0.png)
 	-
-	-
+	- it’s ok to use elements of a symmetry set in an expression assigned to another constant if the expression is symmetric in the elements of the symmetry set.
+		- 如果表达式在对称集合的元素中是对称的，那么在赋给另一个常数的表达式中使用对称集的元素是可以的。
 	-
 	-
 	-
