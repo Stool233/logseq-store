@@ -146,7 +146,8 @@
 - Paxos Commit
 	- The problem with two-phase commit:
 		- It can hang forever if the TM fails.
-	- In math, any
+	- In math, any expression equals itself.
+	-
 	-
 	-
 	-
