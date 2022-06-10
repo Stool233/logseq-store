@@ -161,7 +161,7 @@
 	- ![image.png](../assets/image_1654872341718_0.png)
 	- ![image.png](../assets/image_1654872397826_0.png)
 	- ![image.png](../assets/image_1654872437035_0.png)
-	-
+	- The LET Clause makes three definitions local to the LET IN expression, the defined
 	-
 	-
 	-
