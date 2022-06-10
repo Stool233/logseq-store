@@ -148,28 +148,28 @@
 		- It can hang forever if the TM fails.
 	- In math, any expression equals itself.
 	- Spec
-	- ![image.png](../assets/image_1654871227194_0.png)
-	- ![image.png](../assets/image_1654871457834_0.png)
-	- ![image.png](../assets/image_1654871495184_0.png)
-	- ![image.png](../assets/image_1654871511038_0.png)
-	- ![image.png](../assets/image_1654871571072_0.png)
-	- ![image.png](../assets/image_1654871634948_0.png)
-	- ![image.png](../assets/image_1654871676962_0.png)
-	- ![image.png](../assets/image_1654871783235_0.png)
-		- ![image.png](../assets/image_1654871839852_0.png)
-	- ![image.png](../assets/image_1654872076386_0.png)
-	- ![image.png](../assets/image_1654872109498_0.png){:height 234, :width 594}
-	- ![image.png](../assets/image_1654872341718_0.png)
-	- ![image.png](../assets/image_1654872397826_0.png)
-	- ![image.png](../assets/image_1654872437035_0.png)
-	- ![image.png](../assets/image_1654872900145_0.png)
-		- The LET Clause makes three definitions local to the LET IN expression
-	- ![image.png](../assets/image_1654872884924_0.png){:height 300, :width 682}
-		- The defined identifier can be only in the expression
-	- ![image.png](../assets/image_1654872997609_0.png)
-	- ![image.png](../assets/image_1654873086380_0.png)
-	- ![image.png](../assets/image_1654873096250_0.png)
-	-
+	  collapsed:: true
+		- ![image.png](../assets/image_1654871227194_0.png)
+		- ![image.png](../assets/image_1654871457834_0.png)
+		- ![image.png](../assets/image_1654871495184_0.png)
+		- ![image.png](../assets/image_1654871511038_0.png)
+		- ![image.png](../assets/image_1654871571072_0.png)
+		- ![image.png](../assets/image_1654871634948_0.png)
+		- ![image.png](../assets/image_1654871676962_0.png)
+		- ![image.png](../assets/image_1654871783235_0.png)
+			- ![image.png](../assets/image_1654871839852_0.png)
+		- ![image.png](../assets/image_1654872076386_0.png)
+		- ![image.png](../assets/image_1654872109498_0.png){:height 234, :width 594}
+		- ![image.png](../assets/image_1654872341718_0.png)
+		- ![image.png](../assets/image_1654872397826_0.png)
+		- ![image.png](../assets/image_1654872437035_0.png)
+		- ![image.png](../assets/image_1654872900145_0.png)
+			- The LET Clause makes three definitions local to the LET IN expression
+		- ![image.png](../assets/image_1654872884924_0.png){:height 300, :width 682}
+			- The defined identifier can be only in the expression
+		- ![image.png](../assets/image_1654872997609_0.png)
+		- ![image.png](../assets/image_1654873086380_0.png)
+		- ![image.png](../assets/image_1654873096250_0.png)
 	- it’s ok to use elements of a symmetry set in an expression assigned to another constant if the expression is symmetric in the elements of the symmetry set.
 		- 如果表达式在对称集合的元素中是对称的，那么在赋给另一个常数的表达式中使用对称集的元素是可以的。
 	- There’s one additional condition for symmetry sets.
@@ -178,7 +178,8 @@
 			  对称集的元素，或对称集的常量赋值元素不能出现在CHOOSE表达式中。
 	- What good is checking such small models
 		- Even a very small model can catch an error in an algorithm
--
+- Implementation
+	-
 	-
 	-
 	-
