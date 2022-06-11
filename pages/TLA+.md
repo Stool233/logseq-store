@@ -256,6 +256,10 @@
 			- ![image.png](../assets/image_1654926150384_0.png)
 			- ![image.png](../assets/image_1654926248343_0.png)
 			- ![image.png](../assets/image_1654926275838_0.png)
+				- mathematical simplicity is not an end in itself.
+				  it’s a sign that we’re doing things right.
+					- 数学上的简单性本身并不是目的。
+					  这表明我们在做正确的事情。
 			-
 			-
 		-
