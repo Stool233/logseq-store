@@ -277,4 +277,5 @@
 			-
 			-
 - The Alternating Bit Protocol
-	-
+	- Finite sequence
+		-
