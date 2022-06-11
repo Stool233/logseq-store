@@ -246,7 +246,8 @@
 			-
 		- Stuttering
 			- ![image.png](../assets/image_1654925642812_0.png)
-			- ![image.png](../assets/image_1654925788413_0.png)
+			- ![image.png](../assets/image_1654925815655_0.png)
+			-
 			-
 		-
 		-
