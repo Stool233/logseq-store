@@ -183,10 +183,12 @@
 		- Logical Implication
 			- ![image.png](../assets/image_1654876089759_0.png)
 		- Ordinary Expressions
-			- ![image.png](../assets/image_1654876211372_0.png)
-				- ![image.png](../assets/image_1654876276278_0.png)
-			- ![image.png](../assets/image_1654918438353_0.png)
-			- ![image.png](../assets/image_1654918466210_0.png)
+			- Module-Closed Expression
+				- ![image.png](../assets/image_1654876211372_0.png)
+					- ![image.png](../assets/image_1654876276278_0.png)
+				- ![image.png](../assets/image_1654918438353_0.png)
+				- ![image.png](../assets/image_1654918466210_0.png)
+				- ![image.png](../assets/image_1654918493124_0.png)
 			-
 	-
 	-
