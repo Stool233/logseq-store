@@ -385,5 +385,6 @@
 		- The General Temporal Substitution Law
 			- ![image.png](../assets/image_1654954266964_0.png)
 		- The AB2 Protocol
-			-
-			-
+	- Refinement Mappings
+		-
+		-
