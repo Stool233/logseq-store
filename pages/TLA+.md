@@ -287,4 +287,6 @@
 		- ![image.png](../assets/image_1654936596780_0.png)
 		- ![image.png](../assets/image_1654936726125_0.png)
 	- The Cartesian Product
-	-
+		- ![image.png](../assets/image_1654937170068_0.png)
+		- ![image.png](../assets/image_1654937182555_0.png)
+		-
