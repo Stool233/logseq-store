@@ -287,6 +287,8 @@
 		- ![image.png](../assets/image_1654936596780_0.png)
 		- ![image.png](../assets/image_1654936726125_0.png)
 	- The Cartesian Product
+	  collapsed:: true
 		- ![image.png](../assets/image_1654937170068_0.png)
 		- ![image.png](../assets/image_1654937182555_0.png)
-		-
+		- ![image.png](../assets/image_1654937301975_0.png)
+	- What the protocol should accomplish
