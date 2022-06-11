@@ -329,6 +329,7 @@
 				-
 				-
 		- Adding Liveness To a Spec
+		  collapsed:: true
 			- ![image.png](../assets/image_1654940535914_0.png)
 			- ![image.png](../assets/image_1654940629627_0.png)
 			- ![image.png](../assets/image_1654940719093_0.png)
@@ -340,3 +341,5 @@
 			- ![image.png](../assets/image_1654941364048_0.png)
 			- ![image.png](../assets/image_1654941420303_0.png)
 			-
+	- The Protocol
+		-
