@@ -193,7 +193,6 @@
 				- ![image.png](../assets/image_1654918493124_0.png)
 				- ![image.png](../assets/image_1654918573236_0.png)
 			- Constant Expressions
-			  collapsed:: true
 				- ![image.png](../assets/image_1654918612085_0.png)
 				- ![image.png](../assets/image_1654918738039_0.png)
 			- An assumption
@@ -227,6 +226,7 @@
 			- ![image.png](../assets/image_1654924312098_0.png)
 			- ![image.png](../assets/image_1654924342510_0.png)
 		- ![image.png](../assets/image_1654924371850_0.png)
+		- ![image.png](../assets/image_1654924446838_0.png)
 		-
 	-
 	-
