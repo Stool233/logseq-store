@@ -302,4 +302,5 @@
 		-
 		-
 	- Safety and liveness
+		- ![image.png](../assets/image_1654938318253_0.png)
 		-
