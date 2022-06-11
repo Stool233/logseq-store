@@ -195,6 +195,7 @@
 			- ![image.png](../assets/image_1654918738039_0.png)
 	-
 		- An assumption
-			-
+			- ![image.png](../assets/image_1654918796039_0.png)
+		-
 	-
 	-
