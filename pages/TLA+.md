@@ -308,6 +308,7 @@
 			- ![image.png](../assets/image_1654938409956_0.png)
 			- ![image.png](../assets/image_1654938441351_0.png)
 		- Liveness Formula
+		  collapsed:: true
 			- ![image.png](../assets/image_1654938530296_0.png)
 			- ![image.png](../assets/image_1654938575381_0.png)
 			- ![image.png](../assets/image_1654938734492_0.png)
@@ -316,6 +317,7 @@
 			- ![image.png](../assets/image_1654938952165_0.png)
 			-
 		- Weak fairness
+		  collapsed:: true
 			- Enabled
 				- ![image.png](../assets/image_1654939854964_0.png)
 				- ![image.png](../assets/image_1654939886841_0.png)
@@ -325,3 +327,5 @@
 			- ![image.png](../assets/image_1654940335495_0.png)
 				-
 				-
+		- Adding Liveness To a Spec
+			-
