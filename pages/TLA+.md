@@ -230,6 +230,8 @@
 			- ![image.png](../assets/image_1654924371850_0.png)
 			- ![image.png](../assets/image_1654924446838_0.png)
 	- How it works
+		- The theorem
+			-
 		-
 		-
 		-
