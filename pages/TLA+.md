@@ -364,4 +364,6 @@
 - Implement With Refinement
 	- Preliminaries
 		- Recursive Definitions
+			- ![image.png](../assets/image_1654951801624_0.png)
+			- ![image.png](../assets/image_1654951837196_0.png)
 			-
