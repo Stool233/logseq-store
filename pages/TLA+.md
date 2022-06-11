@@ -292,6 +292,7 @@
 		- ![image.png](../assets/image_1654937182555_0.png)
 		- ![image.png](../assets/image_1654937301975_0.png)
 	- What the protocol should accomplish
+	  collapsed:: true
 		- ![image.png](../assets/image_1654937588023_0.png)
 		- ![image.png](../assets/image_1654937631243_0.png)
 		- ![image.png](../assets/image_1654937663290_0.png)
@@ -299,4 +300,6 @@
 		- ![image.png](../assets/image_1654937690919_0.png){:height 87, :width 500}
 		- ![image.png](../assets/image_1654937894949_0.png)
 		-
+		-
+	- Safety and liveness
 		-
