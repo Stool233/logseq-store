@@ -316,4 +316,6 @@
 			- ![image.png](../assets/image_1654938886359_0.png)
 			- ![image.png](../assets/image_1654938952165_0.png)
 			-
-		-
+		- Weak fairness
+			- Enabled
+				-
