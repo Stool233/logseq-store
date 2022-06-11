@@ -361,4 +361,6 @@
 				- ![image.png](../assets/image_1654948514105_0.png)
 				- ![image.png](../assets/image_1654948570546_0.png)
 			-
-- Implement With Refine
+- Implement With Refinement
+	- Preliminaries
+		-
