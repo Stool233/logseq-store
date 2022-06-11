@@ -263,6 +263,6 @@
 					  这表明我们在做正确的事情。
 			-
 			-
-		- Termination
+		- Termination and stopping
 			-
 			-
