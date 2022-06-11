@@ -378,4 +378,5 @@
 			- ![image.png](../assets/image_1654952388780_0.png)
 			-
 		- The Temporal Substitution law
+			- ![image.png](../assets/image_1654952986901_0.png)
 			-
