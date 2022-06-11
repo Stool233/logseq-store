@@ -231,6 +231,7 @@
 			- ![image.png](../assets/image_1654924446838_0.png)
 	- How it works
 		- The theorem
+		  collapsed:: true
 			- ![image.png](../assets/image_1654924733080_0.png)
 			- ![image.png](../assets/image_1654924757815_0.png)
 			- ![image.png](../assets/image_1654924796990_0.png)
@@ -243,7 +244,8 @@
 			- ![image.png](../assets/image_1654925421580_0.png)
 			- ![image.png](../assets/image_1654925503362_0.png)
 			-
-		-
+		- Stuttering
+			-
 		-
 		-
 		-
