@@ -231,7 +231,10 @@
 			- ![image.png](../assets/image_1654924446838_0.png)
 	- How it works
 		- The theorem
+			- ![image.png](../assets/image_1654924733080_0.png)
+			- ![image.png](../assets/image_1654924757815_0.png)
 			-
+		-
 		-
 		-
 		-
