@@ -191,8 +191,10 @@
 				- ![image.png](../assets/image_1654918493124_0.png)
 			- ![image.png](../assets/image_1654918573236_0.png)
 		- Constant Expressions
-		- ![image.png](../assets/image_1654918612085_0.png)
-		-
+			- ![image.png](../assets/image_1654918612085_0.png)
+			- ![image.png](../assets/image_1654918738039_0.png)
 	-
+		- An assumption
+			-
 	-
 	-
