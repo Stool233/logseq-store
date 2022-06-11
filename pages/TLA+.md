@@ -245,6 +245,7 @@
 			- ![image.png](../assets/image_1654925503362_0.png)
 			-
 		- Stuttering
+		  collapsed:: true
 			- ![image.png](../assets/image_1654925642812_0.png)
 			- ![image.png](../assets/image_1654925815655_0.png)
 			- ![image.png](../assets/image_1654925896714_0.png)
@@ -262,6 +263,6 @@
 					  这表明我们在做正确的事情。
 			-
 			-
-		-
-		-
-		-
+		- Termination
+			-
+			-
