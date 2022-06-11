@@ -306,4 +306,6 @@
 			- ![image.png](../assets/image_1654938318253_0.png)
 			- ![image.png](../assets/image_1654938409956_0.png)
 			- ![image.png](../assets/image_1654938441351_0.png)
-		- Liveness
+		- Liveness Formula
+			- ![image.png](../assets/image_1654938530296_0.png)
+			-
