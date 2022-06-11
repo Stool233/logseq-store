@@ -183,8 +183,8 @@
 		- Logical Implication
 			- ![image.png](../assets/image_1654876089759_0.png)
 		- Ordinary Expressions
-		- ![image.png](../assets/image_1654876211372_0.png)
-			- ![image.png](../assets/image_1654876276278_0.png)
+			- ![image.png](../assets/image_1654876211372_0.png)
+				- ![image.png](../assets/image_1654876276278_0.png)
 		-
 	-
 	-
