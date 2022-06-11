@@ -197,6 +197,7 @@
 		- An assumption
 			- ![image.png](../assets/image_1654918796039_0.png)
 		- State Expressions
-			-
+		- ![image.png](../assets/image_1654919169379_0.png)
+	-
 	-
 	-
