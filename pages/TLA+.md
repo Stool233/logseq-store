@@ -277,7 +277,8 @@
 			-
 			-
 - The Alternating Bit Protocol
-	- Finite sequence
+	- Finite sequence 
+	  collapsed:: true
 		- ![image.png](../assets/image_1654936391049_0.png)
 		- ![image.png](../assets/image_1654936435559_0.png)
 		- ![image.png](../assets/image_1654936481741_0.png)
@@ -285,4 +286,5 @@
 		- ![image.png](../assets/image_1654936566031_0.png)
 		- ![image.png](../assets/image_1654936596780_0.png)
 		- ![image.png](../assets/image_1654936726125_0.png)
-		-
+	- The Cartesian Product
+	-
