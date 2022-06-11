@@ -264,5 +264,6 @@
 			-
 			-
 		- Termination and stopping
+			- ![image.png](../assets/image_1654926919059_0.png)
 			-
 			-
