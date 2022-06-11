@@ -343,6 +343,10 @@
 			-
 	- The Protocol
 		- The Safety Specification
+		  collapsed:: true
 			- ![image.png](../assets/image_1654947591936_0.png)
 			- ![image.png](../assets/image_1654947766815_0.png)
+			-
+		- Liveness
+			- ![image.png](../assets/image_1654947876968_0.png)
 			-
