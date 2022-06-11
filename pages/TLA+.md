@@ -380,4 +380,6 @@
 		- The Temporal Substitution law
 			- ![image.png](../assets/image_1654952986901_0.png)
 			- ![image.png](../assets/image_1654953043857_0.png)
+			- ![image.png](../assets/image_1654953203935_0.png)
+			-
 			-
