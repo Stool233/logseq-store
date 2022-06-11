@@ -184,35 +184,35 @@
 		  collapsed:: true
 			- ![image.png](../assets/image_1654876089759_0.png)
 		- Ordinary Expressions
-		  collapsed:: true
 			- Module-Closed Expression
+			  collapsed:: true
 				- ![image.png](../assets/image_1654876211372_0.png)
 					- ![image.png](../assets/image_1654876276278_0.png)
 				- ![image.png](../assets/image_1654918438353_0.png)
 				- ![image.png](../assets/image_1654918466210_0.png)
 				- ![image.png](../assets/image_1654918493124_0.png)
-			- ![image.png](../assets/image_1654918573236_0.png)
-		- Constant Expressions
-		  collapsed:: true
-			- ![image.png](../assets/image_1654918612085_0.png)
-			- ![image.png](../assets/image_1654918738039_0.png)
-	-
-		- An assumption
-		  collapsed:: true
-			- ![image.png](../assets/image_1654918796039_0.png)
-		- State Expressions
-		  collapsed:: true
-			- ![image.png](../assets/image_1654919169379_0.png)
-			- ![image.png](../assets/image_1654919295616_0.png)
-			- ![image.png](../assets/image_1654919391263_0.png)
-			- ![image.png](../assets/image_1654919427869_0.png)
-		- Action Expression
-		  collapsed:: true
-			- ![image.png](../assets/image_1654919504947_0.png)
-			- ![image.png](../assets/image_1654919735704_0.png)
-		- Priming a state expression
-		  collapsed:: true
-			- ![image.png](../assets/image_1654919840580_0.png)
+				- ![image.png](../assets/image_1654918573236_0.png)
+			- Constant Expressions
+			  collapsed:: true
+				- ![image.png](../assets/image_1654918612085_0.png)
+				- ![image.png](../assets/image_1654918738039_0.png)
+		-
+			- An assumption
+			  collapsed:: true
+				- ![image.png](../assets/image_1654918796039_0.png)
+			- State Expressions
+			  collapsed:: true
+				- ![image.png](../assets/image_1654919169379_0.png)
+				- ![image.png](../assets/image_1654919295616_0.png)
+				- ![image.png](../assets/image_1654919391263_0.png)
+				- ![image.png](../assets/image_1654919427869_0.png)
+			- Action Expression
+			  collapsed:: true
+				- ![image.png](../assets/image_1654919504947_0.png)
+				- ![image.png](../assets/image_1654919735704_0.png)
+			- Priming a state expression
+			  collapsed:: true
+				- ![image.png](../assets/image_1654919840580_0.png)
 	-
 	-
 	-
