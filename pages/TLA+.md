@@ -196,7 +196,6 @@
 			  collapsed:: true
 				- ![image.png](../assets/image_1654918612085_0.png)
 				- ![image.png](../assets/image_1654918738039_0.png)
-		-
 			- An assumption
 			  collapsed:: true
 				- ![image.png](../assets/image_1654918796039_0.png)
@@ -213,6 +212,8 @@
 			- Priming a state expression
 			  collapsed:: true
 				- ![image.png](../assets/image_1654919840580_0.png)
+		- Temporal formulas
+			-
 	-
 	-
 	-
