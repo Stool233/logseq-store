@@ -279,4 +279,6 @@
 - The Alternating Bit Protocol
 	- Finite sequence
 		- ![image.png](../assets/image_1654936391049_0.png)
+		- ![image.png](../assets/image_1654936435559_0.png)
+		- ![image.png](../assets/image_1654936481741_0.png)
 		-
