@@ -303,10 +303,12 @@
 		-
 	- Safety and liveness
 		- Safety Formula
+		  collapsed:: true
 			- ![image.png](../assets/image_1654938318253_0.png)
 			- ![image.png](../assets/image_1654938409956_0.png)
 			- ![image.png](../assets/image_1654938441351_0.png)
 		- Liveness Formula
+		  collapsed:: true
 			- ![image.png](../assets/image_1654938530296_0.png)
 			- ![image.png](../assets/image_1654938575381_0.png)
 			- ![image.png](../assets/image_1654938734492_0.png)
@@ -314,3 +316,4 @@
 			- ![image.png](../assets/image_1654938886359_0.png)
 			- ![image.png](../assets/image_1654938952165_0.png)
 			-
+		-
