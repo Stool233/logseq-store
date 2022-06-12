@@ -400,6 +400,7 @@
 	- Refinement Mappings
 		- AB2 Implements AB
 			- ![image.png](../assets/image_1655022870328_0.png)
+			- ![image.png](../assets/image_1655022901309_0.png)
 			-
 		-
 		-
