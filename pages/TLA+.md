@@ -389,7 +389,8 @@
 			- ![image.png](../assets/image_1655017705132_0.png)
 			- ![image.png](../assets/image_1655017780502_0.png)
 			- ![image.png](../assets/image_1655017828312_0.png)
-			-
+			- Model Value
+				- TLC assumes a model value does not equal
 	- Refinement Mappings
 		-
 		-
