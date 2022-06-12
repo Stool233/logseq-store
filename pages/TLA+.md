@@ -403,11 +403,14 @@
 			- ![image.png](../assets/image_1655022901309_0.png)
 			- ![image.png](../assets/image_1655023052370_0.png)
 			- ![image.png](../assets/image_1655024502948_0.png)
-				- ![image.png](../assets/image_1655024575634_0.png)
-				- ![image.png](../assets/image_1655024626478_0.png)
-				- ![image.png](../assets/image_1655024665741_0.png)
-				- ![image.png](../assets/image_1655024718394_0.png)
-				- ![image.png](../assets/image_1655024741857_0.png)
+				- What does it mean
+					- ![image.png](../assets/image_1655024575634_0.png)
+					- ![image.png](../assets/image_1655024626478_0.png)
+					- ![image.png](../assets/image_1655024665741_0.png)
+					- ![image.png](../assets/image_1655024718394_0.png)
+					- ![image.png](../assets/image_1655024741857_0.png)
+				-
+				- ![image.png](../assets/image_1655024769315_0.png)
 				-
 		-
 		-
