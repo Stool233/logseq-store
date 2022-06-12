@@ -406,7 +406,6 @@
 			- ![image.png](../assets/image_1655023052370_0.png)
 			- ![image.png](../assets/image_1655024502948_0.png)
 				- What does it mean
-				  collapsed:: true
 					- ![image.png](../assets/image_1655024575634_0.png)
 					- ![image.png](../assets/image_1655024626478_0.png)
 					- ![image.png](../assets/image_1655024665741_0.png)
