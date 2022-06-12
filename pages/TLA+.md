@@ -392,6 +392,7 @@
 			- Model Value
 				- TLC assumes a model value does not equal any value that you might expect it to be different from.
 			- Liveness Of AB2
+				- ![image.png](../assets/image_1655019697190_0.png)
 				-
 	- Refinement Mappings
 		-
