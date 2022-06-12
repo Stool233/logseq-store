@@ -414,7 +414,6 @@
 				- How do we check it
 					- ![image.png](../assets/image_1655024769315_0.png)
 					- Specifying SpecH
-					  collapsed:: true
 						- ![image.png](../assets/image_1655024891017_0.png)
 						- ![image.png](../assets/image_1655024931900_0.png)
 						- ![image.png](../assets/image_1655025061713_0.png)
