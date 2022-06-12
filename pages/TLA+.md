@@ -465,6 +465,8 @@
 					- ![image.png](../assets/image_1655047555968_0.png)
 					-
 				-
-		- Im
+		- Imaginary variables
+			- ![image.png](../assets/image_1655047672564_0.png)
+			-
 		-
 		-
