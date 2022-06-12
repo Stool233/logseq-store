@@ -399,19 +399,23 @@
 				- ![image.png](../assets/image_1655020006207_0.png)
 	- Refinement Mappings
 		- AB2 Implements AB
+		  collapsed:: true
 			- ![image.png](../assets/image_1655022870328_0.png)
 			- ![image.png](../assets/image_1655022901309_0.png)
 			- ![image.png](../assets/image_1655023052370_0.png)
 			- ![image.png](../assets/image_1655024502948_0.png)
 				- What does it mean
+				  collapsed:: true
 					- ![image.png](../assets/image_1655024575634_0.png)
 					- ![image.png](../assets/image_1655024626478_0.png)
 					- ![image.png](../assets/image_1655024665741_0.png)
 					- ![image.png](../assets/image_1655024718394_0.png)
 					- ![image.png](../assets/image_1655024741857_0.png)
 				- How do we check it
+				  collapsed:: true
 					- ![image.png](../assets/image_1655024769315_0.png)
 					- Specifying SpecH
+					  collapsed:: true
 						- ![image.png](../assets/image_1655024891017_0.png)
 						- ![image.png](../assets/image_1655024931900_0.png)
 						- ![image.png](../assets/image_1655025061713_0.png)
@@ -420,11 +424,13 @@
 						- ![image.png](../assets/image_1655025175251_0.png)
 						- ![image.png](../assets/image_1655025200137_0.png)
 					- Checking Implementation
+					  collapsed:: true
 						- ![image.png](../assets/image_1655025513092_0.png)
 						- ![image.png](../assets/image_1655025561380_0.png)
 						- ![image.png](../assets/image_1655025636130_0.png)
 						- ![image.png](../assets/image_1655025709890_0.png)
 					- Simplifying Refinement
+					  collapsed:: true
 						- ![image.png](../assets/image_1655025853562_0.png){:height 307, :width 572}
 						- ![image.png](../assets/image_1655025908175_0.png)
 						- ![image.png](../assets/image_1655026168689_0.png)
@@ -446,16 +452,19 @@
 						- ![image.png](../assets/image_1655042725719_0.png)
 						- ![image.png](../assets/image_1655042747839_0.png)
 						- ![image.png](../assets/image_1655042775584_0.png)
-					- What we did and why
-						- ![image.png](../assets/image_1655046946040_0.png)
-						- ![image.png](../assets/image_1655047314329_0.png)
-						- ![image.png](../assets/image_1655047336203_0.png)
-						- ![image.png](../assets/image_1655047368960_0.png)
-						- ![image.png](../assets/image_1655047435841_0.png)
-						- ![image.png](../assets/image_1655047461306_0.png)
-						- ![image.png](../assets/image_1655047497230_0.png)
-						- ![image.png](../assets/image_1655047520433_0.png)
-						- ![image.png](../assets/image_1655047555968_0.png)
-						-
+				- What we did and why
+				  collapsed:: true
+					- ![image.png](../assets/image_1655046946040_0.png)
+					- ![image.png](../assets/image_1655047314329_0.png)
+					- ![image.png](../assets/image_1655047336203_0.png)
+					- ![image.png](../assets/image_1655047368960_0.png)
+					- ![image.png](../assets/image_1655047435841_0.png)
+					- ![image.png](../assets/image_1655047461306_0.png)
+					- ![image.png](../assets/image_1655047497230_0.png)
+					- ![image.png](../assets/image_1655047520433_0.png)
+					- ![image.png](../assets/image_1655047555968_0.png)
+					-
+				-
+		- Im
 		-
 		-
