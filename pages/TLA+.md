@@ -383,8 +383,10 @@
 			- ![image.png](../assets/image_1654953043857_0.png)
 			- ![image.png](../assets/image_1654953203935_0.png)
 		- The General Temporal Substitution Law
+		  collapsed:: true
 			- ![image.png](../assets/image_1654954266964_0.png)
 		- The AB2 Protocol
+		  collapsed:: true
 			- ![image.png](../assets/image_1655016959966_0.png)
 			- ![image.png](../assets/image_1655017705132_0.png)
 			- ![image.png](../assets/image_1655017780502_0.png)
@@ -399,7 +401,6 @@
 				- ![image.png](../assets/image_1655020006207_0.png)
 	- Refinement Mappings
 		- AB2 Implements AB
-		  collapsed:: true
 			- ![image.png](../assets/image_1655022870328_0.png)
 			- ![image.png](../assets/image_1655022901309_0.png)
 			- ![image.png](../assets/image_1655023052370_0.png)
