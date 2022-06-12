@@ -427,7 +427,6 @@
 						- ![image.png](../assets/image_1655025636130_0.png)
 						- ![image.png](../assets/image_1655025709890_0.png)
 					- Simplifying Refinement
-					  collapsed:: true
 						- ![image.png](../assets/image_1655025853562_0.png){:height 307, :width 572}
 						- ![image.png](../assets/image_1655025908175_0.png)
 						- ![image.png](../assets/image_1655026168689_0.png)
