@@ -426,6 +426,7 @@
 						- ![image.png](../assets/image_1655025709890_0.png)
 					- Simplifying Refinement
 						- ![image.png](../assets/image_1655025853562_0.png)
+						- ![image.png](../assets/image_1655025908175_0.png)
 						-
 		-
 		-
