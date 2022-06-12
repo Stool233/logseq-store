@@ -414,6 +414,8 @@
 					- Specifying SpecH
 						- ![image.png](../assets/image_1655024891017_0.png)
 						- ![image.png](../assets/image_1655024931900_0.png)
+						- ![image.png](../assets/image_1655025061713_0.png)
+						- ![image.png](../assets/image_1655025091831_0.png)
 						-
 		-
 		-
