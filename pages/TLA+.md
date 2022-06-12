@@ -409,8 +409,9 @@
 					- ![image.png](../assets/image_1655024665741_0.png)
 					- ![image.png](../assets/image_1655024718394_0.png)
 					- ![image.png](../assets/image_1655024741857_0.png)
-				-
-				- ![image.png](../assets/image_1655024769315_0.png)
-				-
+				- How do we check it
+					- ![image.png](../assets/image_1655024769315_0.png)
+					- Specifying SpecH
+						-
 		-
 		-
