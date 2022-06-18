@@ -319,7 +319,7 @@
 			- ![image.png](../assets/image_1654938886359_0.png)
 			- ![image.png](../assets/image_1654938952165_0.png)
 			-
-		- Weak fairness
+		- [[Weak fairness]]
 		  collapsed:: true
 			- Enabled
 			  collapsed:: true
@@ -351,7 +351,6 @@
 			- ![image.png](../assets/image_1654947766815_0.png)
 			-
 		- Liveness
-		  collapsed:: true
 			- ![image.png](../assets/image_1654947876968_0.png)
 			- ![image.png](../assets/image_1654947902290_0.png)
 			- ![image.png](../assets/image_1654947953096_0.png)
