@@ -14,5 +14,9 @@
 	- 在AWS的实践中，形式化方法不适用于什么场景
 		- todo
 - 形式化方法的实践在AWS的发展历程
-	- 形式化方法实践的第一步
+	- 形式化方法实践走出的第一步（First Steps to Formal Methods）
+		- todo
+	- 第一个巨大的成功案例
+		- todo
+	-
 -
