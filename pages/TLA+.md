@@ -1,5 +1,6 @@
 - **TAG**: [[Computer Science]]
--
+- TLA+ Video Course 的整理
+	- https://lamport.azurewebsites.net/video/videos.html
 - [[TLA+]]的底层基本抽象
 	- An execution of a system is represented as a sequence of discrete steps
 		- 一个系统的执行被表示为一系列离散的步骤
@@ -17,7 +18,7 @@
 				- 科学通过一种随时间变化的状态(通常是连续的)来模拟系统
 			- As in science, TLA+ describes a state as an assignment of values to variables
 				- 在科学中，TLA+将状态描述为对变量赋值
-- 状态机（state machine）
+- [[状态机]]（[[state machine）
 	- An execution of a system is represented as a behavior
 	- A behavior is a sequence of states
 	- We want to specify all possible of a system
