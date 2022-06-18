@@ -55,6 +55,7 @@
 	- TLA+ is an elegant, expressive language for describing state machine.
 - Describing a state machine with math (用数学描述状态机)
 	- 演进
+	  collapsed:: true
 		- ![image.png](../assets/image_1654529341200_0.png){:height 274, :width 397}
 		- ![image.png](../assets/image_1654529370480_0.png)
 		- ![image.png](../assets/image_1654529400161_0.png){:height 322, :width 378}
@@ -70,13 +71,16 @@
 					- Programming languages don't abstract above the code level
 						- 他们不会在代码层之上进行抽象
 	- 记住转换后的这个是数学公式（formula），符合交换律等数学性质
+	  collapsed:: true
 		- ![image.png](../assets/image_1654529983447_0.png)
 		- ![image.png](../assets/image_1654530003980_0.png)
 	- TLA+ 完整例子
+	  collapsed:: true
 		- ![image.png](../assets/image_1654530134394_0.png)
 		- ![image.png](../assets/image_1654530152962_0.png)
 - Decomposing large specs
 	- Using definitions（通过定义，来模块化，减少specs理解成本）
+	  collapsed:: true
 		- ![image.png](../assets/image_1654530220178_0.png)
 		- ![image.png](../assets/image_1654530284057_0.png)
 - Why Does TLC Report Deadlock
@@ -95,16 +99,20 @@
 -
 - In TLA+, every value is a set, But TLA+ doesn't say what their elements are.
 - The TLA+ syntax for an array expression
+  collapsed:: true
 	- ![image.png](../assets/image_1654612447477_0.png)
 - TLA+ Terminology
+  collapsed:: true
 	- ![image.png](../assets/image_1654612529719_0.png){:height 328, :width 480}
 	- Many popular programming languages allow only index sets 0 .. n
 	- Math and TLA+ allow a function to have any set as its domain -- for example, the set of all integers.
-- Transaction Commit
+- [[Transaction Commit]]
+  collapsed:: true
 	- ![image.png](../assets/image_1654615349995_0.png){:height 485, :width 442}
 	- ![image.png](../assets/image_1654613325201_0.png){:height 353, :width 468}
 	- ![image.png](../assets/image_1654614341996_0.png){:height 163, :width 499}
 - Records
+  collapsed:: true
 	- ![image.png](../assets/image_1654617335258_0.png)
 	- ![image.png](../assets/image_1654617393371_0.png)
 	- ![image.png](../assets/image_1654617425652_0.png)
@@ -122,6 +130,7 @@
 			- A process can receive the same messages multiple times.
 			- Two-Phase commit still works
 	- Spec
+	  collapsed:: true
 		- ![image.png](../assets/image_1654688771400_0.png)
 		- ![image.png](../assets/image_1654688808584_0.png)
 		- ![image.png](../assets/image_1654689105828_0.png)
@@ -137,7 +146,8 @@
 		- ![image.png](../assets/image_1654691116691_0.png)
 		- ![image.png](../assets/image_1654691166876_0.png)
 	- Model Values
-		- Symmetry Sets
+		- [[Symmetry Sets]]
+		  collapsed:: true
 			- ![image.png](../assets/image_1654694014794_0.png)
 			- ![image.png](../assets/image_1654694057842_0.png)
 			- TLC will check fewer states if the model sets a symmetry set to a set of model values.
@@ -351,6 +361,7 @@
 			- ![image.png](../assets/image_1654947766815_0.png)
 			-
 		- Liveness
+		  collapsed:: true
 			- ![image.png](../assets/image_1654947876968_0.png)
 			- ![image.png](../assets/image_1654947902290_0.png)
 			- ![image.png](../assets/image_1654947953096_0.png)
