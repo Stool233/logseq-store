@@ -305,12 +305,12 @@
 		-
 		-
 	- Safety and liveness
-		- Safety Formula
+		- [[Safety Formula]]
 		  collapsed:: true
 			- ![image.png](../assets/image_1654938318253_0.png)
 			- ![image.png](../assets/image_1654938409956_0.png)
 			- ![image.png](../assets/image_1654938441351_0.png)
-		- Liveness Formula
+		- [[Liveness Formula]]
 		  collapsed:: true
 			- ![image.png](../assets/image_1654938530296_0.png)
 			- ![image.png](../assets/image_1654938575381_0.png)
@@ -404,17 +404,20 @@
 				- ![image.png](../assets/image_1655020006207_0.png)
 	- Refinement Mappings
 		- AB2 Implements AB
+		  collapsed:: true
 			- ![image.png](../assets/image_1655022870328_0.png)
 			- ![image.png](../assets/image_1655022901309_0.png)
 			- ![image.png](../assets/image_1655023052370_0.png)
 			- ![image.png](../assets/image_1655024502948_0.png)
 				- What does it mean
+				  collapsed:: true
 					- ![image.png](../assets/image_1655024575634_0.png)
 					- ![image.png](../assets/image_1655024626478_0.png)
 					- ![image.png](../assets/image_1655024665741_0.png)
 					- ![image.png](../assets/image_1655024718394_0.png)
 					- ![image.png](../assets/image_1655024741857_0.png)
 				- How do we check it
+				  collapsed:: true
 					- ![image.png](../assets/image_1655024769315_0.png)
 					- Specifying SpecH
 						- ![image.png](../assets/image_1655024891017_0.png)
@@ -452,6 +455,7 @@
 						- ![image.png](../assets/image_1655042747839_0.png)
 						- ![image.png](../assets/image_1655042775584_0.png)
 				- What we did and why
+				  collapsed:: true
 					- ![image.png](../assets/image_1655046946040_0.png)
 					- ![image.png](../assets/image_1655047314329_0.png)
 					- ![image.png](../assets/image_1655047336203_0.png)
