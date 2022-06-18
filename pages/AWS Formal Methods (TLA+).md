@@ -1,7 +1,7 @@
 - **TAG: ** [[TLA+]]
 - 这篇关于AWS形式化方法的实践（TLA+的实践）的文章的整理
 	- https://lamport.azurewebsites.net/tla/formal-methods-amazon.pdf
-- 关于形式化方法（Formal Methods）的一些概述
+- 关于形式化方法（Formal Methods）的一些概述，以及AWS在实践上的整体感受
 	- todo
 	- 更精确的设计（Precise Design）
 		- todo
@@ -11,6 +11,8 @@
 		- todo
 	- 另一个方面的好处
 		- todo
-	- 在形式化方法不适用于什么场景
+	- 在AWS的实践中，形式化方法不适用于什么场景
 		- todo
+- 形式化方法的实践在AWS的发展历程
+	- 形式化方法实践的第一步
 -
