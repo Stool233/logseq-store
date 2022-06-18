@@ -1,1 +1,4 @@
-- 这篇关于AWS形式化方法的实践（）
+- **TAG: ** [[TLA+]]
+- 这篇关于AWS形式化方法的实践（TLA+的实践）的文章的整理
+	- https://lamport.azurewebsites.net/tla/formal-methods-amazon.pdf
+-
