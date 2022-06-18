@@ -18,7 +18,7 @@
 				- 科学通过一种随时间变化的状态(通常是连续的)来模拟系统
 			- As in science, TLA+ describes a state as an assignment of values to variables
 				- 在科学中，TLA+将状态描述为对变量赋值
-- [[状态机]]（[[state machine）
+- [[状态机]]（[[state machine]]）
 	- An execution of a system is represented as a behavior
 	- A behavior is a sequence of states
 	- We want to specify all possible of a system
@@ -146,7 +146,7 @@
 			- 两阶段提交不仅保持了TCConsistent的不变性。
 		- It implements the specification of transaction commit.
 			- 它实现了transaction commit的规范。
-- Paxos Commit
+- [[Paxos]] Commit
 	- The problem with two-phase commit:
 		- It can hang forever if the TM fails.
 	- In math, any expression equals itself.
@@ -464,6 +464,7 @@
 					-
 				-
 		- Imaginary variables
+		  collapsed:: true
 			- ![image.png](../assets/image_1655047672564_0.png)
 			- ![image.png](../assets/image_1655047691672_0.png)
 			- ![image.png](../assets/image_1655047713021_0.png)
