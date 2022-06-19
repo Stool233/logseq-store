@@ -3,7 +3,7 @@
 	- https://lamport.azurewebsites.net/tla/formal-methods-amazon.pdf
 - 文章摘要大纲
 	- 从2011年开始，AWS使用形式化描述和模型检查（formal specification and model checking），去解决核心系统的复杂设计问题。
-	- AWS在
+	- AWS在向客户提供上手简单的使用接口的背后，是一系列复杂的
 - 关于形式化方法（[[Formal Methods]]）的一些概述，以及AWS在实践上的整体感受
 	- todo
 	- 更精确的设计（Precise Design）
