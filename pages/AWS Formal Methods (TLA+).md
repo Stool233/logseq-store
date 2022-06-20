@@ -135,7 +135,8 @@
 		- 在寻找解决方案时，一开始没有选择形式化方法，因为对其投入产出比低的偏见
 			- 克服了这种偏见，是由于看到一个实践
 				- Zave, P. Using lightweight modeling to understand Chord. ACM SIGCOMM Computer Communication Review 42, 2 (Apr. 2012), 49–57.
-				-
+				- 它使用一种叫做Alloy的语言在一个叫做Chord的分布式系统的成员协议中找到了严重的bug
+			-
 	- 第一个巨大的成功案例
 		- todo
 	- 如何推广给更多的工程师
