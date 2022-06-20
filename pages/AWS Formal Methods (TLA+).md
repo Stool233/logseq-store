@@ -193,10 +193,10 @@
 				- 我们已经看到使用TLC模型检查器在测试代码的设计中寻找“边缘情况”的研究，下面这个似乎是可行的方法。然而，Tasiran等人涵盖了硬件设计，我们还没有尝试将该方法应用于软件。
 					- Tasiran, S., Yu, Y., Batson, B., and Kreider, S. Using formal specifications to monitor and guide simulation: Verifying the cache coherence engine of the Alpha 21364 microprocessor. In Proceedings of the Third IEEE International Workshop on Microprocessor Test and Verification (Austin, TX, June). IEEE Computer Society, 2002.
 - TLA+的其他替代选择
-	- 这篇文章讲了我们为何选择TLA+，我们有一些自己的约束条件
+	- 形式化方法有很多种，这篇文章讲了我们为何选择TLA+，我们有一些自己的约束条件
 		- Newcombe, C. Why Amazon chose TLA+. In
 		  Proceedings of the Fourth International Conference Lecture Notes in Computer Science Volume 8477, Y.A. Ameur and K.-D. Schewe, Eds. (Toulouse, France, June 2–6). Springer, 2014, 25–39.
 - 业界其他相关的工作
-	- todo
+	- 见文章
 - 结论
-	- todo
+	- 正式的方法在AWS上取得了巨大的成功，它帮助我们避免了一些微妙但严重的bug进入生产，这些bug是我们通过其他任何技术都无法发现的。他们帮助我们在不牺牲质量的情况下设计出复杂算法的积极优化。在撰写本文时，七个亚马逊团队已经使用了TLA+，他们都发现了这样做的价值，而且更多的亚马逊团队开始使用它。使用TLA+将提高我们系统的上市时间和质量。执行管理层积极鼓励团队为新特性和其他重大设计变化编写TLA+规范。在年度计划中，经理将工程时间分配给TLA+。
