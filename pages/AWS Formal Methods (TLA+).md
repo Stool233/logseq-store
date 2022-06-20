@@ -133,7 +133,9 @@
 				- 以及一些机制(比如“面向恢复的计算”) ，试图在bug触发时将影响降到最低。
 				- 然而，反应性机制不能从对客户数据造成永久性损害的bug中恢复;相反，我们必须防止这样的错误产生。
 		- 在寻找解决方案时，一开始没有选择形式化方法，因为对其投入产出比低的偏见
-			- 克服了这种
+			- 克服了这种偏见，是由于看到一个实践
+				- Zave, P. Using lightweight modeling to understand Chord. ACM SIGCOMM Computer Communication Review 42, 2 (Apr. 2012), 49–57.
+				-
 	- 第一个巨大的成功案例
 		- todo
 	- 如何推广给更多的工程师
