@@ -1,3 +1,4 @@
+- 6.042J
 - Quick Summary
 	- Fundamental Concepts of Discrete Mathematics (sets, relations, proof methods,… )
 		- 离散数学基本概念(集合、关系、证明方法……)
