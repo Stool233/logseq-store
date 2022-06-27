@@ -9,5 +9,14 @@
 		- 离散型概率理论
 - Proofs
 	- A Cool Proof
-		- ![image.png](../assets/image_1656307254777_0.png)
-		-
+		- power point
+		  collapsed:: true
+			- ![image.png](../assets/image_1656307254777_0.png)
+				- ![image.png](../assets/image_1656307265888_0.png)
+				-
+		- elegant and correct
+			- --in this case
+		- worrisome in general
+			- --hidden assumptions
+	- Bogus Proof
+	-
