@@ -8,4 +8,6 @@
 	- Discrete Probability Theory
 		- 离散型概率理论
 - Proofs
-	-
+	- A Cool Proof
+		- ![image.png](../assets/image_1656307254777_0.png)
+		-
