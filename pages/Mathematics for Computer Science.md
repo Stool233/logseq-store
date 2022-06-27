@@ -1,2 +1,6 @@
 - Quick Summary
+	- Fundamental Concepts of Discrete Mathematics (sets, relations, proof methods,… )
+		- 离散数学基本概念(集合、关系、证明方法……)
+	- Discrete Mathematical Structures (numbers, graphs, trees, counting…)
+		- 离散数学结构(数字、图、树、计数……)
 	-
