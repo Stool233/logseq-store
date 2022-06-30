@@ -25,4 +25,7 @@
 			- ![image.png](../assets/image_1656567327682_0.png)
 			- ![image.png](../assets/image_1656567425908_0.png)
 			-
-		-
+		- Moral
+			- Be sure rules are properly applied.
+			- Thoughtless calculation no  substitute for understanding.
+	-
