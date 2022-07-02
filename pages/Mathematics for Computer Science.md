@@ -7,24 +7,27 @@
 		- 离散数学结构(数字、图、树、计数……)
 	- Discrete Probability Theory
 		- 离散型概率理论
-- Proofs
-	- A Cool Proof
-		- power point
-		  collapsed:: true
-			- ![image.png](../assets/image_1656307254777_0.png)
-				- ![image.png](../assets/image_1656307265888_0.png)
+- Video Course
+	- Proofs
+		- A Cool Proof
+			- power point
+			  collapsed:: true
+				- ![image.png](../assets/image_1656307254777_0.png)
+					- ![image.png](../assets/image_1656307265888_0.png)
+					-
+			- elegant and correct
+				- --in this case
+			- worrisome in general
+				- --hidden assumptions
+		- Bogus Proof
+			- power point
+			  collapsed:: true
+				- ![image.png](../assets/image_1656307333565_0.png)
+				- ![image.png](../assets/image_1656567327682_0.png)
+				- ![image.png](../assets/image_1656567425908_0.png)
 				-
-		- elegant and correct
-			- --in this case
-		- worrisome in general
-			- --hidden assumptions
-	- Bogus Proof
-		- power point
-			- ![image.png](../assets/image_1656307333565_0.png)
-			- ![image.png](../assets/image_1656567327682_0.png)
-			- ![image.png](../assets/image_1656567425908_0.png)
-			-
-		- Moral
-			- Be sure rules are properly applied.
-			- Thoughtless calculation no  substitute for understanding.
-	-
+			- Moral
+				- Be sure rules are properly applied.
+				- Thoughtless calculation no  substitute for understanding.
+-
+-
