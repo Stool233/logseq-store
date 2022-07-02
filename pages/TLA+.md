@@ -194,7 +194,6 @@
 - Implementation
 	- Preliminaries
 		- Logical Implication
-		  collapsed:: true
 			- ![image.png](../assets/image_1654876089759_0.png)
 		- Ordinary Expressions
 			- Module-Closed Expression
