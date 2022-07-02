@@ -30,4 +30,5 @@
 				- Be sure rules are properly applied.
 				- Thoughtless calculation no  substitute for understanding.
 -
--
+- Teaching Materials
+	-
