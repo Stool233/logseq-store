@@ -195,6 +195,8 @@
 	- Preliminaries
 		- Logical Implication
 			- ![image.png](../assets/image_1654876089759_0.png)
+			- In speech, implication asserts causality.
+			- In math, implication asserts only correlation.
 		- Ordinary Expressions
 			- Module-Closed Expression
 			  collapsed:: true
