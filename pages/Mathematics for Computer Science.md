@@ -199,4 +199,8 @@
 				- Correctness and clarity usually go together;
 				- a well-written proof is more likely to be a correct proof, since mistakes are harder to hide.
 			- we can offer some general tips on writing good proofs:
-				- State your game plan（）
+				- State your game plan（陈述你的计划）
+					- A good proof begins by explaining the general line of reasoning
+						- 优秀的证明开头部分通常有一句解释概括性的话
+				- Keep a linear flow（保持线性流程）
+					-
