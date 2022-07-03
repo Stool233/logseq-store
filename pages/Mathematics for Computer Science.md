@@ -96,10 +96,10 @@
 			- There are a couple of standard methods for proving an implication.
 				- Method 1
 					- In order to prove that P IMPLIES Q:
-					-
-					  1. Write, “Assume P.”
-					-
-					  2. Show that Q logically follows.
+						-
+						  1. Write, “Assume P.”
+						-
+						  2. Show that Q logically follows.
 				- There are a couple points here that apply to all proofs:
 					- You’ll often need to do some scratchwork while you’re trying to figure out
 					  the logical steps of a proof. Your scratchwork can be as disorganized as you
@@ -109,8 +109,10 @@
 						- 在考虑证明的逻辑步骤时，通常需要一些准备工作，草稿可以比较混乱，推导不通、图表混乱、词语滥用，都无所谓。而最终的证明跟草稿不一样，证明应当是清晰的、简明的。
 					- Proofs typically begin with the word “Proof” and end with some sort of delimiter like ⇤ or “QED.” The only purpose for these conventions is to clarify where proofs begin and end
 						- 证明通常以“证明”一词开始，以某种分隔符或“QED”结束。这些约定只是为了明确证明从哪里开始、到哪里结束。
-				- Method 2 Prove the Contrapositive()
-					-
+				- Method 2 Prove the Contrapositive（证明逆反命题）
+					- An implication (“P IMPLIES Q”) is logically equivalent to its contrapositive
+						- ![image.png](../assets/image_1656842276449_0.png)
+						-
 				-
 		-
 		-
