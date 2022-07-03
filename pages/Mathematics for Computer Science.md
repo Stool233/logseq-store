@@ -173,4 +173,13 @@
 				- Since a false fact by definition can’t be true, the proposition must be true.
 					- 既然虚假事实本身不可能是真的，所以命题一定为真
 			- Proof by contradiction is always a viable approach. However, as the name suggests, indirect proofs can be a little convoluted, so direct proofs are generally preferable when they are available
-				- 反证法总是一种可行的方法。但是，
+				- 反证法总是一种可行的方法。但是，间接证明法可能有点令人费解，所以如果可以的话最好还是采用直接证明方法。
+			- Method: In order to prove a proposition P by contradiction:
+				-
+				  1. Write, “We use proof by contradiction.”
+				-
+				  2. Write, “Suppose P is false.”
+				-
+				  3. Deduce something known to be false (a logical contradiction).
+				-
+				  4. Write, “This is a contradiction. Therefore, P must be true.”
