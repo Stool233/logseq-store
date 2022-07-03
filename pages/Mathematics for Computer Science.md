@@ -35,6 +35,11 @@
 		- proposition（命题）
 			- A proposition is a statement (communication) that is either true or
 			  false.
-		- Predicates（）
+		- Predicates（谓词）
 			- A predicate can be understood as a proposition whose truth depends on the value
 			  of one or more variables.
+			- Predicate and function
+				- This notation for predicates is confusingly similar to ordinary function notation.
+				  If P is a predicate, then P .n/ is either true or false, depending on the value of n.
+				  On the other hand, if p is an ordinary function, like n2+1, then p(n) is a numerical
+				  quantity. Don’t confuse these two!
