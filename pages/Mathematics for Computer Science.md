@@ -152,8 +152,10 @@
 					- In order to prove that P is true iff Q is true:
 						-
 						  1. Write, “We construct a chain of if-and-only-if implications.”
+							- 我们构建一个当且仅当蕴涵链
 						-
 						  2. Prove P is equivalent to a second statement which is equivalent to a third
 						  statement and so forth until you reach Q.
+							- 证明P等价于第二个语句，然后第二个语句等价于第三个语句，以此类推，直到等价于
 					-
 		-
