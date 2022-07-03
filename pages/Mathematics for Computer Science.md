@@ -241,4 +241,6 @@
 					- 得出结论，C一定是空集，即不存在反例。
 			- Summing the Integers
 		- Factoring into Primes（质因数分解）
+			- We’ve previously taken for granted the Prime Factorization Theorem（质因数分解定理）, also known as the Unique Factorization Theorem（唯一分解定理） and the Fundamental Theorem of Arithmetic（算术基本定理）, which states that every integer greater than one has a unique expression as a product of prime numbers.
+				-
 			-
