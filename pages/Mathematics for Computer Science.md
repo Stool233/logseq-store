@@ -33,6 +33,7 @@
 - Teaching Materials
 	- What is a Proof
 		- proposition（命题）
+		  collapsed:: true
 			- A proposition is a statement (communication) that is either true or
 			  false.
 		- Predicates（谓词）
@@ -45,6 +46,7 @@
 				  On the other hand, if p is an ordinary function, like n2+1, then p(n) is a numerical
 				  quantity. Don’t confuse these two!
 		- The Axiomatic Method ( 公理化方法 )
+		  collapsed:: true
 			- axioms（公理）
 				- Propositions like these that are simply accepted as true are called
 				  axioms
@@ -221,3 +223,6 @@
 					- tie everything together yourself and explain why the original claim follows.
 						- 总结一下，解释为什么原命题成立
 				-
+	- The Well Ordering Principle （良序原理）
+		- Every nonempty set of nonnegative integers has a smallest element.
+			- 非负整数
