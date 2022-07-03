@@ -44,4 +44,8 @@
 				  On the other hand, if p is an ordinary function, like n2+1, then p(n) is a numerical
 				  quantity. Don’t confuse these two!
 		- The Axiomatic Method ( 公理化方法 )
-			-
+			- axioms（公理）
+				- Propositions like these that are simply accepted as true are called
+				  axioms
+			- proof（证明）
+				- ” A proof is a sequence of logical deductions from axioms and previously proved statements that concludes with the proposition in question.
