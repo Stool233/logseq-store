@@ -59,10 +59,11 @@
 				- In fact, just a handful of axioms, called the Zermelo-Fraenkel with Choice axioms(ZFC), together with a few logical deduction rules, appear to be sufficient to derive essentially all of mathematics.
 		- Our Axioms（我们的公理）
 			- So instead of starting with ZFC, we’re going to take a huge set of axioms as our foundation: we’ll accept all familiar facts from high school math.
-			- This will give us a quick launch, but you may find this imprecise specification
-			  of the axioms troubling at times. For example, in the midst of a proof, you may
-			  start to wonder, “Must I prove this little fact or can I take it as an axiom?” There
-			  really is no absolute answer, since what’s reasonable to assume and what requires
-			  proof depends on the circumstances and the audience. A good general guideline is
-			  simply to be up front about what you’re assuming.
+				- This will give us a quick launch, but you may find this imprecise specification
+				  of the axioms troubling at times.
+				- For example, in the midst of a proof, you may start to wonder, “Must I prove this little fact or can I take it as an axiom?”
+					- There really is no absolute answer, since what’s reasonable to assume and what requires proof depends on the circumstances and the audience.
+					- A good general guideline is simply to be up front about what you’re assuming.
+			- Logical Deductions（逻辑推理）
+				-
 		-
