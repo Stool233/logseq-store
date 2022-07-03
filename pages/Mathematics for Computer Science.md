@@ -129,5 +129,9 @@
 		- Proving an “If and Only If”（证明当且仅当）
 			- Many mathematical theorems assert that two statements are logically equivalent;
 			  that is, one holds if and only if the other does.
-				- 很多数学定理声称
+				- 很多数学定理声称两个语句是逻辑等价的，即一个语句成立当且仅当另一个语句成立。
+			- Here is an example that has been known for several thousand years:
+				- Two triangles have the same side lengths if and only if two side lengths and the angle between those sides are the same
+			- The phrase “if and only if” comes up so often that it is often abbreviated “iff.”
+		-
 		-
