@@ -186,4 +186,6 @@
 					- 推导得出某些已知的假事实（即逻辑矛盾）
 				-
 				  4. Write, “This is a contradiction. Therefore, P must be true.”
-		- Good Proofs in Practice（）
+		- Good Proofs in Practice（数学证明的优秀实践）
+			- One purpose of a proof is to establish the truth of an assertion with absolute certainty, and mechanically checkable proofs of enormous length or complexity can
+			  accomplish this.
