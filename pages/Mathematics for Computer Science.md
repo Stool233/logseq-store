@@ -156,6 +156,7 @@
 						-
 						  2. Prove P is equivalent to a second statement which is equivalent to a third
 						  statement and so forth until you reach Q.
-							- 证明P等价于第二个语句，然后第二个语句等价于第三个语句，以此类推，直到等价于
+							- 证明P等价于第二个语句，然后第二个语句等价于第三个语句，以此类推，直到等价于Q
+					- This method sometimes requires more ingenuity than the first, but the result can be a short, elegant proof.
 					-
 		-
