@@ -163,3 +163,6 @@
 		- Proof by Cases（案例证明法）
 			- Breaking a complicated proof into cases and proving each case separately is a common, useful proof strategy
 				- 将复杂的证明分解成案例，然后分别证明每一个案例，这是一种常见的、很有用的证明策略。
+			- Part of a case analysis argument is showing that you’ve covered all the cases.
+				- This is often obvious, because the two cases are of the form “P” and “not P.”
+				- 案例分析法需要囊括所有情形
