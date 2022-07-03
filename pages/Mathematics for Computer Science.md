@@ -193,4 +193,10 @@
 				- But humanly intelligible proofs are the only ones that help someone understand the subject.
 				- Mathematicians generally agree that important mathematical results can’t be fully understood until their proofs are understood.
 				- That is why proofs are an important part of the curriculum.
-			-
+			- To be understandable and helpful, more is required of a proof than just logical
+			  correctness:
+				- a good proof must also be clear.
+				- Correctness and clarity usually go together;
+				- a well-written proof is more likely to be a correct proof, since mistakes are harder to hide.
+			- we can offer some general tips on writing good proofs:
+				- State your game plan（）
