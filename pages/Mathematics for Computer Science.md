@@ -203,4 +203,10 @@
 					- A good proof begins by explaining the general line of reasoning
 						- 优秀的证明开头部分通常有一句解释概括性的话
 				- Keep a linear flow（保持线性流程）
-					-
+					- The steps of an argument should follow one another in an intelligible order.
+						- 论证的步骤应当以可理解的方式有序进行
+				- A proof is an essay, not a calculation（证明是一篇论文，而不是计算）
+					- Many students initially write proofs the way
+					  they compute integrals. The result is a long sequence of expressions without
+					  explanation, making it very hard to follow. This is bad. A good proof usually
+					  looks like an essay with some equations thrown in. Use complete sentences
