@@ -161,12 +161,14 @@
 					- This method sometimes requires more ingenuity than the first, but the result can be a short, elegant proof.
 					-
 		- Proof by Cases（案例证明法）
+		  collapsed:: true
 			- Breaking a complicated proof into cases and proving each case separately is a common, useful proof strategy
 				- 将复杂的证明分解成案例，然后分别证明每一个案例，这是一种常见的、很有用的证明策略。
 			- Part of a case analysis argument is showing that you’ve covered all the cases.
 				- This is often obvious, because the two cases are of the form “P” and “not P.”
 				- 案例分析法需要囊括所有情形
 		- Proof by Contradiction（反证法）
+		  collapsed:: true
 			- In a proof by contradiction（反证法）, or indirect proof（间接证明法）, you show that
 				- if a proposition were false, then some false fact would be true.
 					- 假如命题是假的，那么相应的虚假事实为真
@@ -181,6 +183,7 @@
 				  2. Write, “Suppose P is false.”
 				-
 				  3. Deduce something known to be false (a logical contradiction).
-					- 推导得出
+					- 推导得出某些已知的假事实（即逻辑矛盾）
 				-
 				  4. Write, “This is a contradiction. Therefore, P must be true.”
+		- Good Proofs in Practice（）
