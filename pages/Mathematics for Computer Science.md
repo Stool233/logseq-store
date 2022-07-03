@@ -31,4 +31,6 @@
 				- Thoughtless calculation no  substitute for understanding.
 -
 - Teaching Materials
-	-
+	- What is a Proof
+		- A proposition is a statement (communication) that is either true or
+		  false.
