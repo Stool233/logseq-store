@@ -161,5 +161,5 @@
 					- This method sometimes requires more ingenuity than the first, but the result can be a short, elegant proof.
 					-
 		- Proof by Cases（案例证明法）
-			- Breaking a complicated proof into cases and proving each case separately is acommon, useful proof strategy
-		-
+			- Breaking a complicated proof into cases and proving each case separately is a common, useful proof strategy
+				- 将复杂的证明分解成案例，然后分别证明每一个案例，这是一种常见的、很有用的证明策略。
