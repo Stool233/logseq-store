@@ -206,7 +206,7 @@
 					- The steps of an argument should follow one another in an intelligible order.
 						- 论证的步骤应当以可理解的方式有序进行
 				- A proof is an essay, not a calculation（证明是一篇论文，而不是计算）
-					- Many students initially write proofs the way
-					  they compute integrals. The result is a long sequence of expressions without
-					  explanation, making it very hard to follow. This is bad. A good proof usually
-					  looks like an essay with some equations thrown in. Use complete sentences
+					- Many students initially write proofs the way they compute integrals. The result is a long sequence of expressions without explanation, making it very hard to follow. This is bad.
+					- A good proof usually looks like an essay with some equations thrown in. Use complete sentences。
+						- 优秀的证明往往更像是一篇带公式的论文。请使用完整的句子
+				- Avoid excessive symbolism（避免）
