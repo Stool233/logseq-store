@@ -133,5 +133,9 @@
 			- Here is an example that has been known for several thousand years:
 				- Two triangles have the same side lengths if and only if two side lengths and the angle between those sides are the same
 			- The phrase “if and only if” comes up so often that it is often abbreviated “iff.”
-		-
+			- Proving Methods
+				- Method 1: Prove Each Statement Implies the Other（证明两个语句相互蕴涵）
+					- The statement “P IFF Q” is equivalent to the two statements “P IMPLIES Q” and
+					  “Q IMPLIES P.” So you can prove an “iff” by proving two implications:
+					-
 		-
