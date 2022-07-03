@@ -244,5 +244,9 @@
 			- We’ve previously taken for granted the Prime Factorization Theorem（质因数分解定理）, also known as the Unique Factorization Theorem（唯一分解定理） and the Fundamental Theorem of Arithmetic（算术基本定理）, which states that every integer greater than one has a unique expression as a product of prime numbers.
 				- 即每一个大于1的整数都能唯一分解成质因数的乘积
 			- We’ll prove the uniqueness of prime factorization in a later chapter, but well ordering gives an easy proof that every integer greater than one can be expressed as some product of primes.
-		-
+		- 良序集合
+			- A set of numbers is well ordered when each of its nonempty subsets has a minimum element.
+				- r
+			- The Well Ordering Principle says that the set of nonnegative integers is well ordered, but so are lots of other sets.
+				- For example, the set  𝑟ℕ  of numbers of the form  𝑟𝑛 , where  𝑟  is a positive real number and  𝑛∈ℕ .
 			-
