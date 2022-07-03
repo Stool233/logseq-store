@@ -171,3 +171,6 @@
 				- if a proposition were false, then some false fact would be true.
 					- 假如命题是假的，那么相应的虚假事实为真
 				- Since a false fact by definition can’t be true, the proposition must be true.
+					- 既然虚假事实本身不可能是真的，所以命题一定为真
+			- Proof by contradiction is always a viable approach. However, as the name suggests, indirect proofs can be a little convoluted, so direct proofs are generally preferable when they are available
+				- 反证法总是一种可行的方法。但是，
