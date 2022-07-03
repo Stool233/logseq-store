@@ -233,4 +233,5 @@
 			- More generally, there is a standard way to use Well Ordering to prove that some
 			  property, P(n) holds for every nonnegative integer, n. Here is a standard way to
 			  organize such a well ordering proof:
-				-
+				- ![image.png](../assets/image_1656854471033_0.png)
+					- 定义
