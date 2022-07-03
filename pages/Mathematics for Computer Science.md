@@ -168,7 +168,6 @@
 				- This is often obvious, because the two cases are of the form “P” and “not P.”
 				- 案例分析法需要囊括所有情形
 		- Proof by Contradiction（反证法）
-		  collapsed:: true
 			- In a proof by contradiction（反证法）, or indirect proof（间接证明法）, you show that
 				- if a proposition were false, then some false fact would be true.
 					- 假如命题是假的，那么相应的虚假事实为真
@@ -216,5 +215,6 @@
 					- Long programs are usually broken into a hierarchy of smaller procedures
 				- Be wary of the “obvious.”（警惕“显然”）
 				- Finish. （结束）
-					- tie everything together yourself and explain
-					  why the original claim follows.
+					- tie everything together yourself and explain why the original claim follows.
+						- 总结一下，解释为什么原命题成立
+				-
