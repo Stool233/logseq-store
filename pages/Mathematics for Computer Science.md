@@ -117,8 +117,13 @@
 					- Proving one is as good as proving the other, and proving the contrapositive is sometimes easier than proving the original statement. If so, then you can proceed as follows:
 						-
 						  1. Write, “We prove the contrapositive:” and then state the contrapositive.
-						  2. Proceed as in Method 1.
+							- 写“我们证明逆反命题：”，然后表述这个逆反命题
 						-
+						  2. Proceed as in Method 1.
+							- 按方法1继续
+				-
+					-
+					-
 				-
 		-
 		-
