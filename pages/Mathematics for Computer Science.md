@@ -209,4 +209,9 @@
 					- Many students initially write proofs the way they compute integrals. The result is a long sequence of expressions without explanation, making it very hard to follow. This is bad.
 					- A good proof usually looks like an essay with some equations thrown in. Use complete sentences。
 						- 优秀的证明往往更像是一篇带公式的论文。请使用完整的句子
-				- Avoid excessive symbolism（避免）
+				- Avoid excessive symbolism（避免过度使用符号）
+				- Revise and simplify.（修改，简化）
+				- Introduce notation thoughtfully（仔细地介绍符号）
+				- Structure long proofs（将长证明结构化）
+					- Long programs are usually broken into a hierarchy of smaller procedures
+				- Be wary of the “obvious.”
