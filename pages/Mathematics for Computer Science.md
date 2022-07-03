@@ -247,6 +247,6 @@
 		- 良序集合
 			- A set of numbers is well ordered when each of its nonempty subsets has a minimum element.
 				- 如果一个集合的人以非空子集都有一个最小元素，我们称这个集合是良序的（well ordered）
-			- The Well Ordering Principle says that the set of nonnegative integers is well ordered, but so are lots of other sets.（根据良序定理可知，）
+			- The Well Ordering Principle says that the set of nonnegative integers is well ordered, but so are lots of other sets.（根据良序定理可知，非负整数集合是良序的，其实还有很多集合也是良序的）
 				- For example, the set  𝑟ℕ  of numbers of the form  𝑟𝑛 , where  𝑟  is a positive real number and  𝑛∈ℕ .
 			-
