@@ -98,8 +98,10 @@
 					- In order to prove that P IMPLIES Q:
 						-
 						  1. Write, “Assume P.”
+							- 写，假设P
 						-
 						  2. Show that Q logically follows.
+							- 从逻辑上证明Q
 				- There are a couple points here that apply to all proofs:
 					- You’ll often need to do some scratchwork while you’re trying to figure out
 					  the logical steps of a proof. Your scratchwork can be as disorganized as you
@@ -112,6 +114,10 @@
 				- Method 2 Prove the Contrapositive（证明逆反命题）
 					- An implication (“P IMPLIES Q”) is logically equivalent to its contrapositive
 						- ![image.png](../assets/image_1656842276449_0.png)
+					- Proving one is as good as proving the other, and proving the contrapositive is sometimes easier than proving the original statement. If so, then you can proceed as follows:
+						-
+						  1. Write, “We prove the contrapositive:” and then state the contrapositive.
+						  2. Proceed as in Method 1.
 						-
 				-
 		-
