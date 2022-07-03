@@ -214,4 +214,7 @@
 				- Introduce notation thoughtfully（仔细地介绍符号）
 				- Structure long proofs（将长证明结构化）
 					- Long programs are usually broken into a hierarchy of smaller procedures
-				- Be wary of the “obvious.”
+				- Be wary of the “obvious.”（警惕“显然”）
+				- Finish. （结束）
+					- tie everything together yourself and explain
+					  why the original claim follows.
