@@ -88,7 +88,12 @@
 				- This freedom in constructing a proof can seem overwhelming at first. How do you even start a proof?
 					- Here’s the good news: many proofs follow one of a handful of standard templates.
 			-
-		- Proving an Implication（证明）
-			-
+		- Proving an Implication（证明蕴涵）
+			- Propositions of the form “If P, then Q” are called implications.
+				- This implication is often rephrased as “P IMPLIES Q.”
+			- Examples
+				- ![image.png](../assets/image_1656841932882_0.png)
+			- There are a couple of standard methods for proving an implication.
+				-
 		-
 		-
