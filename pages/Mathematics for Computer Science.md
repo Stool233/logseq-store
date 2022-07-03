@@ -58,6 +58,7 @@
 			- Euclid’s axiom-and-proof approach（欧几里得的公理-证明方法）, now called the axiomatic method（公理化方法）, remains the foundation for mathematics today.
 				- In fact, just a handful of axioms, called the Zermelo-Fraenkel with Choice axioms(ZFC), together with a few logical deduction rules, appear to be sufficient to derive essentially all of mathematics.
 		- Our Axioms（我们的公理）
+		  collapsed:: true
 			- So instead of starting with ZFC, we’re going to take a huge set of axioms as our foundation: we’ll accept all familiar facts from high school math.
 				- This will give us a quick launch, but you may find this imprecise specification
 				  of the axioms troubling at times.
@@ -86,6 +87,8 @@
 				  previously proved statements that concludes with the proposition in question.
 				- This freedom in constructing a proof can seem overwhelming at first. How do you even start a proof?
 					- Here’s the good news: many proofs follow one of a handful of standard templates.
+			-
+		- Proving an Implication（证明）
 			-
 		-
 		-
