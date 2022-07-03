@@ -65,5 +65,8 @@
 					- There really is no absolute answer, since what’s reasonable to assume and what requires proof depends on the circumstances and the audience.
 					- A good general guideline is simply to be up front about what you’re assuming.
 			- Logical Deductions（逻辑推理）
+				- Logical deductions, or inference rules, are used to prove new propositions using
+				  previously proved ones.
+					- 逻辑推理，或推理规则，是指基于已被证明过的命题来证明新的命题。
 				-
 		-
