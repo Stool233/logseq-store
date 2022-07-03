@@ -234,4 +234,7 @@
 			  property, P(n) holds for every nonnegative integer, n. Here is a standard way to
 			  organize such a well ordering proof:
 				- ![image.png](../assets/image_1656854471033_0.png)
-					- 定义
+					- 定义C是P为真的反例集合
+					- 假设C是非空集进行反证
+					- 根据良序原理，一定存在一个最小元素n属于C
+					- 得出矛盾——
