@@ -5,3 +5,4 @@
 - [[矛盾论]]
 - [[实践论]]
 - [[性能测试]]
+- [[Mathematics for Computer Science]]
