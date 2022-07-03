@@ -187,5 +187,10 @@
 				-
 				  4. Write, “This is a contradiction. Therefore, P must be true.”
 		- Good Proofs in Practice（数学证明的优秀实践）
-			- One purpose of a proof is to establish the truth of an assertion with absolute certainty, and mechanically checkable proofs of enormous length or complexity can
-			  accomplish this.
+			- One purpose of a proof is to establish the truth of an assertion with absolute certainty（证明的目的之一在于，以绝对的确定性建立关于断言的真相）
+				- and mechanically checkable proofs of enormous length or complexity can
+				  accomplish this.
+				- But humanly intelligible proofs are the only ones that help someone understand the subject.
+				- Mathematicians generally agree that important mathematical results can’t be fully understood until their proofs are understood.
+				- That is why proofs are an important part of the curriculum.
+			-
