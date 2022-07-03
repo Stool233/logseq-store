@@ -106,7 +106,7 @@
 					  like—full of dead-ends, strange diagrams, obscene words, whatever. But
 					  keep your scratchwork separate from your final proof, which should be clear
 					  and concise.
-						-
+						- 在考虑证明的逻辑步骤时，通常需要一些准备工作，草稿可以比较混乱，推导不通、图表混乱、词语滥用，，
 					- Proofs typically begin with the word “Proof” and end with some sort of delimiter like ⇤ or “QED.” The only purpose for these conventions is to clarify where proofs begin and end
 				-
 		-
