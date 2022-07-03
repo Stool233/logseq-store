@@ -250,4 +250,6 @@
 			- The Well Ordering Principle says that the set of nonnegative integers is well ordered, but so are lots of other sets.（根据良序定理可知，非负整数集合是良序的，其实还有很多集合也是良序的）
 				- For example, the set  𝑟ℕ  of numbers of the form  𝑟𝑛 , where  𝑟  is a positive real number and  𝑛∈ℕ .
 			- 在计算机科学领域，良序性往往用来证明计算不会无休止地运行下去。
-				- 思路是为计算的各个步骤指定值，随着程序的运行，
+				- 思路是为计算的各个步骤指定值，随着程序的运行，值越来越小。
+				- 如果这些值构成一个良序集合，那么计算就不会无休止执行。
+				- 否则，这些表示运算步骤的值的子集就没有最小元素。
