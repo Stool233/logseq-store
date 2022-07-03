@@ -75,5 +75,8 @@
 					- A key requirement of an inference rule is that it must be sound（有效的）:
 						- an assignment of truth values to the letters, P, Q, . . . , that makes all the antecedents true must also make the consequent true.
 						- So if we start off with true axioms and apply sound inference rules, everything we prove will also be true
-				-
+				- There are many other natural, sound inference rules, for example:
+					- ![image.png](../assets/image_1656841612309_0.png)
+				- As with axioms, we will not be too formal about the set of legal inference rules.
+					- Each step in a proof should be clear and “logical”; in particular, you should state what previously proved facts are used to derive each new conclusion.
 		-
