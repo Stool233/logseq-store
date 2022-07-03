@@ -94,6 +94,13 @@
 			- Examples
 				- ![image.png](../assets/image_1656841932882_0.png)
 			- There are a couple of standard methods for proving an implication.
-				-
+				- Method 1
+					- In order to prove that P IMPLIES Q:
+					-
+					  1. Write, “Assume P.”
+					-
+					  2. Show that Q logically follows.
+				- There are a couple points here that apply to all proofs:
+					-
 		-
 		-
