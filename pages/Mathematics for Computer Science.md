@@ -55,4 +55,6 @@
 				- A lemma（引理） is a preliminary proposition useful for proving later propositions.
 				- A corollary（推论） is a proposition that follows in just a few logical steps from a
 				  theorem.
-			-
+			- Euclid’s axiom-and-proof approach（欧几里得的公理-证明方法）, now called the axiomatic method（公理化方法）, remains the foundation for mathematics today.
+				- In fact, just a handful of axioms, called the Zermelo-Fraenkel with Choice axioms(ZFC), together with a few logical deduction rules, appear to be sufficient to derive essentially all of mathematics.
+		-
