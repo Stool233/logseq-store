@@ -166,3 +166,8 @@
 			- Part of a case analysis argument is showing that you’ve covered all the cases.
 				- This is often obvious, because the two cases are of the form “P” and “not P.”
 				- 案例分析法需要囊括所有情形
+		- Proof by Contradiction（反证法）
+			- In a proof by contradiction, or indirect proof, you show that
+				- if a proposition were
+				  false, then some false fact would be true. Since a false fact by definition can’t be
+				  true, the proposition must be true.
