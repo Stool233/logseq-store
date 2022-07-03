@@ -143,9 +143,17 @@
 					-
 					  2. Write, “First, we show P implies Q.” Do this by one of the methods in
 					  Section 1.5.（证明蕴涵那一章）
-						-
+						- 首先，证明P蕴涵Q
 					-
 					  3. Write, “Now, we show Q implies P.” Again, do this by one of the methods
 					  in Section 1.5.（证明蕴涵那一章）
+						- 然后，证明Q蕴涵P
+				- Method 2: Construct a Chain of iffs（构建iff链）
+					- In order to prove that P is true iff Q is true:
+						-
+						  1. Write, “We construct a chain of if-and-only-if implications.”
+						-
+						  2. Prove P is equivalent to a second statement which is equivalent to a third
+						  statement and so forth until you reach Q.
 					-
 		-
