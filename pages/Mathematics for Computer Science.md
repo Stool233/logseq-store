@@ -72,5 +72,8 @@
 					- 一个基本的推理规则是假言推理，即证明了P并且证明了P IMPLIES Q，就证明了Q。
 				- ![image.png](../assets/image_1656841432204_0.png)
 					- When the statements above the line, called the antecedents（前件）, are proved, then we can consider the statement below the line, called the conclusion（结论） or consequent（后件）, to also be proved.
-					-
+					- A key requirement of an inference rule is that it must be sound（有效的）:
+						- an assignment of truth values to the letters, P, Q, . . . , that makes all the antecedents true must also make the consequent true.
+						- So if we start off with true axioms and apply sound inference rules, everything we prove will also be true
+				-
 		-
