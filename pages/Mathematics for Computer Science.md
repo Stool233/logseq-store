@@ -138,4 +138,14 @@
 					- The statement “P IFF Q” is equivalent to the two statements “P IMPLIES Q” and
 					  “Q IMPLIES P.” So you can prove an “iff” by proving two implications:
 					-
+					  1. Write, “We prove P implies Q and vice-versa.”
+						- 写“我们证明P蕴涵Q，反之依然”
+					-
+					  2. Write, “First, we show P implies Q.” Do this by one of the methods in
+					  Section 1.5.（证明蕴涵那一章）
+						-
+					-
+					  3. Write, “Now, we show Q implies P.” Again, do this by one of the methods
+					  in Section 1.5.（证明蕴涵那一章）
+					-
 		-
