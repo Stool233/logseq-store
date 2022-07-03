@@ -35,3 +35,6 @@
 		- proposition（命题）
 			- A proposition is a statement (communication) that is either true or
 			  false.
+		- Predicates（）
+			- A predicate can be understood as a proposition whose truth depends on the value
+			  of one or more variables.
