@@ -58,6 +58,7 @@
 			- Euclid’s axiom-and-proof approach（欧几里得的公理-证明方法）, now called the axiomatic method（公理化方法）, remains the foundation for mathematics today.
 				- In fact, just a handful of axioms, called the Zermelo-Fraenkel with Choice axioms(ZFC), together with a few logical deduction rules, appear to be sufficient to derive essentially all of mathematics.
 		- Our Axioms（我们的公理）
+		  collapsed:: true
 			- So instead of starting with ZFC, we’re going to take a huge set of axioms as our foundation: we’ll accept all familiar facts from high school math.
 				- This will give us a quick launch, but you may find this imprecise specification
 				  of the axioms troubling at times.
@@ -65,6 +66,7 @@
 					- There really is no absolute answer, since what’s reasonable to assume and what requires proof depends on the circumstances and the audience.
 					- A good general guideline is simply to be up front about what you’re assuming.
 			- Logical Deductions（逻辑推理）
+			  collapsed:: true
 				- Logical deductions, or inference rules, are used to prove new propositions using
 				  previously proved ones.
 					- 逻辑推理，或推理规则，是指基于已被证明过的命题来证明新的命题。
@@ -87,6 +89,7 @@
 					- Here’s the good news: many proofs follow one of a handful of standard templates.
 			-
 		- Proving an Implication（证明蕴涵）
+		  collapsed:: true
 			- Propositions of the form “If P, then Q” are called implications.
 				- This implication is often rephrased as “P IMPLIES Q.”
 			- Examples
@@ -124,6 +127,7 @@
 					-
 				-
 		- Proving an “If and Only If”（证明当且仅当）
+		  collapsed:: true
 			- Many mathematical theorems assert that two statements are logically equivalent;
 			  that is, one holds if and only if the other does.
 				- 很多数学定理声称两个语句是逻辑等价的，即一个语句成立当且仅当另一个语句成立。
@@ -156,4 +160,5 @@
 							- 证明P等价于第二个语句，然后第二个语句等价于第三个语句，以此类推，直到等价于Q
 					- This method sometimes requires more ingenuity than the first, but the result can be a short, elegant proof.
 					-
+		- Proof by Cases（）
 		-
