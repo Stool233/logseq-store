@@ -160,5 +160,6 @@
 							- 证明P等价于第二个语句，然后第二个语句等价于第三个语句，以此类推，直到等价于Q
 					- This method sometimes requires more ingenuity than the first, but the result can be a short, elegant proof.
 					-
-		- Proof by Cases（）
+		- Proof by Cases（案例证明法）
+			- Breaking a complicated proof into cases and proving each case separately is acommon, useful proof strategy
 		-
