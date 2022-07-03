@@ -48,4 +48,5 @@
 				- Propositions like these that are simply accepted as true are called
 				  axioms
 			- proof（证明）
-				- ” A proof is a sequence of logical deductions from axioms and previously proved statements that concludes with the proposition in question.
+				- A proof is a sequence of logical deductions from axioms and previously proved statements that concludes with the proposition in question.
+				- 证明 是指从公理及已被证明的语句，推导出命题结论
