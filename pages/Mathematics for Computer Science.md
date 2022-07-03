@@ -246,7 +246,7 @@
 			- We’ll prove the uniqueness of prime factorization in a later chapter, but well ordering gives an easy proof that every integer greater than one can be expressed as some product of primes.
 		- 良序集合
 			- A set of numbers is well ordered when each of its nonempty subsets has a minimum element.
-				- r
-			- The Well Ordering Principle says that the set of nonnegative integers is well ordered, but so are lots of other sets.
+				- 如果一个集合的人以非空子集都有一个最小元素，我们称这个集合是良序的（well ordered）
+			- The Well Ordering Principle says that the set of nonnegative integers is well ordered, but so are lots of other sets.（根据良序定理可知，）
 				- For example, the set  𝑟ℕ  of numbers of the form  𝑟𝑛 , where  𝑟  is a positive real number and  𝑛∈ℕ .
 			-
