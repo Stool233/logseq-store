@@ -70,13 +70,16 @@
 					- 逻辑推理，或推理规则，是指基于已被证明过的命题来证明新的命题。
 				- A fundamental inference rule is modus ponens（假言推理）. This rule says that a proof of P together with a proof that P IMPLIES Q is a proof of Q.
 					- 一个基本的推理规则是假言推理，即证明了P并且证明了P IMPLIES Q，就证明了Q。
-				- ![image.png](../assets/image_1656841432204_0.png)
-					- When the statements above the line, called the antecedents（前件）, are proved, then we can consider the statement below the line, called the conclusion（结论） or consequent（后件）, to also be proved.
-					- A key requirement of an inference rule is that it must be sound（有效的）:
-						- an assignment of truth values to the letters, P, Q, . . . , that makes all the antecedents true must also make the consequent true.
-						- So if we start off with true axioms and apply sound inference rules, everything we prove will also be true
+					- ![image.png](../assets/image_1656841432204_0.png) 
+					  collapsed:: true
+						- When the statements above the line, called the antecedents（前件）, are proved, then we can consider the statement below the line, called the conclusion（结论） or consequent（后件）, to also be proved.
+						- A key requirement of an inference rule is that it must be sound（有效的）:
+							- an assignment of truth values to the letters, P, Q, . . . , that makes all the antecedents true must also make the consequent true.
+							- So if we start off with true axioms and apply sound inference rules, everything we prove will also be true
 				- There are many other natural, sound inference rules, for example:
 					- ![image.png](../assets/image_1656841612309_0.png)
 				- As with axioms, we will not be too formal about the set of legal inference rules.
-					- Each step in a proof should be clear and “logical”; in particular, you should state what previously proved facts are used to derive each new conclusion.
+					- Each step in a proof should be clear and “logical”;
+					- in particular, you should state what previously proved facts are used to derive each new conclusion.
+			-
 		-
