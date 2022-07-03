@@ -51,4 +51,8 @@
 				- A proof is a sequence of logical deductions from axioms and previously proved statements that concludes with the proposition in question.
 				- 证明 是指从公理及已被证明的语句，推导出命题结论的一系列逻辑推理过程。
 			- There are several common terms for a proposition that has been proved. The different terms hint at the role of the proposition within a larger body of work
-				-
+				- Important true propositions are called theorems（定理）
+				- A lemma（引理） is a preliminary proposition useful for proving later propositions.
+				- A corollary（推论） is a proposition that follows in just a few logical steps from a
+				  theorem.
+			-
