@@ -231,5 +231,6 @@
 		- Well Ordering Proofs（良序证明）
 		- Template for Well Ordering Proofs（良序证明模版）
 			- More generally, there is a standard way to use Well Ordering to prove that some
-			  property, P .n/ holds for every nonnegative integer, n. Here is a standard way to
+			  property, P(n) holds for every nonnegative integer, n. Here is a standard way to
 			  organize such a well ordering proof:
+				-
