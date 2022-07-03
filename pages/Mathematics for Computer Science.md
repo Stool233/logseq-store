@@ -229,4 +229,7 @@
 		- But in fact, it provides one of the most important proof rules in [[discrete mathematics]] （[[离散数学]]）
 			- 良序原理是离散数学中最为重要的证据规则之一
 		- Well Ordering Proofs（良序证明）
-			-
+		- Template for Well Ordering Proofs（良序证明模版）
+			- More generally, there is a standard way to use Well Ordering to prove that some
+			  property, P .n/ holds for every nonnegative integer, n. Here is a standard way to
+			  organize such a well ordering proof:
