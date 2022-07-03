@@ -89,6 +89,7 @@
 					- Here’s the good news: many proofs follow one of a handful of standard templates.
 			-
 		- Proving an Implication（证明蕴涵）
+		  collapsed:: true
 			- Propositions of the form “If P, then Q” are called implications.
 				- This implication is often rephrased as “P IMPLIES Q.”
 			- Examples
@@ -125,5 +126,8 @@
 					-
 					-
 				-
-		-
+		- Proving an “If and Only If”（证明当且仅当）
+			- Many mathematical theorems assert that two statements are logically equivalent;
+			  that is, one holds if and only if the other does.
+				- 很多数学定理声称
 		-
