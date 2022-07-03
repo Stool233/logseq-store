@@ -101,6 +101,13 @@
 					-
 					  2. Show that Q logically follows.
 				- There are a couple points here that apply to all proofs:
-					-
+					- You’ll often need to do some scratchwork while you’re trying to figure out
+					  the logical steps of a proof. Your scratchwork can be as disorganized as you
+					  like—full of dead-ends, strange diagrams, obscene words, whatever. But
+					  keep your scratchwork separate from your final proof, which should be clear
+					  and concise.
+						-
+					- Proofs typically begin with the word “Proof” and end with some sort of delimiter like ⇤ or “QED.” The only purpose for these conventions is to clarify where proofs begin and end
+				-
 		-
 		-
