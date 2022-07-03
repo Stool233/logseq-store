@@ -36,6 +36,7 @@
 			- A proposition is a statement (communication) that is either true or
 			  false.
 		- Predicates（谓词）
+		  collapsed:: true
 			- A predicate can be understood as a proposition whose truth depends on the value
 			  of one or more variables.
 			- Predicate and function
@@ -168,6 +169,7 @@
 				- This is often obvious, because the two cases are of the form “P” and “not P.”
 				- 案例分析法需要囊括所有情形
 		- Proof by Contradiction（反证法）
+		  collapsed:: true
 			- In a proof by contradiction（反证法）, or indirect proof（间接证明法）, you show that
 				- if a proposition were false, then some false fact would be true.
 					- 假如命题是假的，那么相应的虚假事实为真
@@ -186,6 +188,7 @@
 				-
 				  4. Write, “This is a contradiction. Therefore, P must be true.”
 		- Good Proofs in Practice（数学证明的优秀实践）
+		  collapsed:: true
 			- One purpose of a proof is to establish the truth of an assertion with absolute certainty（证明的目的之一在于，以绝对的确定性建立关于断言的真相）
 				- and mechanically checkable proofs of enormous length or complexity can
 				  accomplish this.
