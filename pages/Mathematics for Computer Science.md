@@ -40,6 +40,8 @@
 			  of one or more variables.
 			- Predicate and function
 				- This notation for predicates is confusingly similar to ordinary function notation.
-				  If P is a predicate, then P .n/ is either true or false, depending on the value of n.
+				  If P is a predicate, then P(n) is either true or false, depending on the value of n.
 				  On the other hand, if p is an ordinary function, like n2+1, then p(n) is a numerical
 				  quantity. Don’t confuse these two!
+		- The Axiomatic Method ( 公理化方法 )
+			-
