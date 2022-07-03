@@ -181,5 +181,6 @@
 				  2. Write, “Suppose P is false.”
 				-
 				  3. Deduce something known to be false (a logical contradiction).
+					- 推导得出
 				-
 				  4. Write, “This is a contradiction. Therefore, P must be true.”
