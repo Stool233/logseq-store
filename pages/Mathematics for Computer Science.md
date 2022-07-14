@@ -37,7 +37,9 @@
 				- ![image.png](../assets/image_1657776983081_0.png)
 			- Soundness
 				- A sound rule preserves truth: if all the antecedents are true in some environment, then so is the conclusion.
-				-
+			- Soundness & Validity
+				- Lemma: A rule is sound iff AND{Antecedents} IMPLIES Conclusion is valid.
+			-
 -
 - Teaching Materials
 	- What is a Proof
