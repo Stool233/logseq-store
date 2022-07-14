@@ -35,6 +35,8 @@
 				- ![image.png](../assets/image_1657776960229_0.png)
 				- ![image.png](../assets/image_1657776971244_0.png)
 				- ![image.png](../assets/image_1657776983081_0.png)
+			- Soundness
+				- A sound rule preserves truth: if all the antecedents are true in some environment, then so is the conclusion.
 				-
 -
 - Teaching Materials
