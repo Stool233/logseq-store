@@ -45,7 +45,8 @@
 			- Proving Validity
 				- Instead of truth tables, can try to prove valid formulas symbolically using axioms and deduction rules
 			- A Proof System
-				-
+				- Another approach is to start with some valid formulas (axioms) and deduce more valid formulas using proof rules
+			-
 -
 - Teaching Materials
 	- What is a Proof
