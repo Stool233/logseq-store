@@ -46,6 +46,9 @@
 				- Instead of truth tables, can try to prove valid formulas symbolically using axioms and deduction rules
 			- A Proof System
 				- Another approach is to start with some valid formulas (axioms) and deduce more valid formulas using proof rules
+			- validity checking still inefficient
+				- Algebraic & deduction proofs in general are no better than truth tables.
+				- No efficient method for verifying validity is known
 			-
 -
 - Teaching Materials
