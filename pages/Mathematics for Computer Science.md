@@ -44,7 +44,8 @@
 			- power point
 			- Proving Validity
 				- Instead of truth tables, can try to prove valid formulas symbolically using axioms and deduction rules
-			-
+			- A Proof System
+				-
 -
 - Teaching Materials
 	- What is a Proof
