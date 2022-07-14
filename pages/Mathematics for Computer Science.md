@@ -42,6 +42,8 @@
 				- Lemma: A rule is sound iff AND{Antecedents} IMPLIES Conclusion is valid.
 		- The Logic of Propositions
 			- power point
+			- Proving Validity
+				- Instead of truth tables, can try to prove valid formulas symbolically using axioms and deduction rules
 			-
 -
 - Teaching Materials
