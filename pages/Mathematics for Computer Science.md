@@ -31,7 +31,11 @@
 				- Thoughtless calculation no  substitute for understanding.
 	- Logic & Propositions
 		- IMPLIES
-			-
+			- power point
+				- ![image.png](../assets/image_1657776960229_0.png)
+				- ![image.png](../assets/image_1657776971244_0.png)
+				- ![image.png](../assets/image_1657776983081_0.png)
+				-
 -
 - Teaching Materials
 	- What is a Proof
