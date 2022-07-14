@@ -1,5 +1,4 @@
 - Video Course
-  collapsed:: true
 	- 6.042J
 		- This subject offers an introduction to discrete mathematics oriented toward computer science and engineering.
 	- Quick Summary
@@ -30,6 +29,9 @@
 			- Moral
 				- Be sure rules are properly applied.
 				- Thoughtless calculation no  substitute for understanding.
+	- Logic & Propositions
+		- IMPLIES
+			-
 -
 - Teaching Materials
 	- What is a Proof
