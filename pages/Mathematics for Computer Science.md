@@ -49,6 +49,7 @@
 			- validity checking still inefficient
 				- Algebraic & deduction proofs in general are no better than truth tables.
 				- No efficient method for verifying validity is known
+		- Quantifiers & Predicate Logic
 			-
 -
 - Teaching Materials
