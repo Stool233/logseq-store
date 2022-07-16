@@ -194,6 +194,7 @@
 - Implementation
 	- Preliminaries
 		- Logical Implication
+		  collapsed:: true
 			- ![image.png](../assets/image_1654876089759_0.png)
 			- In speech, implication asserts causality.
 			- In math, implication asserts only correlation.
@@ -316,6 +317,7 @@
 		-
 		-
 	- Safety and liveness
+	  collapsed:: true
 		- [[Safety Formula]]
 		  collapsed:: true
 			- ![image.png](../assets/image_1654938318253_0.png)
