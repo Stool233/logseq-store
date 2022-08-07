@@ -146,10 +146,6 @@
 						-
 						  2. Proceed as in Method 1.
 							- 按方法1继续
-				-
-					-
-					-
-				-
 		- Proving an “If and Only If”（证明当且仅当）
 		  collapsed:: true
 			- Many mathematical theorems assert that two statements are logically equivalent;
