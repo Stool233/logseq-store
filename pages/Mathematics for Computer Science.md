@@ -54,6 +54,7 @@
 -
 - Teaching Materials
 	- What is a Proof
+	  collapsed:: true
 		- proposition（命题）
 		  collapsed:: true
 			- A proposition is a statement (communication) that is either true or
