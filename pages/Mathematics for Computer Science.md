@@ -242,6 +242,7 @@
 						- 总结一下，解释为什么原命题成立
 				-
 	- The Well Ordering Principle （良序原理）
+	  collapsed:: true
 		- Every nonempty set of nonnegative integers has a smallest element.
 			- 非负整数集中的每个非空子集都有一个最小元素
 		- But in fact, it provides one of the most important proof rules in [[discrete mathematics]] （[[离散数学]]）
