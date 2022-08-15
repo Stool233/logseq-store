@@ -292,5 +292,7 @@
 					- An implication is true exactly when the if-part is false or the then-part is true.
 				- One of our original examples demonstrates an even stranger side of implications.
 					- “If pigs fly, then you can understand the Chebyshev bound.”
-					-
+					- Don’t take this as an insult; we just need to figure out whether this proposition is true or false. Curiously, the answer has nothing to do with whether or not you can understand the Chebyshev bound. Pigs do not fly, so we’re on either line (ft) or line (ff) of the truth table. In both cases, the proposition is true!（猪不会飞，所以对应真值表中的ft行或者ff行，这两种情况下，整个命题都为真）
+				-
+				-
 				-
