@@ -278,6 +278,7 @@
 			-
 	- Logic & Propositions
 		- Propositions from Propositions（命题的命题）
+		  collapsed:: true
 			- we concerned with how propositions are combined and related.
 			- propositional variables（命题变量）
 				- like propositions, can take on only the values T (true) and F (false).
@@ -303,4 +304,5 @@
 				- Mathematicians commonly join propositions in one additional way that doesn’t arise in ordinary speech. （数学家通常用一种普通语言中没有的附加方式来连接命题。）
 				- The proposition “P if and only if Q” asserts that P and Q have the same truth value. Either both are true or both are false.（“P当且仅当Q”命题断言P和Q具有相同的真值。要么都是真的，要么都是假的。）
 					- ![image.png](../assets/image_1660573684233_0.png){:height 179, :width 235}
-					-
+			-
+		- Propositional Logic in Computer Programs
