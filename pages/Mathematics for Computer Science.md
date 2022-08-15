@@ -337,4 +337,7 @@
 			- validity can also be viewed as an aspect of equivalence.
 				- Namely, a formula is valid iff it is equivalent to T.
 			- A satisfiable formula is one which can sometimes be true—that is, there is some assignment of truth values to its variables that makes it true.
+				- One way satisfiability comes up is when there are a collection of system specifications. The job of the system designer is to come up with a system that follows all the specs. This means that the AND of all the specs must be satisfiable or the designer’s job will be impossible
+			- There is also a close relationship between validity and satisfiability: a statement P is satisfiable iff its negation NOT(P) is not valid.
+			-
 				-
