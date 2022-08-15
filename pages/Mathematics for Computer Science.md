@@ -375,4 +375,7 @@
 				-
 				-
 			-
-		-
+		- The SAT Problem（SAT问题）
+			- Determining whether or not a more complicated proposition is satisfiable is not so easy.
+			- The general problem of deciding whether a proposition is satisfiable is called SAT.
+			-
