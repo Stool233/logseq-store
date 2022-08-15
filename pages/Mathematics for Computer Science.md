@@ -308,5 +308,5 @@
 		- Propositional Logic in Computer Programs（计算机程序的命题逻辑）
 			- Propositions and logical connectives arise all the time in computer programs.
 			- Truth Table Calculation（真值表计算）
-				- Simplifying logical expressions has real practical importance in computer science.
+				- Simplifying logical expressions has real practical importance in computer science.（在计算机科学领域，简化逻辑表达式具有）
 				-
