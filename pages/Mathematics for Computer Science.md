@@ -306,6 +306,7 @@
 					- ![image.png](../assets/image_1660573684233_0.png){:height 179, :width 235}
 			-
 		- Propositional Logic in Computer Programs（计算机程序的命题逻辑）
+		  collapsed:: true
 			- Propositions and logical connectives arise all the time in computer programs.
 			- Truth Table Calculation（真值表计算）
 				- Simplifying logical expressions has real practical importance in computer science.（在计算机科学领域，简化逻辑表达式具有十分重要的现实意义）
@@ -319,3 +320,5 @@
 				- We will often use P as an abbreviation for NOT(P), but aside from that, we mostly stick to the words—except when formulas would otherwise run off the page.
 			-
 				-
+		- Equivalence and Validity（等价性和有效性）
+			-
