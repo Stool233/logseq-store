@@ -397,5 +397,9 @@
 			- Order of Quantifiers（量词的顺序）
 				- Swapping the order of different kinds of quantifiers (existential or universal) usually changes the meaning of a proposition.
 			- Variables Over One Domain（变量与域）
+				- The unnamed nonempty set that x and y range over is called the domain of discourse, or just plain domain, of the formula.
+				- It’s easy to arrange for all the variables to range over one domain.
+					- For exam- ple, Goldbach’s Conjecture could be expressed with all variables ranging over the domain N as
+						- ![image.png](../assets/image_1660578904681_0.png)
 				-
 			-
