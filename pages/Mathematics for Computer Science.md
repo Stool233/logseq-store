@@ -332,5 +332,7 @@
 			- You can think about valid formulas as capturing fundamental logical truths.
 				- For example, a property of implication that we take for granted is that if one statement implies a second one, and the second one implies a third, then the first implies the third. The following valid formula confirms the truth of this property of implication.
 					- ![image.png](../assets/image_1660575108792_0.png)
+			- Equivalence of formulas is really a special case of validity.
+				- Namely, statements F and G are equivalent precisely when the statement (F IFF G) is valid.
 				-
 				-
