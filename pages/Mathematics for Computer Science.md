@@ -364,6 +364,8 @@
 					- ![image.png](../assets/image_1660576516358_0.png){:height 49, :width 485}
 					- ![image.png](../assets/image_1660576524470_0.png)
 				- All of these axioms can be verified easily with truth tables.
+				- Theorem 3.4.4. Any propositional formula can be transformed into disjunctive normal form or a conjunctive normal form using the equivalences listed above.(任何命题公式都可以用上面列出的等价公理转换为析取范式或合取范式。)
+				-
 				-
 				-
 			-
