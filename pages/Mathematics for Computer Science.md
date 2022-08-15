@@ -346,5 +346,8 @@
 				- Every propositional formula is equivalent to a “sum-of-products” or disjunctive（析取） form.
 					- More precisely, a disjunctive form is simply an OR of AND-terms, where each AND-term is an AND of variables or negations of variables
 				- Distributive Law of AND over OR
-					-
+					- ![image.png](../assets/image_1660576091719_0.png)
+				- Distributive Law of OR over AND
+					- ![image.png](../assets/image_1660576111313_0.png)
+				-
 			-
