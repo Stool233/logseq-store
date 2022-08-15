@@ -358,6 +358,9 @@
 				- An alternative approach that sometimes helps is to use algebra to prove equivalence.
 					- A lot of different operators may appear in a propositional formula, so a useful first step is to get rid of all but three: AND, OR, and NOT.
 					- This is easy because each of the operators is equivalent to a simple formula using only these three.
-				- We list below a bunch of equivalence axioms with the symbol “ <--> ” between equivalent formulas.
+				- We list below a bunch of equivalence axioms with the symbol “ <--> ” between equivalent formulas. These axioms are important because they are all that’s needed to prove every possible equivalence.
+					- ![image.png](../assets/image_1660576485847_0.png)
+					- ![image.png](../assets/image_1660576508197_0.png)
+					-
 				-
 			-
