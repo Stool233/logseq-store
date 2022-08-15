@@ -405,5 +405,8 @@
 				- ![image.png](../assets/image_1660578997551_0.png){:height 50, :width 481}
 				- ![image.png](../assets/image_1660579032709_0.png){:height 47, :width 490}
 				- The general principle is that moving a NOT across a quantifier changes the kind of quantifier.
-			- Validity for Predicate Formulas
+			- Validity for Predicate Formulas（谓词公式的永真性）
+				- The idea of validity extends to predicate formulas, but to be valid, a formula now must evaluate to true no matter what the domain of discourse may be, no matter what values its variables may take over the domain, and no matter what interpretations its predicate variables may be given.
+				- Another useful example of a valid assertion is
+					-
 			-
