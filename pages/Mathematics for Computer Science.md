@@ -376,6 +376,7 @@
 				-
 			-
 		- The SAT Problem（SAT问题）
+		  collapsed:: true
 			- Determining whether or not a more complicated proposition is satisfiable is not so easy.
 			- The general problem of deciding whether a proposition is satisfiable is called SAT.
 			- One approach to SAT is to construct a truth table and check whether or not a T ever appears, but as with testing validity, this approach quickly bogs down for formulas with many variables because truth tables grow exponentially with the number of variables.
@@ -383,4 +384,7 @@
 			- Recently there has been exciting progress on SAT-solvers for practical applications like digital circuit verification. These programs find satisfying assignments with amazing efficiency even for formulas with millions of variables. Unfortunately, it’s hard to predict which kind of formulas are amenable to SAT-solver methods, and for formulas that are unsatisfiable, SAT-solvers generally get nowhere.
 			- So no one has a good idea how to solve SAT in polynomial time, or how to prove that it can’t be done—researchers are completely stuck.
 			- The problem of determining whether or not SAT has a polynomial time solution is known as the “P vs. NP” problem
+		- Predicate Formulas（谓词公式）
+			- Quantifiers（量词）
+				-
 			-
