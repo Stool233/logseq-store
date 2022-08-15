@@ -334,5 +334,7 @@
 					- ![image.png](../assets/image_1660575108792_0.png)
 			- Equivalence of formulas is really a special case of validity.
 				- Namely, statements F and G are equivalent precisely when the statement (F IFF G) is valid.
-				-
+			- validity can also be viewed as an aspect of equivalence.
+				- Namely, a formula is valid iff it is equivalent to T.
+			- A satisfiable formula is one which can sometimes be true—that is, there is some assignment of truth values to its variables that makes it true.
 				-
