@@ -279,6 +279,9 @@
 	- Logic & Propositions
 		- Propositions from Propositions（命题的命题）
 			- we concerned with how propositions are combined and related.
-			- propositional variables
+			- propositional variables（命题变量）
 				- like propositions, can take on only the values T (true) and F (false).
+				- Propositional variables are also called Boolean variables（布尔变量） after their inventor, the nineteenth century mathematician George—you guessed it—Boole.
+			-
+			-
 			-
