@@ -308,5 +308,10 @@
 		- Propositional Logic in Computer Programs（计算机程序的命题逻辑）
 			- Propositions and logical connectives arise all the time in computer programs.
 			- Truth Table Calculation（真值表计算）
-				- Simplifying logical expressions has real practical importance in computer science.（在计算机科学领域，简化逻辑表达式具有）
+				- Simplifying logical expressions has real practical importance in computer science.（在计算机科学领域，简化逻辑表达式具有十分重要的现实意义）
+					- Expression simplification in programs like the one above can make a program easier to read and understand.
+					- Simplified programs may also run faster, since they require fewer operations.
+					- In hardware, simplifying expressions can decrease the number of logic gates on a chip because digital circuits can be described by logical formulas
+						- Minimizing the logical formulas corresponds to reducing the number of gates in the circuit. The payoff of gate minimization is potentially enormous: a chip with fewer gates is smaller, consumes less power, has a lower defect rate, and is cheaper to manufacture.
+			-
 				-
