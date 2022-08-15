@@ -389,6 +389,10 @@
 				- Specifically, an assertion that a predicate is always true is called a universal quantification（全称量词）,
 				- and an assertion that a predicate is sometimes true is an existential quantification（存在量词）.
 			- Mixing Quantifiers（混合量词）
+				- Goldbach’s Conjecture
+					- For every even integer n greater than 2, there exist primes p and q such
+					  that n = p + q.
 				- we can write Goldbach’s Conjecture in logic notation as follows:
-				- ![image.png](../assets/image_1660578534155_0.png)
+					- ![image.png](../assets/image_1660578534155_0.png)
+			- Order of Quantifiers（量词的顺序）
 			-
