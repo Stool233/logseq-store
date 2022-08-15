@@ -351,5 +351,7 @@
 					- ![image.png](../assets/image_1660576111313_0.png)
 				- The expression (3.6) is a disjunctive form where each AND-term is an AND of every one of the variables or their negations in turn. An expression of this form is called a disjunctive normal form (DNF). （析取范式）
 					- ![image.png](../assets/image_1660576191229_0.png)
+				- Theorem 3.4.3. Every propositional formula is equivalent to both a disjunctive normal form and a conjunctive normal form.
+			- Proving Equivalences（等价性证明）
 				-
 			-
