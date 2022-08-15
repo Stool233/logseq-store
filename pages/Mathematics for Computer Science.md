@@ -395,4 +395,6 @@
 				- we can write Goldbach’s Conjecture in logic notation as follows:
 					- ![image.png](../assets/image_1660578534155_0.png)
 			- Order of Quantifiers（量词的顺序）
+				- Swapping the order of different kinds of quantifiers (existential or universal) usually changes the meaning of a proposition.
+				-
 			-
