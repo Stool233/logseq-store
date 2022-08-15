@@ -386,5 +386,7 @@
 			- The problem of determining whether or not SAT has a polynomial time solution is known as the “P vs. NP” problem
 		- Predicate Formulas（谓词公式）
 			- Quantifiers（量词）
+				- Specifically, an assertion that a predicate is always true is called a universal quantification（全称量词）,
+				- and an assertion that a predicate is sometimes true is an existential quantification（存在量词）.
 				-
 			-
