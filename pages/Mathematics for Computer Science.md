@@ -388,5 +388,7 @@
 			- Quantifiers（量词）
 				- Specifically, an assertion that a predicate is always true is called a universal quantification（全称量词）,
 				- and an assertion that a predicate is sometimes true is an existential quantification（存在量词）.
-				-
+			- Mixing Quantifiers（混合量词）
+				- we can write Goldbach’s Conjecture in logic notation as follows:
+				- ![image.png](../assets/image_1660578534155_0.png)
 			-
