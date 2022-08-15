@@ -409,5 +409,5 @@
 				- The idea of validity extends to predicate formulas, but to be valid, a formula now must evaluate to true no matter what the domain of discourse may be, no matter what values its variables may take over the domain, and no matter what interpretations its predicate variables may be given.
 				- Another useful example of a valid assertion is
 					- ![image.png](../assets/image_1660579154754_0.png)
-					-
+				- An interpretation like this that falsifies an assertion is called a counter-model to that assertion.（断言的反模式）
 			-
