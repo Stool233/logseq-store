@@ -324,5 +324,7 @@
 			- A statement of the form “NOT(Q) IMPLIES NOT(P)” is called the contrapositive（逆否命题） of the implication “P IMPLIES Q.”
 			- In contrast, the converse（逆命题） of “P IMPLIES Q” is the statement “Q IMPLIES P .”
 				- an implication is generally not equivalent to its converse.
+			- the AND of the implications is equivalent to the IFF statement.
+				- ![image.png](../assets/image_1660574756962_0.png){:height 133, :width 479}
 			-
 			-
