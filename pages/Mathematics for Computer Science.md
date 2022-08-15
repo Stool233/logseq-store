@@ -321,4 +321,5 @@
 			-
 				-
 		- Equivalence and Validity（等价性和有效性）
+			- A statement of the form “NOT(Q) IMPLIES NOT(P)” is called the contrapositive（逆否命题） of the implication “P IMPLIES Q.”
 			-
