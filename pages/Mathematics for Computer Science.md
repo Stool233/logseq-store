@@ -342,5 +342,5 @@
 					- One way satisfiability comes up is when there are a collection of system specifications. The job of the system designer is to come up with a system that follows all the specs. This means that the AND of all the specs must be satisfiable or the designer’s job will be impossible
 				- There is also a close relationship between validity and satisfiability: a statement P is satisfiable iff its negation NOT(P) is not valid.
 		- The Algebra of Propositions（命题代数）
-			-
+			- Propositions in Normal Form（）
 			-
