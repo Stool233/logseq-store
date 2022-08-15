@@ -293,6 +293,8 @@
 				- One of our original examples demonstrates an even stranger side of implications.
 					- “If pigs fly, then you can understand the Chebyshev bound.”
 					- Don’t take this as an insult; we just need to figure out whether this proposition is true or false. Curiously, the answer has nothing to do with whether or not you can understand the Chebyshev bound. Pigs do not fly, so we’re on either line (ft) or line (ff) of the truth table. In both cases, the proposition is true!（猪不会飞，所以对应真值表中的ft行或者ff行，这两种情况下，整个命题都为真）
-				-
+				- In contrast, here’s an example of a false implication:
+					- “If the moon shines white, then the moon is made of white cheddar.”
+					- Yes, the moon shines white. But, no, the moon is not made of white cheddar cheese. So we’re on line (tf) of the truth table, and the proposition is false.（是的，月亮是白色的。但是，不，月亮不是由白色的切达奶酪做成的。我们在真值表的(tf)线上，命题是假的。）
 				-
 				-
