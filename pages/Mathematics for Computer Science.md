@@ -356,5 +356,8 @@
 				- A check of equivalence or validity by truth table runs out of steam pretty quickly:
 					- a proposition with n variables has a truth table with 2^n lines, so the effort required to check a proposition grows exponentially with the number of variables.
 				- An alternative approach that sometimes helps is to use algebra to prove equivalence.
+					- A lot of different operators may appear in a propositional formula, so a useful first step is to get rid of all but three: AND, OR, and NOT.
+					- This is easy because each of the operators is equivalent to a simple formula using only these three.
+				- We list below a bunch of equivalence axioms with the symbol “ <--> ” between equivalent formulas.
 				-
 			-
