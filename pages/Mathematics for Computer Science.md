@@ -329,5 +329,8 @@
 		- Validity and Satisfiability（永真性和可满足性）
 			- A valid formula is one which is always true, no matter what truth values its variables may have. The simplest example is
 				- P OR NOT(P)
-		-
-			-
+			- You can think about valid formulas as capturing fundamental logical truths.
+				- For example, a property of implication that we take for granted is that if one statement implies a second one, and the second one implies a third, then the first implies the third. The following valid formula confirms the truth of this property of implication.
+					- ![image.png](../assets/image_1660575108792_0.png)
+				-
+				-
