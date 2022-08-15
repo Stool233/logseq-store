@@ -320,12 +320,13 @@
 				- We will often use P as an abbreviation for NOT(P), but aside from that, we mostly stick to the words—except when formulas would otherwise run off the page.
 			-
 				-
-		- Equivalence and Validity（等价性和有效性）
-			- A statement of the form “NOT(Q) IMPLIES NOT(P)” is called the contrapositive（逆否命题） of the implication “P IMPLIES Q.”
-			- In contrast, the converse（逆命题） of “P IMPLIES Q” is the statement “Q IMPLIES P .”
-				- an implication is generally not equivalent to its converse.
-			- the AND of the implications is equivalent to the IFF statement.
-				- ![image.png](../assets/image_1660574756962_0.png){:height 133, :width 479}
+		- Equivalence and Validity（等价性和永真性）
+			- Implications and Contrapositives（蕴涵和逆否）
+				- A statement of the form “NOT(Q) IMPLIES NOT(P)” is called the contrapositive（逆否命题） of the implication “P IMPLIES Q.”
+				- In contrast, the converse（逆命题） of “P IMPLIES Q” is the statement “Q IMPLIES P .”
+					- an implication is generally not equivalent to its converse.
+				- the AND of the implications is equivalent to the IFF statement.
+					- ![image.png](../assets/image_1660574756962_0.png){:height 133, :width 479}
 			- Validity and Satisfiability（永真性和可满足性）
 				- A valid formula is one which is always true, no matter what truth values its variables may have. The simplest example is
 					- P OR NOT(P)
