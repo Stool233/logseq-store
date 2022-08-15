@@ -361,6 +361,9 @@
 				- We list below a bunch of equivalence axioms with the symbol “ <--> ” between equivalent formulas. These axioms are important because they are all that’s needed to prove every possible equivalence.
 					- ![image.png](../assets/image_1660576485847_0.png)
 					- ![image.png](../assets/image_1660576508197_0.png)
-					-
+					- ![image.png](../assets/image_1660576516358_0.png){:height 49, :width 485}
+					- ![image.png](../assets/image_1660576524470_0.png)
+				- All of these axioms can be verified easily with truth tables.
+				-
 				-
 			-
