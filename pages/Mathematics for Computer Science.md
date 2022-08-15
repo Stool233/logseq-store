@@ -378,4 +378,4 @@
 		- The SAT Problem（SAT问题）
 			- Determining whether or not a more complicated proposition is satisfiable is not so easy.
 			- The general problem of deciding whether a proposition is satisfiable is called SAT.
-			-
+			- One approach to SAT is to construct a truth table and check whether or not a T ever appears, but as with testing validity, this approach quickly bogs down for formulas with many variables because truth tables grow exponentially with the number of variables.
