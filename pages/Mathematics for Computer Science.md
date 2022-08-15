@@ -353,5 +353,7 @@
 					- ![image.png](../assets/image_1660576191229_0.png)
 				- Theorem 3.4.3. Every propositional formula is equivalent to both a disjunctive normal form and a conjunctive normal form.
 			- Proving Equivalences（等价性证明）
+				- A check of equivalence or validity by truth table runs out of steam pretty quickly:
+					- a proposition with n variables has a truth table with 2^n lines, so the effort required to check a proposition grows exponentially with the number of variables.
 				-
 			-
