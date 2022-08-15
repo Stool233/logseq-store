@@ -403,5 +403,7 @@
 						- ![image.png](../assets/image_1660578904681_0.png)
 			- Negating Quantifiers（否定量词）
 				- ![image.png](../assets/image_1660578997551_0.png){:height 50, :width 481}
-				-
+				- ![image.png](../assets/image_1660579032709_0.png){:height 47, :width 490}
+				- The general principle is that moving a NOT across a quantifier changes the kind of quantifier.
+			- Validity for Predicate Formulas
 			-
