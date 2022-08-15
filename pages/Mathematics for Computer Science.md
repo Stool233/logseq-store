@@ -345,5 +345,6 @@
 			- Propositions in Normal Form（命题范式）
 				- Every propositional formula is equivalent to a “sum-of-products” or disjunctive（析取） form.
 					- More precisely, a disjunctive form is simply an OR of AND-terms, where each AND-term is an AND of variables or negations of variables
-				-
+				- Distributive Law of AND over OR
+					-
 			-
