@@ -402,5 +402,6 @@
 					- For exam- ple, Goldbach’s Conjecture could be expressed with all variables ranging over the domain N as
 						- ![image.png](../assets/image_1660578904681_0.png)
 			- Negating Quantifiers（否定量词）
+				- ![image.png](../assets/image_1660578997551_0.png){:height 50, :width 481}
 				-
 			-
