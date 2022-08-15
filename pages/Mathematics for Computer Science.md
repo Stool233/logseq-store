@@ -355,5 +355,6 @@
 			- Proving Equivalences（等价性证明）
 				- A check of equivalence or validity by truth table runs out of steam pretty quickly:
 					- a proposition with n variables has a truth table with 2^n lines, so the effort required to check a proposition grows exponentially with the number of variables.
+				- An alternative approach that sometimes helps is to use algebra to prove equivalence.
 				-
 			-
