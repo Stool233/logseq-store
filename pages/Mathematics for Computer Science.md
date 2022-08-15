@@ -286,6 +286,8 @@
 				- Mathematicians use the words NOT, AND, and OR for operations that change or combine propositions
 				- The precise mathematical meaning of these special words can be specified by truth tables.（真值表）
 			- IMPLIES
+				- The combining operation with the least intuitive technical meaning is “implies.”
+					- ![image.png](../assets/image_1660573015255_0.png){:height 155, :width 281}
 				-
 				-
 				-
