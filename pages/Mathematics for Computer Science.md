@@ -326,18 +326,18 @@
 				- an implication is generally not equivalent to its converse.
 			- the AND of the implications is equivalent to the IFF statement.
 				- ![image.png](../assets/image_1660574756962_0.png){:height 133, :width 479}
-		- Validity and Satisfiability（永真性和可满足性）
-			- A valid formula is one which is always true, no matter what truth values its variables may have. The simplest example is
-				- P OR NOT(P)
-			- You can think about valid formulas as capturing fundamental logical truths.
-				- For example, a property of implication that we take for granted is that if one statement implies a second one, and the second one implies a third, then the first implies the third. The following valid formula confirms the truth of this property of implication.
-					- ![image.png](../assets/image_1660575108792_0.png)
-			- Equivalence of formulas is really a special case of validity.
-				- Namely, statements F and G are equivalent precisely when the statement (F IFF G) is valid.
-			- validity can also be viewed as an aspect of equivalence.
-				- Namely, a formula is valid iff it is equivalent to T.
-			- A satisfiable formula is one which can sometimes be true—that is, there is some assignment of truth values to its variables that makes it true.
-				- One way satisfiability comes up is when there are a collection of system specifications. The job of the system designer is to come up with a system that follows all the specs. This means that the AND of all the specs must be satisfiable or the designer’s job will be impossible
-			- There is also a close relationship between validity and satisfiability: a statement P is satisfiable iff its negation NOT(P) is not valid.
+			- Validity and Satisfiability（永真性和可满足性）
+				- A valid formula is one which is always true, no matter what truth values its variables may have. The simplest example is
+					- P OR NOT(P)
+				- You can think about valid formulas as capturing fundamental logical truths.
+					- For example, a property of implication that we take for granted is that if one statement implies a second one, and the second one implies a third, then the first implies the third. The following valid formula confirms the truth of this property of implication.
+						- ![image.png](../assets/image_1660575108792_0.png)
+				- Equivalence of formulas is really a special case of validity.
+					- Namely, statements F and G are equivalent precisely when the statement (F IFF G) is valid.
+				- validity can also be viewed as an aspect of equivalence.
+					- Namely, a formula is valid iff it is equivalent to T.
+				- A satisfiable formula is one which can sometimes be true—that is, there is some assignment of truth values to its variables that makes it true.
+					- One way satisfiability comes up is when there are a collection of system specifications. The job of the system designer is to come up with a system that follows all the specs. This means that the AND of all the specs must be satisfiable or the designer’s job will be impossible
+				- There is also a close relationship between validity and satisfiability: a statement P is satisfiable iff its negation NOT(P) is not valid.
+		-
 			-
-				-
