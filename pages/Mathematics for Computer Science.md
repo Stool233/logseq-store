@@ -283,6 +283,9 @@
 				- like propositions, can take on only the values T (true) and F (false).
 				- Propositional variables are also called Boolean variables（布尔变量） after their inventor, the nineteenth century mathematician George—you guessed it—Boole.
 			- NOT, AND, and OR
+				- Mathematicians use the words NOT, AND, and OR for operations that change or combine propositions
+				- The precise mathematical meaning of these special words can be specified by truth tables.（真值表）
+			- IMPLIES
 				-
 				-
 				-
