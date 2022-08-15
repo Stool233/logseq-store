@@ -290,5 +290,7 @@
 					- ![image.png](../assets/image_1660573015255_0.png){:height 155, :width 281}
 				- The truth table for implications can be summarized in words as follows:
 					- An implication is true exactly when the if-part is false or the then-part is true.
-				-
+				- One of our original examples demonstrates an even stranger side of implications.
+					- “If pigs fly, then you can understand the Chebyshev bound.”
+					-
 				-
