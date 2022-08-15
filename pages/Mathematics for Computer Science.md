@@ -313,5 +313,9 @@
 					- Simplified programs may also run faster, since they require fewer operations.
 					- In hardware, simplifying expressions can decrease the number of logic gates on a chip because digital circuits can be described by logical formulas
 						- Minimizing the logical formulas corresponds to reducing the number of gates in the circuit. The payoff of gate minimization is potentially enormous: a chip with fewer gates is smaller, consumes less power, has a lower defect rate, and is cheaper to manufacture.
+			- Cryptic Notation（符号表示）
+				- ![image.png](../assets/image_1660574197625_0.png){:height 243, :width 371}
+				- The mathematical notation is concise but cryptic. Words such as “AND” and “OR” are easier to remember and won’t get confused with operations on numbers.
+				- We will often use P as an abbreviation for NOT.P /, but aside from that, we mostly stick to the words—except when formulas would otherwise run off the page.
 			-
 				-
