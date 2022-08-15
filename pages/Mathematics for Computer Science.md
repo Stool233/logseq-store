@@ -321,6 +321,7 @@
 			-
 				-
 		- Equivalence and Validity（等价性和永真性）
+		  collapsed:: true
 			- Implications and Contrapositives（蕴涵和逆否）
 				- A statement of the form “NOT(Q) IMPLIES NOT(P)” is called the contrapositive（逆否命题） of the implication “P IMPLIES Q.”
 				- In contrast, the converse（逆命题） of “P IMPLIES Q” is the statement “Q IMPLIES P .”
@@ -340,5 +341,6 @@
 				- A satisfiable formula is one which can sometimes be true—that is, there is some assignment of truth values to its variables that makes it true.
 					- One way satisfiability comes up is when there are a collection of system specifications. The job of the system designer is to come up with a system that follows all the specs. This means that the AND of all the specs must be satisfiable or the designer’s job will be impossible
 				- There is also a close relationship between validity and satisfiability: a statement P is satisfiable iff its negation NOT(P) is not valid.
-		-
+		- The Algebra of Propositions（命题代数）
+			-
 			-
