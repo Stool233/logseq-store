@@ -300,6 +300,7 @@
 					- It often bothers people when they first learn that implications which have false hypotheses are considered to be true. But implications with false hypotheses hardly ever come up in ordinary settings, so there’s not much reason to be bothered by whatever truth assignment logicians and mathematicians choose to give them.（当人们第一次得知含有错误假设的暗示被认为是正确的时候，这常常会让他们感到困扰。但错误假设的含义在普通情况下几乎不会出现，所以没有太多理由被逻辑学家和数学家选择给他们的真理分配所困扰。）
 					- There are, of course, good reasons for the mathematical convention that implications are true when their hypotheses are false. （当然，有很好的理由来支持数学惯例，即当假设为假时，暗示为真。）
 			- If and Only If
-				-
-				-
-				-
+				- Mathematicians commonly join propositions in one additional way that doesn’t arise in ordinary speech. （数学家通常用一种普通语言中没有的附加方式来连接命题。）
+				- The proposition “P if and only if Q” asserts that P and Q have the same truth value. Either both are true or both are false.（“P当且仅当Q”命题断言P和Q具有相同的真值。要么都是真的，要么都是假的。）
+					- ![image.png](../assets/image_1660573684233_0.png){:height 179, :width 235}
+					-
