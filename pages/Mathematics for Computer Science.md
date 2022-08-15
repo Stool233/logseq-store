@@ -327,5 +327,7 @@
 			- the AND of the implications is equivalent to the IFF statement.
 				- ![image.png](../assets/image_1660574756962_0.png){:height 133, :width 479}
 		- Validity and Satisfiability（永真性和可满足性）
-			- A valid formula is one which is always true, no matter what truth values its variables may have.
+			- A valid formula is one which is always true, no matter what truth values its variables may have. The simplest example is
+				- P OR NOT(P)
+		-
 			-
