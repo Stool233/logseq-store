@@ -379,3 +379,5 @@
 			- Determining whether or not a more complicated proposition is satisfiable is not so easy.
 			- The general problem of deciding whether a proposition is satisfiable is called SAT.
 			- One approach to SAT is to construct a truth table and check whether or not a T ever appears, but as with testing validity, this approach quickly bogs down for formulas with many variables because truth tables grow exponentially with the number of variables.
+			- The general definition of an “efficient” procedure is one that runs in polynomial time, that is, that runs in a number of basic steps bounded by a polynomial in s, where s is the size of an input.
+			-
