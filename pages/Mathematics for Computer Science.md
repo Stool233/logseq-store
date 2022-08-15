@@ -277,4 +277,5 @@
 					- 有最小元素0，但是存在没有最小元素的非空子集——比如正有理数。
 			-
 	- Logic & Propositions
-		-
+		- Propositions from Propositions（命题的命题）
+			-
