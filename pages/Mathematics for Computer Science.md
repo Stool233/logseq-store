@@ -297,6 +297,8 @@
 					- “If the moon shines white, then the moon is made of white cheddar.”
 					- Yes, the moon shines white. But, no, the moon is not made of white cheddar cheese. So we’re on line (tf) of the truth table, and the proposition is false.（是的，月亮是白色的。但是，月亮不是由白色的切达奶酪做成的。我们在真值表的(tf)线上，命题是假的。）
 				- False Hypotheses（无效假说）
+					- It often bothers people when they first learn that implications which have false hypotheses are considered to be true. But implications with false hypotheses hardly ever come up in ordinary settings, so there’s not much reason to be bothered by whatever truth assignment logicians and mathematicians choose to give them.（当人们第一次得知含有错误假设的暗示被认为是正确的时候，这常常会让他们感到困扰。但错误假设的含义在普通情况下几乎不会出现，所以没有太多理由被逻辑学家和数学家选择给他们的真理分配所困扰。）
+					- There are, of course, good reasons for the mathematical convention that implications are true when their hypotheses are false. （当然，有很好的理由来支持数学惯例，即当假设为假时，暗示为真。）
 					-
 				-
 				-
