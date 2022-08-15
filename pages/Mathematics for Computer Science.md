@@ -342,7 +342,9 @@
 					- One way satisfiability comes up is when there are a collection of system specifications. The job of the system designer is to come up with a system that follows all the specs. This means that the AND of all the specs must be satisfiable or the designer’s job will be impossible
 				- There is also a close relationship between validity and satisfiability: a statement P is satisfiable iff its negation NOT(P) is not valid.
 		- The Algebra of Propositions（命题代数）
+		  collapsed:: true
 			- Propositions in Normal Form（命题范式）
+			  collapsed:: true
 				- Every propositional formula is equivalent to a “sum-of-products” or disjunctive（析取） form.
 					- More precisely, a disjunctive form is simply an OR of AND-terms, where each AND-term is an AND of variables or negations of variables
 				- Distributive Law of AND over OR
@@ -353,6 +355,7 @@
 					- ![image.png](../assets/image_1660576191229_0.png)
 				- Theorem 3.4.3. Every propositional formula is equivalent to both a disjunctive normal form and a conjunctive normal form.
 			- Proving Equivalences（等价性证明）
+			  collapsed:: true
 				- A check of equivalence or validity by truth table runs out of steam pretty quickly:
 					- a proposition with n variables has a truth table with 2^n lines, so the effort required to check a proposition grows exponentially with the number of variables.
 				- An alternative approach that sometimes helps is to use algebra to prove equivalence.
@@ -366,8 +369,10 @@
 				- All of these axioms can be verified easily with truth tables.
 				- Theorem 3.4.4. Any propositional formula can be transformed into disjunctive normal form or a conjunctive normal form using the equivalences listed above.(任何命题公式都可以用上面列出的等价公理转换为析取范式或合取范式。)
 				- Theorem 3.4.5 (Completeness of the propositional equivalence axioms). Two propositional formula are equivalent iff they can be proved equivalent using the equivalence axioms listed above.（两个命题公式是等价的，当且仅当可以通过上述等价公理证明它们是等价的）
-				- it’s important to realize that using the strategy we gave for applying the axioms involves essentially the same effort it would take to construct truth tables, and there is no guarantee that applying the axioms will generally be any easier than using truth tables.（从本质上说，公理法所采用的策略与真值表方法相同，所以不能保证）
+				- it’s important to realize that using the strategy we gave for applying the axioms involves essentially the same effort it would take to construct truth tables, and there is no guarantee that applying the axioms will generally be any easier than using truth tables.（从本质上说，公理法所采用的策略与真值表方法相同，所以不能保证公理法就一定比真值表法简单）
+				-
 				-
 				-
 				-
 			-
+		-
