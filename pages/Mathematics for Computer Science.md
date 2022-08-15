@@ -365,7 +365,8 @@
 					- ![image.png](../assets/image_1660576524470_0.png)
 				- All of these axioms can be verified easily with truth tables.
 				- Theorem 3.4.4. Any propositional formula can be transformed into disjunctive normal form or a conjunctive normal form using the equivalences listed above.(任何命题公式都可以用上面列出的等价公理转换为析取范式或合取范式。)
-				- Theorem 3.4.5 (Completeness of the propositional equivalence axioms). Two propositional formula are equivalent iff they can be proved equivalent using the equivalence axioms listed above.（两个）
+				- Theorem 3.4.5 (Completeness of the propositional equivalence axioms). Two propositional formula are equivalent iff they can be proved equivalent using the equivalence axioms listed above.（两个命题公式是等价的，当且仅当可以通过上述等价公理证明它们是等价的）
+				-
 				-
 				-
 				-
