@@ -1,4 +1,4 @@
-- **TAG**: [[产品设计]], [[用户体验]],
+- **TAG**: [[产品设计]], [[用户体验]], [[设计原则]]
 -
 - Ant Design
 	- https://ant.design/docs/spec/introduce-cn
