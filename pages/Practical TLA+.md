@@ -3,7 +3,8 @@
 		- A weakly fair action will, if it stays enabled, eventually happen.
 			- We can declare every label in a process weakly fair by calling it a fair process.
 		- A strongly fair action, if it’s repeatedly enabled, will eventually happen.
-			-
+			- In practice, people don’t often use strong fairness; it’s a much safer to assume the system is only weakly fair.
+			- However, it’s worth knowing about for the cases where it is useful.
 -
 - The Temporal Operators
 	- []
