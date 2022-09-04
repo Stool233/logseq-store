@@ -1,2 +1,9 @@
 - The Temporal Operators
-	-
+	- []
+		- [] is always.
+		- []P means that for P is true for all states in all behaviors.
+		- You can also write ~[]P, which means that P will be false for at least one state.
+	- <>
+		- <> is eventually.
+		- <>P means that for every behavior, there is at least one state where P is true.
+		-
