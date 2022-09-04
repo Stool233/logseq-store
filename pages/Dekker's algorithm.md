@@ -12,4 +12,6 @@
 	- To alleviate this problem, volatile variables should be marked as modifiable outside the scope of the currently executing context.
 		- Note however that the C/C++ "volatile" attribute only guarantees that the compiler generates code with the proper ordering; it does not include the necessary memory barriers to guarantee in-order execution of that code.
 		- C++11 atomic variables can be used to guarantee the appropriate ordering requirements — by default, operations on atomic variables are sequentially consistent so if the wants_to_enter and turn variables are atomic a naive implementation will "just work". Alternatively, ordering can be guaranteed by the explicit use of separate fences, with the load and store operations using a relaxed ordering.
--
+- The other problem with Dekker’s Algorithm is that it’s not resilient. If either thread crashes, it will prevent the other from finishing.
+	- 该算法不具备弹性
+	-
