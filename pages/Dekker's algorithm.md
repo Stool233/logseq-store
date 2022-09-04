@@ -1,2 +1,3 @@
 - https://en.wikipedia.org/wiki/Dekker%27s_algorithm
-- ![dekker.pdf](../assets/dekker_1662279942518_0.pdf)
+- TLA+(PlusCal): ![dekker.pdf](../assets/dekker_1662279942518_0.pdf)
+-
