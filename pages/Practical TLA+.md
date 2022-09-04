@@ -10,4 +10,6 @@
 		- You can also write ~<>P, which means that P is never true.
 			- Note that this is the same as saying []~P, and in fact <>P is formally defined as ~[]~P.
 	- ~>
-		-
+		- ~> is leads-to. P ~> Q means that if there is some state where P is true, then either Q is true either now or in some future state.
+		- Once this is set, it’s irreversible: even if P is later false, Q still must happen.
+			- Unlike <>, ~> is “triggered” every time P is true.
