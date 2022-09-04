@@ -15,4 +15,9 @@
 			- Unlike <>, ~> is “triggered” every time P is true.
 		- You can also do P ~> []Q. If P is true, then there is some state where Q becomes true and forever stays true.
 	- [ ]<> and <>[ ]
-		-
+		- []<>P means that P is always eventually true, <>[]P means that P is eventually always true.
+			- For a finite spec, these mean the same thing: P is true at termination.
+			- For an infinite spec,
+				- <>[]P means that there is some point where P becomes true and forever stays true
+				- []<>P means that if P ever becomes false, it will eventually become true again.
+				-
