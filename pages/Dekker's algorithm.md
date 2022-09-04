@@ -1,3 +1,2 @@
 - https://en.wikipedia.org/wiki/Dekker%27s_algorithm
 -
--
