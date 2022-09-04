@@ -6,4 +6,8 @@
 	- <>
 		- <> is eventually.
 		- <>P means that for every behavior, there is at least one state where P is true.
+			- It may be false before, and it may be false after, but what matters is that it was at some point true.
+		- You can also write ~<>P, which means that P is never true.
+			- Note that this is the same as saying []~P, and in fact <>P is formally defined as ~[]~P.
+	- ~>
 		-
