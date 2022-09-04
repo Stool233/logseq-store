@@ -1,3 +1,9 @@
+- Fairness, Weak and Strong
+	- There are two kinds of fairness: weak and strong.
+		- A weakly fair action will, if it stays enabled, eventually happen.
+			- We can declare every label in a process weakly fair by calling it a fair process.
+		-
+-
 - The Temporal Operators
 	- []
 		- [] is always.
