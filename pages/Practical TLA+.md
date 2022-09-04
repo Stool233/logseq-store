@@ -13,3 +13,6 @@
 		- ~> is leads-to. P ~> Q means that if there is some state where P is true, then either Q is true either now or in some future state.
 		- Once this is set, it’s irreversible: even if P is later false, Q still must happen.
 			- Unlike <>, ~> is “triggered” every time P is true.
+		- You can also do P ~> []Q. If P is true, then there is some state where Q becomes true and forever stays true.
+	- [ ]<> and <>[ ]
+		-
