@@ -1,4 +1,8 @@
 - https://en.wikipedia.org/wiki/Dekker%27s_algorithm
 - TLA+(PlusCal): ![dekker.pdf](../assets/dekker_1662279942518_0.pdf)
 - Dekker's algorithm is the first known correct solution to the mutual exclusion problem in concurrent programming where processes only communicate via shared memory.
-- Dekker's algorithm guarantees mutual exclusion, freedom from deadlock, and freedom from starvation. ()
+- Dekker's algorithm guarantees mutual exclusion, freedom from deadlock, and freedom from starvation.
+	- 在两个线程的情况下可以满足
+- One advantage of this algorithm is that it doesn't require special test-and-set (atomic read/modify/write) instructions and is therefore highly portable between languages and machine architectures.
+- One disadvantage is that it is limited to two processes and makes use of busy waiting instead of process suspension. (The use of busy waiting suggests that processes should spend a minimum amount of time inside the critical section.)
+-
