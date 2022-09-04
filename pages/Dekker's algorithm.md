@@ -14,4 +14,5 @@
 		- C++11 atomic variables can be used to guarantee the appropriate ordering requirements — by default, operations on atomic variables are sequentially consistent so if the wants_to_enter and turn variables are atomic a naive implementation will "just work". Alternatively, ordering can be guaranteed by the explicit use of separate fences, with the load and store operations using a relaxed ordering.
 - The other problem with Dekker’s Algorithm is that it’s not resilient. If either thread crashes, it will prevent the other from finishing.
 	- 该算法不具备弹性
-	-
+- some proof: https://itunesu-assets.itunes.apple.com/itunes-assets/CobaltPublic5/v4/17/31/66/173166f4-552e-e5f7-f9df-a5e9843048a8/301-5284704595466591750-CoSc450_Lecture_45_slides.pdf
+-
