@@ -5,4 +5,6 @@
 	- 在两个线程的情况下可以满足
 - One advantage of this algorithm is that it doesn't require special test-and-set (atomic read/modify/write) instructions and is therefore highly portable between languages and machine architectures.
 - One disadvantage is that it is limited to two processes and makes use of busy waiting instead of process suspension. (The use of busy waiting suggests that processes should spend a minimum amount of time inside the critical section.)
+- Many modern CPUs execute their instructions in an out-of-order fashion; even memory accesses can be reordered (see memory ordering). This algorithm won't work on SMP machines equipped with these CPUs without the use of memory barriers.
+- Additionally, many optimizing compilers can perform transformations that will cause this algorithm to fail regardless of the platform.
 -
