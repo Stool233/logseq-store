@@ -160,6 +160,10 @@
 	- Traditional file systems guarantee strong consistency
 	- AWS recently guaranteed strong consistency (December 2020)
 	- Some S3 implementations only guarantee eventual consistency
-	-
+	- Worst case tests from 2014: 1 out of 1,000 operations
+		- https://github.com/gaul/are-we-consistent-yet
+	- Caching can hide this behavior
+	- Make sure your workload can tolerate these semantics
+-
 	-
 	-
