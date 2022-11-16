@@ -155,6 +155,11 @@
 	- Multiple clients may cache stale data!
 	- Metadata freshness relies on stat cache timeouts
 		- 15 minutes by default
+	- inotify does not work
+- Eventual consistency
+	- Traditional file systems guarantee strong consistency
+	- AWS recently guaranteed strong consistency (December 2020)
+	- Some S3 implementations only guarantee eventual consistency
 	-
 	-
 	-
