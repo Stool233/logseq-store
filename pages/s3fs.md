@@ -117,5 +117,11 @@
 	- ![image.png](../assets/image_1668594077236_0.png){:height 451, :width 572}
 - s3fs, goofys, and s3ql interoperability and compatibility
 	- ![image.png](../assets/image_1668594345950_0.png)
+- s3fs, goofys, and s3ql performance
+	- ![image.png](../assets/image_1668594816637_0.png)
+- Conclusion
+	- Consider trade-offs that your application can tolerate
+	- Use s3fs for native object access and more POSIX compatibility
+	- Use goofys for native object access and good performance
 	-
 	-
