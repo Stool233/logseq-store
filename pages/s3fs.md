@@ -41,4 +41,18 @@
 	- s3fs returns 128 KB to the client and caches the data for future reads
 	- Performance is good for larger files
 - s3fs write new file example
-	-
+	- Application calls write
+	- s3fs writes data to the local disk
+	- s3fs flushes on close, fsync, or when more than 5 GB written
+		- Issue CreateMultipartUpload
+		- Issue multiple UploadPart to write modified data
+		- Issue CompleteMultipartUpload
+	- Performance is good when creating larger files
+- s3fs write to existing file example
+	- During flush s3fs will
+		- Evaluate modified data for modified regions smaller than 5 MB
+		- Issue GetObject to round up to minimum 5 MB size
+		  Issue CreateMultipartUpload
+		  Issue UploadPart for modified data
+		  Issue UploadPartCopy for unmodified data
+		  Issue CompleteMultipartUpload
