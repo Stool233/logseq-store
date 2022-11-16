@@ -170,7 +170,6 @@
 	- -o parallel_count - number of parallel PUT requests
 	- -o multipart_size - size of parallel PUT requests
 	- -o max_dirty_data - amount of temporary data to buffer locally before flushing to S3
--
 	- Defaults tuned for lower-memory devices and containers. Larger values can double write performance or more.
-	-
+-
 	-
