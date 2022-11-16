@@ -1,9 +1,11 @@
 - http://gaul.org/talks/s3fs-tradeoffs/#3
 - Why use an S3 file system
-	- Need some degree of POSIX application compatibility
+	- Need some degree of POSIX application compatibility（需要一定程度的POSIX应用程序兼容性）
 		- Interoperate with both cloud-native and legacy applications
 	- Store TBs or PBs of data cheaply with good sequential performance (以较低的成本存储TBs或PBs的数据，具有良好的顺序性能)
 		- Archival, analytics, and machine learning
-	- Lightweight network file system
+	- Lightweight network file system（轻量级网络文件系统）
 		- Personal computer or Raspberry Pi
+- Trade-offs -- pick two
+	- POSIX
 	-
