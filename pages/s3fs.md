@@ -1,2 +1,7 @@
 - http://gaul.org/talks/s3fs-tradeoffs/#3
--
+- Why use an S3 file system
+	- Need some degree of POSIX application compatibility
+		- Interoperate with both cloud-native and legacy applications
+	- Store TBs or PBs of data cheaply with good sequential performance
+		- Archival, analytics, and machine learning
+	-
