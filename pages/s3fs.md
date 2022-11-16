@@ -128,5 +128,13 @@
 -
 - http://gaul.org/talks/reintroduction-to-s3fs
 - s3fs overview
+	- Works well for several use cases
+		- But is a leaky abstraction with data consistency and performance pitfalls
+- s3fs works well when
+	- Some POSIX compatibility is required
+		- Supports most operations but lacks hard links and atomic renames
+	- Interoperating with other S3 applications
+		- Uses the normal S3 object format
+		- Stores UIDs, permissions, and xattr in S3 user metadata
 	-
 	-
