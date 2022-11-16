@@ -11,6 +11,12 @@
 		- ![image.png](../assets/image_1668592301339_0.png){:height 369, :width 423}
 - FUSE
 	- Filesystem in Userspace
-	- Allows non-kernel file system implementations
+	- Allows non-kernel file system implementations（允许非内核文件系统实现）
+	- Maps POSIX system calls to FUSE operations
+		- ssize_t write(int fd, void *buf, size_t count)
+	- Wide variety: btfs, dbxfs, sshfs, and hundreds more
+- S3
+	- Amazon Simple Storage Service
+	- The most popular object storage protocol
 	-
 	-
