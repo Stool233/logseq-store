@@ -36,4 +36,9 @@
 - s3fs read example
 	- Application calls read with a 128 KB buffer
 	- s3fs issues 5 parallel GetObject requests for 10 MB regions
-		-
+		- GET /foo HTTP/1.1
+		- Range: 1-10485760
+	- s3fs returns 128 KB to the client and caches the data for future reads
+	- Performance is good for larger files
+- s3fs write new file example
+	-
