@@ -58,4 +58,13 @@
 		- Issue CompleteMultipartUpload
 	- Poor performance with random writes
 		- One byte write requires several RPCs and O(file size) server-side IO!
--
+- s3fs readdir example
+	- Application calls getdents
+	- s3fs issues ListObjects
+		- Returns basic information like name, size, and modified time
+	- s3fs issues parallel HeadObject requests for each file
+		- Returns extended information like access & change time, owner, permissions, etc.
+	- s3fs returns struct dirent
+	- Terrible performance: one system call can turn into thousands of HTTP requests!
+- s3fs caching
+	-
