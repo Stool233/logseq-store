@@ -73,4 +73,8 @@
 	- Noobj cache: holds negative directory entries
 	- Data cache: holds file read data
 	- Only enables stat cache by default
--
+- goofys
+	- Focus on performance and large files
+	- Simpler mapping from POSIX to S3 than s3fs
+	- Does not support atomic renames, random writes, fsync, hard links, and symlinks
+	-
