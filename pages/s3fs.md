@@ -102,4 +102,6 @@
 	- Treats object store like a block device
 		- Writes data into opaque 10 MB single-part objects
 	- Supports atomic renames and hard links
-	-
+	- Offers deduplication and snapshots
+	- One client can mount a bucket at a time
+-
