@@ -33,4 +33,7 @@
 	- Multiple clients can mount a bucket although caching delays updates（多个客户端可以挂载同一个桶，尽管缓存会延迟更新）
 	- Lots of configuration knobs (too many?)
 	- Many distribution packages: Debian, Red Hat, Ubuntu, FreeBSD, and macOS
-	-
+- s3fs read example
+	- Application calls read with a 128 KB buffer
+	- s3fs issues 5 parallel GetObject requests for 10 MB regions
+		-
