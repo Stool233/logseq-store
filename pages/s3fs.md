@@ -87,4 +87,10 @@
 		- Asynchronously issue UploadPart to write buffered data
 	- Application calls close
 		- goofys synchronously issues CompleteMultipartUpload
-	-
+	- Performance is great when creating larger files, usually network-limited
+- goofys readdir example
+	- Application calls getdirents
+	- goofys issues ListObjects
+		- Returns basic information like name, size, and modified time
+	- goofys returns struct dirent
+	- Good performance: one system call issues only a single HTTP request
