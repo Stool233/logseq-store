@@ -108,4 +108,10 @@
 	- Application calls write
 		- s3ql writes to local disk
 	- Application calls close or fsync
+		- s3ql asynchronously writes to S3
+	- Performance is great, not network-limited
+- s3ql readdir example
+	- Application calls getdirents
+		- s3ql returns struct dirent from SQLite
+- Trade-offs revisited
 	-
