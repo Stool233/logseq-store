@@ -52,7 +52,10 @@
 	- During flush s3fs will
 		- Evaluate modified data for modified regions smaller than 5 MB
 		- Issue GetObject to round up to minimum 5 MB size
-		  Issue CreateMultipartUpload
-		  Issue UploadPart for modified data
-		  Issue UploadPartCopy for unmodified data
-		  Issue CompleteMultipartUpload
+		- Issue CreateMultipartUpload
+		- Issue UploadPart for modified data
+		- Issue UploadPartCopy for unmodified data
+		- Issue CompleteMultipartUpload
+	- Poor performance with random writes
+		- One byte write requires several RPCs and O(file size) server-side IO!
+	-
