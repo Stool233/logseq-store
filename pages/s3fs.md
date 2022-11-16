@@ -141,6 +141,14 @@
 	- High bandwidth and low latency to S3 bucket
 		- e.g., client in the same AWS region
 - POSIX compatibility adds overhead
-	-
+	- Mapping POSIX onto S3 is like hammering a square peg in to a round hole
+		- readdir issues a HEAD request for each file
+		- Random writes amplify to 5 MB (minimum S3 multipart size)
+		- Updating metadata copies entire object on S3 server
+	- Prefer native S3 applications when available
+		- AWS CLI vs. ls or find
+		- rclone vs. rsync
+		- MySQL backups: xbstream vs. cp
+		-
 	-
 	-
