@@ -32,4 +32,5 @@
 		- Lacks atomic renames and hard links（缺乏原子重命名和硬链接）
 	- Multiple clients can mount a bucket although caching delays updates（多个客户端可以挂载同一个桶，尽管缓存会延迟更新）
 	- Lots of configuration knobs (too many?)
+	- Many distribution packages: Debian, Red Hat, Ubuntu, FreeBSD, and macOS
 	-
