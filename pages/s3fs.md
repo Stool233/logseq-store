@@ -115,4 +115,7 @@
 		- s3ql returns struct dirent from SQLite
 - Trade-offs revisited
 	- ![image.png](../assets/image_1668594077236_0.png){:height 451, :width 572}
+- s3fs, goofys, and s3ql interoperability and compatibility
+	- ![image.png](../assets/image_1668594345950_0.png)
+	-
 	-
