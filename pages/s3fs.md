@@ -72,4 +72,5 @@
 		- Defaults to 100,000 entries cached for 15 minutes
 	- Noobj cache: holds negative directory entries
 	- Data cache: holds file read data
-	-
+	- Only enables stat cache by default
+-
