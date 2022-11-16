@@ -175,5 +175,7 @@
 	- NFS is a better choice for workloads that require multi-client coordination, make small modifications, or list many files.
 	- ![image.png](../assets/image_1668598130844_0.png)
 - Alternatives
+	- goofys - gives up some POSIX compatibility for better performance, especially readdir
+	- s3ql - gives up S3 object interoperability and multi-client access for better metadata performance and other features
 	-
 	-
