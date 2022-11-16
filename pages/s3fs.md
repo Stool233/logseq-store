@@ -24,5 +24,6 @@
 - Comparing POSIX and S3 APIs
 	- POSIX has stateful files while S3 has stateless objects
 		- ![image.png](../assets/image_1668592468167_0.png){:height 325, :width 319}
-	-
+			- lseek: 用于显式地为一个已打开的文件设置其偏移量
+		-
 	-
