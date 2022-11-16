@@ -174,5 +174,6 @@
 - Comparison with NFS
 	- NFS is a better choice for workloads that require multi-client coordination, make small modifications, or list many files.
 	- ![image.png](../assets/image_1668598130844_0.png)
+- Alternatives
 	-
 	-
