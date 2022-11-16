@@ -123,5 +123,10 @@
 	- Consider trade-offs that your application can tolerate
 	- Use s3fs for native object access and more POSIX compatibility
 	- Use goofys for native object access and good performance
+	- Use s3ql for good performance and maximum POSIX compatibility
+	- Prefer native S3 applications when available
+-
+- http://gaul.org/talks/reintroduction-to-s3fs
+- s3fs overview
 	-
 	-
