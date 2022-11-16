@@ -171,5 +171,8 @@
 	- -o multipart_size - size of parallel PUT requests
 	- -o max_dirty_data - amount of temporary data to buffer locally before flushing to S3
 	- Defaults tuned for lower-memory devices and containers. Larger values can double write performance or more.
--
+- Comparison with NFS
+	- NFS is a better choice for workloads that require multi-client coordination, make small modifications, or list many files.
+	- ![image.png](../assets/image_1668598130844_0.png)
+	-
 	-
