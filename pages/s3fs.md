@@ -171,6 +171,13 @@
 	- -o multipart_size - size of parallel PUT requests
 	- -o max_dirty_data - amount of temporary data to buffer locally before flushing to S3
 	- Defaults tuned for lower-memory devices and containers. Larger values can double write performance or more.
+- Changes in recent years
+	- Many concurrency, data corruption, and POSIX compatibility fixes
+	- More robust testing to prevent regressions
+	- Packages for all major distributions (2017-2018)
+	- 2-5x faster read, write, and readdir performance (2018-2019)
+	- Partial updates to objects via server-side copies (2019)
+	- Support for writing objects larger than local storage (2020)
 - Comparison with NFS
 	- NFS is a better choice for workloads that require multi-client coordination, make small modifications, or list many files.
 	- ![image.png](../assets/image_1668598130844_0.png)
