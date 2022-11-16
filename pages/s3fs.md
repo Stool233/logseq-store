@@ -7,5 +7,10 @@
 	- Lightweight network file system（轻量级网络文件系统）
 		- Personal computer or Raspberry Pi
 - Trade-offs -- pick two
-	- POSIX
+	- POSIX、Native Object access、Fast
+		- ![image.png](../assets/image_1668592301339_0.png){:height 369, :width 423}
+- FUSE
+	- Filesystem in Userspace
+	- Allows non-kernel file system implementations
+	-
 	-
