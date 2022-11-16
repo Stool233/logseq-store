@@ -104,4 +104,8 @@
 	- Supports atomic renames and hard links
 	- Offers deduplication and snapshots
 	- One client can mount a bucket at a time
--
+- s3ql write new file example
+	- Application calls write
+		- s3ql writes to local disk
+	- Application calls close or fsync
+	-
