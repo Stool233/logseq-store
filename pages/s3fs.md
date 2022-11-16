@@ -25,5 +25,8 @@
 	- POSIX has stateful files while S3 has stateless objects
 		- ![image.png](../assets/image_1668592468167_0.png){:height 325, :width 319}
 			- lseek: 用于显式地为一个已打开的文件设置其偏移量
-				- S3没有lseek主要意味着追加写入操作比较难实现，而对于读取，则可以由GetObject带上Range: bytes=KK-NN来实现偏移量读取，不过
+				- S3没有lseek主要意味着追加写入操作比较难实现。而对于读取，则可以由GetObject带上Range: bytes=KK-NN来实现偏移量读取，不过偏移量也需要自己维护。
+- s3fs
+	- One of the earliest S3 file systems
+	- Focus on native S3 object interoperability and POSIX compatibility（关注本地S3对象互操作性和POSIX兼容性）
 	-
