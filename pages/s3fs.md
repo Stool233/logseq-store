@@ -80,3 +80,11 @@
 	- Fakes some metadata - atime/ctime, uid/gid, and permissions
 	- Lacks native data cache but integrates with external catfs（缺乏本地数据缓存，但与外部catfs集成）
 	- Sane defaults - fewer configuration knobs than s3fs
+- goofys write new file example
+	- Application calls write
+		- goofys buffers in memory
+	- goofys flushes when more than 5 MB written
+		- Asynchronously issue UploadPart to write buffered data
+	- Application calls close
+		- goofys synchronously issues CompleteMultipartUpload
+	-
