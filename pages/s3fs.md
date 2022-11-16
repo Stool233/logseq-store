@@ -164,6 +164,8 @@
 		- https://github.com/gaul/are-we-consistent-yet
 	- Caching can hide this behavior
 	- Make sure your workload can tolerate these semantics
--
+- Flags to tune performance
+	- -o multireq_max - number of parallel HEAD requests during readdir
+	-
 	-
 	-
