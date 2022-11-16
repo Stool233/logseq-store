@@ -18,5 +18,9 @@
 - S3
 	- Amazon Simple Storage Service
 	- The most popular object storage protocol
+	- Object storage offers scale-out performance and lower costs
+	- Many implementations: AWS, Backblaze, Ceph, GCS, Minio, and OpenStack Swift
+	- Wide variety of applications and SDKs
+- Comparing POSIX and S3 APIs
 	-
 	-
