@@ -136,5 +136,11 @@
 	- Interoperating with other S3 applications
 		- Uses the normal S3 object format
 		- Stores UIDs, permissions, and xattr in S3 user metadata
+	- Sequential reads and writes on larger files
+	- Single directories have thousands of files, not millions
+	- High bandwidth and low latency to S3 bucket
+		- e.g., client in the same AWS region
+- POSIX compatibility adds overhead
+	-
 	-
 	-
