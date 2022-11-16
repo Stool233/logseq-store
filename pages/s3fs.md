@@ -166,6 +166,11 @@
 	- Make sure your workload can tolerate these semantics
 - Flags to tune performance
 	- -o multireq_max - number of parallel HEAD requests during readdir
-	-
+	- -o use_cache - cache GET requests in /tmp
+	- -o parallel_count - number of parallel PUT requests
+	- -o multipart_size - size of parallel PUT requests
+	- -o max_dirty_data - amount of temporary data to buffer locally before flushing to S3
+-
+	- Defaults tuned for lower-memory devices and containers. Larger values can double write performance or more.
 	-
 	-
