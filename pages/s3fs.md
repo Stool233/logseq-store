@@ -94,3 +94,12 @@
 		- Returns basic information like name, size, and modified time
 	- goofys returns struct dirent
 	- Good performance: one system call issues only a single HTTP request
+- s3ql
+	- Focus on performance and POSIX compatibility
+		- Lacks native object access
+	- Very fast metadata access
+		- Stored in local SQLite database and syncs to S3 every 24 hours
+	- Treats object store like a block device
+		- Writes data into opaque 10 MB single-part objects
+	- Supports atomic renames and hard links
+	-
