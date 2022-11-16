@@ -22,5 +22,7 @@
 	- Many implementations: AWS, Backblaze, Ceph, GCS, Minio, and OpenStack Swift
 	- Wide variety of applications and SDKs
 - Comparing POSIX and S3 APIs
+	- POSIX has stateful files while S3 has stateless objects
+		- ![image.png](../assets/image_1668592468167_0.png){:height 325, :width 319}
 	-
 	-
