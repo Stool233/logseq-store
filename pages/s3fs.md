@@ -2,6 +2,8 @@
 - Why use an S3 file system
 	- Need some degree of POSIX application compatibility
 		- Interoperate with both cloud-native and legacy applications
-	- Store TBs or PBs of data cheaply with good sequential performance
+	- Store TBs or PBs of data cheaply with good sequential performance (以较低的成本存储TBs或PBs的数据，具有良好的顺序性能)
 		- Archival, analytics, and machine learning
+	- Lightweight network file system
+		- Personal computer or Raspberry Pi
 	-
