@@ -67,4 +67,9 @@
 	- s3fs returns struct dirent
 	- Terrible performance: one system call can turn into thousands of HTTP requests!
 - s3fs caching
+	- s3fs works around poor performance with a variety of caches
+	- Stat cache: holds file metadata
+		- Defaults to 100,000 entries cached for 15 minutes
+	- Noobj cache: holds negative directory entries
+	- Data cache: holds file read data
 	-
