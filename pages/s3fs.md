@@ -145,10 +145,16 @@
 		- readdir issues a HEAD request for each file
 		- Random writes amplify to 5 MB (minimum S3 multipart size)
 		- Updating metadata copies entire object on S3 server
-	- Prefer native S3 applications when available
+	- Prefer native S3 applications when available（在可用的情况下，首选本地S3应用程序）
 		- AWS CLI vs. ls or find
 		- rclone vs. rsync
 		- MySQL backups: xbstream vs. cp
-		-
+- Primitive multi-client coordination
+	- Close-to-open data consistency
+	- fsync does what you expect
+	- Multiple clients may cache stale data!
+	- Metadata freshness relies on stat cache timeouts
+		- 15 minutes by default
+	-
 	-
 	-
