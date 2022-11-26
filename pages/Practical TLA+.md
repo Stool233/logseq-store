@@ -30,4 +30,6 @@
 				- <>[]P means that there is some point where P becomes true and forever stays true
 				- []<>P means that if P ever becomes false, it will eventually become true again.
 					- Another way to think about it is that []<>P <=> (~P ~> P): P being false leads to P being true later.
+-
+- [[MapReduce]]
 	-
