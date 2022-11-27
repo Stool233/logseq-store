@@ -50,4 +50,9 @@
 				- We will continue to assume the system never reassigns away from a fair worker, as that worker always responds to the heartbeat.
 				-
 - While blind guessing can work for tests or typecheckers, it won’t help with specification.
+-
+-
+- PlusCal
+	- PlusCal is a language for writing algorithms. It is designed not to replace programming languages, but to replace pseudo-code.
+		- Why replace pseudocode? No formal language can be as powerful or easy to write. Nothing can beat the convenience of inventing new constructs as needed and letting the reader try to deduce their meaning from informal explanations.
 	-
