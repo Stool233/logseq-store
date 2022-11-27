@@ -57,4 +57,4 @@
 		- Why replace pseudocode? No formal language can be as powerful or easy to write. Nothing can beat the convenience of inventing new constructs as needed and letting the reader try to deduce their meaning from informal explanations.
 	- The major problem with pseudo-code is that it cannot be tested, and untested code is usually incorrect.
 		- In August of 2004, I did a Google search for quick sort and tested the first ten actual algorithms on the pages it found. Of those ten, four were written in pseudo-code; they were all incorrect. The only correct versions were written in executable code; they were undoubtedly correct only because they had been debugged.
-	-
+	- Algorithms written in PlusCal can be tested with TLC—either by complete model checking or by repeated execution, making nondeterministic choices randomly
