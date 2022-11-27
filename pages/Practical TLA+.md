@@ -58,3 +58,6 @@
 	- The major problem with pseudo-code is that it cannot be tested, and untested code is usually incorrect.
 		- In August of 2004, I did a Google search for quick sort and tested the first ten actual algorithms on the pages it found. Of those ten, four were written in pseudo-code; they were all incorrect. The only correct versions were written in executable code; they were undoubtedly correct only because they had been debugged.
 	- Algorithms written in PlusCal can be tested with TLC—either by complete model checking or by repeated execution, making nondeterministic choices randomly
+	- Another advantage of an algorithm written in PlusCal is that it has a precise meaning that is specified by its TLA+ translation.
+		- The translation can be a practical aid to understanding the meaning of the code.
+	-
