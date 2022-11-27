@@ -62,4 +62,6 @@
 		- The translation can be a practical aid to understanding the meaning of the code.
 		- Since the translation is a formula of TLA, a logic with well-defined semantics and proof rules , it can be used to reason about the algorithm with any desired degree of rigor
 	- PlusCal is a language with simple program structures and arbitrary mathematical expressions.
-	-
+	- PlusCal is meant to replace pseudo-code. It combines the best features of pseudo-code with the ability to catch errors by model checking.
+		- It is suitable for use in books, in articles, and in the classroom. It can also be used by programmers to debug their algorithms before implementing them.
+-
