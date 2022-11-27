@@ -34,8 +34,10 @@
 - [[MapReduce]]
 	- 三种不同假设下的形式描述
 		-
-		  1. A first spec that assumes all workers always succeed.
+		  1. A first spec that assumes all workers always succeed.（假设所有的worker都能成功。）
 		-
-		  2. A second, fault tolerant spec that allows workers to fail.
+		  id:: 6382c9cc-e87d-447e-96d1-46835002201c
+		  2. A second, fault tolerant spec that allows workers to fail.（允许worker出错的容错规范。）
 		-
-		  3. A final spec that works even if the recovery mechanism partially fails, too.
+		  3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
+	-
