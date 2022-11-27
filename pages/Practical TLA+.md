@@ -38,6 +38,9 @@
 		-
 		  id:: 6382c9cc-e87d-447e-96d1-46835002201c
 		  2. A second, fault tolerant spec that allows workers to fail.（允许worker出错的容错规范。）
+			- The reducer is fair. If it’s not, we can’t guarantee anything happens.
+			- There is at least one fair worker. If there’s none, then we can easily see the algorithm couldn’t possible succeed: just have every worker keep crashing and you’ll never meet Liveness.
+			- It doesn’t matter which worker is the fair one. This assumption significantly reduces our state space, since we can arbitrarily pick one with CHOOSE.
 			-
 		-
 		  3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
