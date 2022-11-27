@@ -60,4 +60,5 @@
 	- Algorithms written in PlusCal can be tested with TLC—either by complete model checking or by repeated execution, making nondeterministic choices randomly
 	- Another advantage of an algorithm written in PlusCal is that it has a precise meaning that is specified by its TLA+ translation.
 		- The translation can be a practical aid to understanding the meaning of the code.
+		- Since the translation is a formula of TLA, a logic with well-defined semantics and proof rules , it can be used to reason about the algorithm with any desired degree of rigor
 	-
