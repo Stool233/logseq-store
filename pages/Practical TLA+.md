@@ -41,7 +41,8 @@
 			- The reducer is fair. If it’s not, we can’t guarantee anything happens.
 			- There is at least one fair worker. If there’s none, then we can easily see the algorithm couldn’t possible succeed: just have every worker keep crashing and you’ll never meet Liveness.
 			- It doesn’t matter which worker is the fair one. This assumption significantly reduces our state space, since we can arbitrarily pick one with CHOOSE.
-			-
+			- The reducer may or may not detect an unfair worker failing, but it will never falsely decide a fair worker has failed. This is the biggest assumption here, but it’s an assumption that makes our system a lot easier to design.
 		-
 		  3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
+			-
 	-
