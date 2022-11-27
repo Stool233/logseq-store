@@ -61,4 +61,5 @@
 	- Another advantage of an algorithm written in PlusCal is that it has a precise meaning that is specified by its TLA+ translation.
 		- The translation can be a practical aid to understanding the meaning of the code.
 		- Since the translation is a formula of TLA, a logic with well-defined semantics and proof rules , it can be used to reason about the algorithm with any desired degree of rigor
+	- PlusCal is a language with simple program structures and arbitrary mathematical expressions.
 	-
