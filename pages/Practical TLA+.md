@@ -32,4 +32,10 @@
 					- Another way to think about it is that []<>P <=> (~P ~> P): P being false leads to P being true later.
 -
 - [[MapReduce]]
-	-
+	- 三种不同假设下的形式描述
+		-
+		  1. A first spec that assumes all workers always succeed.
+		-
+		  2. A second, fault tolerant spec that allows workers to fail.
+		-
+		  3. A final spec that works even if the recovery mechanism partially fails, too.
