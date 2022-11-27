@@ -44,5 +44,7 @@
 			- The reducer may or may not detect an unfair worker failing, but it will never falsely decide a fair worker has failed. This is the biggest assumption here, but it’s an assumption that makes our system a lot easier to design.
 		-
 		  3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
+			- In theory, we don’t have a way of distinguishing failing nodes from passing ones. In practice, we can do things that give us a reasonable amount of confidence.
+				- For example, we can ping all the servers every N seconds and assume that the ones that don’t answer in time are failing. Of course, the node might not be failing, and it could be that our reducer is acting up.
 			-
 	-
