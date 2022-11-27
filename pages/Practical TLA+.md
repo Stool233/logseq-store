@@ -46,5 +46,7 @@
 		  3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
 			- In theory, we don’t have a way of distinguishing failing nodes from passing ones. In practice, we can do things that give us a reasonable amount of confidence.
 				- For example, we can ping all the servers every N seconds and assume that the ones that don’t answer in time are failing. Of course, the node might not be failing, and it could be that our reducer is acting up.
-			-
+			- Before, the server could move the queue of an unfair worker to a fair one. Now, the server can still move the assignments of an unfair worker but does not know which ones are fair. Instead, it must decide which worker to pick.
+				- We will continue to assume the system never reassigns away from a fair worker, as that worker always responds to the heartbeat.
+		-
 	-
