@@ -18,5 +18,9 @@
 			- ![image.png](../assets/image_1670252096697_0.png)
 			- ![image.png](../assets/image_1670252110389_0.png)
 	- 硬件解法
-		-
+		- test and set
+			- ![image.png](../assets/image_1670252165743_0.png)
+			- ![image.png](../assets/image_1670252183544_0.png)
+			- ![image.png](../assets/image_1670252202100_0.png)
+			-
 		-
