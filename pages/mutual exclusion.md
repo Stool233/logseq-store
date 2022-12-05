@@ -1,5 +1,5 @@
 - Dijkstra's Mutual Exclusion Problem（Dijkstra的互斥问题）
-	- 它要求
-		-
+	- Requirements （它要求）
+		- Only one thread may be in the
 		- ![image.png](../assets/image_1670250795719_0.png)
 		-
