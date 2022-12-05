@@ -7,8 +7,9 @@
 		- Cannot make any assumptions about speed of threads.
 		- ![image.png](../assets/image_1670250795719_0.png)
 	- 一些不可靠的解法
-		-
-		- ![image.png](../assets/image_1670251931583_0.png)
-		- ![image.png](../assets/image_1670251946876_0.png)
-		-
+		- 问题一般出在一些操作有原子性的假设，但该假设实际不成立
+		  collapsed:: true
+			- ![image.png](../assets/image_1670251931583_0.png)
+			- ![image.png](../assets/image_1670251946876_0.png)
+	-
 		-
