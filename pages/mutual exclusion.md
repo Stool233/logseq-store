@@ -19,8 +19,11 @@
 			- ![image.png](../assets/image_1670252110389_0.png)
 	- 硬件解法
 		- test and set
+		  collapsed:: true
 			- ![image.png](../assets/image_1670252165743_0.png)
 			- ![image.png](../assets/image_1670252183544_0.png)
 			- ![image.png](../assets/image_1670252202100_0.png)
 			-
+		- 其他细节见网站
+	- Dijkstra的解法
 		-
