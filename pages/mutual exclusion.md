@@ -1,2 +1,5 @@
 - Dijkstra's Mutual Exclusion Problem（Dijkstra的互斥问题）
-	-
+	- 它要求
+		-
+		- ![image.png](../assets/image_1670250795719_0.png)
+		-
