@@ -1,4 +1,4 @@
-- **TAG:** [[Computer Science]] [[algorithm]]
+- **TAG:** [[Computer Science]] [[algorithm]]  [[mutual exclusion]]
 - https://en.wikipedia.org/wiki/Dekker%27s_algorithm
 - TLA+(PlusCal): ![dekker.pdf](../assets/dekker_1662279942518_0.pdf)
 - Dekker's algorithm is the first known correct solution to the [[mutual exclusion]] problem in concurrent programming where processes only communicate via shared memory.
@@ -9,9 +9,9 @@
 	- 算法中，每个进程当发现next_thread不为自己时，会去判断是否有其他进程也有意访问CS，
 		- 如果有，则此时先退避，也就是将flag设为false，然后循环等待next_thread为自己
 		- 如果没有，则可访问CS
-	- 算法中，当进程访问CS完成后，
+	- 算法中，当进程访问CS完成后，则选择其他一个进程作为next_thread
 - Dekker's algorithm guarantees mutual exclusion, freedom from deadlock, and freedom from starvation.
-	- 在两个线程的情况下可以满足 保证互斥、
+	- 在两个线程的情况下可以满足 保证互斥、不死锁、不饥饿
 - One advantage of this algorithm is that it doesn't require special test-and-set (atomic read/modify/write) instructions and is therefore highly portable between languages and machine architectures.
 - One disadvantage is that it is limited to two processes and makes use of busy waiting instead of process suspension. (The use of busy waiting suggests that processes should spend a minimum amount of time inside the critical section.)
 - 注意CPU、编译器等的特殊优化，对算法正确执行的影响
