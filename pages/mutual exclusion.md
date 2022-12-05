@@ -3,6 +3,7 @@
 		- Only one thread may be in the critical section at any time.
 		- Each must eventually be able to enter its critical section.
 		- Must be symmetrical (all run same program).
-		-
+		- Cannot make any assumptions about speed of threads.
 		- ![image.png](../assets/image_1670250795719_0.png)
+	-
 		-
