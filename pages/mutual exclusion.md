@@ -1,9 +1,14 @@
 - Dijkstra's Mutual Exclusion Problem（Dijkstra的互斥问题）
+	- http://rust-class.org/class-20-mutual-exclusion.html
 	- Requirements （它要求）
 		- Only one thread may be in the critical section at any time.
 		- Each must eventually be able to enter its critical section.
 		- Must be symmetrical (all run same program).
 		- Cannot make any assumptions about speed of threads.
 		- ![image.png](../assets/image_1670250795719_0.png)
-	-
+	- 一些不可靠的解法
+		-
+		- ![image.png](../assets/image_1670251931583_0.png)
+		- ![image.png](../assets/image_1670251946876_0.png)
+		-
 		-
