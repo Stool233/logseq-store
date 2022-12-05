@@ -3,7 +3,8 @@
 - TLA+(PlusCal): ![dekker.pdf](../assets/dekker_1662279942518_0.pdf)
 - Dekker's algorithm is the first known correct solution to the [[mutual exclusion]] problem in concurrent programming where processes only communicate via shared memory.
 - 主要思想：
-	- 通过flag变量表示进程想要访问CS
+	- 通过flag = [thread -> false/true]表示进程有意访问CS
+	- 通过next_thread表示下一个可以访问cs的
 - Dekker's algorithm guarantees mutual exclusion, freedom from deadlock, and freedom from starvation.
 	- 在两个线程的情况下可以满足
 - One advantage of this algorithm is that it doesn't require special test-and-set (atomic read/modify/write) instructions and is therefore highly portable between languages and machine architectures.
