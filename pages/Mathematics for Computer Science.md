@@ -1,5 +1,6 @@
 - Video Course
 	- 6.042J
+		- https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/
 		- This subject offers an introduction to discrete mathematics oriented toward computer science and engineering.
 	- Quick Summary
 		- Fundamental Concepts of Discrete Mathematics (sets, relations, proof methods,… )
