@@ -410,6 +410,6 @@
 				- Another useful example of a valid assertion is
 					- ![image.png](../assets/image_1660579154754_0.png)
 				- An interpretation like this that falsifies an assertion is called a counter-model to that assertion.（断言的反模式）
-			- 整理 TODO
-			-
-			-
+		- 整理 TODO
+-
+	-
