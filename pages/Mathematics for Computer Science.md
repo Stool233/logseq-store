@@ -104,8 +104,11 @@
 				- The Union Bound
 				  id:: 63f9d565-fa0a-47df-88e2-b0d11f443d22
 					- ![image.png](../assets/image_1677317507073_0.png){:height 155, :width 340}
-				-
+				- Monotonicity
 				  id:: 63f9d583-7bbd-4999-9deb-ae9a838761a4
+					- ![image.png](../assets/image_1677317582489_0.png){:height 86, :width 432}
+				- Boole's Inequen
+				  id:: 63f9d5ce-20a2-46de-8144-ce7fa58f1a82
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
