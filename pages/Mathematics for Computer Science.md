@@ -474,6 +474,8 @@
 	- Events and Probability Spaces
 		- The Birthday Principle（生日原理）
 			- Exact Formula for Match Probability
-				- There are d n sequences of n birthdays, and under our assumptions, these are equally likely. There are d(d-1)(d-2)(d-3).. (d-(n-1)) length n sequences of distinct birthdays. That means the probability that everyone has a different birthday
-				  is:3
+				- There are d n sequences of n birthdays, and under our assumptions, these are equally likely. There are d(d-1)(d-2)(d-3).. (d-(n-1)) length n sequences of distinct birthdays. That means the probability that everyone has a different birthday is:
+					- ![image.png](../assets/image_1677319365478_0.png)
+					- For n = 95 and d = 365, the value of (16.5) is less than 1/200000, which
+					  means the probability of having some pair of matching birthdays actually is more than 1  1=200; 000 > 0:99999.
 		-
