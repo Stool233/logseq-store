@@ -96,9 +96,13 @@
 					- （允许用“和”代替“积分”）
 			- Derived Rules of Probability
 				- Difference Rule
-					- ![image.png](../assets/image_1677317417201_0.png){:height 299, :width 423}
-					-
-					  id:: 63f9d529-f255-4846-a31f-a49460885a4e
+					- ![image.png](../assets/image_1677317417201_0.png){:height 278, :width 418}
+				- Inclusion-Exclustion
+				  id:: 63f9d529-f255-4846-a31f-a49460885a4e
+					- ![image.png](../assets/image_1677317462476_0.png){:height 230, :width 336}
+					- ![image.png](../assets/image_1677317476705_0.png){:height 152, :width 332}
+				-
+				  id:: 63f9d565-fa0a-47df-88e2-b0d11f443d22
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
