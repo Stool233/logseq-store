@@ -89,8 +89,11 @@
 			- Sum Rule
 				- ![image.png](../assets/image_1677317009033_0.png){:height 248, :width 442}
 				- ![image.png](../assets/image_1677317094186_0.png){:height 200, :width 445}
-			- Discrete Probability
+			- Discrete Probability（离散概率）
 			  id:: 63f9d3e6-64aa-4509-8697-87cba8491e6a
+				- Discrete = countable sample space
+				- Allows sums instead of integrals
+				-
 				-
 - Teaching Materials
 	- What is a Proof
