@@ -72,6 +72,7 @@
 			- Simplified Monty Hall Tree
 				- So the message here is that the tree that you come up with to model the experimental outcomes is really a modeling process. And there may be many models that work to capture a given scenario. And it will often pay off to try to find a simpler tree to make the analysis simpler.
 		- Probability Spaces
+			- Sample space: a countable set S whose elements are called outcomes
 			-
 - Teaching Materials
 	- What is a Proof
