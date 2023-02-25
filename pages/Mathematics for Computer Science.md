@@ -77,10 +77,11 @@
 			- Probability function,
 				- Pr: S -> [0, 1], such that
 					- ![image.png](../assets/image_1677316609021_0.png){:height 145, :width 321}
-				- The purpose of the "tree model" is to figure out which probability space to use:
-					- outcomes = leaves of tree
-					- outcome probabilities
-					-
+			- The purpose of the "tree model" is to figure out which probability space to use:
+				- outcomes = leaves of tree
+				- outcome probabilities calculated from branch probabilities
+			- An event is a subset
+				-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
