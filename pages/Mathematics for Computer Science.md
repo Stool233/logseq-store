@@ -53,7 +53,8 @@
 		- Quantifiers & Predicate Logic
 - Probability
 	- Intro to Discrete Probability
-		-
+		- Tree Model
+			-
 -
 - Teaching Materials
 	- What is a Proof
