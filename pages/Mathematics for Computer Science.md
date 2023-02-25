@@ -477,5 +477,10 @@
 				- There are d n sequences of n birthdays, and under our assumptions, these are equally likely. There are d(d-1)(d-2)(d-3).. (d-(n-1)) length n sequences of distinct birthdays. That means the probability that everyone has a different birthday is:
 					- ![image.png](../assets/image_1677319365478_0.png)
 					- For n = 95 and d = 365, the value of (16.5) is less than 1/200000, which
-					  means the probability of having some pair of matching birthdays actually is more than 1  1=200; 000 > 0:99999.
+					  means the probability of having some pair of matching birthdays actually is more than 1 - 1/200000 > 0.99999.
+			- The Birthday Principle
+				- ![image.png](../assets/image_1677319443767_0.png)
+				- For example, the Birthday Principle says that if you have p2  365 ⇡ 27 people
+				  in a room, then the probability that two share a birthday is about 0:632. The actual
+				  probability is about 0:626, so the approximation is quite good.
 		-
