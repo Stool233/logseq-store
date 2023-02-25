@@ -57,6 +57,7 @@
 			- Determine the outcomes
 				- using a tree of possible steps can help
 					- ![image.png](../assets/image_1677312901337_0.png)
+					- ![image.png](../assets/image_1677312969214_0.png)
 				-
 -
 - Teaching Materials
