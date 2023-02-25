@@ -69,6 +69,7 @@
 					  3. Assign outcome probabilities
 					-
 					  4. Compute event probabilities
+		- Simplified Monty
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
