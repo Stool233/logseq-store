@@ -93,6 +93,7 @@
 			  id:: 63f9d3e6-64aa-4509-8697-87cba8491e6a
 				- Discrete = countable sample space
 				- Allows sums instead of integrals
+					- （允许用“和”代替“积分”）
 				-
 				-
 - Teaching Materials
