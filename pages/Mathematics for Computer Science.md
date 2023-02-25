@@ -84,8 +84,10 @@
 				- ![image.png](../assets/image_1677316890128_0.png){:height 65, :width 142}
 				- ![image.png](../assets/image_1677316926363_0.png){:height 114, :width 320} 
 				  id:: 63f9d31a-1ee1-4688-af61-ad258bd48773
-			-
-			  id:: 63f9d33e-7465-4c53-b64c-14010e441bf3
+					- Cor: The Sum Rule
+					  id:: 63f9d33e-7465-4c53-b64c-14010e441bf3
+			- Sum Rule
+				-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
