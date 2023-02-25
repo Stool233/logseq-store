@@ -483,6 +483,6 @@
 				- For example, the Birthday Principle says that if you have 27 people
 				  in a room, then the probability that two share a birthday is about 0.632. The actual probability is about 0.626, so the approximation is quite good.
 				- Among other applications, it implies that to use a hash function that maps n items into a hash table of size d, you can expect many collisions if n^2 is more than a small fraction of d. The Birthday Principle also famously comes into play as the basis of “birthday attacks” that crack certain cryptographic systems.
-					- 在其他应用中，它意味着使用一个哈希函数将n个项目映射到大小为d的哈希表中，如果n^2只大于d，则可以预期会有许多冲突。生日原则也作为破解某些加密系统的“生日攻击”的基础发挥着著名的作用。
+					- 在其他应用中，它意味着使用一个哈希函数将n个项目映射到大小为d的哈希表中，如果n^2只是稍微大于d，则可以预期会有许多冲突。生日原则也作为破解某些加密系统的“生日攻击”的基础发挥着著名的作用。
 				-
 		-
