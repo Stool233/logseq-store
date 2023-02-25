@@ -482,5 +482,5 @@
 				- ![image.png](../assets/image_1677319443767_0.png)
 				- For example, the Birthday Principle says that if you have  27 people
 				  in a room, then the probability that two share a birthday is about 0.632. The actual probability is about 0.626, so the approximation is quite good.
-				-
+				- Among other applications, it implies that to use a hash function that maps n items into a hash table of size d, you can expect many collisions if n^2 is more than a small fraction of d. The Birthday Principle also famously comes into play as the basis of “birthday attacks” that crack certain cryptographic systems.
 		-
