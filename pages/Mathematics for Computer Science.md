@@ -51,7 +51,9 @@
 				- Algebraic & deduction proofs in general are no better than truth tables.
 				- No efficient method for verifying validity is known
 		- Quantifiers & Predicate Logic
-			-
+- Probability
+	- Intro to Discrete Probability
+		-
 -
 - Teaching Materials
 	- What is a Proof
