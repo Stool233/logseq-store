@@ -94,7 +94,7 @@
 				- Discrete = countable sample space
 				- Allows sums instead of integrals
 					- （允许用“和”代替“积分”）
-				-
+			- Derived Rules of Probability
 				-
 - Teaching Materials
 	- What is a Proof
