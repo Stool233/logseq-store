@@ -95,7 +95,8 @@
 				- Allows sums instead of integrals
 					- （允许用“和”代替“积分”）
 			- Derived Rules of Probability
-				-
+				- Difference Rule
+					-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
