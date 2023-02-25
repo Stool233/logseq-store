@@ -87,7 +87,8 @@
 					- Cor: The Sum Rule
 					  id:: 63f9d33e-7465-4c53-b64c-14010e441bf3
 			- Sum Rule
-				-
+				- ![image.png](../assets/image_1677317009033_0.png)
+			-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
