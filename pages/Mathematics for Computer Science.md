@@ -56,9 +56,13 @@
 		- Tree Model
 			- Determine the outcomes
 				- using a tree of possible steps can help
+				  collapsed:: true
 					- ![image.png](../assets/image_1677312901337_0.png)
 					- ![image.png](../assets/image_1677312969214_0.png)
-				-
+			- Find Probability
+				- Intuition is important but dangerous.
+					- Stick with 4-part method:
+						-
 -
 - Teaching Materials
 	- What is a Proof
