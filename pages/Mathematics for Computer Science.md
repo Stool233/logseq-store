@@ -480,7 +480,7 @@
 					  means the probability of having some pair of matching birthdays actually is more than 1 - 1/200000 > 0.99999.
 			- The Birthday Principle
 				- ![image.png](../assets/image_1677319443767_0.png)
-				- For example, the Birthday Principle says that if you have p2  365 ⇡ 27 people
-				  in a room, then the probability that two share a birthday is about 0:632. The actual
-				  probability is about 0:626, so the approximation is quite good.
+				- For example, the Birthday Principle says that if you have  27 people
+				  in a room, then the probability that two share a birthday is about 0.632. The actual probability is about 0.626, so the approximation is quite good.
+				-
 		-
