@@ -110,8 +110,7 @@
 				- Boole's Inequality
 				  id:: 63f9d5ce-20a2-46de-8144-ce7fa58f1a82
 					- ![image.png](../assets/image_1677317642864_0.png){:height 225, :width 431}
-				-
-				  id:: 63f9d60b-16dc-4827-bbe2-e38c0219c1fc
+					-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
