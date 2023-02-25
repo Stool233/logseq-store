@@ -61,9 +61,13 @@
 					- ![image.png](../assets/image_1677312969214_0.png)
 			- Find Probability
 				- Intuition is important but dangerous. Stick with [[4-part method]]:
-					- Identify outcomes (trees helps)
-					- Identify
--
+					-
+					  1. Identify outcomes (trees helps)
+					-
+					  2. Identify event (winning)
+					-
+					  3. Assign outcome probabilities
+					-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
