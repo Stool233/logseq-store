@@ -72,6 +72,7 @@
 			- Simplified Monty Hall Tree
 				- So the message here is that the tree that you come up with to model the experimental outcomes is really a modeling process. And there may be many models that work to capture a given scenario. And it will often pay off to try to find a simpler tree to make the analysis simpler.
 		- Probability Spaces
+		  collapsed:: true
 			- Sample space:
 				- a countable set S whose elements are called outcomes
 			- Probability function,
@@ -111,6 +112,7 @@
 				  id:: 63f9d5ce-20a2-46de-8144-ce7fa58f1a82
 					- ![image.png](../assets/image_1677317642864_0.png){:height 225, :width 431}
 					-
+		-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
@@ -484,5 +486,6 @@
 				  in a room, then the probability that two share a birthday is about 0.632. The actual probability is about 0.626, so the approximation is quite good.
 				- Among other applications, it implies that to use a hash function that maps n items into a hash table of size d, you can expect many collisions if n^2 is more than a small fraction of d. The Birthday Principle also famously comes into play as the basis of “birthday attacks” that crack certain cryptographic systems.
 					- 在其他应用中，它意味着使用一个哈希函数将n个项目映射到大小为d的哈希表中，如果n^2只是稍微大于d，则可以预期会有许多冲突。生日原则也作为破解某些加密系统的“生日攻击”的基础发挥着著名的作用。
+			-
 				-
 		-
