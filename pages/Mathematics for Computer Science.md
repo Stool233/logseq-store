@@ -54,7 +54,9 @@
 - Probability
 	- Intro to Discrete Probability
 		- Tree Model
-			-
+			- Determine the outcomes
+				- using a tree of possible steps can help
+				-
 -
 - Teaching Materials
 	- What is a Proof
