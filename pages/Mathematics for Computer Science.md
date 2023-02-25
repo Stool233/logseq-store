@@ -336,6 +336,7 @@
 					- 有最小元素0，但是存在没有最小元素的非空子集——比如正有理数。
 			-
 	- Logic & Propositions
+	  collapsed:: true
 		- Propositions from Propositions（命题的命题）
 		  collapsed:: true
 			- we concerned with how propositions are combined and related.
@@ -470,5 +471,6 @@
 					- ![image.png](../assets/image_1660579154754_0.png)
 				- An interpretation like this that falsifies an assertion is called a counter-model to that assertion.（断言的反模式）
 		- 整理 TODO
--
-	-
+	- Events and Probability Spaces
+		- The Birt
+		-
