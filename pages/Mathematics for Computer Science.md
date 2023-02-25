@@ -60,9 +60,9 @@
 					- ![image.png](../assets/image_1677312901337_0.png)
 					- ![image.png](../assets/image_1677312969214_0.png)
 			- Find Probability
-				- Intuition is important but dangerous.
-					- Stick with 4-part method:
-						-
+				- Intuition is important but dangerous. Stick with [[4-part method]]:
+					- Identify outcomes (trees helps)
+					- Identify
 -
 - Teaching Materials
 	- What is a Proof
