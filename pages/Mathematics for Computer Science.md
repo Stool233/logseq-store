@@ -77,8 +77,8 @@
 			- Probability function,
 				- Pr: S -> [0, 1], such that
 					- ![image.png](../assets/image_1677316609021_0.png){:height 145, :width 321}
-					-
-					-
+			- The
+				-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
