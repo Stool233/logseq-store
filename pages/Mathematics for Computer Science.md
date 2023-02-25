@@ -87,8 +87,11 @@
 					- Cor: The Sum Rule
 					  id:: 63f9d33e-7465-4c53-b64c-14010e441bf3
 			- Sum Rule
-				- ![image.png](../assets/image_1677317009033_0.png)
-			-
+				- ![image.png](../assets/image_1677317009033_0.png){:height 248, :width 442}
+				- ![image.png](../assets/image_1677317094186_0.png){:height 200, :width 445}
+			- Discrete Probability
+			  id:: 63f9d3e6-64aa-4509-8697-87cba8491e6a
+				-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
