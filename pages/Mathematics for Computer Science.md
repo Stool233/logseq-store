@@ -113,7 +113,7 @@
 					- ![image.png](../assets/image_1677317642864_0.png){:height 225, :width 431}
 					-
 	- Conditional Probability
-		- We were reasoning about conditional proba
+		- We were reasoning about conditional probability in the way we defined our probability spaces in the first place
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
