@@ -122,7 +122,7 @@
 				- ![image.png](../assets/image_1677420783673_0.png){:height 247, :width 376}
 		- Conditional Defines a New Space
 			- ![image.png](../assets/image_1677420997027_0.png){:height 255, :width 409}
-		-
+			-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
