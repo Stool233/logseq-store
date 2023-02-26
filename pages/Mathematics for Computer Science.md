@@ -115,14 +115,14 @@
 	- Conditional Probability
 		- We were reasoning about conditional probability in the way we defined our probability spaces in the first place
 		- Product Rule
-		  collapsed:: true
 			- ![image.png](../assets/image_1677420625805_0.png){:height 301, :width 428}
 			- Conditional Probability
-				- ![image.png](../assets/image_1677420695313_0.png){:height 341, :width 557}
+				- ![image.png](../assets/image_1677420695313_0.png){:height 241, :width 382}
 			- Product Rule for 3
-				- ![image.png](../assets/image_1677420783673_0.png){:height 300, :width 467}
+				- ![image.png](../assets/image_1677420783673_0.png){:height 247, :width 376}
 		- Conditional Defines a New Space
-			-
+			- ![image.png](../assets/image_1677420997027_0.png){:height 255, :width 409}
+		-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
