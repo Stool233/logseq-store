@@ -112,6 +112,7 @@
 				  id:: 63f9d5ce-20a2-46de-8144-ce7fa58f1a82
 					- ![image.png](../assets/image_1677317642864_0.png){:height 225, :width 431}
 					-
+	- Conditional Probability
 		-
 - Teaching Materials
 	- What is a Proof
