@@ -114,6 +114,8 @@
 					-
 	- Conditional Probability
 		- We were reasoning about conditional probability in the way we defined our probability spaces in the first place
+		- Product Rule
+			-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
