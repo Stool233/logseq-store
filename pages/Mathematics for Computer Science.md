@@ -128,7 +128,8 @@
 			-
 		- Law of Total Probability
 			- Law of reasoning about probability by cases
-			-
+			- ![image.png](../assets/image_1677475219985_0.png){:height 267, :width 487}
+		-
 - Teaching Materials
 	- What is a Proof
 	  collapsed:: true
