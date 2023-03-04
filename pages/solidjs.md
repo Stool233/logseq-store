@@ -3,6 +3,8 @@
 	- primitives
 		- signal
 		- effect
-			- A driving philosophy of Solid is that, by treating everything as a signal or an effect, we can better reason about our application.
+			- Behind the scenes, Solid's compiler creates effects based on our JSX. It sees that we're using count() in a specific part of the DOM, and it creates an effect that updates just that part of the DOM when the signal reruns.
+			- A driving philosophy of Solid is that, by treating everything as a signal or an effect, we can better reason about our application.（Solid的一个驱动理念是，通过将所有事物视为信号或影响，我们可以更好地解释我们的应用程序。）
+		-
 	-
 	-
