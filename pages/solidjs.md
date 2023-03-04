@@ -3,5 +3,6 @@
 	- primitives
 		- signal
 		- effect
-		-
+			- A driving philosophy of Solid is that, by treating everything as a signal or an effect, we can better reason about our application.
+	-
 	-
