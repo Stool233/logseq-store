@@ -2,5 +2,6 @@
 	- While components are the building blocks of views in Solid apps, primitives are the building blocks of interactivity（在Solid应用中，组件是视图的构建块，而原语是交互性的构建块）
 	- primitives
 		- signal
+		- effect
 		-
 	-
