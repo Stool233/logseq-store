@@ -1,3 +1,5 @@
 - AlexNet
 	- https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
 	-
+	- ![image.png](../assets/image_1678613647943_0.png){:height 361, :width 485}
+	-
