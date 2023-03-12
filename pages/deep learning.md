@@ -15,5 +15,7 @@
 		- ![image.png](../assets/image_1678625172789_0.png){:height 404, :width 485}
 		- 时序信息编码
 			- 构建表示位置的向量与输入相加
-		-
+		- 计算复杂度对比
+			- ![image.png](../assets/image_1678625611203_0.png)
+			-
 			-
