@@ -37,6 +37,8 @@
 	- 可以允许用少量有标号的数据，但不是通过梯度下降的参数更新或者fine-tuning
 		- in-context learning
 			- ![image.png](../assets/image_1678631166311_0.png)
-		-
+	- 不同参数的对比
+		- ![image.png](../assets/image_1678631436797_0.png)
+		- 批量的大小很大，对机器的内存有比较大的考验。
 	-
 	-
