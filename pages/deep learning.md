@@ -10,4 +10,4 @@
 - Transformer
 	- ![image.png](../assets/image_1678622969998_0.png){:height 512, :width 365}
 	- ![image.png](../assets/image_1678623471454_0.png)
-	- 多头注意力
+	- 多头注意力机制，有点像在卷积神经网络里面，有多个输出通道的感觉
