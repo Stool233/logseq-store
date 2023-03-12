@@ -8,4 +8,5 @@
 	- 用原始的rgp图片做输入，不需要特征提取。
 		- end to end 的卖点
 - Transformer
+	- ![image.png](../assets/image_1678622969998_0.png){:height 512, :width 365}
 	-
