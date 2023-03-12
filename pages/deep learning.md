@@ -47,6 +47,6 @@
 				- 这是Information Retrieval非常常用的技术
 - InstructGPT
 	- 标了一些数据，然后问题和答案都写出来，然后训练一个模型（fine-tuning）
-	- 然后
+	- 然后做了一个排序的数据集，然后用强化学习的方式训练了一个模型
 	-
 	-
