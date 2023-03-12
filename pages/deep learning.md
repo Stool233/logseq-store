@@ -34,6 +34,7 @@
 			- 例如，把英语翻译成法语，可以添加一个prompt：translate to French
 				- ![image.png](../assets/image_1678630178330_0.png){:height 266, :width 527}
 - GPT3
-	- 可以允许用少量有标号的数据，但不是通过梯度下降或者fine-tuning
+	- 可以允许用少量有标号的数据，但不是通过梯度下降的参数更新或者fine-tuning
+	-
 	-
 	-
