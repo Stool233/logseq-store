@@ -45,5 +45,7 @@
 		- Common Crawl的数据，然后做质量的过滤。
 			- 另外，对于相似文本，文本相似度算法用的是LSH的算法，它可以很快地判断一个集合和另外一个很大的集合之间的相似度
 				- 这是Information Retrieval非常常用的技术
+- InstructGPT
+	-
 	-
 	-
