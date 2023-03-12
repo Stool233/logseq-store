@@ -36,7 +36,7 @@
 - GPT3
 	- 可以允许用少量有标号的数据，但不是通过梯度下降的参数更新或者fine-tuning
 		- in-context learning
-		- ![image.png](../assets/image_1678631166311_0.png)
+			- ![image.png](../assets/image_1678631166311_0.png)
 		-
 	-
 	-
