@@ -1,4 +1,4 @@
-- **TAG**: [[Computer Science]]
+- **TAG**: [[Computer Science]] [[形式化证明]]
 - TLA+ Video Course 的整理
 	- https://lamport.azurewebsites.net/video/videos.html
 - [[TLA+]]的底层基本抽象

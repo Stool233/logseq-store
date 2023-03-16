@@ -1,4 +1,4 @@
-- **TAG:** [[TLA+]] [[Computer Science]]
+- **TAG:** [[TLA+]] [[Computer Science]] [[形式化证明]]
 - 这篇关于AWS形式化方法的实践（TLA+的实践）的文章的整理
 	- https://lamport.azurewebsites.net/tla/formal-methods-amazon.pdf
 - 文章摘要大纲（以及遇到的问题简述）
