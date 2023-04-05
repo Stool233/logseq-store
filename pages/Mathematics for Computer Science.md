@@ -61,14 +61,10 @@
 					- ![image.png](../assets/image_1677312969214_0.png)
 			- Find Probability
 				- Intuition is important but dangerous. Stick with [[4-part method]]:
-					-
-					  1. Identify outcomes (trees helps)
-					-
-					  2. Identify event (winning)
-					-
-					  3. Assign outcome probabilities
-					-
-					  4. Compute event probabilities
+					- 1. Identify outcomes (trees helps)
+					- 2. Identify event (winning)
+					- 3. Assign outcome probabilities
+					- 4. Compute event probabilities
 			- Simplified Monty Hall Tree
 				- So the message here is that the tree that you come up with to model the experimental outcomes is really a modeling process. And there may be many models that work to capture a given scenario. And it will often pay off to try to find a simpler tree to make the analysis simpler.
 		- Probability Spaces
@@ -204,11 +200,9 @@
 			- There are a couple of standard methods for proving an implication.
 				- Method 1
 					- In order to prove that P IMPLIES Q:
-						-
-						  1. Write, “Assume P.”
+						- 1. Write, “Assume P.”
 							- 写，假设P
-						-
-						  2. Show that Q logically follows.
+						- 2. Show that Q logically follows.
 							- 从逻辑上证明Q
 				- There are a couple points here that apply to all proofs:
 					- You’ll often need to do some scratchwork while you’re trying to figure out
@@ -223,11 +217,9 @@
 					- An implication (“P IMPLIES Q”) is logically equivalent to its contrapositive
 						- ![image.png](../assets/image_1656842276449_0.png)
 					- Proving one is as good as proving the other, and proving the contrapositive is sometimes easier than proving the original statement. If so, then you can proceed as follows:
-						-
-						  1. Write, “We prove the contrapositive:” and then state the contrapositive.
+						- 1. Write, “We prove the contrapositive:” and then state the contrapositive.
 							- 写“我们证明逆反命题：”，然后表述这个逆反命题
-						-
-						  2. Proceed as in Method 1.
+						- 2. Proceed as in Method 1.
 							- 按方法1继续
 		- Proving an “If and Only If”（证明当且仅当）
 		  collapsed:: true
@@ -241,24 +233,19 @@
 				- Method 1: Prove Each Statement Implies the Other（证明两个语句相互蕴涵）
 					- The statement “P IFF Q” is equivalent to the two statements “P IMPLIES Q” and
 					  “Q IMPLIES P.” So you can prove an “iff” by proving two implications:
-					-
-					  1. Write, “We prove P implies Q and vice-versa.”
+					- 1. Write, “We prove P implies Q and vice-versa.”
 						- 写“我们证明P蕴涵Q，反之依然”
-					-
-					  2. Write, “First, we show P implies Q.” Do this by one of the methods in
+					- 2. Write, “First, we show P implies Q.” Do this by one of the methods in
 					  Section 1.5.（证明蕴涵那一章）
 						- 首先，证明P蕴涵Q
-					-
-					  3. Write, “Now, we show Q implies P.” Again, do this by one of the methods
+					- 3. Write, “Now, we show Q implies P.” Again, do this by one of the methods
 					  in Section 1.5.（证明蕴涵那一章）
 						- 然后，证明Q蕴涵P
 				- Method 2: Construct a Chain of iffs（构建iff链）
 					- In order to prove that P is true iff Q is true:
-						-
-						  1. Write, “We construct a chain of if-and-only-if implications.”
+						- 1. Write, “We construct a chain of if-and-only-if implications.”
 							- 我们构建一个当且仅当蕴涵链
-						-
-						  2. Prove P is equivalent to a second statement which is equivalent to a third
+						- 2. Prove P is equivalent to a second statement which is equivalent to a third
 						  statement and so forth until you reach Q.
 							- 证明P等价于第二个语句，然后第二个语句等价于第三个语句，以此类推，直到等价于Q
 					- This method sometimes requires more ingenuity than the first, but the result can be a short, elegant proof.
@@ -280,15 +267,11 @@
 			- Proof by contradiction is always a viable approach. However, as the name suggests, indirect proofs can be a little convoluted, so direct proofs are generally preferable when they are available
 				- 反证法总是一种可行的方法。但是，间接证明法可能有点令人费解，所以如果可以的话最好还是采用直接证明方法。
 			- Method: In order to prove a proposition P by contradiction:
-				-
-				  1. Write, “We use proof by contradiction.”
-				-
-				  2. Write, “Suppose P is false.”
-				-
-				  3. Deduce something known to be false (a logical contradiction).
+				- 1. Write, “We use proof by contradiction.”
+				- 2. Write, “Suppose P is false.”
+				- 3. Deduce something known to be false (a logical contradiction).
 					- 推导得出某些已知的假事实（即逻辑矛盾）
-				-
-				  4. Write, “This is a contradiction. Therefore, P must be true.”
+				- 4. Write, “This is a contradiction. Therefore, P must be true.”
 		- Good Proofs in Practice（数学证明的优秀实践）
 		  collapsed:: true
 			- One purpose of a proof is to establish the truth of an assertion with absolute certainty（证明的目的之一在于，以绝对的确定性建立关于断言的真相）
