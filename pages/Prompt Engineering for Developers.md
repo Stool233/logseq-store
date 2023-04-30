@@ -1,7 +1,8 @@
 - **TAG: [[ChatGPT]] [[Computer Science]]  **
 - Two Types of large language models (LLMs)
 - Principles of Prompting
-	- 1. Write clear and specific instructions
+	- collapsed:: true
+	  1. Write clear and specific instructions
 		- Tactic 1: Use delimiters
 			- example:
 				- Triple quotes: """
@@ -19,7 +20,8 @@
 		- Tactic 4: Few-shot prompting
 			- Give successful examples of completing tasks
 			- Then ask model to perform the task
-	- 2. Give the model time to think
+	- collapsed:: true
+	  2. Give the model time to think
 		- Tactic 1: Specify the steps to complete a task
 			- example:
 				- Step 1: ...
@@ -30,3 +32,6 @@
 		- Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion
 			- 用途
 				- 让模型多一点时间去自行思考解决方案，然后与我们给出的可能答案进行比较，为我们更好地校对问题
+- Model Limitations
+	- Ha
+	- Makes statements that sound plausible but are not true
