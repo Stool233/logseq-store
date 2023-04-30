@@ -29,4 +29,4 @@
 				- Step N: ...
 		- Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion
 			- 用途
-				- 让模型多一点时间去自行思考解决方案，然后与我们给出的
+				- 让模型多一点时间去自行思考解决方案，然后与我们给出的可能答案进行比较，为我们更好地校对问题
