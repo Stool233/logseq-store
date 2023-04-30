@@ -44,3 +44,6 @@
 		- Analyze why result does not give desired output.
 		- Refine the idea and the prompt
 		- Repeat
+	- Iterative Process
+		- Try something
+		- Ana;
