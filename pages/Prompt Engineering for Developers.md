@@ -62,5 +62,6 @@
 	- Expanding
 		- temperature（温度）的运用
 			- Temperature越高，则LLM在预测下一个词时，会更加随机
-				- 具体指的是，会选取预期
-			- 在构建可预测回复的应用程序时，需要将Temperature设为0
+				- “随机”具体指的是，会选取概率较低的可选项
+			- 所以在构建可预测回复的应用程序时，需要将Temperature设为0
+		-
