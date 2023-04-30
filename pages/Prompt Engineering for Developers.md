@@ -39,4 +39,8 @@
 		- First find relevant information,
 		- then answer the question base on the relevant information.
 - Iterative Prompt Development
-	-
+	- Prompt guidelines
+		- Be clear and specific
+		- Analyze why result does not give desired output.
+		- Refine the idea and the prompt
+		- Repeat
