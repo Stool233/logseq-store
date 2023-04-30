@@ -60,4 +60,5 @@
 	- Transforming
 		- 翻译、文本格式替换、情感替换。。。
 	- Expanding
-		- tempe
+		- temperature（温度）的运用
+			- Temperature越低，
