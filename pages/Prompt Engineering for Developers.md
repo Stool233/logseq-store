@@ -18,5 +18,6 @@
 			- Check assumptions required to do the task
 		- Tactic 4: Few-shot prompting
 			- Give successful examples of completing tasks
-			- Then ask model to
+			- Then ask model to perform the task
 	- 2. Give the model time to think
+		-
