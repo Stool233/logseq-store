@@ -1,2 +1,3 @@
 - **TAG: [[ChatGPT]] [[Computer Science]]  **
-- Two Types of large
+- Two Types of large language models (LLMs)
+-
