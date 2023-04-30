@@ -2,4 +2,7 @@
 - Two Types of large language models (LLMs)
 - Principles of Prompting
 	- 1. Write clear and specific instructions
+		- Tactic 1: Use delimiters
+			- Triple quotes: """
+			- Triple
 	- 2. Give the model time to think
