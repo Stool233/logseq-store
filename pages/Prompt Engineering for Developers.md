@@ -1,3 +1,5 @@
 - **TAG: [[ChatGPT]] [[Computer Science]]  **
 - Two Types of large language models (LLMs)
--
+- Principles of Prompting
+	- 1. Write clear and specific instructions
+	- 2. Give the model time to think
