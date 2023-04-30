@@ -50,4 +50,7 @@
 		- Clarify instructions, give more time to think
 		- Refine prompt with a batch of examples
 	- 由于不存在完美的、可用于所有场景的Prompt，所以需要有良好的工作模式，对每个场景，迭代出合适的prompt。
--
+- 一些例子
+	- Summarizing
+		- 文章摘要、评论摘要
+		- 这里有意思的点是，可以让Prompt成为
