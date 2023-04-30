@@ -1,2 +1,2 @@
 - **TAG: [[ChatGPT]] [[Computer Science]]  **
--
+- Two Types of large
