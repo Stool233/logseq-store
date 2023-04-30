@@ -37,4 +37,6 @@
 		- Makes statements that sound plausible but are not true
 	- Reducing hallucinations
 		- First find relevant information,
-		- then answer the question
+		- then answer the question base on the relevant information.
+- Iterative Prompt Development
+	-
