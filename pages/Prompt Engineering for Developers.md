@@ -49,4 +49,4 @@
 		- Analyze where result does not give what you want
 		- Clarify instructions, give more time to think
 		- Refine prompt with a batch of examples
-	- l
+	- 由于不存在完美的，可用于所有场景的Prompt，所以需要有良好的工作模式，迭代出合适的prompt，
