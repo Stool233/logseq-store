@@ -46,4 +46,7 @@
 		- Repeat
 	- Iterative Process
 		- Try something
-		- Ana;
+		- Analyze where result does not give what you want
+		- Clarify instructions, give more time to think
+		- Refine prompt with a batch of examples
+	- l
