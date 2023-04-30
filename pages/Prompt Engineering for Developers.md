@@ -3,9 +3,14 @@
 - Principles of Prompting
 	- 1. Write clear and specific instructions
 		- Tactic 1: Use delimiters
-			- Triple quotes: """
-			- Triple backticks: ```
-			- Triple dashes: ---
-			- Angle brackets: < >,
-			- XML tags: <tag> </tag>
+			- example:
+				- Triple quotes: """
+				- Triple backticks: ```
+				- Triple dashes: ---
+				- Angle brackets: < >,
+				- XML tags: <tag> </tag>
+			- 用途
+				- Avoiding Prompt Injections
+					- 减少提示冲突
+				-
 	- 2. Give the model time to think
