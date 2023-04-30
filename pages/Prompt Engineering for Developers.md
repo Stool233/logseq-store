@@ -33,5 +33,8 @@
 			- 用途
 				- 让模型多一点时间去自行思考解决方案，然后与我们给出的可能答案进行比较，为我们更好地校对问题
 - Model Limitations
-	- Ha
-	- Makes statements that sound plausible but are not true
+	- Hallucination
+		- Makes statements that sound plausible but are not true
+	- Reducing hallucinations
+		- First find relevant information,
+		- then answer the question
