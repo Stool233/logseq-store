@@ -4,5 +4,8 @@
 	- 1. Write clear and specific instructions
 		- Tactic 1: Use delimiters
 			- Triple quotes: """
-			- Triple
+			- Triple backticks: ```
+			- Triple dashes: ---
+			- Angle brackets: < >,
+			- XML tags: <tag> </tag>
 	- 2. Give the model time to think
