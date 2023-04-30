@@ -12,5 +12,6 @@
 			- 用途
 				- Avoiding Prompt Injections
 					- 减少提示冲突
-				-
+		- Tactic 2: Ask for structured output
+			- HTML、JSON
 	- 2. Give the model time to think
