@@ -14,4 +14,6 @@
 					- 减少提示冲突
 		- Tactic 2: Ask for structured output
 			- HTML、JSON
+		- Tactic 3: Check whether conditions are satisfied
+			- Check assumptions required to do the task
 	- 2. Give the model time to think
