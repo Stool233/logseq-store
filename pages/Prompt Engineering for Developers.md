@@ -58,4 +58,6 @@
 		- 情感识别、主题识别。。。
 		- 同样的，不需要自己去训练一个机器学习模型，简单的zero-shot、few-shot，就可以利用Promtpt去完成同样的任务
 	- Transforming
-		- 翻译、文本格式替换、
+		- 翻译、文本格式替换、情感替换。。。
+	- Expanding
+		- tempe
