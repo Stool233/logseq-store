@@ -43,7 +43,12 @@
 						- operations on a large data structure;
 						- compiler decisions.
 					- uses a single non-atomic CPU instruction:
-						-
+						- RMW instructions; unaligned loads and stores.
+						  collapsed:: true
+							- ```
+							  flag++
+							  ```
+					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
