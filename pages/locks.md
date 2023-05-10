@@ -86,7 +86,6 @@
 						- x86 example: MFENCE, LFENCE, SFENCE.
 					- The x86 LOCK instruction prefix provides **both**.
 						- ![image.png](../assets/image_1683730215513_0.png)
-						- LOCK会锁定内存总线
 					- **Atomic compare-and-swap (CAS)** conditionally updates a variable:
 						- checks if it has the expected value and if so, changes it to the desired value.
 					-
