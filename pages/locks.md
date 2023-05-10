@@ -78,8 +78,13 @@
 					- ...the hardware provides!
 			- special hardware instructions
 				- For **guaranteed atomicity** and to **prevent memory reordering**.
-					- guaranteed atomicity
+					- **guaranteed atomicity**
 						- x86 example: XCHG (exchange)
+					- **prevent memory reordering**
+						- these instructions are called memory barriers.
+						- they prevent reordering by the compiler too.
+						- x86 example: MFENCE, LFENCE, SFENCE.
+				-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
