@@ -85,7 +85,7 @@
 						- they prevent reordering by the compiler too.
 						- x86 example: MFENCE, LFENCE, SFENCE.
 					- The x86 LOCK instruction prefix provides **both**.
-						- ![image.png](../assets/image_1683730215513_0.png)
+						- ![image.png](../assets/image_1683731526353_0.png){:height 172, :width 562}
 					- **Atomic compare-and-swap (CAS)** conditionally updates a variable:
 						- checks if it has the expected value and if so, changes it to the desired value.
 					-
