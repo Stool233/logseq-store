@@ -93,8 +93,8 @@
 				- ![image.png](../assets/image_1683731646267_0.png)
 				- This is a simplified [[spinlock]].
 					- Spinlocks are used extensively in
-					  the Linux kernel.
-				-
+					  the [[Linux]] kernel.
+				- The **atomic CAS** is the quintessence of any lock implementation.
 				-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
