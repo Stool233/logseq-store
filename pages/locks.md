@@ -29,7 +29,7 @@
 				-
 				-
 		- let’s build a lock! (a tour through lock internals)
-			- want: “mutual exclusion”
+			- want: “[[mutual exclusion]]”
 				-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
