@@ -68,7 +68,7 @@
 					- For processor reordering, by the **hardware memory model**:
 						- x86_64 provides Total Store Ordering (TSO).
 							- a relaxed consistency model.
-							- most reorderings are invalid but StoreLoad is game;  allows processor to hide the latency of writes.
+							- most reorderings are invalid but StoreLoad is game;  allows processor to hide the latency of writes.(这是一种相对较弱的一致性模型，虽然大多数的重排序都是无效的，但是对于存储-加载这种操作是有效的。这意味着处理器可以在隐藏写入操作的延迟的同时，对其他指令进行重排序，以提高执行效率。)
 					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
