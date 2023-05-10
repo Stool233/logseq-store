@@ -1,5 +1,9 @@
 - **TAG: [[Computer Science]] **
 - 相关文章
 	- Let's talk locks
-		- 来源：https://www.infoq.com/presentations/go-locks/
+		- 来源：
+			- https://www.infoq.com/presentations/go-locks/
+		- let’s build a lock! (a tour through lock internals)
+		- let’s analyze its performance! (performance models for contention)
 		-
+			-
