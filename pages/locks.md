@@ -88,7 +88,9 @@
 						- ![image.png](../assets/image_1683731526353_0.png){:height 172, :width 562}
 					- **Atomic compare-and-swap (CAS)** conditionally updates a variable:
 						- checks if it has the expected value and if so, changes it to the desired value.
-					- 为什么需要
+					- 为什么需要LOCK前缀，不能单纯使用COMXCHG？
+						- https://hackmd.io/@vesuppi/Syvoiw1f8
+						- TODOThat
 			- baby’s first lock: spinlocks
 				- ![image.png](../assets/image_1683731637697_0.png)
 				- ![image.png](../assets/image_1683731646267_0.png)
