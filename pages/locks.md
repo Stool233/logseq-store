@@ -49,9 +49,9 @@
 							  flag++
 							  ```
 				- An **atomic operation** is an “indivisible” memory access.
-					- In x86_64, loads, stores that are   naturally aligned up to 64b.*
-						- guarantees the data item fits within a cache line;
-						- **cache coherency** guarantees a consistent view for a single cache line.
+					- In x86_64, loads, stores that are   naturally aligned up to 64b.*（在x86_64中，加载、存储 自然对齐到64b）
+						- guarantees the data item fits within a cache line;（保证数据项适合缓存行）
+						- **cache coherency** guarantees a consistent view for a single cache line.（缓存一致性保证了单个缓存行的一致视图）
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
