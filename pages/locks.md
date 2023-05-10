@@ -65,7 +65,10 @@
 					- The only cardinal rule is **sequential consistency for single threaded programs.**
 					- Other guarantees about compiler reordering are captured by a   **language’s memory model**:
 						- C++, Go guarantee data-race free programs will be sequentially consistent.（C++、Go保证没有数据竞争的程序将是顺序一致的。）
-						-
+					- For processor reordering, by the **hardware memory model**:
+						- x86_64 provides Total Store Ordering (TSO).
+							- a relaxed consistency model.
+							- most reorderings are invalid but StoreLoad is game;  allows processor to hide the latency of writes.
 					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
