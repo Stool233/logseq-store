@@ -13,11 +13,18 @@
 						- a brief go primer
 							- The unit of concurrent execution: goroutines.
 								- use as you would threads
+									- ```go
+									  go handle_request(r)
+									  ```
 								- but user-space threads:
 									- managed entirely by the Go runtime, not the operating system.
 								- Data shared between goroutines must be synchronized.
 								- One way is to use the blocking, non-recursive lock construct:
-									- ```
+									- ```go
+									  var mu sync.Mutex
+									  mu.Lock()
+									  ...
+									  mu.Unlock()
 									  ```
 							-
 					-
