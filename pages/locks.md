@@ -98,7 +98,12 @@
 					- Spinlocks are used extensively in
 					  the [[Linux]] kernel.
 				- The **atomic CAS** is the quintessence of any lock implementation.
-				-
+			- cost of an atomic operation
+				- Run on a 12-core x86_64 SMP machine.
+					- Atomic store to a C _Atomic int, 10M times in a tight loop.
+					- Measure average time taken per operation
+				- With 1 thread: ~13ns (vs. regular operation: ~2ns)
+				- With 12 cpu-pinned threads: ~110ns
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
