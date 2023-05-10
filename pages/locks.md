@@ -32,6 +32,7 @@
 			- want: “[[mutual exclusion]]”
 				- only one thread has access to shared data at any given time
 			- use a flag?
+			  collapsed:: true
 				- ![image.png](../assets/image_1683720086369_0.png)
 				- ![image.png](../assets/image_1683720101428_0.png)
 				- ![image.png](../assets/image_1683720111922_0.png)
@@ -53,7 +54,11 @@
 					- **cache coherency** guarantees a consistent view for a single cache line.（缓存一致性保证了单个缓存行的一致视图）
 				- use a flag?
 					- nope; not atomic.
-					-
+						- ![image.png](../assets/image_1683720708455_0.png){:height 289, :width 222}
+						- the compiler may reorder operations.
+							- ![image.png](../assets/image_1683720721888_0.png)
+						- the processor may reorder operations.
+							-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
