@@ -14,6 +14,7 @@
 			- ![image.png](../assets/image_1670251946876_0.png)
 	- 内核上的简单解法
 		- 通过disable中断
+		  collapsed:: true
 			- ![image.png](../assets/image_1670252089089_0.png)
 			- ![image.png](../assets/image_1670252096697_0.png)
 			- ![image.png](../assets/image_1670252110389_0.png)
