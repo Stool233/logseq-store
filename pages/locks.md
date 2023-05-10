@@ -52,14 +52,15 @@
 				- In x86_64, loads, stores that are   naturally aligned up to 64b.*（在x86_64中，加载、存储 自然对齐到64b）
 					- guarantees the data item fits within a cache line;（保证数据项适合缓存行）
 					- **cache coherency** guarantees a consistent view for a single cache line.（缓存一致性保证了单个缓存行的一致视图）
-				- use a flag?
-					- nope; not atomic.
-						- ![image.png](../assets/image_1683720708455_0.png){:height 289, :width 222}
-						- the compiler may reorder operations.
-							- ![image.png](../assets/image_1683720721888_0.png)
-						- the processor may reorder operations.
-							- ![image.png](../assets/image_1683720755408_0.png)
-						-
+			- use a flag? nope; not atomic.
+				- ![image.png](../assets/image_1683720708455_0.png){:height 289, :width 222}
+					- the compiler may reorder operations.
+					  collapsed:: true
+						- ![image.png](../assets/image_1683720721888_0.png)
+					- the processor may reorder operations.
+					  collapsed:: true
+						- ![image.png](../assets/image_1683720755408_0.png)
+					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
