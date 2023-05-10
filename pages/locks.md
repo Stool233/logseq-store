@@ -76,7 +76,9 @@
 			- use a flag? nope; not atomic and no memory order guarantees.
 				- need a construct that provides atomicity and prevents memory reordering.
 					- ...the hardware provides!
-			-
+			- special hardware instructions
+				- For **guaranteed atomicity** and to **prevent memory reordering**.
+					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
