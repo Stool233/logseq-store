@@ -88,7 +88,12 @@
 						- ![image.png](../assets/image_1683731526353_0.png){:height 172, :width 562}
 					- **Atomic compare-and-swap (CAS)** conditionally updates a variable:
 						- checks if it has the expected value and if so, changes it to the desired value.
-			- baby’s first lock
+			- baby’s first lock: spinlocks
+				- ![image.png](../assets/image_1683731637697_0.png)
+				- ![image.png](../assets/image_1683731646267_0.png)
+				- This is a simplified [[spinlock]].
+					- Spinlocks are used extensively in
+					  the Linux kernel.
 				-
 				-
 		- let’s analyze its performance! (performance models for contention)
