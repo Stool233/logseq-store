@@ -84,7 +84,8 @@
 						- these instructions are called memory barriers.
 						- they prevent reordering by the compiler too.
 						- x86 example: MFENCE, LFENCE, SFENCE.
-				-
+					- The x86 LOCK instruction prefix provides **both**.
+					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
