@@ -1,4 +1,4 @@
-- **TAG: * [[Computer Science]] [[locks]]
+- **TAG:** [[Computer Science]] [[locks]]
 - Dijkstra's Mutual Exclusion Problem（Dijkstra的互斥问题）
 	- http://rust-class.org/class-20-mutual-exclusion.html
 	- Requirements （它要求）
@@ -14,7 +14,6 @@
 			- ![image.png](../assets/image_1670251946876_0.png)
 	- 内核上的简单解法
 		- 通过disable中断
-		  collapsed:: true
 			- ![image.png](../assets/image_1670252089089_0.png)
 			- ![image.png](../assets/image_1670252096697_0.png)
 			- ![image.png](../assets/image_1670252110389_0.png)
