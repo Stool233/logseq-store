@@ -104,6 +104,9 @@
 					- Measure average time taken per operation
 				- With 1 thread: ~13ns (vs. regular operation: ~2ns)
 				- With 12 cpu-pinned threads: ~110ns
+					- threads are effectively serialized
+			- We have a scheme for mutual exclusion that provides atomicity and memory ordering guarantees.
+			-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
