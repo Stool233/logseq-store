@@ -15,7 +15,10 @@
 								- use as you would threads
 								- but user-space threads:
 									- managed entirely by the Go runtime, not the operating system.
-								-
+								- Data shared between goroutines must be synchronized.
+								- One way is to use the blocking, non-recursive lock construct:
+									- ```
+									  ```
 							-
 					-
 		- let’s analyze its performance! (performance models for contention)
