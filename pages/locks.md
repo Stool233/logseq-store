@@ -31,6 +31,7 @@
 		- let’s build a lock! (a tour through lock internals)
 			- want: “[[mutual exclusion]]”
 				- only one thread has access to shared data at any given time
+			- ![image.png](../assets/image_1683720086369_0.png)
 			-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
