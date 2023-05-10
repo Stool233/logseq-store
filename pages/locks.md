@@ -85,6 +85,8 @@
 						- they prevent reordering by the compiler too.
 						- x86 example: MFENCE, LFENCE, SFENCE.
 					- The x86 LOCK instruction prefix provides **both**.
+						- ![image.png](../assets/image_1683730215513_0.png)
+						-
 					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
