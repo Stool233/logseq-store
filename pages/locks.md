@@ -73,8 +73,10 @@
 								- (这是一种相对较弱的一致性模型，虽然大多数的重排序都是无效的，但是对于存储-加载这种操作是有效的。这意味着处理器可以在隐藏写入操作的延迟的同时，对其他指令进行重排序，以提高执行效率。)
 									- "无效"的重排序是指处理器对指令的执行顺序进行的重排序，不会改变程序的行为，即不会导致程序的正确性受到影响。在这种情况下，重排序是被允许的。
 									- "有效"的重排序是指处理器对指令的执行顺序进行的重排序，可能会导致程序的行为发生变化，即可能会导致程序的正确性受到影响。在这种情况下，重排序是不被允许的，需要通过内存模型的规则来限制。
-					-
-					-
+			- use a flag? nope; not atomic and no memory order guarantees.
+				- need a construct that provides atomicity and prevents memory reordering.
+					- ...the hardware provides!
+			-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
