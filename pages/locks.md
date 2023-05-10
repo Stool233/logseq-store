@@ -60,6 +60,9 @@
 					- the processor may reorder operations.
 					  collapsed:: true
 						- ![image.png](../assets/image_1683720755408_0.png)
+			- memory access reordering
+				- The compiler, processor can **reorder memory operations** to optimize execution.
+					- The only cardinal rule is **sequential consistency for single threaded programs.**
 					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
