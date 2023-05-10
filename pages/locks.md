@@ -6,8 +6,11 @@
 		- let’s build a lock! (a tour through lock internals)
 			- our case-study
 				- Lock implementations are hardware, ISA, OS and language specific:
-					- We assume an x86_64 SMP machine running a modern Linux.
-					- We’ll look at the lock implementation in Go 1.12.
+					- We assume an **x86_64 SMP machine** running a **modern Linux**.
+						- ![image.png](../assets/image_1683719235930_0.png){:height 263, :width 375}
+					- We’ll look at the lock implementation in **Go 1.12**.
+					-
+					-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
 			-
