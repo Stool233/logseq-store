@@ -179,6 +179,9 @@
 					- the sync.Mutex implementation adds a layer that fixes these.
 				- go’s sync.Mutex
 					- Is a hybrid lock that uses a semaphore to sleep / wake goroutines.
+					- Additionally, it tracks extra state to:
+						- prevent unnecessarily waking up a goroutine
+							- “There’s a goroutine actively trying to CAS”: An unlock in this case does not wake a waiter.
 					-
 					-
 						-
