@@ -244,8 +244,13 @@
 				- Universal Scalability Law (USL)
 					- Scalability depends on contention and cross-talk.
 					- contention penalty
-						- due to serialization for shared resources. 
-						  examples: lock contention, database contention.
-						-
+						- due to serialization for shared resources.
+						- examples: lock contention, database contention.
+					- crosstalk penalty
+						- due to coordination for coherence.
+						- examples: servers coordinating to synchronize  mutable state.
+					- ![image.png](../assets/image_1683816912802_0.png)
+					- ![image.png](../assets/image_1683816919817_0.png)
+					-
 		- let’s use it, smartly! (a few closing strategies)
 			-
