@@ -203,8 +203,9 @@
 							- Go initially performs better than C
 							- but they ~converge as concurrency gets high enough.
 							- ![image.png](../assets/image_1683815510595_0.png)
-					- sync.Mutex uses a semaphore
-						-
+					- sync.Mutex
+						- ![image.png](../assets/image_1683815579947_0.png){:height 151, :width 354}
+						- ![image.png](../assets/image_1683815616854_0.png) ![image.png](../assets/image_1683815567046_0.png){:height 316, :width 360}
 							-
 						-
 						-
