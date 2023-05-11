@@ -150,9 +150,13 @@
 			- ...can we do better for user-space threads?
 				- goroutines are user-space threads.
 					- The go runtime multiplexes them onto threads.
+						- ![image.png](../assets/image_1683814561777_0.png){:height 160, :width 322}
 					- lighter-weight and cheaper than threads:
 						- goroutine switches = ~tens of ns;
 						- thread switches = ~a μs.
+					- we can block the goroutine without blocking the underlying thread!
+						- to avoid the thread context switch cost.
+				-
 					-
 				-
 				-
