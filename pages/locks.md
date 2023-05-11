@@ -166,8 +166,10 @@
 					- ![image.png](../assets/image_1683814833820_0.png)
 					- ![image.png](../assets/image_1683814936257_0.png)
 					- ![image.png](../assets/image_1683814964028_0.png)
-				- this is clever.
-					- Avoids the hefty thread context switch cost in the contended case,  up to a point.
+				- this is clever. Avoids the hefty thread context switch cost in the contended case,  up to a point. but...
+					-
+					-
+						-
 					-
 					-
 				-
