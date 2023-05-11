@@ -109,6 +109,7 @@
 				- spinning for long durations is wasteful; it takes away CPU time from other threads.
 					- enter the operating system!
 			- Linux’s futex
+				- Interface and mechanism for userspace code to ask the kernel to suspend/ resume threads.
 				-
 			-
 		- let’s analyze its performance! (performance models for contention)
