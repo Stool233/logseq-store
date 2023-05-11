@@ -205,10 +205,11 @@
 							- ![image.png](../assets/image_1683815510595_0.png)
 					- sync.Mutex
 						- ![image.png](../assets/image_1683815579947_0.png){:height 151, :width 354}
-						- ![image.png](../assets/image_1683815616854_0.png) ![image.png](../assets/image_1683815567046_0.png){:height 316, :width 360}
-							-
-						-
-						-
+						- ![image.png](../assets/image_1683815640554_0.png)
+						- ![image.png](../assets/image_1683815656978_0.png)
+				-
+					-
+					-
 				-
 				-
 			-
