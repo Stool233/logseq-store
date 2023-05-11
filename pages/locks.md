@@ -114,7 +114,10 @@
 						- futex syscall
 					- mechanism
 						- kernel-managed queue
-				-
+					- ![image.png](../assets/image_1683810122395_0.png)
+				- in the kernel:
+					- 1. arrange for thread to be resumed in the future:
+						-
 					-
 			-
 		- let’s analyze its performance! (performance models for contention)
