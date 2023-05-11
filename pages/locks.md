@@ -156,7 +156,11 @@
 						- thread switches = ~a μs.
 					- we can block the goroutine without blocking the underlying thread!
 						- to avoid the thread context switch cost.
-				-
+				- This is what the Go runtime’s semaphore does!
+					- The semaphore is conceptually very similar to futexes in Linux*, but it is used to  sleep/wake goroutines:
+						- a goroutine that blocks on a mutex is descheduled, but not the underlying thread.
+						- the goroutine wait queues are managed by the runtime, in user-space.
+					-
 					-
 				-
 				-
