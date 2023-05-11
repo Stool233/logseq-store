@@ -131,7 +131,14 @@
 						  (lock, increment an integer, unlock).
 						- Measure average time taken per lock/unlock pair 
 						  (from within the program).
-						-
+					- uncontended case (1 thread): ~13ns
+						- cost of the user-space atomic CAS = ~13ns
+					- contended case (12 cpu-pinned threads): ~0.9us
+						- cost of the atomic CAS +
+						  syscall + thread context switch = ~0.9us
+					- ![image.png](../assets/image_1683811457091_0.png)
+				-
+					-
 					-
 			-
 		- let’s analyze its performance! (performance models for contention)
