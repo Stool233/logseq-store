@@ -181,8 +181,13 @@
 					- Is a hybrid lock that uses a semaphore to sleep / wake goroutines.
 					- Additionally, it tracks extra state to:
 						- prevent unnecessarily waking up a goroutine
-							- “There’s a goroutine actively trying to CAS”: An unlock in this case does not wake a waiter.
-					-
+							- “There’s a goroutine actively trying to CAS”:
+								- An unlock in this case does not wake a waiter.
+						- prevent severe goroutine starvation
+							- “a waiter has been waiting”:
+								- If a waiter is resumed but loses the CAS again, it’s queued at the head of the wait queue.
+								- If a waiter fails to lock for 1ms, switch the mutex to “starvation mode”.
+									-
 					-
 						-
 					-
