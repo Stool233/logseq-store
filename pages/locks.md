@@ -110,12 +110,14 @@
 					- enter the operating system!
 			- Linux’s futex
 				- Interface and mechanism for userspace code to ask the kernel to suspend/ resume threads.
+				  collapsed:: true
 					- Interface
 						- futex syscall
 					- mechanism
 						- kernel-managed queue
 					- ![image.png](../assets/image_1683810122395_0.png)
 				- in the kernel:
+				  collapsed:: true
 					- 1. arrange for thread to be resumed in the future:
 						- add an entry for this thread in the kernel queue for the address we care about
 					- 2. deschedule the calling thread to suspend it.
@@ -126,6 +128,7 @@
 						- ...but we still have a nice, lightweight primitive to build synchronization constructs.
 					- pthread mutexes use futexes.
 				- cost of a futex
+				  collapsed:: true
 					- Run on a 12-core x86_64 SMP machine.
 						- Lock & unlock a pthread mutex 10M times in loop 
 						  (lock, increment an integer, unlock).
@@ -142,7 +145,10 @@
 				- The trade-off is it uses CPU cycles not making progress.
 				- So at some point, it makes sense to pay the cost of the context switch to go to sleep.
 				- There are smart “hybrid” futexes:
-					-
+					- CAS-spin a small, fixed number of times —> if that didn’t lock, make the futex syscall.
+					- Examples: the Go runtime’s futex implementation; a variant of the pthread_mutex.
+			- ...can we do better for user-space threads?
+				-
 				-
 				-
 			-
