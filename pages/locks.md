@@ -160,6 +160,7 @@
 					- The semaphore is conceptually very similar to futexes in Linux*, but it is used to  sleep/wake goroutines:
 						- a goroutine that blocks on a mutex is descheduled, but not the underlying thread.
 						- the goroutine wait queues are managed by the runtime, in user-space.
+					- ![image.png](../assets/image_1683814719954_0.png)
 					-
 					-
 				-
