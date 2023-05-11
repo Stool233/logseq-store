@@ -192,6 +192,10 @@
 										- i.e. the waiter does not have to compete.
 					- how does it perform?
 						- Run on a 12-core x86_64 SMP machine.
+							- Lock & unlock a Go sync.Mutex 10M times in loop
+								- (lock, increment an integer, unlock).
+							- Measure average time taken per lock/unlock pair
+								- (from within the program).
 						-
 						-
 							-
