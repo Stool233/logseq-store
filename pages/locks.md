@@ -237,6 +237,9 @@
 						- ![image.png](../assets/image_1683816511817_0.png)
 					- a simple experiment
 						- Measure time taken to complete a fixed workload.
-							-
+							- serial fraction holds a lock (sync.Mutex).
+							- scale parallel fraction (p) from 0.25 to 0.75
+							- measure time taken for number of goroutines (N) = 1 —> 12.
+						-
 		- let’s use it, smartly! (a few closing strategies)
 			-
