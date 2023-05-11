@@ -164,6 +164,7 @@
 				- the goroutine wait queues
 					- (in user-space, managed by the go runtime)
 					- ![image.png](../assets/image_1683814833820_0.png)
+					- ![image.png](../assets/image_1683814936257_0.png)
 					-
 					-
 				-
