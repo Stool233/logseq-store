@@ -120,6 +120,7 @@
 						- add an entry for this thread in the kernel queue for the address we care about
 					- 2. deschedule the calling thread to suspend it.
 					- ![image.png](../assets/image_1683810270647_0.png)
+					- ![image.png](../assets/image_1683810416523_0.png)
 					-
 					-
 			-
