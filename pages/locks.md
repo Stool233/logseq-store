@@ -196,7 +196,13 @@
 								- (lock, increment an integer, unlock).
 							- Measure average time taken per lock/unlock pair
 								- (from within the program).
-						-
+						- uncontended case (1 goroutine): ~13ns
+						- contended case (12 goroutines): ~0.8us
+						- ![image.png](../assets/image_1683815468307_0.png){:height 314, :width 387}
+						- Contended case performance of C vs. Go:
+							- Go initially performs better than C
+							- but they ~converge as concurrency gets high enough.
+							-
 						-
 							-
 						-
