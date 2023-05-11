@@ -37,6 +37,7 @@
 				- ![image.png](../assets/image_1683720101428_0.png)
 				- ![image.png](../assets/image_1683720111922_0.png)
 			- atomicity
+			  collapsed:: true
 				- A memory operation is **non-atomic** if it can be observed half-complete by another thread.
 				- An operation may be non-atomic because it:
 					- uses multiple CPU instructions:
@@ -53,6 +54,7 @@
 					- guarantees the data item fits within a cache line;（保证数据项适合缓存行）
 					- **cache coherency** guarantees a consistent view for a single cache line.（缓存一致性保证了单个缓存行的一致视图）
 			- use a flag? nope; not atomic.
+			  collapsed:: true
 				- ![image.png](../assets/image_1683720708455_0.png){:height 289, :width 222}
 					- the compiler may reorder operations.
 					  collapsed:: true
@@ -61,6 +63,7 @@
 					  collapsed:: true
 						- ![image.png](../assets/image_1683720755408_0.png)
 			- memory access reordering
+			  collapsed:: true
 				- The compiler, processor can **reorder memory operations** to optimize execution.
 					- The only cardinal rule is **sequential consistency for single threaded programs.**
 					- Other guarantees about compiler reordering are captured by a   **language’s memory model**:
@@ -74,9 +77,11 @@
 									- "无效"的重排序是指处理器对指令的执行顺序进行的重排序，不会改变程序的行为，即不会导致程序的正确性受到影响。在这种情况下，重排序是被允许的。
 									- "有效"的重排序是指处理器对指令的执行顺序进行的重排序，可能会导致程序的行为发生变化，即可能会导致程序的正确性受到影响。在这种情况下，重排序是不被允许的，需要通过内存模型的规则来限制。
 			- use a flag? nope; not atomic and no memory order guarantees.
+			  collapsed:: true
 				- need a construct that provides atomicity and prevents memory reordering.
 					- ...the hardware provides!
 			- special hardware instructions
+			  collapsed:: true
 				- For **guaranteed atomicity** and to **prevent memory reordering**.
 					- **guaranteed atomicity**
 						- x86 example: XCHG (exchange)
@@ -92,6 +97,7 @@
 						- https://hackmd.io/@vesuppi/Syvoiw1f8
 						- TODOThat
 			- baby’s first lock: spinlocks
+			  collapsed:: true
 				- ![image.png](../assets/image_1683731637697_0.png)
 				- ![image.png](../assets/image_1683731646267_0.png)
 				- This is a simplified [[spinlock]].
@@ -99,6 +105,7 @@
 					  the [[Linux]] kernel.
 				- The **atomic CAS** is the quintessence of any lock implementation.
 			- cost of an atomic operation
+			  collapsed:: true
 				- Run on a 12-core x86_64 SMP machine.
 					- Atomic store to a C _Atomic int, 10M times in a tight loop.
 					- Measure average time taken per operation
@@ -106,9 +113,11 @@
 				- With 12 cpu-pinned threads: ~110ns
 					- threads are effectively serialized
 			- We have a scheme for mutual exclusion that provides **atomicity and memory ordering guarantees**. ...but
+			  collapsed:: true
 				- spinning for long durations is wasteful; it takes away CPU time from other threads.
 					- enter the operating system!
 			- Linux’s futex
+			  collapsed:: true
 				- Interface and mechanism for userspace code to ask the kernel to suspend/ resume threads.
 				  collapsed:: true
 					- Interface
@@ -141,6 +150,7 @@
 						  syscall + thread context switch = ~0.9us
 					- ![image.png](../assets/image_1683811457091_0.png)
 			- spinning vs. sleeping
+			  collapsed:: true
 				- Spinning makes sense for short durations; it keeps the thread on the CPU.
 				- The trade-off is it uses CPU cycles not making progress.
 				- So at some point, it makes sense to pay the cost of the context switch to go to sleep.
@@ -148,6 +158,7 @@
 					- CAS-spin a small, fixed number of times —> if that didn’t lock, make the futex syscall.
 					- Examples: the Go runtime’s futex implementation; a variant of the pthread_mutex.
 			- ...can we do better for user-space threads?
+			  collapsed:: true
 				- goroutines are user-space threads.
 					- The go runtime multiplexes them onto threads.
 						- ![image.png](../assets/image_1683814561777_0.png){:height 160, :width 322}
@@ -212,7 +223,7 @@
 					-
 				-
 				-
-			-
 		- let’s analyze its performance! (performance models for contention)
+			-
 		- let’s use it, smartly! (a few closing strategies)
 			-
