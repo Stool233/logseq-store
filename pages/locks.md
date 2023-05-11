@@ -117,7 +117,9 @@
 					- ![image.png](../assets/image_1683810122395_0.png)
 				- in the kernel:
 					- 1. arrange for thread to be resumed in the future:
-						-
+						- add an entry for this thread in the kernel queue for the address we care about
+					- 2. deschedule the calling thread to suspend it.
+					- ![image.png](../assets/image_1683810270647_0.png)
 					-
 			-
 		- let’s analyze its performance! (performance models for contention)
