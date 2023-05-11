@@ -137,9 +137,14 @@
 						- cost of the atomic CAS +
 						  syscall + thread context switch = ~0.9us
 					- ![image.png](../assets/image_1683811457091_0.png)
+			- spinning vs. sleeping
+				- Spinning makes sense for short durations; it keeps the thread on the CPU.
+				- The trade-off is it uses CPU cycles not making progress.
+				- So at some point, it makes sense to pay the cost of the context switch to go to sleep.
+				- There are smart “hybrid” futexes:
+					-
 				-
-					-
-					-
+				-
 			-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
