@@ -167,7 +167,13 @@
 					- ![image.png](../assets/image_1683814936257_0.png)
 					- ![image.png](../assets/image_1683814964028_0.png)
 				- this is clever. Avoids the hefty thread context switch cost in the contended case,  up to a point. but...
-					-
+					- Resumed goroutines have to compete with any other goroutines trying to CAS.
+						- They will likely lose:
+							- there’s a delay between when the flag was set to 0 and this goroutine was rescheduled..
+								- ![image.png](../assets/image_1683815107423_0.png)
+					- So, the semaphore implementation may end up:
+						- unnecessarily resuming a waiter goroutine
+							-
 					-
 						-
 					-
