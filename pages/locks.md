@@ -161,6 +161,9 @@
 						- a goroutine that blocks on a mutex is descheduled, but not the underlying thread.
 						- the goroutine wait queues are managed by the runtime, in user-space.
 					- ![image.png](../assets/image_1683814719954_0.png)
+				- the goroutine wait queues
+					- (in user-space, managed by the go runtime)
+					- ![image.png](../assets/image_1683814833820_0.png)
 					-
 					-
 				-
