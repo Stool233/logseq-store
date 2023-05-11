@@ -173,7 +173,13 @@
 								- ![image.png](../assets/image_1683815107423_0.png)
 					- So, the semaphore implementation may end up:
 						- unnecessarily resuming a waiter goroutine
-							-
+							- results in a goroutine context switch again.
+						- cause goroutine starvation
+							- can result in long wait times, high tail latencies.
+					- the sync.Mutex implementation adds a layer that fixes these.
+				- go’s sync.Mutex
+					- Is a hybrid lock that uses a semaphore to sleep / wake goroutines.
+					-
 					-
 						-
 					-
