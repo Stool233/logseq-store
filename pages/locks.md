@@ -121,7 +121,17 @@
 					- 2. deschedule the calling thread to suspend it.
 					- ![image.png](../assets/image_1683810270647_0.png)
 					- ![image.png](../assets/image_1683810416523_0.png)
-					-
+				- pretty convenient!
+					- That was a hella simplified futex.
+						- ...but we still have a nice, lightweight primitive to build synchronization constructs.
+					- pthread mutexes use futexes.
+				- cost of a futex
+					- Run on a 12-core x86_64 SMP machine.
+						- Lock & unlock a pthread mutex 10M times in loop 
+						  (lock, increment an integer, unlock).
+						- Measure average time taken per lock/unlock pair 
+						  (from within the program).
+						-
 					-
 			-
 		- let’s analyze its performance! (performance models for contention)
