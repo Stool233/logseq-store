@@ -224,6 +224,10 @@
 				-
 				-
 		- let’s analyze its performance! (performance models for contention)
-			-
+			- uncontended case
+				- Cost of the atomic CAS.
+			- contended case
+				- In the worst-case, cost of failed atomic operations + spinning + goroutine context switch +   thread context switch.
+					- ....But really, depends on degree of contention.
 		- let’s use it, smartly! (a few closing strategies)
 			-
