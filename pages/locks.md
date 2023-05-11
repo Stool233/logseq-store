@@ -110,7 +110,12 @@
 					- enter the operating system!
 			- Linux’s futex
 				- Interface and mechanism for userspace code to ask the kernel to suspend/ resume threads.
+					- Interface
+						- futex syscall
+					- mechanism
+						- kernel-managed queue
 				-
+					-
 			-
 		- let’s analyze its performance! (performance models for contention)
 		- let’s use it, smartly! (a few closing strategies)
