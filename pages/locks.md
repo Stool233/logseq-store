@@ -230,6 +230,7 @@
 				- In the worst-case, cost of failed atomic operations + spinning + goroutine context switch +   thread context switch.
 					- ....But really, depends on degree of contention.
 			- “How does application performance change with concurrency?”
+			  collapsed:: true
 				- how many threads do we need to support a target throughput?   while keeping response time the same.
 				- how does response time change with the number of threads? assuming a constant workload.
 				- Amdahl’s Law
@@ -253,4 +254,9 @@
 					- ![image.png](../assets/image_1683816919817_0.png)
 					-
 		- let’s use it, smartly! (a few closing strategies)
-			-
+			- but first, profile!
+				- Go mutex
+					- Go mutex contention profiler
+						- https://golang.org/doc/diagnostics.html
+						-
+-
