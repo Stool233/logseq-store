@@ -240,6 +240,12 @@
 							- serial fraction holds a lock (sync.Mutex).
 							- scale parallel fraction (p) from 0.25 to 0.75
 							- measure time taken for number of goroutines (N) = 1 —> 12.
+						- ![image.png](../assets/image_1683816830569_0.png)
+				- Universal Scalability Law (USL)
+					- Scalability depends on contention and cross-talk.
+					- contention penalty
+						- due to serialization for shared resources. 
+						  examples: lock contention, database contention.
 						-
 		- let’s use it, smartly! (a few closing strategies)
 			-
