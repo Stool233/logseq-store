@@ -232,6 +232,9 @@
 			- “How does application performance change with concurrency?”
 				- how many threads do we need to support a target throughput?   while keeping response time the same.
 				- how does response time change with the number of threads? assuming a constant workload.
-				-
+				- Amdahl’s Law
+					- Speed-up depends on the fraction of the workload that can be parallelized (p).
+						- ![image.png](../assets/image_1683816511817_0.png)
+					-
 		- let’s use it, smartly! (a few closing strategies)
 			-
