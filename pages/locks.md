@@ -235,6 +235,8 @@
 				- Amdahl’s Law
 					- Speed-up depends on the fraction of the workload that can be parallelized (p).
 						- ![image.png](../assets/image_1683816511817_0.png)
-					-
+					- a simple experiment
+						- Measure time taken to complete a fixed workload.
+							-
 		- let’s use it, smartly! (a few closing strategies)
 			-
