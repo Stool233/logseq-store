@@ -187,11 +187,16 @@
 							- “a waiter has been waiting”:
 								- If a waiter is resumed but loses the CAS again, it’s queued at the head of the wait queue.
 								- If a waiter fails to lock for 1ms, switch the mutex to “starvation mode”.
-									-
-					-
+									- other goroutines cannot CAS, they must queue
+									- The unlock hands the mutex off to the first waiter.
+										- i.e. the waiter does not have to compete.
+					- how does it perform?
+						- Run on a 12-core x86_64 SMP machine.
 						-
-					-
-					-
+						-
+							-
+						-
+						-
 				-
 				-
 			-
