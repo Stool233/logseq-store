@@ -202,7 +202,8 @@
 						- Contended case performance of C vs. Go:
 							- Go initially performs better than C
 							- but they ~converge as concurrency gets high enough.
-							-
+							- ![image.png](../assets/image_1683815510595_0.png)
+					- sync.Mutex uses a semaphore
 						-
 							-
 						-
