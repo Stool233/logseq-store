@@ -285,7 +285,9 @@
 								- http://www.ece.ubc.ca/~sasha/papers/eurosys16-final29.pdf
 							- Go scheduler’s per-CPU runqueues;
 								- https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit
-							-
-							-
+								- ![image.png](../assets/image_1683888138887_0.png){:height 358, :width 314}
+				- use read-write locks
+				-
+					-
 				-
 -
