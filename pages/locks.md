@@ -268,6 +268,14 @@
 					- Dtrace,systemtap
 					- mutrace,Valgrind-drd
 			- strategy I: don’t use a lock
+				- remove the need for synchronization from hot-paths:
+					- typically involves rearchitecting.
+				- reduce the number of lock operations:
+					- doing more thread local work, buffering, batching, copy-on-write.
+				- use atomic operations.
+				- use lock-free data structures
+					- see: http://www.1024cores.net/
+			- strategy II: granular locks
 				-
 				-
 -
