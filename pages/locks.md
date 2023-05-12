@@ -4,7 +4,6 @@
 		- 来源：
 			- https://www.infoq.com/presentations/go-locks/
 		- our case-study
-		  collapsed:: true
 			- Lock implementations are hardware, ISA, OS and language specific:
 				- We assume an **x86_64 SMP machine** running a **modern Linux**.
 					- SMP System
@@ -32,7 +31,6 @@
 			- want: “[[mutual exclusion]]”
 				- only one thread has access to shared data at any given time
 			- use a flag?
-			  collapsed:: true
 				- ![image.png](../assets/image_1683720086369_0.png)
 				- ![image.png](../assets/image_1683720101428_0.png)
 				- ![image.png](../assets/image_1683720111922_0.png)
