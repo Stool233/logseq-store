@@ -276,6 +276,16 @@
 				- use lock-free data structures
 					- see: http://www.1024cores.net/
 			- strategy II: granular locks
-				-
+				- shard data:
+					- but ensure no false sharing, by padding to cache line size.
+						- examples:
+							- go runtime semaphore’s hash table buckets;
+								- https://github.com/golang/go/blob/master/src/runtime/sema.go#L49
+							- Linux scheduler’s per-CPU runqueues;
+								- http://www.ece.ubc.ca/~sasha/papers/eurosys16-final29.pdf
+							- Go scheduler’s per-CPU runqueues;
+								- https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit
+							-
+							-
 				-
 -
