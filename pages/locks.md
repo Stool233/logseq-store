@@ -35,7 +35,6 @@
 				- ![image.png](../assets/image_1683720101428_0.png)
 				- ![image.png](../assets/image_1683720111922_0.png)
 			- atomicity
-			  collapsed:: true
 				- A memory operation is **non-atomic** if it can be observed half-complete by another thread.
 				- An operation may be non-atomic because it:
 					- uses multiple CPU instructions:
@@ -43,7 +42,6 @@
 						- compiler decisions.
 					- uses a single non-atomic CPU instruction:
 						- RMW instructions; unaligned loads and stores.
-						  collapsed:: true
 							- ```
 							  flag++
 							  ```
@@ -52,16 +50,12 @@
 					- guarantees the data item fits within a cache line;（保证数据项适合缓存行）
 					- **cache coherency** guarantees a consistent view for a single cache line.（缓存一致性保证了单个缓存行的一致视图）
 			- use a flag? nope; not atomic.
-			  collapsed:: true
 				- ![image.png](../assets/image_1683720708455_0.png){:height 289, :width 222}
 					- the compiler may reorder operations.
-					  collapsed:: true
 						- ![image.png](../assets/image_1683720721888_0.png)
 					- the processor may reorder operations.
-					  collapsed:: true
 						- ![image.png](../assets/image_1683720755408_0.png)
 			- memory access reordering
-			  collapsed:: true
 				- The compiler, processor can **reorder memory operations** to optimize execution.
 					- The only cardinal rule is **sequential consistency for single threaded programs.**
 					- Other guarantees about compiler reordering are captured by a   **language’s memory model**:
@@ -75,11 +69,9 @@
 									- "无效"的重排序是指处理器对指令的执行顺序进行的重排序，不会改变程序的行为，即不会导致程序的正确性受到影响。在这种情况下，重排序是被允许的。
 									- "有效"的重排序是指处理器对指令的执行顺序进行的重排序，可能会导致程序的行为发生变化，即可能会导致程序的正确性受到影响。在这种情况下，重排序是不被允许的，需要通过内存模型的规则来限制。
 			- use a flag? nope; not atomic and no memory order guarantees.
-			  collapsed:: true
 				- need a construct that provides atomicity and prevents memory reordering.
 					- ...the hardware provides!
 			- special hardware instructions
-			  collapsed:: true
 				- For **guaranteed atomicity** and to **prevent memory reordering**.
 					- **guaranteed atomicity**
 						- x86 example: XCHG (exchange)
