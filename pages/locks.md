@@ -254,6 +254,7 @@
 					- ![image.png](../assets/image_1683816919817_0.png)
 					-
 		- let’s use it, smartly! (a few closing strategies)
+		  collapsed:: true
 			- but first, profile!
 				- Go mutex
 					- Go mutex contention profiler
@@ -292,6 +293,16 @@
 					- typically involves rearchitecting.
 						- ![image.png](../assets/image_1683888195151_0.png)
 			- bonus strategy:
+				- contention-aware schedulers
+					- example: Contention-aware scheduling in MySQL 8.0 Innodb
+						- https://web.eecs.umich.edu/~mozafari/php/data/uploads/lock-schd-report.pdf
+			-
 				-
-				-
+	- References
+		- Jeff Preshing’s excellent blog series
+			- https://preshing.com/archives/
+		- Memory Barriers: A Hardware View for Software Hackers  LWN.net on futexes
+			-
+		- The Go source code
+		- The Universal Scalability Law Manifesto, Neil Gunther
 -
