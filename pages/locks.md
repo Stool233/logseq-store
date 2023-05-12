@@ -301,8 +301,13 @@
 	- References
 		- Jeff Preshing’s excellent blog series
 			- https://preshing.com/archives/
-		- Memory Barriers: A Hardware View for Software Hackers  LWN.net on futexes
-			-
+		- Memory Barriers: A Hardware View for Software Hackers
+			- http://www.puppetmastertrading.com/images/hwViewForSwHackers.pdf
+		- LWN.net on futexes
+			- https://lwn.net/Articles/360699/
 		- The Go source code
+			- https://github.com/golang/go/tree/master/src
 		- The Universal Scalability Law Manifesto, Neil Gunther
+			- http://www.perfdynamics.com/Manifesto/USLscalability.html
+	-
 -
