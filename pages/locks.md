@@ -287,7 +287,11 @@
 								- https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit
 								- ![image.png](../assets/image_1683888138887_0.png){:height 358, :width 314}
 				- use read-write locks
+			- strategy III: do less serial work
+				- move computation out of critical section:
+					- typically involves rearchitecting.
+						- ![image.png](../assets/image_1683888195151_0.png)
+			- bonus strategy:
 				-
-					-
 				-
 -
