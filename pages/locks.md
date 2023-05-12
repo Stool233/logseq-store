@@ -264,6 +264,10 @@
 						- http://brendangregg.com/perf.html
 						- http://brendangregg.com/offcpuanalysis.html
 					- eBPF:
-						-
-					-
+						- https://github.com/iovisor/bcc/issues/892
+					- Dtrace,systemtap
+					- mutrace,Valgrind-drd
+			- strategy I: don’t use a lock
+				-
+				-
 -
