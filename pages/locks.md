@@ -114,7 +114,6 @@
 						- kernel-managed queue
 					- ![image.png](../assets/image_1683810122395_0.png)
 				- in the kernel:
-				  collapsed:: true
 					- 1. arrange for thread to be resumed in the future:
 						- add an entry for this thread in the kernel queue for the address we care about
 					- 2. deschedule the calling thread to suspend it.
