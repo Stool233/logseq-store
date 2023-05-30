@@ -1,4 +1,6 @@
 - Cache coherence protocol and atomicity（缓存一致性协议和原子性）
 	- Cache coherence protocol can guarantee atomicity of a single cache line operation like `ADD`（缓存一致性协议可以保证像ADD这样的单个缓存行操作的原子性）
-	-
+		- Before executing the `ADD`, the cache will broadcast INVALIDATE on the bus (supposed its state was `shared` before).
+		- On this bus, only one message can be broadcast each time.
+		-
 	-
