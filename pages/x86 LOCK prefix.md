@@ -1,3 +1,4 @@
 - Cache coherence protocol and atomicity（缓存一致性协议和原子性）
-	- Cache coherence protocol can guarantee atomicity of a single cache line operation like `ADD`
+	- Cache coherence protocol can guarantee atomicity of a single cache line operation like `ADD`（缓存一致性协议可以保证像ADD这样的单个缓存行操作的原子性）
+	-
 	-
