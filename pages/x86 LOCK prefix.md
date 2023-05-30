@@ -9,6 +9,8 @@
 				- Somehow `A` sends out the INV message first, so the cache line states are
 					- `A`: shared → modified
 					- `B`: shared → invalidated
-				- Now `B` gets the bus and sends out its READX message, which requires a copy of the modified value and also invalidate all others. When `A` gets the message, `ADD` won’t be interrupted. It only returns the updated value and invalidates itself once `ADD` is done.
+				- Now `B` gets the bus and sends out its READX message, which requires a copy of the modified value and also invalidate all others.
+				- When `A` gets the message, `ADD` won’t be interrupted. It only returns the updated value and invalidates itself once `ADD` is done.
+				-
 		-
 	-
