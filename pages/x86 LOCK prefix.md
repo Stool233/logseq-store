@@ -5,12 +5,12 @@
 			- On this bus, only one message can be broadcast each time.
 			- So other processors’ copies will be Inv.
 			- If another process broadcast another INV message immediately after that, the `XADD` instruction won’t respond until it finishes.
-				- Suppose `A` and `B` are trying to do `ADD` at the same time:
-				- Somehow `A` sends out the INV message first, so the cache line states are
-					- `A`: shared → modified
-					- `B`: shared → invalidated
-				- Now `B` gets the bus and sends out its READX message, which requires a copy of the modified value and also invalidate all others.
-				- When `A` gets the message, `ADD` won’t be interrupted. It only returns the updated value and invalidates itself once `ADD` is done.
-				-
-		-
+		- Suppose `A` and `B` are trying to do `ADD` at the same time:
+			- Somehow `A` sends out the INV message first, so the cache line states are
+				- `A`: shared → modified
+				- `B`: shared → invalidated
+			- Now `B` gets the bus and sends out its READX message, which requires a copy of the modified value and also invalidate all others.
+			- When `A` gets the message, `ADD` won’t be interrupted. It only returns the updated value and invalidates itself once `ADD` is done.
+- Lock signal and bus lock
+	-
 	-
