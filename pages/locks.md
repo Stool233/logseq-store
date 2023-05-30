@@ -85,7 +85,8 @@
 						- checks if it has the expected value and if so, changes it to the desired value.
 					- 为什么需要LOCK前缀，不能单纯使用COMXCHG？
 						- https://hackmd.io/@vesuppi/Syvoiw1f8
-						- TODOThat
+						- [[x86 LOCK prefix]]
+						-
 			- baby’s first lock: spinlocks
 			  collapsed:: true
 				- ![image.png](../assets/image_1683731637697_0.png)
