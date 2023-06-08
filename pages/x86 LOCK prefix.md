@@ -32,4 +32,8 @@
 		- 3. Add one to it.
 		- 4. Write the new value to the cache line.
 		- 5. Change the cache line to modified and unlock it.
-	-
+	- Notice the difference?
+		- In the unlocked increment, the cache line is only locked during the write memory operation, just like all writes.
+		- In the locked increment, the cache line is held across the entire instruction, all the way from the read operation to the write operation and including during the increment itself.
+	- Remember, the “LOCK” prefix is implemented by the MESI protocol (or something more complicated, like MESIF on Intel or MEOSI on AMD) in reality. Even then, modern processors probably implement something far more complicated, and its unfortunate that its undocumented.
+	- Still, LOCK swap is clearly more efficient under MESI than LOCK cmpxchg.
