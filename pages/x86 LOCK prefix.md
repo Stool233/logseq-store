@@ -13,5 +13,6 @@
 			- Now `B` gets the bus and sends out its READX message, which requires a copy of the modified value and also invalidate all others.
 			- When `A` gets the message, `ADD` won’t be interrupted. It only returns the updated value and invalidates itself once `ADD` is done.
 - Lock signal and bus lock
-	-
+	- Intel 64 and IA-32 processors provide a LOCK# signal that is asserted automatically during certain critical memory operations to lock the system bus or equivalent link.
+		- While this output signal is asserted, requests from other processors or bus agents for control of the bus are blocked.
 	-
