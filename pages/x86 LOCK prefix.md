@@ -31,4 +31,5 @@
 		- 2. Read value.
 		- 3. Add one to it.
 		- 4. Write the new value to the cache line.
-		- - Change the cache line to modified and unlock it.
+		- 5. Change the cache line to modified and unlock it.
+	-
