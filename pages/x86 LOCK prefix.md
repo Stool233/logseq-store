@@ -21,4 +21,14 @@
 - Why without LOCK inc won’t be atomic
 	- On modern CPUs, the LOCK prefix locks the cache line so that the read-modify-write operation is logically atomic. These are oversimplified, but hopefully they’ll give you the idea.
 	- Unlocked increment:
-		-
+		- 1. Acquire cache line, shareable is fine. Read the value.
+		- 2. Add one to the read value.
+		- 3. Acquire cache line exclusive (if not already E or M) and lock it.
+		- 4. Write the new value to the cache line.
+		- 5. Change the cache line to modified and unlock it.
+	- Locked increment:
+		- 1. Acquire cache line exclusive (if not already E or M) and lock it.
+		- 2. Read value.
+		- 3. Add one to it.
+		- 4. Write the new value to the cache line.
+		- - Change the cache line to modified and unlock it.
