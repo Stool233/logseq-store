@@ -103,7 +103,6 @@
 				- With 12 cpu-pinned threads: ~110ns
 					- threads are effectively serialized
 			- We have a scheme for mutual exclusion that provides **atomicity and memory ordering guarantees**. ...but
-			  collapsed:: true
 				- spinning for long durations is wasteful; it takes away CPU time from other threads.
 					- enter the operating system!
 			- Linux’s futex
