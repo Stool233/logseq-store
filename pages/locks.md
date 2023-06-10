@@ -123,7 +123,6 @@
 						- ...but we still have a nice, lightweight primitive to build synchronization constructs.
 					- pthread mutexes use futexes.
 				- cost of a futex
-				  collapsed:: true
 					- Run on a 12-core x86_64 SMP machine.
 						- Lock & unlock a pthread mutex 10M times in loop 
 						  (lock, increment an integer, unlock).
@@ -136,7 +135,6 @@
 						  syscall + thread context switch = ~0.9us
 					- ![image.png](../assets/image_1683811457091_0.png)
 			- spinning vs. sleeping
-			  collapsed:: true
 				- Spinning makes sense for short durations; it keeps the thread on the CPU.
 				- The trade-off is it uses CPU cycles not making progress.
 				- So at some point, it makes sense to pay the cost of the context switch to go to sleep.
