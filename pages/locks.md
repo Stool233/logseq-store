@@ -96,7 +96,6 @@
 					  the [[Linux]] kernel.
 				- The **atomic CAS** is the quintessence of any lock implementation.
 			- cost of an atomic operation
-			  collapsed:: true
 				- Run on a 12-core x86_64 SMP machine.
 					- Atomic store to a C _Atomic int, 10M times in a tight loop.
 					- Measure average time taken per operation
