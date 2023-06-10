@@ -89,7 +89,6 @@
 						- [[x86 LOCK prefix]]
 						-
 			- baby’s first lock: spinlocks
-			  collapsed:: true
 				- ![image.png](../assets/image_1683731637697_0.png)
 				- ![image.png](../assets/image_1683731646267_0.png)
 				- This is a simplified [[spinlock]].
