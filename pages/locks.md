@@ -142,7 +142,6 @@
 					- CAS-spin a small, fixed number of times —> if that didn’t lock, make the futex syscall.
 					- Examples: the Go runtime’s futex implementation; a variant of the pthread_mutex.
 			- ...can we do better for user-space threads?
-			  collapsed:: true
 				- goroutines are user-space threads.
 					- The go runtime multiplexes them onto threads.
 						- ![image.png](../assets/image_1683814561777_0.png){:height 160, :width 322}
