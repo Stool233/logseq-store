@@ -66,4 +66,9 @@
 			- 如果我们做了一些改动并使用 `git commit` 创建了一个新 **提交** 呢？这个新 **提交** 会被添加到哪个分支上呢？
 				- 答案是 `test` 分支，因为它是当前的活动分支（因为 `HEAD` 指向了它）。之后，`test` 指针会移动至新添加的 **提交** 上。注意 `HEAD` 仍然指向 `test`。
 					- ![image.png](../assets/image_1691232877795_0.png)
-				-
+				- 因此，如果我们使用 `git checkout master` 回到 master 分支，我们就让 `HEAD` 的再次指向 `master` 了。
+					- ![image.png](../assets/image_1691232898417_0.png)
+				- 如果我们现在创建一个新的 **提交**，它就会被添加到 `master` 分支，**commit B2424** 会成为新提交的父节点。
+					- ![image.png](../assets/image_1691232916972_0.png)
+	- 如何在 Git 中记录变化
+		-
