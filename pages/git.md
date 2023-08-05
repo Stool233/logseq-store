@@ -53,4 +53,5 @@
 			- ![image.png](../assets/image_1691232573426_0.png){:height 424, :width 449}
 		- 我们通常使用 `git branch` 命令创建一个新分支，而我们实际创建的却是另一个指针（pointer）。
 			- 假设我们使用 `git branch test` 命令创建了一个名为 `test` 的分支，我们实际上是创建了另一个指针，它指向当前分支上的同一 **提交**。
+				- ![image.png](../assets/image_1691232709416_0.png){:height 610, :width 596}
 		-
