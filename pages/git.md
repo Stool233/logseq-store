@@ -59,4 +59,11 @@
 				- ![image.png](../assets/image_1691232794600_0.png)
 			- 活动分支（active branch）指的是我们当前所在的分支，也就是 `HEAD` 指向的分支。
 			- 要将活动分支切换到 `test`，我们可以使用命令 `git checkout test`。现在我们已经能猜到这条命令真正做的事情了——它只不过是把 `HEAD` 指向的分支改成了 `test`。
+				- ![image.png](../assets/image_1691232829626_0.png)
+			- 在创建 `test` 分支之前，我们也可以使用 `git checkout -b test`，
+				- 这条命令等价于先运行 `git branch test` 创建分支，
+				- 再运行 `git checkout test` 使 `HEAD` 指向新的分支。
+			- 如果我们做了一些改动并使用 `git commit` 创建了一个新 **提交** 呢？这个新 **提交** 会被添加到哪个分支上呢？
+				- 答案是 `test` 分支，因为它是当前的活动分支（因为 `HEAD` 指向了它）。之后，`test` 指针会移动至新添加的 **提交** 上。注意 `HEAD` 仍然指向 `test`。
+					- ![image.png](../assets/image_1691232877795_0.png)
 				-
