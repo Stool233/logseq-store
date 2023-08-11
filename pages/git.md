@@ -106,6 +106,11 @@
 		-
 -
 - mac下模拟git hash-object
-	- ```echo -n "hello world" > test.txt
+	- ```
+	  >echo -n "hello world" > test.txt
+	  >git hash-object test.txt
+	  95d09f2b10159347eece71399a7e2e907ea3df4f
+	  >printf "blob %s\0" "$(stat -f "%z" test.txt)" | cat - test.txt | openssl dgst -sha1
+	  (stdin)= 95d09f2b10159347eece71399a7e2e907ea3df4f
 	  ```
 -
