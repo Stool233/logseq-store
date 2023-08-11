@@ -113,7 +113,10 @@
 	  >printf "blob %s\0" "$(stat -f "%z" test.txt)" | cat - test.txt | openssl dgst -sha1
 	  (stdin)= 95d09f2b10159347eece71399a7e2e907ea3df4f
 	  ```
-- -
+- 根据hash获取文件路径
+	- ```
+	  git rev-list --all --objects | grep <sha1-hash>
+	  ```
 - Git对象打包（Packfiles）：
 	- 为了节省空间和提高性能，Git 会定期把许多小的对象文件打包到一起，形成一个大的 "packfile"。打包后的对象不再以单独的文件形式存在于 `.git/objects/` 目录下，而是存在于 `.git/objects/pack/` 目录下的一个 packfile 中。你可以使用 `git verify-pack` 命令来查看 packfile 的内容。
 	- 如果你需要查看某个具体对象的内容，你可以使用 `git cat-file` 命令，例如
@@ -131,9 +134,3 @@
 		- **差分压缩**：在打包的过程中，Git 会尽量使用一种叫做 "差分压缩"（delta compression）的技术。这种技术的原理是，只存储一个对象相对于另一个对象的差异，而不是存储每个对象的完整内容。这种技术对于版本控制系统非常有效，因为在版本控制系统中，很多版本的文件都和其他版本的文件非常相似。
 		- **索引**：每个 packfile 都有一个对应的索引文件（.idx 文件）。这个索引文件包含了 packfile 中每个对象的哈希值和在 packfile 中的位置。当 Git 需要查找一个对象时，它会首先查找这个对象的哈希值在哪个索引文件中，然后根据索引文件中的信息在对应的 packfile 中找到这个对象。
 		- **解包**：当 Git 需要读取一个对象的内容时，如果这个对象在一个 packfile 中，Git 会首先在 packfile 的索引文件中查找这个对象的位置，然后在 packfile 中找到这个对象。如果这个对象使用了差分压缩，Git 会先找到这个对象的基对象，然后应用差异来重建这个对象的完整内容。
-- 根据hash获取文件路径
-	- ```
-	  git rev-list --all --objects | grep <sha1-hash>
-	  ```
-	-
--
