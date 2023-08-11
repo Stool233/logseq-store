@@ -12,7 +12,7 @@
 				- ![image.png](../assets/image_1691231828911_0.png)
 		- 在 `git` 中，**树对象（tree）** 相当于目录。一个 **树对象** 基本上就是一个目录列表，它引用着 **blob** 和其它的 **树对象**。
 			- **树对象** 也用 SHA-1 哈希值唯一标识，它通过其它对象（**blob** 或 **树对象**）的 SHA-1 哈希值引用它们。
-				- ![image.png](../assets/image_1691231885848_0.png)
+				- ![image.png](../assets/image_1691231885848_0.png){:height 248, :width 658}
 			- 这张图相当于一个文件系统，这个文件系统有一个根目录，根目录下有一个位于 `/test.js` 的文件和一个名为 `/docs` 的目录，`/docs` 目录下有两个文件：`/docs/pic.png` 和 `/docs/1.txt`。
 				- ![image.png](../assets/image_1691232065372_0.png)
 		- 在 `git` 中，一个快照就是一个 **提交（commit）**。
