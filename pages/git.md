@@ -1,4 +1,5 @@
 - Git 内部原理图解——对象、分支以及如何从零开始建仓库
+  collapsed:: true
 	- 来源：
 		- https://www.freecodecamp.org/chinese/news/git-internals-objects-branches-create-repo/
 	- Git 对象——blob、tree 和 commit
@@ -103,3 +104,8 @@
 			- 为了查找上面的那个哈希值，`git` 会先寻找 `.git\objects` 目录下名为 `54` 的目录，然后搜索那个目录，这进一步缩小了搜索范围。`.git\objects` 目录下最多可能会有 256 个子目录（从 `00` 到 `FF`）。
 		- 创建 **blob** 这个过程通常发生在我们将一些东西添加到 **暂存区** 的时候——也就是我们使用 `git add` 的时候。
 		-
+-
+- mac下模拟git hash-object
+	- ```echo -n "hello world" > test.txt
+	  ```
+-
