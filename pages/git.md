@@ -120,7 +120,12 @@
 		- ```
 		  git cat-file -p 25fd71335b3ddbeaeedc9b869647edfc515173f7
 		  ```
--
+	- 如何查看hash在哪个packfile中
+		- ```
+		  for pack in .git/objects/pack/*.idx; do
+		    git verify-pack -v $pack | grep 25fd71335b3ddbeaeedc9b869647edfc515173f7 && echo $pack
+		  done
+		  ```
 - 根据hash获取文件路径
 	- ```
 	  git rev-list --all --objects | grep <sha1-hash>
