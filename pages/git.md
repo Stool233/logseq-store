@@ -126,6 +126,7 @@
 		    git verify-pack -v $pack | grep 25fd71335b3ddbeaeedc9b869647edfc515173f7 && echo $pack
 		  done
 		  ```
+	-
 - 根据hash获取文件路径
 	- ```
 	  git rev-list --all --objects | grep <sha1-hash>
