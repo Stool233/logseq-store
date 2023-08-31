@@ -174,12 +174,17 @@
 					- ![image.png](../assets/image_1693460405480_0.png)
 			-
 		- git cherry-pick
+		  collapsed:: true
 			- This command takes the changes introduced in the specified revision, and apply them to the active commit.
 			- It also creates a new commit object, and updates the active branch to point to this new object.
+			- ![image.png](../assets/image_1693494555351_0.png)
+			-
 			- ![image.png](../assets/image_1693494224085_0.png)
 			- In the example above I specified the SHA-1 identifier of the created commit, but you could also use `git cherry-pick main`, as the commit whose changes we are applying is the one `main` is pointing to.
 			- Note that `git cherry-pick` actually computes the difference between the specified commit and its parent, and then applies them on the active commit.
 				- This means that sometimes, Git won’t be able to apply those changes as you may get a conflict, but that’s a topic for another post.
 				- Also note that you can ask Git to `cherry-pick` the changes introduced in any commit, not only commits referenced by a branch.
+		- git revert
+			- ![image.png](../assets/image_1693494587604_0.png)
 			-
 -
