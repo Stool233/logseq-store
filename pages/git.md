@@ -192,5 +192,8 @@
 			- `git revert` created a new commit object, which means it’s an addition to the history.
 				- By using `git revert` you didn’t rewrite history.
 				- You admitted your past mistake, and this commit is an acknowledgement that you made had a mistake and now you fixed it.
-				-
+					- Some would say it’s the more mature way.
+					- Some would say it’s not as clean a history you would get if you used `git reset` to rewrite the previous commit.
+					- But this is a way to avoid rewriting history.
+		-
 -
