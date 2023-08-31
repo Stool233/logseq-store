@@ -149,7 +149,6 @@
 		- https://medium.com/@Omer_Rosenbaum/git-undo-how-to-rewrite-git-history-with-confidence-d4452e2969c2
 	- Undoing the changes
 		- git reset
-		  collapsed:: true
 			- `git reset --soft`
 				- So the very last step you did before was to `git commit`, which actually means two things — Git created a commit object, and moved `main`, the active branch.
 				- To undo this step, use the command `git reset --soft HEAD~1`.
@@ -174,7 +173,6 @@
 					- ![image.png](../assets/image_1693460405480_0.png)
 			-
 		- git cherry-pick
-		  collapsed:: true
 			- This command takes the changes introduced in the specified revision, and apply them to the active commit.
 			- It also creates a new commit object, and updates the active branch to point to this new object.
 			- ![image.png](../assets/image_1693494555351_0.png)
@@ -185,7 +183,6 @@
 				- This means that sometimes, Git won’t be able to apply those changes as you may get a conflict, but that’s a topic for another post.
 				- Also note that you can ask Git to `cherry-pick` the changes introduced in any commit, not only commits referenced by a branch.
 		- git revert
-		  collapsed:: true
 			- ![image.png](../assets/image_1693494587604_0.png)
 			- ![image.png](../assets/image_1693494598942_0.png)
 			- This command takes the commit you’re providing it with, compute the Diff from its parent commit, just like `git cherry-pick`, but this time it computes the reverse changes.
@@ -197,6 +194,7 @@
 					- Some would say it’s not as clean a history you would get if you used `git reset` to rewrite the previous commit.
 					- But this is a way to avoid rewriting history.
 		- git reflog / git log -g
+		  collapsed:: true
 			- While you work with Git, whenever you change `HEAD`, which you can do by using `git reset`, but also other commands like `git switch` or `git checkout`, Git adds an entry to the `reflog`.
 				- ![image.png](../assets/image_1693495689745_0.png)
 			- So such as Git uses `HEAD~1` to get to the first parent of `HEAD`, and `HEAD~2` to refer to the second parent of `HEAD` and so on, Git uses `HEAD@{1}` to refer to the first reflog parent of `HEAD`, where `HEAD` pointed to in the previous step.
@@ -208,5 +206,7 @@
 			- What would happen if I used this command again? And ran `git commit --reset HEAD@{1}`? Git would set `HEAD` to where `HEAD` was pointing before the last `reset`, meaning to “Commit 2”. We can keep going all day:
 				- ![image.png](../assets/image_1693495849230_0.png)
 				- 每次reset都会创建一个reflog
-		-
+	- The most important tool, even more important than the five tools listed in this toolbox, is **to whiteboard the current situation vs the desired one.** Trust me on this, it will make every situation seem less daunting and the solution more clear.
+	-
+	-
 -
