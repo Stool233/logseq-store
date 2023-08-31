@@ -157,4 +157,6 @@
 				- ![image.png](../assets/image_1693459074462_0.png)
 			- `git reset --mixed`
 				- (note: `--mixed` is the default switch for `git reset`).
+				- This command starts the same as `git reset --soft HEAD~1`. Meaning it takes the pointer of whatever `HEAD` is pointing to now, which is the `main` branch, and sets it to `HEAD~1`
+				- Next, Git goes further, effectively undoing the changes we made to the index.
 				-
