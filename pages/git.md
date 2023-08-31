@@ -156,4 +156,5 @@
 					- However, this command did **not **affect the state of the index or the working tree.
 				- ![image.png](../assets/image_1693459074462_0.png)
 			- `git reset --mixed`
-			-
+				- (note: `--mixed` is the default switch for `git reset`).
+				-
