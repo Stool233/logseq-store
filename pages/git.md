@@ -147,5 +147,9 @@
 - Git UNDO — how to rewrite Git history with confidence
 	- 来源：
 		- https://medium.com/@Omer_Rosenbaum/git-undo-how-to-rewrite-git-history-with-confidence-d4452e2969c2
-	- git reset
-		-
+	- Undoing the changes
+		- git reset
+			- `git reset --soft`
+				- So the very last step you did before was to `git commit`, which actually means two things — Git created a commit object, and moved `main`, the active branch.
+				- To undo this step, use the command `git reset --soft HEAD~1`.
+			-
