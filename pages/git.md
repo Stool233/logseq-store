@@ -161,4 +161,8 @@
 				- Next, Git goes further, effectively undoing the changes we made to the index.
 					- That is, changing the index so that it matches with the current `HEAD`, the new `HEAD` after setting it in the first step.
 				- ![image.png](../assets/image_1693460161497_0.png)
-			-
+			- `git reset --hard`
+				- Go ahead and run `git reset --hard HEAD~1`
+					- Again, Git starts with the `--soft` stage, setting whatever `HEAD` is pointing to (`main`), to `HEAD~1` (“Commit 1”).
+					- Next, moving on to the `--mixed` stage, matching the index with `HEAD`. That is, Git undoes the staging of `2.txt`.
+					-
