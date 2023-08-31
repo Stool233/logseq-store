@@ -106,6 +106,7 @@
 		-
 -
 - mac下模拟git hash-object
+  collapsed:: true
 	- ```
 	  >echo -n "hello world" > test.txt
 	  >git hash-object test.txt
@@ -114,10 +115,12 @@
 	  (stdin)= 95d09f2b10159347eece71399a7e2e907ea3df4f
 	  ```
 - 根据hash获取文件路径
+  collapsed:: true
 	- ```
 	  git rev-list --all --objects | grep <sha1-hash>
 	  ```
 - Git对象打包（Packfiles）：
+  collapsed:: true
 	- 为了节省空间和提高性能，Git 会定期把许多小的对象文件打包到一起，形成一个大的 "packfile"。打包后的对象不再以单独的文件形式存在于 `.git/objects/` 目录下，而是存在于 `.git/objects/pack/` 目录下的一个 packfile 中。你可以使用 `git verify-pack` 命令来查看 packfile 的内容。
 	- 如果你需要查看某个具体对象的内容，你可以使用 `git cat-file` 命令，例如
 		- ```
