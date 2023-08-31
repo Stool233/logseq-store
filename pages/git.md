@@ -167,4 +167,6 @@
 					- Next, moving on to the `--mixed` stage, matching the index with `HEAD`. That is, Git undoes the staging of `2.txt`.
 					- It is time for the `--hard` step, where Git goes even further and matches the working dir with the stage of the index.
 						- In this case, it means **removing `2.txt` also from the working dir.**
-				-
+						- (Note: in this specific case the file is *untracked* so it won’t be deleted from the file system, it isn’t really important in order to understand `git reset` though)
+					- ![image.png](../assets/image_1693460405480_0.png)
+					-
