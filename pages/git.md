@@ -152,4 +152,5 @@
 			- `git reset --soft`
 				- So the very last step you did before was to `git commit`, which actually means two things — Git created a commit object, and moved `main`, the active branch.
 				- To undo this step, use the command `git reset --soft HEAD~1`.
-			-
+					- This command asks Git to change whatever `HEAD` is pointing to.
+				-
