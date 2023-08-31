@@ -198,7 +198,12 @@
 					- But this is a way to avoid rewriting history.
 		- git reflog / git log -g
 			- While you work with Git, whenever you change `HEAD`, which you can do by using `git reset`, but also other commands like `git switch` or `git checkout`, Git adds an entry to the `reflog`.
+				- ![image.png](../assets/image_1693495689745_0.png)
 			- So such as Git uses `HEAD~1` to get to the first parent of `HEAD`, and `HEAD~2` to refer to the second parent of `HEAD` and so on, Git uses `HEAD@{1}` to refer to the first reflog parent of `HEAD`, where `HEAD` pointed to in the previous step.
 			- We can also ask `git rev-parse` to show us its value:
-				-
+				- ![image.png](../assets/image_1693495674583_0.png)
+			- Another way to view the `reflog` is by using `git log -g`, which asks `git log` to actually consider the `reflog` :
+				- ![image.png](../assets/image_1693495709278_0.png)
+			- So to get back to “Commit 3”, you can just use `git reset --hard HEAD@{1}` (or the SHA-1 value of “Commit 3”):
+			-
 -
