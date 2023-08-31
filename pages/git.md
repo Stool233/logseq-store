@@ -196,5 +196,9 @@
 					- Some would say it’s the more mature way.
 					- Some would say it’s not as clean a history you would get if you used `git reset` to rewrite the previous commit.
 					- But this is a way to avoid rewriting history.
-		- git reflog
+		- git reflog / git log -g
+			- While you work with Git, whenever you change `HEAD`, which you can do by using `git reset`, but also other commands like `git switch` or `git checkout`, Git adds an entry to the `reflog`.
+			- So such as Git uses `HEAD~1` to get to the first parent of `HEAD`, and `HEAD~2` to refer to the second parent of `HEAD` and so on, Git uses `HEAD@{1}` to refer to the first reflog parent of `HEAD`, where `HEAD` pointed to in the previous step.
+			- We can also ask `git rev-parse` to show us its value:
+				-
 -
