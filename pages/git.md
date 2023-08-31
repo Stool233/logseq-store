@@ -147,4 +147,5 @@
 - Git UNDO — how to rewrite Git history with confidence
 	- 来源：
 		- https://medium.com/@Omer_Rosenbaum/git-undo-how-to-rewrite-git-history-with-confidence-d4452e2969c2
-	-
+	- git reset
+		-
