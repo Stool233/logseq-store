@@ -181,4 +181,5 @@
 			- Note that `git cherry-pick` actually computes the difference between the specified commit and its parent, and then applies them on the active commit.
 				- This means that sometimes, Git won’t be able to apply those changes as you may get a conflict, but that’s a topic for another post.
 				- Also note that you can ask Git to `cherry-pick` the changes introduced in any commit, not only commits referenced by a branch.
+			-
 -
