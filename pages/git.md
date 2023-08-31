@@ -154,4 +154,5 @@
 				- To undo this step, use the command `git reset --soft HEAD~1`.
 					- This command asks Git to change whatever `HEAD` is pointing to.
 					- However, this command did **not **affect the state of the index or the working tree.
-				-
+				- ![image.png](../assets/image_1693459074462_0.png)
+			-
