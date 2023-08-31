@@ -185,6 +185,7 @@
 				- This means that sometimes, Git won’t be able to apply those changes as you may get a conflict, but that’s a topic for another post.
 				- Also note that you can ask Git to `cherry-pick` the changes introduced in any commit, not only commits referenced by a branch.
 		- git revert
+		  collapsed:: true
 			- ![image.png](../assets/image_1693494587604_0.png)
 			- ![image.png](../assets/image_1693494598942_0.png)
 			- This command takes the commit you’re providing it with, compute the Diff from its parent commit, just like `git cherry-pick`, but this time it computes the reverse changes.
@@ -195,5 +196,5 @@
 					- Some would say it’s the more mature way.
 					- Some would say it’s not as clean a history you would get if you used `git reset` to rewrite the previous commit.
 					- But this is a way to avoid rewriting history.
-		-
+		- git reflog
 -
