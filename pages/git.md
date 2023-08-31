@@ -165,4 +165,6 @@
 				- Go ahead and run `git reset --hard HEAD~1`
 					- Again, Git starts with the `--soft` stage, setting whatever `HEAD` is pointing to (`main`), to `HEAD~1` (“Commit 1”).
 					- Next, moving on to the `--mixed` stage, matching the index with `HEAD`. That is, Git undoes the staging of `2.txt`.
-					-
+					- It is time for the `--hard` step, where Git goes even further and matches the working dir with the stage of the index.
+						- In this case, it means **removing `2.txt` also from the working dir.**
+				-
