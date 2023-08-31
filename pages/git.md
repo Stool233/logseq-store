@@ -173,5 +173,9 @@
 							- 当你执行`git reset --hard`命令时，Git会重置你的工作目录和索引(index)以匹配HEAD。但是，此命令不会影响未跟踪的文件。因此，如果一个文件是"untracked"的，即使你执行了`git reset --hard`，该文件仍然会保留在你的工作目录中。
 					- ![image.png](../assets/image_1693460405480_0.png)
 			-
-		-
+		- git cherry-pick
+			- This command takes the changes introduced in the specified revision, and apply them to the active commit.
+			- It also creates a new commit object, and updates the active branch to point to this new object.
+			- ![image.png](../assets/image_1693494224085_0.png)
+			-
 -
