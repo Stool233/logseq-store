@@ -168,5 +168,7 @@
 					- It is time for the `--hard` step, where Git goes even further and matches the working dir with the stage of the index.
 						- In this case, it means **removing `2.txt` also from the working dir.**
 						- (Note: in this specific case the file is *untracked* so it won’t be deleted from the file system, it isn’t really important in order to understand `git reset` though)
+							- 在Git中，"untracked file"指的是那些存在于你的工作目录中，但并未被纳入Git追踪的文件。换句话说，这些文件在你的Git仓库的历史记录中没有出现过。这可能是因为这些文件是新创建的，或者是在`.gitignore`文件中明确指定不进行追踪的。
+							- 当你执行`git reset --hard`命令时，Git会重置你的工作目录和索引(index)以匹配HEAD。但是，此命令不会影响未跟踪的文件。因此，如果一个文件是"untracked"的，即使你执行了`git reset --hard`，该文件仍然会保留在你的工作目录中。
 					- ![image.png](../assets/image_1693460405480_0.png)
-					-
+			-
