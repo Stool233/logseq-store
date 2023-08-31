@@ -187,5 +187,10 @@
 		- git revert
 			- ![image.png](../assets/image_1693494587604_0.png)
 			- ![image.png](../assets/image_1693494598942_0.png)
-			-
+			- This command takes the commit you’re providing it with, compute the Diff from its parent commit, just like `git cherry-pick`, but this time it computes the reverse changes.
+				- So if in the specified commit you added a line, the reverse would delete the line, and vice versa.
+			- `git revert` created a new commit object, which means it’s an addition to the history.
+				- By using `git revert` you didn’t rewrite history.
+				- You admitted your past mistake, and this commit is an acknowledgement that you made had a mistake and now you fixed it.
+				-
 -
