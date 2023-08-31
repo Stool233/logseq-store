@@ -144,3 +144,7 @@
 		- **版本 2 的增强**：版本 2 的 `.idx` 文件引入了一些增强，包括对大于 4GB 的 `.pack` 文件的支持和 CRC32 校验和，这些都有助于提高 `.idx` 文件的性能和可靠性。
 		- **内存映射文件**：Git 使用内存映射文件（memory-mapped files）来处理 `.idx` 文件。这意味着整个 `.idx` 文件会被映射到内存中，这使得访问 `.idx` 文件就像访问内存一样快。
 -
+- Git UNDO — how to rewrite Git history with confidence
+	- 来源：
+		- https://medium.com/@Omer_Rosenbaum/git-undo-how-to-rewrite-git-history-with-confidence-d4452e2969c2
+	-
