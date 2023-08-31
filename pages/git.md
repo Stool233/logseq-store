@@ -207,5 +207,6 @@
 			- So to get back to “Commit 3”, you can just use `git reset --hard HEAD@{1}` (or the SHA-1 value of “Commit 3”):
 			- What would happen if I used this command again? And ran `git commit --reset HEAD@{1}`? Git would set `HEAD` to where `HEAD` was pointing before the last `reset`, meaning to “Commit 2”. We can keep going all day:
 				- ![image.png](../assets/image_1693495849230_0.png)
-				-
+				- 每次reset都会创建一个reflog
+		-
 -
