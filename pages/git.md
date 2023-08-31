@@ -186,5 +186,6 @@
 				- Also note that you can ask Git to `cherry-pick` the changes introduced in any commit, not only commits referenced by a branch.
 		- git revert
 			- ![image.png](../assets/image_1693494587604_0.png)
+			- ![image.png](../assets/image_1693494598942_0.png)
 			-
 -
