@@ -145,6 +145,7 @@
 		- **内存映射文件**：Git 使用内存映射文件（memory-mapped files）来处理 `.idx` 文件。这意味着整个 `.idx` 文件会被映射到内存中，这使得访问 `.idx` 文件就像访问内存一样快。
 -
 - Git UNDO — how to rewrite Git history with confidence
+  collapsed:: true
 	- 来源：
 		- https://medium.com/@Omer_Rosenbaum/git-undo-how-to-rewrite-git-history-with-confidence-d4452e2969c2
 	- Undoing the changes
@@ -215,4 +216,8 @@
 	-
 	-
 -
--
+- Git Diff and Patch - Full Handbook for Developers
+	- `git diff`
+		- is a command that takes two inputs, and computes the difference between them. Inputs can be commits, but also files, and even files that have never been introduced to the repository.
+		- ![image.png](../assets/image_1693639263270_0.png)
+		-
