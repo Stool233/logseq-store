@@ -123,7 +123,10 @@
 				- git update-index --add --cacheinfo 100644 <blob-hash> <filename>
 					- 注意：`cacheinfo` 是一个[git 存储的](https://github.com/git/git/blob/master/Documentation/technical/index-format.txt)十六位的文件模式，这个模式遵循 [POSIX 类型和模式](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/sys_stat.h.html) 的布局
 		- git write-tree
-			-
+			- 创建一个树对象，在一个 **树对象** 中记录 **索引** 的内容
+		- git commit-tree
+			- 创建一个引用 **树对象** 的 **提交** 对象
+				-
 			-
 -
 - mac下模拟git hash-object
