@@ -231,5 +231,7 @@
 		- ![image.png](../assets/image_1693639387734_0.png)
 	- The Structure of a Diff
 		- ![image.png](../assets/image_1693639424918_0.png)
-	-
+	- How to Produce diffs
+		- ![image.png](../assets/image_1693639476111_0.png)
+	- How to Apply Patches
 		-
