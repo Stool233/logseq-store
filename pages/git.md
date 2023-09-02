@@ -217,7 +217,13 @@
 	-
 -
 - Git Diff and Patch - Full Handbook for Developers
+	- 来源：
+		- https://www.freecodecamp.org/news/git-diff-and-patch/
 	- `git diff`
 		- is a command that takes two inputs, and computes the difference between them. Inputs can be commits, but also files, and even files that have never been introduced to the repository.
 		- ![image.png](../assets/image_1693639263270_0.png)
+		- This is important – `git diff` computes the difference between two strings, which most of the time happen to consist of code, but not necessarily.
+	- `patch`
+		- ![image.png](../assets/image_1693639311864_0.png)
+		- A `patch` consists of asymmetric instructions to get from one file to another
 		-
