@@ -239,3 +239,7 @@
 			- The biggest problem with using patches is that it is hard to apply a patch when your working directory does not match the sender's previous commit.
 			- Losing the commit history makes it difficult to resolve conflicts. You will better understand it as you dive deeper into the process of `git apply`.
 		- Understanding the Context Lines
+			- By default, Git looks for `3` lines of context before and after each change introduced in the patch. If you take three lines before and after the added line, and three lines before and after the deleted line
+			- You can ask Git to rely on fewer lines of context, using the `-C` argument. For example, to ask Git to look for `1` line of the surrounding context, run the following command:
+				- `git apply -C1 new_patch.patch`
+			-
