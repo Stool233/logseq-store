@@ -111,6 +111,8 @@
 	- 底层命令
 		- git hash-object
 			- 获取 **blob 对象** 的 SHA-1 哈希值
+				- echo "git is awesome" | git hash-object --stdin
+			- 为了真的将该 **blob 对象** 写入 `git` 的对象数据库，我们可以简单地给 `git hash-object` 加一个 `-w` 开关
 		-
 -
 - mac下模拟git hash-object
