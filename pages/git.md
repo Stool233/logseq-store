@@ -234,4 +234,8 @@
 	- How to Produce diffs
 		- ![image.png](../assets/image_1693639476111_0.png)
 	- How to Apply Patches
-		-
+		- Historical note
+			- Actually, sharing patches used to be the main way to share code in the early days of open source. But now - virtually all projects have moved to sharing Git commits directly through pull requests (called "merge requests" on some platforms).
+			- The biggest problem with using patches is that it is hard to apply a patch when your working directory does not match the sender's previous commit.
+			- Losing the commit history makes it difficult to resolve conflicts. You will better understand it as you dive deeper into the process of `git apply`.
+		- Understanding the Context Lines
