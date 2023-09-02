@@ -225,5 +225,8 @@
 		- This is important – `git diff` computes the difference between two strings, which most of the time happen to consist of code, but not necessarily.
 	- `patch`
 		- ![image.png](../assets/image_1693639311864_0.png)
+		- A `diff` shows the differences between two files, or snapshots, and can be quite minimal in doing so. A `patch` is an extension of a `diff`, augmented with further information such as context lines and filenames, which allow it to be applied more widely. It is a text document that describes how to alter an existing file or codebase.
 		- A `patch` consists of asymmetric instructions to get from one file to another
-		-
+		- The `patch` format uses context, as well as line numbers, to locate differing file regions. This allows a `patch` to be applied to a somewhat earlier or later version of the first file than the one from which it was derived, as long as the applying program can still locate the context of the change.
+			-
+			-
