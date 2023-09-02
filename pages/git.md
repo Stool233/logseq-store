@@ -217,6 +217,7 @@
 	-
 -
 - Git Diff and Patch - Full Handbook for Developers
+  collapsed:: true
 	- 来源：
 		- https://www.freecodecamp.org/news/git-diff-and-patch/
 	- `git diff`
