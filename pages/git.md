@@ -126,6 +126,8 @@
 			- 创建一个树对象，在一个 **树对象** 中记录 **索引** 的内容
 		- git commit-tree
 			- 创建一个引用 **树对象** 的 **提交** 对象
+				- git commit-tree <tree-hash> -m <commit message>
+			- 声明这个提交的 *父提交*
 				-
 			-
 -
