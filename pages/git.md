@@ -128,7 +128,8 @@
 			- 创建一个引用 **树对象** 的 **提交** 对象
 				- git commit-tree <tree-hash> -m <commit message>
 			- 声明这个提交的 *父提交*
-				-
+				- 我们用 `git commit-tree` 命令的 `-p` 开关声明父节点
+			-
 			-
 -
 - mac下模拟git hash-object
