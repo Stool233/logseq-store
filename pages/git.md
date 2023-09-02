@@ -113,7 +113,13 @@
 			- 获取 **blob 对象** 的 SHA-1 哈希值
 				- echo "git is awesome" | git hash-object --stdin
 			- 为了真的将该 **blob 对象** 写入 `git` 的对象数据库，我们可以简单地给 `git hash-object` 加一个 `-w` 开关
-		-
+		- git cat-file
+			- `git cat-file -t` （`-t` 代表“type”）
+				- 查看对象的类型
+			- `git cat-file -p` （`-p` 代表“pretty-print”）
+				- 查看对象的内容
+				-
+			-
 -
 - mac下模拟git hash-object
   collapsed:: true
