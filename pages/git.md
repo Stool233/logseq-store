@@ -122,7 +122,8 @@
 			- 把文件添加到暂存区
 				- git update-index --add --cacheinfo 100644 <blob-hash> <filename>
 					- 注意：`cacheinfo` 是一个[git 存储的](https://github.com/git/git/blob/master/Documentation/technical/index-format.txt)十六位的文件模式，这个模式遵循 [POSIX 类型和模式](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/sys_stat.h.html) 的布局
-					-
+		- git write-tree
+			-
 			-
 -
 - mac下模拟git hash-object
