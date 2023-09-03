@@ -1,5 +1,6 @@
 - Git 内部原理图解——对象、分支以及如何从零开始建仓库
 	- 来源：
+	  collapsed:: true
 		- https://www.freecodecamp.org/chinese/news/git-internals-objects-branches-create-repo/
 	- Git 对象——blob、tree 和 commit
 	  collapsed:: true
@@ -109,6 +110,7 @@
 		- 创建 **blob** 这个过程通常发生在我们将一些东西添加到 **暂存区** 的时候——也就是我们使用 `git add` 的时候。
 		-
 	- 底层命令
+	  collapsed:: true
 		- git hash-object
 			- 获取 **blob 对象** 的 SHA-1 哈希值
 				- echo "git is awesome" | git hash-object --stdin
