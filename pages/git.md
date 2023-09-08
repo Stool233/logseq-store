@@ -300,5 +300,6 @@
 				- The result is the state of the new, merge commit.
 			- ![image.png](../assets/image_1694184772178_0.png)
 			- ![image.png](../assets/image_1694184866119_0.png)
-		-
+			- You can also understand why it's called a "3-way merge":
+				-
 		-
