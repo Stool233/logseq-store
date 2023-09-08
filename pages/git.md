@@ -275,4 +275,6 @@
 			-
 -
 - Definitive Guide to Merging in Git
-	-
+	- What is a Merge in Git
+		- Merging is the process of combining the recent changes from several branches into a single new commit that will be on all those branches.
+		-
