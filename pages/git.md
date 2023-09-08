@@ -289,5 +289,8 @@
 				- ![image.png](../assets/image_1694183621180_0.png)
 	- How to perform a three-way merge in Git
 		- The 3-way merge process includes these stages:
+			- First, Git locates the common ancestor of the two branches.
+				- That is, the common commit from which the merging branches most recently diverged.
+				- Technically, this is actually the first commit that is reachable from both branches. This commit is then called the **merge base**.
 			-
 		-
