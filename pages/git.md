@@ -273,3 +273,5 @@
 			- You can ask Git to rely on fewer lines of context, using the `-C` argument. For example, to ask Git to look for `1` line of the surrounding context, run the following command:
 				- `git apply -C1 new_patch.patch`
 			-
+-
+- Definitive Guide to Merging in Git
