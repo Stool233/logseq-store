@@ -320,6 +320,7 @@
 	- How to Resolve Merge Conflicts
 		- Git performs the same 3-way merge algorithm on a files level
 			- ![image.png](../assets/image_1694186792014_0.png)
-		-
+		- `git log -p -–merge`
+			-
 		-
 		-
