@@ -308,5 +308,7 @@
 			- This is unlike, say, the fast-forward examples we saw before.
 				- The fast-forward examples are actually a case of a **two**-way merge, as Git only compares two states
 	- How Git's 3-way Merge Algorithm Works
+		- ![image.png](../assets/image_1694185400757_0.png)
+		- ![image.png](../assets/image_1694185426765_0.png)
 		-
 		-
