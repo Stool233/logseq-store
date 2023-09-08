@@ -307,5 +307,6 @@
 				- and their common ancestor.
 			- This is unlike, say, the fast-forward examples we saw before.
 				- The fast-forward examples are actually a case of a **two**-way merge, as Git only compares two states
+	- How Git's 3-way Merge Algorithm Works
 		-
 		-
