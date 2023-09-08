@@ -310,5 +310,9 @@
 	- How Git's 3-way Merge Algorithm Works
 		- ![image.png](../assets/image_1694185400757_0.png)
 		- ![image.png](../assets/image_1694185426765_0.png)
-		-
+		- this is a 3-way merge
+			- In general, if all versions agree on a line, then this line is used.
+			- If `A` and the `merge base` match, and `B` has another version, `B` is taken.
+			- In the opposite case, where the `merge base` and `B` match, the `A` version is selected.
+			- If `A` and `B` match, this version is taken, whether the merge base agrees or not.
 		-
