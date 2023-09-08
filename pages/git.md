@@ -301,5 +301,11 @@
 			- ![image.png](../assets/image_1694184772178_0.png)
 			- ![image.png](../assets/image_1694184866119_0.png)
 			- You can also understand why it's called a "3-way merge":
-				-
+				- Git merges three different states
+					- that of the first branch,
+					- that of the second branch,
+					- and their common ancestor.
+				- This is unlike, say, the fast-forward examples we saw before.
+					- The fast-forward examples are actually a case of a **two**-way merge, as Git only compares two states
+		-
 		-
