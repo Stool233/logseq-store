@@ -287,5 +287,7 @@
 			- ![image.png](../assets/image_1694183586762_0.png)
 			- In case you don't want that to happen, but rather you want Git to really perform a merge, you could either change Git's configuration, or run the `merge` command with the `--no-ff` flag.
 				- ![image.png](../assets/image_1694183621180_0.png)
-	- Time For a More Advanced Case
+	- How to perform a three-way merge in Git
+		- The 3-way merge process includes these stages:
+			-
 		-
