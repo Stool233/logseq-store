@@ -283,5 +283,8 @@
 			- Almost always, we merge two commits by referring to them with the branch names that point to them.
 			- Thus we say we "merge branches" – though under the hood, we actually merge commits.
 	- Time to Get Hands-on
-		- The result of a fast-forward merge
-		-
+		- fast-forward merge
+			- ![image.png](../assets/image_1694183586762_0.png)
+			- In case you don't want that to happen, but rather you want Git to really perform a merge, you could either change Git's configuration, or run the `merge` command with the `--no-ff` flag.
+				- ![image.png](../assets/image_1694183621180_0.png)
+			-
