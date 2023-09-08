@@ -315,6 +315,9 @@
 			- If `A` and the `merge base` match, and `B` has another version, `B` is taken.
 			- In the opposite case, where the `merge base` and `B` match, the `A` version is selected.
 			- If `A` and `B` match, this version is taken, whether the merge base agrees or not.
+		- This description leaves one open question though: What happens in cases where all three versions disagree?
+			- Well, that's a conflict that Git does not resolve automatically. In these cases, Git calls for a human's help.
 	- How to Resolve Merge Conflicts
+		-
 		-
 		-
