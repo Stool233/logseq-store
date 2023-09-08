@@ -315,4 +315,6 @@
 			- If `A` and the `merge base` match, and `B` has another version, `B` is taken.
 			- In the opposite case, where the `merge base` and `B` match, the `A` version is selected.
 			- If `A` and `B` match, this version is taken, whether the merge base agrees or not.
+	- How to Resolve Merge Conflicts
+		-
 		-
