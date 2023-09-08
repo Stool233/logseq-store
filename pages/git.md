@@ -280,4 +280,8 @@
 		- In a way, merging is the complement of branching in version control:
 			- a branch allows you to work simultaneously with others on a particular set of files, whereas a merge allows you to later combine separate work on branches that diverged from a common ancestor commit.
 		- When you merge with Git, you merge **commits**.
-			- Almost always, we merge two commits by referring to them with the branch names that point to them. Thus we say we "merge branches" – though under the hood, we actually merge commits.
+			- Almost always, we merge two commits by referring to them with the branch names that point to them.
+			- Thus we say we "merge branches" – though under the hood, we actually merge commits.
+	- Time to Get Hands-on
+		- The result of a fast-forward merge
+		-
