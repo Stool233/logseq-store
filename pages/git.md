@@ -275,6 +275,7 @@
 			-
 -
 - Definitive Guide to Merging in Git
+  collapsed:: true
 	- What is a Merge in Git
 		- Merging is the process of combining the recent changes from several branches into a single new commit that will be on all those branches.
 		- In a way, merging is the complement of branching in version control:
@@ -325,6 +326,8 @@
 			- Adding `-p` tells `git log` to show the commits along the diffs they introduced.
 			- The `--merge` switch makes the command show all commits containing changes relevant to any *unmerged files*, on either branch, together with their diffs.
 			- This can help you identify the changes in history that led to the conflicts
+	-
 		-
 		-
-		-
+-
+-
