@@ -299,5 +299,6 @@
 			- Third, Git applies both patches to the merge base using a 3-way merge algorithm.
 				- The result is the state of the new, merge commit.
 			- ![image.png](../assets/image_1694184772178_0.png)
+			- ![image.png](../assets/image_1694184866119_0.png)
 		-
 		-
