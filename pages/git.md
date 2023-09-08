@@ -292,5 +292,12 @@
 			- First, Git locates the common ancestor of the two branches.
 				- That is, the common commit from which the merging branches most recently diverged.
 				- Technically, this is actually the first commit that is reachable from both branches. This commit is then called the **merge base**.
-			-
+			- Second, Git calculates two diffs:
+				- one diff from the merge base to the first branch,
+				- and another diff from the merge base to the second branch.
+				- Git generates patches based on those diffs.
+			- Third, Git applies both patches to the merge base using a 3-way merge algorithm.
+				- The result is the state of the new, merge commit.
+			- ![image.png](../assets/image_1694184772178_0.png)
+		-
 		-
