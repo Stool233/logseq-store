@@ -321,6 +321,10 @@
 		- Git performs the same 3-way merge algorithm on a files level
 			- ![image.png](../assets/image_1694186792014_0.png)
 		- `git log -p -–merge`
-			-
+			- As a reminder, `git log` shows the history of commits that are reachable from `HEAD`.
+			- Adding `-p` tells `git log` to show the commits along the diffs they introduced.
+			- The `--merge` switch makes the command show all commits containing changes relevant to any *unmerged files*, on either branch, together with their diffs.
+			- This can help you identify the changes in history that led to the conflicts
+		-
 		-
 		-
