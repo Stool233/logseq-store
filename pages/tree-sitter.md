@@ -2,5 +2,7 @@
 	- https://docs.rs/tree-sitter-graph/0.11.0/tree_sitter_graph/reference/index.html
 	- tree-sitter-graph的图定义DSL
 		- 图DSL由一个或多个节(stanzas)组成
-			- 每个节以tree-sitter查询模式开始
+			- 每个节以tree-sitter查询模式[***query pattern***](https://tree-sitter.github.io/tree-sitter/using-parsers#pattern-matching-with-queries),开始
+				- 该模式标识具体语法树的一部分
+				- 查询模式应该使用捕获[***captures***](https://tree-sitter.github.io/tree-sitter/using-parsers#capturing-nodes)来识别树的匹配部分中的特定语法节点
 				-
