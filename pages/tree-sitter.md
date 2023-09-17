@@ -5,5 +5,6 @@
 			- 每个节以tree-sitter查询模式[***query pattern***](https://tree-sitter.github.io/tree-sitter/using-parsers#pattern-matching-with-queries),开始
 				- 该模式标识具体语法树的一部分
 				- 查询模式应该使用捕获[***captures***](https://tree-sitter.github.io/tree-sitter/using-parsers#capturing-nodes)来识别树的匹配部分中的特定语法节点
-			- 查询之后是一个块，它是一个语句序列，用于构造图节点，将它们与边连接起来，并用属性对两者进行注释
+			- 查询之后是一个块，它是一个语句序列，用于构造图节点（node），将它们与边（edge）连接起来，并用属性（attributes）对两者进行注释.
+			-
 				-
