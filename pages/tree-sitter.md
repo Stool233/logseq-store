@@ -1,14 +1,19 @@
 - tree-sitter-graph
 	- https://docs.rs/tree-sitter-graph/0.11.0/tree_sitter_graph/reference/index.html
 	- tree-sitter-graph的图定义DSL
-		- 图DSL由一个或多个节(stanzas)组成
-			- 每个节以tree-sitter查询模式[***query pattern***](https://tree-sitter.github.io/tree-sitter/using-parsers#pattern-matching-with-queries),开始
-				- 该模式标识具体语法树的一部分
-				- 查询模式应该使用捕获[***captures***](https://tree-sitter.github.io/tree-sitter/using-parsers#capturing-nodes)来识别树的匹配部分中的特定语法节点
-			- 查询之后是一个块，它是一个语句序列，用于构造图节点（node），将它们与边（edge）连接起来，并用属性（attributes）对两者进行注释.
-		- 常规执行将按顺序应用节，重要的是要确保在使用有作用域的变量之前已经赋值。
-			- 在使用延迟求值策略(隐式处理此问题)时，这不是必需的。
-				- 当有许多节时，惰性求值策略也更有效，因为它可以减少树遍历。
-				- 因此，建议使用延迟求值策略，并且很可能成为未来版本中唯一支持的策略。
+		- High-level structure
+			- 图DSL由一个或多个节(stanzas)组成
+				- 每个节以tree-sitter查询模式[***query pattern***](https://tree-sitter.github.io/tree-sitter/using-parsers#pattern-matching-with-queries),开始
+					- 该模式标识具体语法树的一部分
+					- 查询模式应该使用捕获[***captures***](https://tree-sitter.github.io/tree-sitter/using-parsers#capturing-nodes)来识别树的匹配部分中的特定语法节点
+				- 查询之后是一个块，它是一个语句序列，用于构造图节点（node），将它们与边（edge）连接起来，并用属性（attributes）对两者进行注释.
+			- 为了针对具体的语法树执行图形DSL文件，我们详尽地执行图形DSL文件中的每个节。
+				- 对于每个节，我们标识具体语法树与查询模式匹配的每个位置。
+					- 对于这些位置中的每一个，我们最终都为查询模式的捕获分配了一组不同的语法节点。
+					- 我们为每个捕获赋值执行语句块，创建块中提到的任何图节点、边或属性。
+				- 常规执行将按顺序应用节，重要的是要确保在使用有作用域的变量之前已经赋值。
+					- 在使用延迟求值策略(隐式处理此问题)时，这不是必需的。
+						- 当有许多节时，惰性求值策略也更有效，因为它可以减少树遍历。
+						- 因此，建议使用延迟求值策略，并且很可能成为未来版本中唯一支持的策略。
 		-
 			-
