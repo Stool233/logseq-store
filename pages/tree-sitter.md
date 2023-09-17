@@ -82,6 +82,14 @@
 					- 但只有那些出现在 `dotted_name` 内部的标识符的图节点会有一个 `kind` 属性。
 					- 尽管我们在不同的查询中使用了不同的捕获名称来查找这些`identifier`节点，但两个节中的图节点引用都指向同一个图节点。
 		- 图边（Edges）
-			-
+			- 边通过 `edge` 语句创建，该语句指定应连接的两个图节点。边是有方向的，`edge` 语句中的 `->` 箭头表示边的方向
+				- ```
+				  (import_statement name: (_) @name)
+				  {
+				    node @name.source
+				    node @name.sink
+				    edge @name.source -> @name.sink
+				  }
+				  ```
 			-
 			-
