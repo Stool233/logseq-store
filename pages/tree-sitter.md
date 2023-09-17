@@ -53,5 +53,11 @@
 					    node @id.node
 					  }
 					  ```
-				-
+				- 创建图节点的第二种方式是调用 `node` 函数
+					- ```
+					  (identifier) @id
+					  {
+					    let @id.node = (node)
+					  }
+					  ```
 			-
