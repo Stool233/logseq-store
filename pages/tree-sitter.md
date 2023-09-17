@@ -111,7 +111,7 @@
 				- 另一方面，属性是图 DSL 文件产生的输出的一部分，执行完成后仍然存在。
 		- 属性简写（Attribute shorthands）
 			- 常用的属性组合可以用简写方式来表示。每个简写定义了属性名，一个捕获属性值的变量，以及它扩展的一系列属性。
-			- 属性简写在与节（stanzas）相同的级别上定义。例如，以下简写接受一个语法节点作为参数，并扩展为其源文本和子索引的属性
+			- 属性简写在与节（stanzas）相同的级别上定义。例如，以下简写接受一个语法节点作为参数，并扩展为其源文本和子索引的属性：
 				- ```
 				  attribute node_props = node => node_text = (source-text node), node_index = (named-child-index node)
 				  
