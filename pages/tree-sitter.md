@@ -94,5 +94,14 @@
 			- 在图中，任何特定的源节点和目标节点之间最多只能有一条边。如果多个节（stanza）在同一对图节点之间创建边，那么这些边将被 "折叠" 成一条边。
 		- 属性（Attributes）
 			- 图节点和边都有一组关联的属性。每个属性有一个名字（是一个标识符）和一个值。
-			-
+			- 你可以使用 `attr` 语句来给图节点或边添加属性：
+				- ```
+				  (import_statement name: (_) @name)
+				  {
+				    node @name.source
+				    node @name.sink
+				    attr (@name.sink) kind = "module"
+				    attr (@name.source -> @name.sink) precedence = 10
+				  }
+				  ```
 			-
