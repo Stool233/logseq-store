@@ -15,5 +15,18 @@
 					- 在使用延迟求值策略(隐式处理此问题)时，这不是必需的。
 						- 当有许多节时，惰性求值策略也更有效，因为它可以减少树遍历。
 						- 因此，建议使用延迟求值策略，并且很可能成为未来版本中唯一支持的策略。
-		-
+		- Expressions
+			- The value of an expression in the graph DSL can be any of the following:
+				- - null
+				- - a boolean
+				- - a string
+				- - an integer (unsigned, 32 bits)
+				- - a reference to a syntax node
+				- - a reference to a graph node
+				- - an ordered list of values
+				- - a list comprehension
+				- - an unordered set of values
+				- - a set comprehension
+		- Syntax nodes
+			-
 			-
