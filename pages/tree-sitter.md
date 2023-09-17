@@ -148,5 +148,9 @@
 				  ```
 -
 - tree-sitter-stack-graphs
+	- https://docs.rs/tree-sitter-stack-graphs/0.7.0/tree_sitter_stack_graphs/index.html#enums
+	- 这个crate让你可以使用tree-sitter的图构造DSL来构造堆栈图。
+		- 图DSL允许你从源文件的解析语法树构造任意的图结构。
+		- 如果你使用下面描述的属性词汇来构造一个图，那么执行图DSL的结果将是一个有效的堆栈图，我们可以将其用于名称绑定查询。
 	-
 	-
