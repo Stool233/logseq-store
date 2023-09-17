@@ -64,5 +64,17 @@
 					- 实际上，第一个例子中的 `node` 语句只是第二个例子中 `let` 语句的语法糖。
 					- 由于最常见的模式是创建一个图节点并立即将其赋值给一个不可变的作用域变量，我们提供了 `node` 语句作为一个方便的简写。
 					- 如果你需要做更复杂的事情，比如将图节点的引用赋值给一个可变变量，你可以直接调用 `node` 函数。
-			-
+			- 通过使用作用域变量[scoped variable](https://docs.rs/tree-sitter-graph/0.11.0/tree_sitter_graph/reference/index.html#variables)将图节点附加到语法节点，你可以从多个节（stanza）引用它们：
+				- ```
+				  (identifier) @id
+				  {
+				    node @id.node
+				  }
+				  
+				  (dotted_name (identifier) @dotted_element)
+				  {
+				    ; We will learn more about the attr statement below
+				    attr (@dotted_element.node) kind = "dotted"
+				    }
+				  ```
 				-
