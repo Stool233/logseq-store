@@ -1,4 +1,6 @@
 - tree-sitter-graph
 	- https://docs.rs/tree-sitter-graph/0.11.0/tree_sitter_graph/reference/index.html
 	- tree-sitter-graph的图定义DSL
-		-
+		- 图DSL由一个或多个节(stanzas)组成
+			- 每个节以tree-sitter查询模式开始
+				-
