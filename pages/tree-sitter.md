@@ -27,6 +27,8 @@
 				- - a list comprehension
 				- - an unordered set of values
 				- - a set comprehension
-		- Syntax nodes
-			-
+		- Syntax nodes（语法节点）
+			- 语法节点由tree-siter查询捕获(@name)标识
+			- 未使用的查询捕获被视为错误，除非它们以下划线开头。
+		- Variables
 			-
