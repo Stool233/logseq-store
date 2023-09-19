@@ -3,7 +3,6 @@
 	  collapsed:: true
 		- https://www.freecodecamp.org/chinese/news/git-internals-objects-branches-create-repo/
 	- Git 对象——blob、tree 和 commit
-	  collapsed:: true
 		- 将 `git` 看成一个文件系统（尤其是该系统的实时快照）是很有用的。
 			- 一个文件系统从 *根目录（root directory）* 开始（在基于 UNIX 的系统中是 `/`），通常也会包含其它的目录（例如 `/usr` 或 `/bin`）。这些目录会包含其它的目录和（或）文件（例如 `/usr/1.txt`）。
 		- 在 `git` 中，文件的内容存储在一些被称为 **blob** （二进制大对象）的对象中。
