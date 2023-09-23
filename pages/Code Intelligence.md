@@ -37,6 +37,9 @@
 				- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
 	- 相关文章：
 		- https://docs.sourcegraph.com/code_navigation/explanations/precise_code_navigation
+			- 精确的代码导航依赖于 [SCIP](https://github.com/sourcegraph/scip)（SCIP 代码智能协议）和 [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) （语言服务器索引格式）数据来提供预先计算的代码导航。
+			- 它提供快速且高度准确的代码导航，但需要定期生成并上传到您的 Sourcegraph 实例。
+			- 精确的代码导航是一项可选功能：您尚未上传索引的存储库将继续使用基于搜索的代码导航。
 		- https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend/
 		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
 		- https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol
