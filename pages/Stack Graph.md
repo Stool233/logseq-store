@@ -1,1 +1,6 @@
-- **TAGS**
+- **Tags**: [[Code Intelligence]] [[Code Navigation]] [[tree-sitter]]
+-
+- 相关的文章、论文
+	- https://github.blog/2021-12-09-introducing-stack-graphs/
+	- https://dcreager.net/talks/stack-graphs/
+	-
