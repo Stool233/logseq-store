@@ -1,5 +1,5 @@
-- **Tags: [[LSP]]** [[LSIF]] []
-- **语言服务器协议 (Language Server Protocol, LSP)**
+- **Tags**: [[LSP]] [[LSIF]] [[Code Navigation]]
+- **语言服务器协议 (Language Server Protocol, [[LSP]])**
 	- https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/
 	- LSP 是一种协议，用于在客户端（例如，编辑器或集成开发环境）和服务器（提供语言特性支持的工具，如编译器或解析器）之间进行通信。
 	- 通过使用 LSP，可以将语言特性的实现与客户端分离，使得一种语言的处理引擎可以为多种客户端提供服务，如语法高亮、代码补全、定义跳转、重命名、代码检查等。
@@ -35,7 +35,10 @@
 	-
 - sourcegraph的实践文章
 	- sourcegraph介绍：
-	-
+		- GitLab的CEO Sid Sijbrandij曾评价Sourcegraph，“拥有这个世界上最好的查找定义、查找引用和智能代码导航能力。
+			- 观点来自：
+				- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
+			-
 	- 相关文章：
 		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
 		- https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol
