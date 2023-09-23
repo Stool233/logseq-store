@@ -23,6 +23,8 @@
 		- 例子来自：
 			- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
 		- 以一个User.java实例来帮助读者理解LSIF是如何提供服务的，我们将鼠标悬停第14行第16个字符name上，触发textDocument/hover行为。
+			- textDocument/hover
+				- 当你将鼠标悬停在某个代码元素（例如变量，函数或类）上时，编辑器会向语言服务器发送一个 `textDocument/hover` 请求，请求中包含了当前文件的 URI 和光标的位置。语言服务器会根据这个请求返回相应的悬停信息，例如代码元素的定义，类型信息，文档注释等。
 			- ![image.png](../assets/image_1695474778850_0.png)
 			- 首先User.java的代码将会转换为如下索引（为了便于阅读，只展示与该行为相关的索引：悬停所在的symbol  range、hover result、method）
 				- ```json
