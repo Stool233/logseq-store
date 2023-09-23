@@ -22,6 +22,9 @@
 	- 请求流程：
 		- 例子来自：
 			- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
+		- 以一个User.java实例来帮助读者理解LSIF是如何提供服务的，我们将鼠标悬停第14行第16个字符name上，触发textDocument/hover行为。
+			- ![image.png](../assets/image_1695474778850_0.png)
+			-
 		- ![image.png](../assets/image_1695461854987_0.png)
 	- 一些缺点：
 		- 索引大、构建慢
