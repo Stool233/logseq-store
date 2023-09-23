@@ -17,5 +17,6 @@
 		- 内部文档
 -
 - Stack graphs（Name resolution at scale）
-	- https://arxiv.org/pdf/2211.01224.pdf
--
+	- 来源：
+		- https://arxiv.org/pdf/2211.01224.pdf
+	-
