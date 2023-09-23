@@ -22,4 +22,10 @@
 	- 请求流程：
 		- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
 		- ![image.png](../assets/image_1695461854987_0.png)
+	- 一些缺点：
+		- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
+		  id:: 650eb20d-62fc-4567-b946-7ac0a7e05d80
+		- 索引大、构建慢
+		- 关联复杂，不利于分布式构建
+		- 数据结构导致增量效率低
 	-
