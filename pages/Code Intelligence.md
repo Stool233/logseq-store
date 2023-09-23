@@ -14,6 +14,7 @@
 		- 它也是业界优秀的服务供应商Sourcegraph采用的索引格式方案，语法服务供应商会实现相应的解析器将静态代码转换成对应的索引格式。
 		- *最近sourcegraph有一套新的方案：SCIP*
 			- https://about.sourcegraph.com/blog/announcing-scip
+			- [[SCIP - a better code indexing format than LSIF]]
 	- LSIF 索引格式的设计是基于以下几点驱动：
 		- 该格式不应暗示使用某种持久化技术
 		- 定义的数据应该尽可能接近LSP的建模，便于通过LSP请求交互（生态好）
