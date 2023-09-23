@@ -1,8 +1,8 @@
 - 来源：
 	- https://about.sourcegraph.com/blog/announcing-scip
 -
-- 扩大LSIF规模的挑战
-	- 随着 [[LSIF]] 使用量的增长，我们遇到了该协议的一些限制：
+- 扩大[[LSIF]]规模的挑战
+	- 随着 LSIF 使用量的增长，我们遇到了该协议的一些限制：
 		- 由于缺乏静态类型而导致开发速度缓慢。
 			- LSIF 不附带机器可读的模式，并且动态图结构使得在大多数编程语言中很难将 LSIF 有效负载编码为一组简单的结构或类。
 		- 性能缓慢导致在写入或读取 LSIF 有效负载的图形编码时需要保存大量内存数据结构。
@@ -11,6 +11,9 @@
 			- 不透明全局 ID 的大量使用对符号（或“结果集”）添加到索引的方式施加了排序约束，使得处理文件中的循环依赖关系以及其他常见情况变得棘手。
 			- 全局递增的 ID 也使得仅使用文档子集的新信息更新现有索引变得困难。
 	- 这些问题大部分都归结为 LSIF 的图编码，它严重依赖不透明的 ID 号来连接边和顶点。为了解决这些问题，我们创建了 SCIP 作为 Protobuf 模式，该模式以人类可读的符号字符串 ID 为中心，取代了“名字对象（monikers）”和“结果集（resultSet）”的概念。
--
+	-
+- [[SCIP]]：更快、更小、更简单的语言索引器
+	- SCIP Protobuf 模式可[在 sourcegraph/scip](https://sourcegraph.com/github.com/sourcegraph/scip/-/blob/scip.proto)存储库中找到，并包含有关如何对符号和源位置之间的关系进行编码的综合文档。
+	- SCIP 的设计深受[SemanticDB](https://scalameta.org/docs/semanticdb/specification.html)的启发，SemanticDB 是 Scala 生态系统中首创的另一种代码索引格式。
 	-
 	-
