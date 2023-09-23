@@ -35,11 +35,14 @@
 	-
 - sourcegraph的实践文章
 	- sourcegraph介绍：
+		- 专注于 代码智能、代码搜索的公司
 		- GitLab的CEO Sid Sijbrandij曾评价Sourcegraph，“拥有这个世界上最好的查找定义、查找引用和智能代码导航能力。
 			- 观点来自：
 				- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
+		-
 			-
 	- 相关文章：
+		- https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend/
 		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
 		- https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol
 	-
