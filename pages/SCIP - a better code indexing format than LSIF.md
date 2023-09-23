@@ -14,6 +14,8 @@
 	-
 - [[SCIP]]：更快、更小、更简单的语言索引器
 	- SCIP Protobuf 模式可[在 sourcegraph/scip](https://sourcegraph.com/github.com/sourcegraph/scip/-/blob/scip.proto)存储库中找到，并包含有关如何对符号和源位置之间的关系进行编码的综合文档。
-	- SCIP 的设计深受[SemanticDB](https://scalameta.org/docs/semanticdb/specification.html)的启发，SemanticDB 是 Scala 生态系统中首创的另一种代码索引格式。
+		- SCIP 的设计深受[SemanticDB](https://scalameta.org/docs/semanticdb/specification.html)的启发
+			- SemanticDB 是 Scala 生态系统中首创的另一种代码索引格式。
+	-
 	-
 	-
