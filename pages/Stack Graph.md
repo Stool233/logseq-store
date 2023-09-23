@@ -6,9 +6,15 @@
 	- https://dcreager.net/talks/stack-graphs/
 		- 会议分享video
 	- https://media.dcreager.net/dcreager-2022-ucsc-lsd-slides.pdf
-		-
+		- 会议分享video相关的PPT
 	- https://github.com/github/stack-graphs
+		- 相关源码
 	- https://news.ycombinator.com/item?id=29500602
+		- 作者在黑客论坛上的讨论
 	- https://arxiv.org/pdf/2211.01224.pdf
+		- 相关发表的论文
 	- https://github.github.io/stack-graph-docs/
+		- 内部文档
+	-
+	-
 	-
