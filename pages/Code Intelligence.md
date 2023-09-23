@@ -36,6 +36,7 @@
 			- 观点来自：
 				- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
 	- 相关文章：
+		- https://docs.sourcegraph.com/code_navigation/explanations/precise_code_navigation
 		- https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend/
 		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
 		- https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol
