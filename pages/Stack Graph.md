@@ -15,6 +15,7 @@
 		- 相关发表的论文
 	- https://github.github.io/stack-graph-docs/
 		- 内部文档
-	-
-	-
-	-
+-
+- Stack graphs（Name resolution at scale）
+	- https://arxiv.org/pdf/2211.01224.pdf
+-
