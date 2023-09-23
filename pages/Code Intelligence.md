@@ -12,6 +12,8 @@
 		- 目前主要用于Code Intelligence领域，并且是该领域非常主流的方案。
 	- 通俗的讲，LSIF定义了一种可以响应LSP请求的存储索引格式，该格式将静态代码转换成了图的数据结构。
 		- 它也是业界优秀的服务供应商Sourcegraph采用的索引格式方案，语法服务供应商会实现相应的解析器将静态代码转换成对应的索引格式。
+		- *最近sourcegraph有一套新的方案：SCIP*
+			- https://about.sourcegraph.com/blog/announcing-scip
 	- LSIF 索引格式的设计是基于以下几点驱动：
 		- 该格式不应暗示使用某种持久化技术
 		- 定义的数据应该尽可能接近LSP的建模，便于通过LSP请求交互（生态好）
@@ -40,6 +42,8 @@
 			- 精确的代码导航依赖于 [SCIP](https://github.com/sourcegraph/scip)（SCIP 代码智能协议）和 [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) （语言服务器索引格式）数据来提供预先计算的代码导航。
 			- 它提供快速且高度准确的代码导航，但需要定期生成并上传到您的 Sourcegraph 实例。
 			- 精确的代码导航是一项可选功能：您尚未上传索引的存储库将继续使用基于搜索的代码导航。
+		- https://about.sourcegraph.com/blog/announcing-scip
+			- SCIP - a better code indexing format than LSIF
 		- https://about.sourcegraph.com/blog
 		- https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend/
 		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
