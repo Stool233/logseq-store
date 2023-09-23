@@ -33,4 +33,11 @@
 		- 关联复杂，不利于分布式构建
 		- 数据结构导致增量效率低
 	-
+- sourcegraph的实践文章
+	- sourcegraph介绍：
+	-
+	- 相关文章：
+		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
+		- https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol
+	-
 	-
