@@ -1,10 +1,10 @@
-- **Tags: [[LSP]]**
+- **Tags: [[LSP]]** [[LSIF]] []
 - **语言服务器协议 (Language Server Protocol, LSP)**
 	- https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/
 	- LSP 是一种协议，用于在客户端（例如，编辑器或集成开发环境）和服务器（提供语言特性支持的工具，如编译器或解析器）之间进行通信。
 	- 通过使用 LSP，可以将语言特性的实现与客户端分离，使得一种语言的处理引擎可以为多种客户端提供服务，如语法高亮、代码补全、定义跳转、重命名、代码检查等。
 	- 使用 LSP 的好处是，一旦为一种编程语言实现了一个 LSP 服务器，那么任何支持 LSP 的编辑器都可以利用这个服务器提供的语言特性。
-- **语言服务器索引格式 (Language Server Index Format, LSIF)**
+- **语言服务器索引格式 (Language Server Index Format, [[LSIF]])**
 	- https://microsoft.github.io/language-server-protocol/specifications/lsif/0.4.0/specification/
 	- LSIF 是为了解决 LSP 不能在没有运行语言服务器的情况下工作的问题而设计的。
 		- 例如，在浏览一个大型代码库或者浏览在线的源代码时，可能无法启动一个完整的语言服务器来提供语言特性。
