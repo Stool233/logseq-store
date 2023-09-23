@@ -25,7 +25,33 @@
 		- 以一个User.java实例来帮助读者理解LSIF是如何提供服务的，我们将鼠标悬停第14行第16个字符name上，触发textDocument/hover行为。
 			- ![image.png](../assets/image_1695474778850_0.png)
 			-
-		- ![image.png](../assets/image_1695461854987_0.png)
+			- ```jso
+			  { 
+			    id: 1,             //表示this.name中name的range，即IDE中的坐标
+			    type: "vertex", 
+			    label: "range", 
+			    start: { line: 14, character: 14},
+			    end: { line: 14, character: 18} 
+			  }
+			  {
+			    id: 2,            //表示鼠标悬浮在name上的提示信息
+			    type: "vertex",
+			    label: "hoverResult",
+			    result: {
+			      contents: [
+			        { language: "java", value: "String name \n 用户信息" }
+			      ]
+			    }
+			  }
+			  {
+			    id: 3,            //表示一个鼠标悬浮提示行为
+			    type: "edge", 
+			    label: "textDocument/hover",
+			    outV: 2, 
+			    inV: 1            //输入为id=1的索引,输出为id=2的索引
+			  }
+			  ```
+			- ![image.png](../assets/image_1695461854987_0.png)
 	- 一些缺点：
 		- 索引大、构建慢
 		- 关联复杂，不利于分布式构建
