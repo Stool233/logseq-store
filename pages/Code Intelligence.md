@@ -44,7 +44,8 @@
 			- 精确的代码导航是一项可选功能：您尚未上传索引的存储库将继续使用基于搜索的代码导航。
 				- 基于搜索的代码导航由 ctags 和 tree-sitter 等工具提供支持
 		- https://about.sourcegraph.com/blog/announcing-scip
-			- SCIP - a better code indexing format than LSIF
+			- [[SCIP - a better code indexing format than LSIF]]
+			-
 		- https://about.sourcegraph.com/blog
 		- https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend/
 		- https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol
