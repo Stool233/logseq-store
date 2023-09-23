@@ -6,10 +6,6 @@
 	- 使用 LSP 的好处是，一旦为一种编程语言实现了一个 LSP 服务器，那么任何支持 LSP 的编辑器都可以利用这个服务器提供的语言特性。
 - **语言服务器索引格式 (Language Server Index Format, [[LSIF]])**
 	- https://microsoft.github.io/language-server-protocol/specifications/lsif/0.4.0/specification/
-	- LSIF 是为了解决 LSP 不能在没有运行语言服务器的情况下工作的问题而设计的。
-		- 例如，在浏览一个大型代码库或者浏览在线的源代码时，可能无法启动一个完整的语言服务器来提供语言特性。
-	- LSIF 是一种数据格式，用于表示预先计算好的语言信息，如定义、引用和文档注释。
-		- 通过 LSIF，可以在没有运行语言服务器的情况下提供丰富的语言特性。
 	- LSIF（language-server-index-format）
 		- 是一种用于描述程序信息且遵循LSP规范的语言服务器索引格式，
 		- 同时它的查询和存储是支持HTTP协议的，
@@ -26,12 +22,11 @@
 			- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
 		- ![image.png](../assets/image_1695461854987_0.png)
 	- 一些缺点：
-		- 观点来自：
-			- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
-			  id:: 650eb20d-62fc-4567-b946-7ac0a7e05d80
 		- 索引大、构建慢
 		- 关联复杂，不利于分布式构建
 		- 数据结构导致增量效率低
+		- 观点来自：
+			- https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg
 	-
 - sourcegraph的实践文章
 	- sourcegraph介绍：
