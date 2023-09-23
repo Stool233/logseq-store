@@ -16,6 +16,7 @@
 	- SCIP Protobuf 模式可[在 sourcegraph/scip](https://sourcegraph.com/github.com/sourcegraph/scip/-/blob/scip.proto)存储库中找到，并包含有关如何对符号和源位置之间的关系进行编码的综合文档。
 		- SCIP 的设计深受[SemanticDB](https://scalameta.org/docs/semanticdb/specification.html)的启发
 			- SemanticDB 是 Scala 生态系统中首创的另一种代码索引格式。
-	-
+	- 开始使用 SCIP 后，我们体验到了一系列好处
+		- 与 LSIF 相比，使用 SCIP 时生活质量得到了多项改进，因此实现新语言索引器的开发时间更快。这些改进包括使用 Protobuf 架构中的静态类型，在编辑器中为我们提供丰富的代码完成功能，并降低因拼写错误导致的运行时错误的风险。由于以人类可读的符号而不是不透明的数字 ID 为中心，我们还经历了更符合人体工程学的调试，并且减少了记录不必要的抽象的需要，例如导入/导出名字，如果出错，这些名字会默默地破坏导航。
 	-
 	-
