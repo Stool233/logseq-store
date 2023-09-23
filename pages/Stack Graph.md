@@ -2,5 +2,13 @@
 -
 - 相关的文章、论文
 	- https://github.blog/2021-12-09-introducing-stack-graphs/
+		- 一篇介绍
 	- https://dcreager.net/talks/stack-graphs/
+		- 会议分享video
+	- https://media.dcreager.net/dcreager-2022-ucsc-lsd-slides.pdf
+		-
+	- https://github.com/github/stack-graphs
+	- https://news.ycombinator.com/item?id=29500602
+	- https://arxiv.org/pdf/2211.01224.pdf
+	- https://github.github.io/stack-graph-docs/
 	-
