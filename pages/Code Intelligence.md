@@ -4,6 +4,7 @@
 	- LSP 是一种协议，用于在客户端（例如，编辑器或集成开发环境）和服务器（提供语言特性支持的工具，如编译器或解析器）之间进行通信。
 	- 通过使用 LSP，可以将语言特性的实现与客户端分离，使得一种语言的处理引擎可以为多种客户端提供服务，如语法高亮、代码补全、定义跳转、重命名、代码检查等。
 	- 使用 LSP 的好处是，一旦为一种编程语言实现了一个 LSP 服务器，那么任何支持 LSP 的编辑器都可以利用这个服务器提供的语言特性。
+		- LSP (Language Server Protocol) 服务器运行的主要是语言分析器，语义解析器，以及其他与特定编程语言相关的工具。这些工具使得 LSP 服务器能理解和分析源代码，以提供如代码自动补全，跳转到定义，查找引用等功能。
 - **语言服务器索引格式 (Language Server Index Format, [[LSIF]])**
 	- https://microsoft.github.io/language-server-protocol/specifications/lsif/0.4.0/specification/
 	- LSIF（language-server-index-format）
