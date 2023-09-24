@@ -269,7 +269,10 @@
 			- 虽然 LSIF 规范能够存储从分析单个文件中得到的增量结果，但是没有现存的 LSP 实现支持这种操作模式。
 				- 相反，它们是针对整个项目快照运行的，通常在用于构建和测试项目的同一个持续集成（CI）管道中。
 				- 当新的提交到来时，整个项目需要重新分析，即使只有少数几个文件改变了。
+					- (LSP 服务器通常依赖已有的编译器和代码质量检查器（linters），这些历史上并未关注增量操作。将 LSP 服务器更新为增量模式将需要对现有的编译器进行返工，这比从头开始编写一个增量 LSP 服务器的任务更为艰巨[11]。)
+						- Jeff Smits, Gabriël D. P. Konat, and Eelco Visser. Constructing hybrid incremental compilers for cross-module extensibility with an internal build system. The Art, Science, and Engineering of Programming, 4(3), 2020. doi:10.22152/programming-journal.org/2020/4/16.
 		- LSP 和 LSIF 是在构建时间生成代码导航数据的许多先前特定于语言的框架的标准化。
-			- 所有构建时间分析都有同样的缺点。它们需要包所有者明确指定如何分析他们的项目，10 并且通过作为 CI 的一部分运行分析，需要项目所有者支付所使用的计算资源。
+			- 所有构建时间分析都有同样的缺点。
+			- 它们需要包所有者明确指定如何分析他们的项目，10 并且通过作为 CI 的一部分运行分析，需要项目所有者支付所使用的计算资源。
 			-
 			-
