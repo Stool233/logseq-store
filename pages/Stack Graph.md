@@ -272,7 +272,8 @@
 					- (LSP 服务器通常依赖已有的编译器和代码质量检查器（linters），这些历史上并未关注增量操作。将 LSP 服务器更新为增量模式将需要对现有的编译器进行返工，这比从头开始编写一个增量 LSP 服务器的任务更为艰巨[11]。)
 						- [11] Jeff Smits, Gabriël D. P. Konat, and Eelco Visser. Constructing hybrid incremental compilers for cross-module extensibility with an internal build system. The Art, Science, and Engineering of Programming, 4(3), 2020. doi:10.22152/programming-journal.org/2020/4/16.
 		- LSP和LSIF是以前许多特定于语言的框架的标准化，用于在构建时生成代码导航数据。
-			- 所有构建时间分析都有同样的缺点。
-			- 它们需要包所有者明确指定如何分析他们的项目，10 并且通过作为 CI 的一部分运行分析，需要项目所有者支付所使用的计算资源。
+			- 所有构建时分析都有同样的缺点。
+				- 它们要求 包所有者 明确地指定如何分析他们的项目，10
+				- 并且通过将分析作为CI的一部分运行，要求项目所有者为所使用的计算资源付费。
 			-
 			-
