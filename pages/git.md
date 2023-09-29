@@ -406,3 +406,7 @@
 		- 但它们之间存在一个关键的区别：
 			- `git stash apply` 将更改应用到工作目录，但不会从 stash 列表中删除相应的条目；
 			- `git stash pop` 也将更改应用到工作目录，但它将从 stash 列表中删除相应的条目。
+	- `git stash drop` 是一个命令，用于从 stash 列表中删除一个特定的 stash。
+		- 如果不提供 stash 的名称，`git stash drop` 将删除最近的 stash。
+		- 你也可以提供一个 stash 的名字，以删除特定的 stash。
+-
