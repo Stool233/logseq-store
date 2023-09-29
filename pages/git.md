@@ -372,5 +372,15 @@
 		- 这里有一些微妙之处，使得结果更加出色。
 			- 首先，我们生成synthetic commit的方式是完全稳定的：
 				- 任何看到一个commit Y的人（并且拷贝了它的整个历史，包括所有的submodule链接以及它们的trees、blobs和历史）都能够完全复制相同的Y+，包括修改日期、parents，甚至commit hashes。
+			- 但是它的扩展性更远。
+				- 一个没有commit Y，但是有commit X的人，可以生成和从Y生成Y+的人完全相同的X+。（记住，Y+依赖于X+）。
+				- 如果你有Y历史的一个子集，你可以生成Y+历史的一个完美子集。
+				- 这非常重要：
+					- 这意味着两个不同的人，给定相同的输入，总是可以重新生成相同的git-subtrac输出。
+					- 只要你拥有所有的对象，删除和从头开始重新生成subtrac branch就没有危险。
+			- 其次，git-subtrac尽可能地从.trac branch中剪除冗余。
+				- 它只针对commit Y（基于X）生成一个新的Y+，如果submodule链接的集合与X不同。
+				- 如果submodules没有改变，那么commit Y+就是X+（不是一个新的commit）。
+				- 这最小化了你的.trac branch在新的commit、rebase等中的变化。
 			-
 		-
