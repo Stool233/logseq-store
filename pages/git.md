@@ -350,5 +350,9 @@
 					- 为了使这个工作，所有的git都被设计成在你进行常规操作时不会干扰submodule的链接，并且在submodule链接丢失时不会中断。
 					- 所以很容易犯下这样的错误，比如在你对parent project进行更改推送时忘记将你对submodule的更改也推送，从而使其他人无法再check out你的parent code。
 	- How does git-subtrac work
-		-
+		- git-subtrac借鉴了我早期的git-subtree项目的一些技巧，但在设计上更加以submodule为中心。
+		- 你需要知道的主要事情是，
+			- 与git中的所有其他类型的对象不同，git tree中的"submodule"引用并不会导致引用的对象（一个commit）被包含在git object packs中，或者与你的branch一起被推送。
+				- 换句话说，当你向你的项目中添加一个文件（blob）或子目录（tree），然后将它提交到一个branch，然后推送那个branch，commit永远不会在不包含它引用的trees和blobs的副本的情况下被发送。
+				- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。这就是所有问题的来源。
 		-
