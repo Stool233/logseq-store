@@ -348,5 +348,7 @@
 			- Submodule是可选的。
 				- 一个早期的设计目标是让一些访问项目的人可能无法访问所有subproject中的所有commit。
 					- 为了使这个工作，所有的git都被设计成在你进行常规操作时不会干扰submodule的链接，并且在submodule链接丢失时不会中断。
-					- 所以很容易犯下这样的错误，比如在你对parent project进行更改推送时忘记将你对submodule的更改也推送，从而使其他人无法再检出你的parent code。
-			-
+					- 所以很容易犯下这样的错误，比如在你对parent project进行更改推送时忘记将你对submodule的更改也推送，从而使其他人无法再check out你的parent code。
+	- How does git-subtrac work
+		-
+		-
