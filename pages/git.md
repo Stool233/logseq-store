@@ -368,5 +368,9 @@
 			- 然后，它会创建一个新的、平行的历史，在这个历史中，每一个commit的"parent commits"不仅包含"真实的"parent(s)，还包括那个commit的tree中引用的commit。
 				- 换句话说，如果你有一个基于X的commit Y，并且Y的文件系统包含对A、B、C的submodule链接，那么我们会生成一个新的commit Y+，它的parents是X+、A、B和C。X+是通过同样的方式生成的，通过追加X引用的submodule链接。
 			- 这样，当你将Y+推送到某个地方的git服务器时，它会包含A、B和C...以及它们所有的trees、files和parents，这正如你最初可能期望的那样。
-	- Features of the subtrac
+	- Features of the subtrac history branch
+		- 这里有一些微妙之处，使得结果更加出色。
+			- 首先，我们生成synthetic commit的方式是完全稳定的：
+				- 任何看到一个commit Y的人（并且拷贝了它的整个历史，包括所有的submodule链接以及它们的trees、blobs和历史）都能够完全复制相同的Y+，包括修改日期、parents，甚至commit hashes。
+				-
 		-
