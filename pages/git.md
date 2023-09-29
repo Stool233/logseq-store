@@ -372,5 +372,5 @@
 		- 这里有一些微妙之处，使得结果更加出色。
 			- 首先，我们生成synthetic commit的方式是完全稳定的：
 				- 任何看到一个commit Y的人（并且拷贝了它的整个历史，包括所有的submodule链接以及它们的trees、blobs和历史）都能够完全复制相同的Y+，包括修改日期、parents，甚至commit hashes。
-				-
+			-
 		-
