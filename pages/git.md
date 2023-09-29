@@ -351,16 +351,19 @@
 					- 所以很容易犯下这样的错误，比如在你对parent project进行更改推送时忘记将你对submodule的更改也推送，从而使其他人无法再check out你的parent code。
 	- How does git-subtrac work
 		- git-subtrac借鉴了我早期的git-subtree项目的一些技巧，但在设计上更加以submodule为中心。
-		- 你需要知道的主要事情是，
-			- 与git中的所有其他类型的对象不同，git tree中的"submodule"引用并不会导致引用的对象（一个commit）被包含在git object packs中，或者与你的branch一起被推送。
-				- 换句话说，当你向你的项目中添加一个文件（blob）或子目录（tree），然后将它提交到一个branch，然后推送那个branch，commit永远不会在不包含它引用的trees和blobs的副本的情况下被发送。
-				- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。
-				- 这就是所有问题的来源。
-		- 你需要知道的第二件事是，
-			- 如果一个commit（比如，X）被引用为另一个commit（比如，Y）的parent，那么当你将commit Y推送到某个地方时，它总会确保X也在那里（要么通过检查它是否已经存在，要么将它与Y一起打包）。
-				- 这是递归的，所以如果你将你的commit历史的HEAD推送到某个地方，那么所有基于它的commit - 以及那些commit引用的所有trees和blobs - 都会跟随它一起被推送。
-				- 这是正常的，当然，如果这不起作用，你会感到非常惊讶。
-		- 同样相关的是，一个commit可以有多个parent commit。
-			- 当你做一个merge时，你的"merge commit"至少有两个parent。这个用法并不常见，但一个单独的commit可以有任意多的parents。你可以一次性将一堆branch合并在一起。
-		-
+		- 背景知识补充
+			- 你需要知道的主要事情是，
+				- 与git中的所有其他类型的对象不同，git tree中的"submodule"引用并不会导致引用的对象（一个commit）被包含在git object packs中，或者与你的branch一起被推送。
+					- 换句话说，当你向你的项目中添加一个文件（blob）或子目录（tree），然后将它提交到一个branch，然后推送那个branch，commit永远不会在不包含它引用的trees和blobs的副本的情况下被发送。
+					- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。
+					- 这就是所有问题的来源。
+			- 你需要知道的第二件事是，
+				- 如果一个commit（比如，X）被引用为另一个commit（比如，Y）的parent，那么当你将commit Y推送到某个地方时，它总会确保X也在那里（要么通过检查它是否已经存在，要么将它与Y一起打包）。
+					- 这是递归的，所以如果你将你的commit历史的HEAD推送到某个地方，那么所有基于它的commit - 以及那些commit引用的所有trees和blobs - 都会跟随它一起被推送。
+					- 这是正常的，当然，如果这不起作用，你会感到非常惊讶。
+			- 同样相关的是，一个commit可以有多个parent commit。
+				- 当你做一个merge时，你的"merge commit"至少有两个parent。这个用法并不常见，但一个单独的commit可以有任意多的parents。你可以一次性将一堆branch合并在一起。
+		- 以下是我们要做的：
+			- git-subtrac会浏览你的主项目中所有commit的所有tree，找到所有的submodule链接（即，链接到commit对象的链接）。
+			- 然后，它会创建一个新的、平行的历史，在这个历史中，每一个commit的"parent commits"不仅包含"真实的"parent(s)，还包括那个commit的tree中引用的commit。换句话说，如果你有一个基于X的commit Y，并且Y的文件系统包含对A、B、C的submodule链接，那么我们会生成一个新的commit Y+，它的parents是X+、A、B和C。X+是通过同样的方式生成的，通过追加X引用的submodule链接。
 		-
