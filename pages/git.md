@@ -365,5 +365,7 @@
 				- 当你做一个merge时，你的"merge commit"至少有两个parent。这个用法并不常见，但一个单独的commit可以有任意多的parents。你可以一次性将一堆branch合并在一起。
 		- 以下是我们要做的：
 			- git-subtrac会浏览你的主项目中所有commit的所有tree，找到所有的submodule链接（即，链接到commit对象的链接）。
-			- 然后，它会创建一个新的、平行的历史，在这个历史中，每一个commit的"parent commits"不仅包含"真实的"parent(s)，还包括那个commit的tree中引用的commit。换句话说，如果你有一个基于X的commit Y，并且Y的文件系统包含对A、B、C的submodule链接，那么我们会生成一个新的commit Y+，它的parents是X+、A、B和C。X+是通过同样的方式生成的，通过追加X引用的submodule链接。
+			- 然后，它会创建一个新的、平行的历史，在这个历史中，每一个commit的"parent commits"不仅包含"真实的"parent(s)，还包括那个commit的tree中引用的commit。
+				- 换句话说，如果你有一个基于X的commit Y，并且Y的文件系统包含对A、B、C的submodule链接，那么我们会生成一个新的commit Y+，它的parents是X+、A、B和C。X+是通过同样的方式生成的，通过追加X引用的submodule链接。
+				-
 		-
