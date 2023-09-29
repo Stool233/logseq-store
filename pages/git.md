@@ -384,5 +384,7 @@
 				- 这最小化了你的.trac branch在新的commit、rebase等中的变化。
 		- 因此，我们可以免费获得以下特性：
 			- 如果两个人以不同的方式扩展commit X，例如在X的基础上生成commit Y和commit Z，那么他们的subtrac trees Y+和Z+都会将X+作为parent。然后当你将Y和Z合并在一起（比如说，生成commit YZ），生成的YZ+ commit也会看起来像是Y+和Z+的git merge。这个merge可以由git就像由git-subtrac一样轻松地生成。主要的结果是，你应该总是能够将新生成的.trac branch推送到upstream，而不需要使用"force push"，因为它应该总是看起来像是上一个branch的"fast forward"，尽管实际上它每次都是从头重新生成的。
+			- 想象一下，我们的项目的commit X依赖于一个submodule的commit N。由于某些原因commit N的效果不太理想，在commit Y中我们将submodule回退到commit M（N之前的一个commit）以等待submodule人员修复它。在我们对submodule的fork中，我们然后意识到我们想要应用某个其他patch Q的cherry pick，所以我们forked submodule的'master' branch看起来像M+Q。如果我们将这个新的master branch推送到我们实际的submodule repo，它会产生一个令人惊讶的问题：我们的subproject的commit Y运行得很好，因为它链接到M+Q。但是如果有人然后想要回退到我们superproject的一个更早的版本（例如，使用git bisect）并再次尝试commit X，它将不能工作！submodule repo再也不包含N，因为我们回退了submodule的master branch。
+				- 在这种情况下，git-subtrac帮助很大。由于X+包括N，Y+包括M+Q，所以两个submodule链接的集合都包含在.trac branch中。我们成功地跟踪了submodules的"历史的历史"。
 			-
 		-
