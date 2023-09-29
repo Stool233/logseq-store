@@ -396,5 +396,13 @@
 	- git cat-file -t 9dacb64b
 -
 - git stash
-	- -
 	- `git stash` 是用于临时保存工作目录和暂存区更改的命令，这样你就可以在同一分支上切换到不同的任务。
+	- `git stash` 在有暂存区的更改和工作目录的更改时会创建两个 commit 对象：一个针对工作目录的更改，另一个针对暂存区的更改。
+		- 这两个 commit 是有父子关系的，其中 "worktree commit" 是子 commit，"index commit" 是父 commit。
+		- 如果只有工作目录的更改，`git stash` 则只会创建一个 commit。
+	- `git stash` 默认不会处理未被追踪的文件（即那些在工作目录中新添加但未执行 `git add` 的文件）。
+		- 你可以使用 `git stash -u` 或 `git stash --include-untracked` 命令来包含未被追踪的文件，或者使用 `git stash --all` 来处理所有的更改（包括未被追踪的文件和被 `.gitignore` 忽略的文件）。
+	- `git stash apply` 和 `git stash pop` 都可以用于将暂存的更改应用到工作目录，
+		- 但它们之间存在一个关键的区别：
+			- `git stash apply` 将更改应用到工作目录，但不会从 stash 列表中删除相应的条目；
+			- `git stash pop` 也将更改应用到工作目录，但它将从 stash 列表中删除相应的条目。
