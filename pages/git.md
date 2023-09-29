@@ -386,5 +386,7 @@
 			- 如果两个人以不同的方式扩展commit X，例如在X的基础上生成commit Y和commit Z，那么他们的subtrac trees Y+和Z+都会将X+作为parent。然后当你将Y和Z合并在一起（比如说，生成commit YZ），生成的YZ+ commit也会看起来像是Y+和Z+的git merge。这个merge可以由git就像由git-subtrac一样轻松地生成。主要的结果是，你应该总是能够将新生成的.trac branch推送到upstream，而不需要使用"force push"，因为它应该总是看起来像是上一个branch的"fast forward"，尽管实际上它每次都是从头重新生成的。
 			- 想象一下，我们的项目的commit X依赖于一个submodule的commit N。由于某些原因commit N的效果不太理想，在commit Y中我们将submodule回退到commit M（N之前的一个commit）以等待submodule人员修复它。在我们对submodule的fork中，我们然后意识到我们想要应用某个其他patch Q的cherry pick，所以我们forked submodule的'master' branch看起来像M+Q。如果我们将这个新的master branch推送到我们实际的submodule repo，它会产生一个令人惊讶的问题：我们的subproject的commit Y运行得很好，因为它链接到M+Q。但是如果有人然后想要回退到我们superproject的一个更早的版本（例如，使用git bisect）并再次尝试commit X，它将不能工作！submodule repo再也不包含N，因为我们回退了submodule的master branch。
 				- 在这种情况下，git-subtrac帮助很大。由于X+包括N，Y+包括M+Q，所以两个submodule链接的集合都包含在.trac branch中。我们成功地跟踪了submodules的"历史的历史"。
-			-
+			- 同样，使用submodules的一个常见用途是维护用于发送upstream的patch队列。
+				- 也就是说，我们拉取一个submodule项目（一个库）的某个版本，并开始改进它，用我们的superproject（一个app）测试我们的patches，直到我们确定它们真的能工作。当我们感觉有信心时，我们想要将subproject rebase到最新版本，并在发送给subproject的维护者之前在顶部应用我们的patches。在传统的submodule设置中，我们必须非常小心不要在rebase submodule的master branch时丢失旧的历史。使用git-subtrac，这一切都像你希望的那样工作：当你需要它们时，旧的和新的patch历史都是可用的。
+			- 现在，fork一个superproject（例如，在github上）会带着它所有的submodule历史一起，使得pull request非常容易。（如果你想通过这种方式分享你的submodule patches，我猜你可以提交一个针对.trac branch的pull request。）
 		-
