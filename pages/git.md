@@ -356,5 +356,8 @@
 				- 换句话说，当你向你的项目中添加一个文件（blob）或子目录（tree），然后将它提交到一个branch，然后推送那个branch，commit永远不会在不包含它引用的trees和blobs的副本的情况下被发送。
 				- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。
 				- 这就是所有问题的来源。
-		-
+		- 你需要知道的第二件事是，
+			- 如果一个commit（比如，X）被引用为另一个commit（比如，Y）的父级，那么当你将commit Y推送到某个地方时，它总会确保X也在那里（要么通过检查它是否已经存在，要么将它与Y一起打包）。
+				- 这是递归的，所以如果你将你的commit历史的HEAD推送到某个地方，那么所有基于它的commit - 以及那些commit引用的所有trees和blobs - 都会跟随它一起被推送。
+				- 这是正常的，当然，如果这不起作用，你会感到非常惊讶。
 		-
