@@ -339,5 +339,11 @@
 					- 您必须为您更改的每一个子仓库fork，然后更新.gitmodules链接，告诉所有人如何获取您的更改等。
 					- 结果是，submodule迫使人们集中在单个上游仓库上。
 			- 在你的git仓库内部，submodule的链接是指向commit的链接，不是指向tree的链接。
-				- 这个特性非常强大（"这个目录是由项目P的commit X的内容提供的"），因为它就像你把一个项目的内容复制到另一个项目的subdir中，但你仍然保留了subproject的完整历史。不幸的是，这种能力将git已经复杂的历史管理（很少有人理解）变得更为复杂。subproject有（我们希望）一个始终向前移动的历史（commit总是在顶部添加）。而你的主项目有一个向前发展的历史。但是你对subproject的链接可以向后移动！你可以对你的parent project进行新的commit，将subproject从commit X移动到早期的commit X-2，而不是后期的commit X+2。因此，git的所有正常fork, merge, revert, stash等算法对submodule都无效。并且，可以肯定的是，还没有人更新它们以便更好地与submodule一起工作。
+				- 这个特性非常强大（"这个目录是由项目P的commit X的内容提供的"），因为它就像你把一个项目的内容复制到另一个项目的subdir中，但你仍然保留了subproject的完整历史。
+				- 不幸的是，这种能力将git已经复杂的历史管理（很少有人理解）变得更为复杂。
+					- subproject有（我们希望）一个始终向前移动的历史（commit总是在顶部添加）而你的主项目有一个向前发展的历史。
+					- 但是你对subproject的链接可以向后移动！你可以对你的parent project进行新的commit，将subproject从commit X移动到早期的commit X-2，而不是后期的commit X+2。
+					- 因此，git的所有正常fork, merge, revert, stash等算法对submodule都无效。
+					- 并且，可以肯定的是，还没有人更新它们以便更好地与submodule一起工作。
+			-
 			-
