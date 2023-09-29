@@ -357,7 +357,10 @@
 				- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。
 				- 这就是所有问题的来源。
 		- 你需要知道的第二件事是，
-			- 如果一个commit（比如，X）被引用为另一个commit（比如，Y）的父级，那么当你将commit Y推送到某个地方时，它总会确保X也在那里（要么通过检查它是否已经存在，要么将它与Y一起打包）。
+			- 如果一个commit（比如，X）被引用为另一个commit（比如，Y）的parent，那么当你将commit Y推送到某个地方时，它总会确保X也在那里（要么通过检查它是否已经存在，要么将它与Y一起打包）。
 				- 这是递归的，所以如果你将你的commit历史的HEAD推送到某个地方，那么所有基于它的commit - 以及那些commit引用的所有trees和blobs - 都会跟随它一起被推送。
 				- 这是正常的，当然，如果这不起作用，你会感到非常惊讶。
+		- 同样相关的是，一个commit可以有多个parent commit。
+			- 当你做一个merge时，你的"merge commit"至少有两个parent。这个用法并不常见，但一个单独的commit可以有任意多的parents。你可以一次性将一堆branch合并在一起。
+		-
 		-
