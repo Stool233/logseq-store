@@ -391,3 +391,6 @@
 				- 也就是说，我们拉取一个submodule项目（一个库）的某个版本，并开始改进它，用我们的superproject（一个app）测试我们的patches，直到我们确定它们真的能工作。当我们感觉有信心时，我们想要将subproject rebase到最新版本，并在发送给subproject的维护者之前在顶部应用我们的patches。在传统的submodule设置中，我们必须非常小心不要在rebase submodule的master branch时丢失旧的历史。使用git-subtrac，这一切都像你希望的那样工作：当你需要它们时，旧的和新的patch历史都是可用的。
 			- 现在，fork一个superproject（例如，在github上）会带着它所有的submodule历史一起，使得pull request非常容易。（如果你想通过这种方式分享你的submodule patches，我猜你可以提交一个针对.trac branch的pull request。）
 		-
+-
+- GIT查看对象类型
+	- git cat-file -t 9dacb64b
