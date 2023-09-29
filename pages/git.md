@@ -345,5 +345,8 @@
 					- 但是你对subproject的链接可以向后移动！你可以对你的parent project进行新的commit，将subproject从commit X移动到早期的commit X-2，而不是后期的commit X+2。
 					- 因此，git的所有正常fork, merge, revert, stash等算法对submodule都无效。
 					- 并且，可以肯定的是，还没有人更新它们以便更好地与submodule一起工作。
-			-
+			- Submodule是可选的。
+				- 一个早期的设计目标是让一些访问项目的人可能无法访问所有subproject中的所有commit。
+					- 为了使这个工作，所有的git都被设计成在你进行常规操作时不会干扰submodule的链接，并且在submodule链接丢失时不会中断。
+					- 所以很容易犯下这样的错误，比如在你对parent project进行更改推送时忘记将你对submodule的更改也推送，从而使其他人无法再检出你的parent code。
 			-
