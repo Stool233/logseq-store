@@ -354,5 +354,7 @@
 		- 你需要知道的主要事情是，
 			- 与git中的所有其他类型的对象不同，git tree中的"submodule"引用并不会导致引用的对象（一个commit）被包含在git object packs中，或者与你的branch一起被推送。
 				- 换句话说，当你向你的项目中添加一个文件（blob）或子目录（tree），然后将它提交到一个branch，然后推送那个branch，commit永远不会在不包含它引用的trees和blobs的副本的情况下被发送。
-				- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。这就是所有问题的来源。
+				- 但是，如果你的tree链接到一个commit - 这就是submodule的全部，一个tree链接到一个commit而不是到另一个tree或blob - 那么git push并不会打包subcommit或者它下面的任何东西。它假设你会自己推送那个commit。
+				- 这就是所有问题的来源。
+		-
 		-
