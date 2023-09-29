@@ -382,5 +382,7 @@
 				- 它只针对commit Y（基于X）生成一个新的Y+，如果submodule链接的集合与X不同。
 				- 如果submodules没有改变，那么commit Y+就是X+（不是一个新的commit）。
 				- 这最小化了你的.trac branch在新的commit、rebase等中的变化。
+		- 因此，我们可以免费获得以下特性：
+			- 如果两个人以不同的方式扩展commit X，例如在X的基础上生成commit Y和commit Z，那么他们的subtrac trees Y+和Z+都会将X+作为parent。然后当你将Y和Z合并在一起（比如说，生成commit YZ），生成的YZ+ commit也会看起来像是Y+和Z+的git merge。这个merge可以由git就像由git-subtrac一样轻松地生成。主要的结果是，你应该总是能够将新生成的.trac branch推送到upstream，而不需要使用"force push"，因为它应该总是看起来像是上一个branch的"fast forward"，尽管实际上它每次都是从头重新生成的。
 			-
 		-
