@@ -396,6 +396,7 @@
 	- git cat-file -t 9dacb64b
 -
 - git stash
+  collapsed:: true
 	- `git stash` 是用于临时保存工作目录和暂存区更改的命令，这样你就可以在同一分支上切换到不同的任务。
 	- `git stash` 在有暂存区的更改和工作目录的更改时会创建两个 commit 对象：一个针对工作目录的更改，另一个针对暂存区的更改。
 		- 这两个 commit 是有父子关系的，其中 "worktree commit" 是子 commit，"index commit" 是父 commit。
@@ -409,4 +410,13 @@
 	- `git stash drop` 是一个命令，用于从 stash 列表中删除一个特定的 stash。
 		- 如果不提供 stash 的名称，`git stash drop` 将删除最近的 stash。
 		- 你也可以提供一个 stash 的名字，以删除特定的 stash。
+-
+- git fetch
+	- `git fetch` 命令会从远程库下载本地库中缺失的提交。这个命令将远程分支的引用下载到本地仓库，但它**不会**改变你的本地工作分支。如果你希望将这些变更合并到你的工作分支中，你需要显式地执行 `git merge` 或 `git rebase`。
+	- 这个命令是安全的，你可以随时运行它，不必担心它会改变你的本地代码。
+-
+- git pull
+	- `git pull` 命令是 `git fetch` 和 `git merge` 的组合。它不仅会从远程库获取最新的提交，还会自动地合并到你的当前分支。当你的工作树是干净的（即，没有未提交的改动）时，这通常是一个快速更新本地分支的好方法。
+	- 但是，如果你的本地有未提交的修改，或者你想要对合并有更多的控制，那么 `git pull` 可能就不是最佳选择了。在这种情况下，你可能首选 `git fetch`，然后决定如何手动合并或重构。
+-
 -
