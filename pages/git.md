@@ -331,6 +331,7 @@
 		-
 -
 - git-subtrac
+  collapsed:: true
 	- https://github.com/apenwarr/git-subtrac
 	- git submodules存在的一些问题
 		- 自Git最早的日子以来，Git submodule一直非常复杂且难以使用，而且没有太大的改进。这些复杂性源于一些主要的设计问题：
@@ -420,6 +421,9 @@
 -
 - git submodule
 	- submodule对应到.git里面，路径在.git/modules/{module}，里面的内容就是另一个完整的.git
+	- 当你首次运行 `git submodule update` 命令时，尽管你使用了 `--no-fetch` 选项，Git 仍然会尝试从原始的远程仓库（origin repo）获取数据
+		- 为了避免 Git 尝试从原始的远程仓库获取数据，你可以更改子模块的远程仓库 URL。这会"欺骗" Git，使其认为远程仓库的位置已经改变，从而避免不必要的数据获取。
+	-
 	-
 - git 启动file协议：
 	- git config --global protocol.file.allow always
