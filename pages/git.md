@@ -421,5 +421,7 @@
 - git submodule
 	- submodule对应到.git里面，路径在.git/modules/{module}，里面的内容就是另一个完整的.git
 	-
-- git 启动
+- git 启动file协议：
+	- git config --global protocol.file.allow always
+	-
 	-
