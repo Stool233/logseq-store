@@ -331,7 +331,6 @@
 		-
 -
 - git-subtrac
-  collapsed:: true
 	- https://github.com/apenwarr/git-subtrac
 	- git submodules存在的一些问题
 		- 自Git最早的日子以来，Git submodule一直非常复杂且难以使用，而且没有太大的改进。这些复杂性源于一些主要的设计问题：
