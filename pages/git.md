@@ -331,7 +331,6 @@
 		-
 -
 - git-subtrac
-  collapsed:: true
 	- https://github.com/apenwarr/git-subtrac
 	- git submodules存在的一些问题
 		- 自Git最早的日子以来，Git submodule一直非常复杂且难以使用，而且没有太大的改进。这些复杂性源于一些主要的设计问题：
@@ -396,6 +395,7 @@
 	- git cat-file -t 9dacb64b
 -
 - git stash
+  collapsed:: true
 	- `git stash` 是用于临时保存工作目录和暂存区更改的命令，这样你就可以在同一分支上切换到不同的任务。
 	- `git stash` 在有暂存区的更改和工作目录的更改时会创建两个 commit 对象：一个针对工作目录的更改，另一个针对暂存区的更改。
 		- 这两个 commit 是有父子关系的，其中 "worktree commit" 是子 commit，"index commit" 是父 commit。
