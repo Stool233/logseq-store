@@ -371,7 +371,6 @@
 				- 换句话说，如果你有一个基于X的commit Y，并且Y的文件系统包含对A、B、C的submodule链接，那么我们会生成一个新的commit Y+，它的parents是X+、A、B和C。X+是通过同样的方式生成的，通过追加X引用的submodule链接。
 			- 这样，当你将Y+推送到某个地方的git服务器时，它会包含A、B和C...以及它们所有的trees、files和parents，这正如你最初可能期望的那样。
 	- Features of the subtrac history branch
-	  collapsed:: true
 		- 这里有一些微妙之处，使得结果更加出色。
 			- 首先，我们生成synthetic commit的方式是完全稳定的：
 				- 任何看到一个commit Y的人（并且拷贝了它的整个历史，包括所有的submodule链接以及它们的trees、blobs和历史）都能够完全复制相同的Y+，包括修改日期、parents，甚至commit hashes。
@@ -393,6 +392,7 @@
 				- 也就是说，我们拉取一个submodule项目（一个库）的某个版本，并开始改进它，用我们的superproject（一个app）测试我们的patches，直到我们确定它们真的能工作。当我们感觉有信心时，我们想要将subproject rebase到最新版本，并在发送给subproject的维护者之前在顶部应用我们的patches。在传统的submodule设置中，我们必须非常小心不要在rebase submodule的master branch时丢失旧的历史。使用git-subtrac，这一切都像你希望的那样工作：当你需要它们时，旧的和新的patch历史都是可用的。
 			- 现在，fork一个superproject（例如，在github上）会带着它所有的submodule历史一起，使得pull request非常容易。（如果你想通过这种方式分享你的submodule patches，我猜你可以提交一个针对.trac branch的pull request。）
 	- 使用git-subtrac的注意事项
+	  collapsed:: true
 		- 由于submodule的奇怪行为，使用git subtrac需要禁止git submodule去莫名其妙访问远程
 			- 即先git clone 后，要调整submodule.*.url=.（即调整到本地），然后再执行submodule update
 			- 这样才能拉到自己没有push到submodule远程，但存在于主仓库远程的commit
