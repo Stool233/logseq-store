@@ -355,7 +355,7 @@
 		  ```
 		- ![image.png](../assets/image_1697987593811_0.png)
 	- Advanced Rebasing in Git
--
+		-
 -
 - git-subtrac
   collapsed:: true
