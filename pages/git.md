@@ -398,7 +398,7 @@
 		- In other words, if the only commits in question are those you created locally – go ahead, use rebase, go wild.
 			- But if the commits have been pushed, this can lead to a huge problem – as someone else may rely on these commits, that you later overwrite, and then you and they will have different versions of the repository.
 			- This is unlike `merge` which, as we have seen, does not modify history.
-	- Recap
+	-
 		-
 	-
 -
