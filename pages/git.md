@@ -356,7 +356,7 @@
 		- ![image.png](../assets/image_1697987593811_0.png)
 	- Advanced Rebasing in Git
 		- wants it to seem as if he introduced the changes in "Commit 7" and "Commit 8" as a single commit.
-			- ![image-240](https://www.freecodecamp.org/news/content/images/2023/06/image-240.png)
+			- ![image.png](../assets/image_1697987839132_0.png)
 			- you can use an **interactive** rebase. To do that, we add the `-i` (or `--interactive`) switch to the `rebase` command:
 				- ```
 				  git rebase -i main
@@ -364,6 +364,8 @@
 			- `squash`. A *squashed* commit will have its contents "folded" into the contents of the commit preceding it. So in our case, Paul would like to squash "Commit 8" into "Commit 7":
 			- ![image.png](../assets/image_1697987798170_0.png)
 			- ![image.png](../assets/image_1697987813973_0.png)
+			- ![image.png](../assets/image_1697987852638_0.png)
+		- How to Use the   `--onto`   Switch of   `git rebase`
 			-
 -
 - git-subtrac
