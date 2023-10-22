@@ -339,7 +339,15 @@
 			- a command takes a commit, computes the *patch* this commit introduces by computing the difference between the parent's commit and the commit itself,
 			- and then `cherry-pick` "replays" this difference.
 	- Beyond   `cherry-pick`   – How to Use   `git rebase`
-		-
+		- You can look at `git rebase` as a way to perform multiple `cherry-pick`s one after the other – that is, to "replay" multiple commits.
+			- This is not the only thing you can do with `rebase`, but it's a good starting point for our explanation.
+		- To understand the process, I will provide the high level view, and then dive deeper into each step. The process of rebasing one branch on top of another branch is as follows:
+			- 1. Find the common ancestor.
+			- 2. Identify the commits to be "replayed".
+			- 3. For every commit `X`, compute `diff(parent(X), X)`, and store it as a `patch(X)`.
+			- 4. Move `HEAD` to the new base.
+			- 5. Apply the generated patches in order on the target branch. Each time, create a new commit object with the new state.
+	-
 -
 - git-subtrac
   collapsed:: true
