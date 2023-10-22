@@ -276,6 +276,8 @@
 -
 - A Definitive Guide to Merging in Git
   collapsed:: true
+	- 来源：
+		- https://www.freecodecamp.org/news/the-definitive-guide-to-git-merge
 	- What is a Merge in Git
 		- Merging is the process of combining the recent changes from several branches into a single new commit that will be on all those branches.
 		- In a way, merging is the complement of branching in version control:
