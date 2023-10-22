@@ -332,13 +332,16 @@
 -
 - A Definitive Guide to Rebasing
 	- How is   `git rebase`   Different than   `git merge` ?
+	  collapsed:: true
 		- you use `rebase` to take the changes that were committed on one branch – Paul's branch – and replay them on a different branch, `john_branch`.
 			- ![image.png](../assets/image_1697986014620_0.png)
 	- `cherry-pick`   as a Basis for Rebase
+	  collapsed:: true
 		- `git cherry-pick`
 			- a command takes a commit, computes the *patch* this commit introduces by computing the difference between the parent's commit and the commit itself,
 			- and then `cherry-pick` "replays" this difference.
 	- Beyond   `cherry-pick`   – How to Use   `git rebase`
+	  collapsed:: true
 		- You can look at `git rebase` as a way to perform multiple `cherry-pick`s one after the other – that is, to "replay" multiple commits.
 			- This is not the only thing you can do with `rebase`, but it's a good starting point for our explanation.
 		- To understand the process, I will provide the high level view, and then dive deeper into each step. The process of rebasing one branch on top of another branch is as follows:
@@ -348,6 +351,7 @@
 			- 4. Move `HEAD` to the new base.
 			- 5. Apply the generated patches in order on the target branch. Each time, create a new commit object with the new state.
 	- Time to Get Hands-On with Rebase
+	  collapsed:: true
 		- ![image.png](../assets/image_1697987584866_0.png)
 		- ```
 		  git checkout paul_branch
@@ -357,6 +361,7 @@
 	- Advanced Rebasing in Git
 	  collapsed:: true
 		- wants it to seem as if he introduced the changes in "Commit 7" and "Commit 8" as a single commit.
+		  collapsed:: true
 			- ![image.png](../assets/image_1697987839132_0.png)
 			- you can use an **interactive** rebase. To do that, we add the `-i` (or `--interactive`) switch to the `rebase` command:
 				- ```
@@ -367,12 +372,14 @@
 			- ![image.png](../assets/image_1697987813973_0.png)
 			- ![image.png](../assets/image_1697987852638_0.png)
 		- How to Use the   `--onto`   Switch of   `git rebase`
+		  collapsed:: true
 			- ![image.png](../assets/image_1697987905638_0.png)
 			- ![image.png](../assets/image_1697987912925_0.png)
 			- ```
 			  git rebase -–onto <SHA_OF_COMMIT_11> main new_branch
 			  ```
 		- How to rebase on a single branch
+		  collapsed:: true
 			- ![image.png](../assets/image_1697988011874_0.png)
 			- ![image.png](../assets/image_1697988020840_0.png)
 			- ```
@@ -380,7 +387,8 @@
 			  ```
 			- ![image.png](../assets/image_1697988038656_0.png)
 			- ![image.png](../assets/image_1697988044754_0.png)
-		-
+		- How to Exclude Commits
+		- How to move commits across branches
 	-
 -
 - git-subtrac
