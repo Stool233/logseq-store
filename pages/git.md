@@ -331,7 +331,8 @@
 		-
 -
 - A Definitive Guide to Rebasing
-	-
+	- Short Recap - What is Git Merge?
+		-
 -
 - git-subtrac
   collapsed:: true
