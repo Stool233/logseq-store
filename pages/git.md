@@ -347,7 +347,9 @@
 			- 3. For every commit `X`, compute `diff(parent(X), X)`, and store it as a `patch(X)`.
 			- 4. Move `HEAD` to the new base.
 			- 5. Apply the generated patches in order on the target branch. Each time, create a new commit object with the new state.
-	-
+	- Time to Get Hands-On with Rebase
+		- ![image.png](../assets/image_1697987584866_0.png)
+		-
 -
 - git-subtrac
   collapsed:: true
