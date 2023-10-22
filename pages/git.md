@@ -391,6 +391,14 @@
 		- How to move commits across branches
 	- Zooming Out for the Big Picture
 		- ![image.png](../assets/image_1697988146927_0.png)
+		- Now that you know what "Git rebase" is, and how to use interactive rebase or `rebase --onto`, as I hope you agree, `git rebase` is a super powerful tool.
+		- Yet, it has one huge drawback when compared with merging.
+			- Git rebase changes the history.
+			- This means that you should **not** rebase commits that exist outside your local copy of the repository, and that other people may have based their commits on.
+		- In other words, if the only commits in question are those you created locally – go ahead, use rebase, go wild.
+			- But if the commits have been pushed, this can lead to a huge problem – as someone else may rely on these commits, that you later overwrite, and then you and they will have different versions of the repository.
+			- This is unlike `merge` which, as we have seen, does not modify history.
+	- Recap
 		-
 	-
 -
