@@ -366,6 +366,11 @@
 			- ![image.png](../assets/image_1697987813973_0.png)
 			- ![image.png](../assets/image_1697987852638_0.png)
 		- How to Use the   `--onto`   Switch of   `git rebase`
+			- ![image.png](../assets/image_1697987905638_0.png)
+			- ![image.png](../assets/image_1697987912925_0.png)
+			- ```
+			  git rebase -–onto <SHA_OF_COMMIT_11> main new_branch
+			  ```
 			-
 -
 - git-subtrac
