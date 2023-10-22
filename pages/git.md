@@ -338,7 +338,8 @@
 		- `git cherry-pick`
 			- a command takes a commit, computes the *patch* this commit introduces by computing the difference between the parent's commit and the commit itself,
 			- and then `cherry-pick` "replays" this difference.
-			-
+	- Beyond   `cherry-pick`   – How to Use   `git rebase`
+		-
 -
 - git-subtrac
   collapsed:: true
