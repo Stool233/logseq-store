@@ -355,7 +355,12 @@
 		  ```
 		- ![image.png](../assets/image_1697987593811_0.png)
 	- Advanced Rebasing in Git
-		-
+		- wants it to seem as if he introduced the changes in "Commit 7" and "Commit 8" as a single commit.
+			- you can use an **interactive** rebase. To do that, we add the `-i` (or `--interactive`) switch to the `rebase` command:
+				- ```
+				  git rebase -i main
+				  ```
+				-
 -
 - git-subtrac
   collapsed:: true
