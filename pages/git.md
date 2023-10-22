@@ -355,6 +355,7 @@
 		  ```
 		- ![image.png](../assets/image_1697987593811_0.png)
 	- Advanced Rebasing in Git
+	  collapsed:: true
 		- wants it to seem as if he introduced the changes in "Commit 7" and "Commit 8" as a single commit.
 			- ![image.png](../assets/image_1697987839132_0.png)
 			- you can use an **interactive** rebase. To do that, we add the `-i` (or `--interactive`) switch to the `rebase` command:
@@ -372,7 +373,15 @@
 			  git rebase -–onto <SHA_OF_COMMIT_11> main new_branch
 			  ```
 		- How to rebase on a single branch
-			-
+			- ![image.png](../assets/image_1697988011874_0.png)
+			- ![image.png](../assets/image_1697988020840_0.png)
+			- ```
+			  git rebase --interactive --onto <SHA_OF_COMMIT_15> <SHA_OF_COMMIT_15>
+			  ```
+			- ![image.png](../assets/image_1697988038656_0.png)
+			- ![image.png](../assets/image_1697988044754_0.png)
+		-
+	-
 -
 - git-subtrac
   collapsed:: true
