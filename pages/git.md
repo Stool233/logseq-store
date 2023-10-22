@@ -389,6 +389,9 @@
 			- ![image.png](../assets/image_1697988044754_0.png)
 		- How to Exclude Commits
 		- How to move commits across branches
+	- Zooming Out for the Big Picture
+		- ![image.png](../assets/image_1697988146927_0.png)
+		-
 	-
 -
 - git-subtrac
