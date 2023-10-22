@@ -349,7 +349,13 @@
 			- 5. Apply the generated patches in order on the target branch. Each time, create a new commit object with the new state.
 	- Time to Get Hands-On with Rebase
 		- ![image.png](../assets/image_1697987584866_0.png)
-		-
+		- ```
+		  git checkout paul_branch
+		  git rebase john_branch
+		  ```
+		- ![image.png](../assets/image_1697987593811_0.png)
+	- Advanced Rebasing in Git
+-
 -
 - git-subtrac
   collapsed:: true
