@@ -371,6 +371,7 @@
 			- ```
 			  git rebase -–onto <SHA_OF_COMMIT_11> main new_branch
 			  ```
+		- How to rebase on a single branch
 			-
 -
 - git-subtrac
