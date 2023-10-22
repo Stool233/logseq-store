@@ -331,8 +331,10 @@
 		-
 -
 - A Definitive Guide to Rebasing
-	- Short Recap - What is Git Merge?
-		-
+	- How is   `git rebase`   Different than   `git merge` ?
+		- you use `rebase` to take the changes that were committed on one branch – Paul's branch – and replay them on a different branch, `john_branch`.
+			- ![image.png](../assets/image_1697986014620_0.png)
+	- # `cherry-pick`   as a Basis for Rebase
 -
 - git-subtrac
   collapsed:: true
