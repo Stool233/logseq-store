@@ -334,6 +334,9 @@
 -
 - A Definitive Guide to Rebasing
   collapsed:: true
+	- 来源：
+	  collapsed:: true
+		- https://www.freecodecamp.org/news/git-rebase-handbook/
 	- How is   `git rebase`   Different than   `git merge` ?
 	  collapsed:: true
 		- you use `rebase` to take the changes that were committed on one branch – Paul's branch – and replay them on a different branch, `john_branch`.
@@ -344,6 +347,7 @@
 			- a command takes a commit, computes the *patch* this commit introduces by computing the difference between the parent's commit and the commit itself,
 			- and then `cherry-pick` "replays" this difference.
 	- Beyond   `cherry-pick`   – How to Use   `git rebase`
+	  collapsed:: true
 		- You can look at `git rebase` as a way to perform multiple `cherry-pick`s one after the other – that is, to "replay" multiple commits.
 			- This is not the only thing you can do with `rebase`, but it's a good starting point for our explanation.
 		- To understand the process, I will provide the high level view, and then dive deeper into each step. The process of rebasing one branch on top of another branch is as follows:
