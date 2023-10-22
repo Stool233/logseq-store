@@ -274,7 +274,7 @@
 				- `git apply -C1 new_patch.patch`
 			-
 -
-- Definitive Guide to Merging in Git
+- A Definitive Guide to Merging in Git
   collapsed:: true
 	- What is a Merge in Git
 		- Merging is the process of combining the recent changes from several branches into a single new commit that will be on all those branches.
@@ -330,7 +330,11 @@
 		-
 		-
 -
+- A Definitive Guide to Rebasing
+	-
+-
 - git-subtrac
+  collapsed:: true
 	- https://github.com/apenwarr/git-subtrac
 	- git submodules存在的一些问题
 	  collapsed:: true
@@ -399,6 +403,7 @@
 			- 这样才能拉到自己没有push到submodule远程，但存在于主仓库远程的commit
 -
 - GIT查看对象类型
+  collapsed:: true
 	- git cat-file -t 9dacb64b
 -
 - git stash
@@ -418,20 +423,25 @@
 		- 你也可以提供一个 stash 的名字，以删除特定的 stash。
 -
 - git fetch
+  collapsed:: true
 	- `git fetch` 命令会从远程库下载本地库中缺失的提交。这个命令将远程分支的引用下载到本地仓库，但它**不会**改变你的本地工作分支。如果你希望将这些变更合并到你的工作分支中，你需要显式地执行 `git merge` 或 `git rebase`。
 	- 这个命令是安全的，你可以随时运行它，不必担心它会改变你的本地代码。
 -
 - git pull
+  collapsed:: true
 	- `git pull` 命令是 `git fetch` 和 `git merge` 的组合。它不仅会从远程库获取最新的提交，还会自动地合并到你的当前分支。当你的工作树是干净的（即，没有未提交的改动）时，这通常是一个快速更新本地分支的好方法。
 	- 但是，如果你的本地有未提交的修改，或者你想要对合并有更多的控制，那么 `git pull` 可能就不是最佳选择了。在这种情况下，你可能首选 `git fetch`，然后决定如何手动合并或重构。
 -
 - git submodule
+  collapsed:: true
 	- submodule对应到.git里面，路径在.git/modules/{module}，里面的内容就是另一个完整的.git
 	- 当你首次运行 `git submodule update` 命令时，尽管你使用了 `--no-fetch` 选项，Git 仍然会尝试从原始的远程仓库（origin repo）获取数据
 		- 为了避免 Git 尝试从原始的远程仓库获取数据，你可以更改子模块的远程仓库 URL。这会"欺骗" Git，使其认为远程仓库的位置已经改变，从而避免不必要的数据获取。
 	-
 	-
+-
 - git 启动file协议：
+  collapsed:: true
 	- git config --global protocol.file.allow always
 	-
 	-
