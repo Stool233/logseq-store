@@ -23,9 +23,9 @@
 			- Note that this is the same as saying []~P, and in fact <>P is formally defined as ~[]~P. （注意，这与说[]~P是一样的，事实上<>P被正式定义为~[]~P。）
 	- ~>
 		- ~> is leads-to. P ~> Q means that if there is some state where P is true, then either Q is true either now or in some future state.（P ~> Q意思是，如果有某个状态P为真，那么Q要么是现在为真，要么是未来为真）
-		- Once this is set, it’s irreversible: even if P is later false, Q still must happen.（一旦这个设定，它是不可逆的:即使P后来为假，Q仍然必须发生。）
-			- Unlike <>, ~> is “triggered” every time P is true.
-		- You can also do P ~> []Q. If P is true, then there is some state where Q becomes true and forever stays true.
+		- Once this is set, it’s irreversible: even if P is later false, Q still must happen.（一旦这个被设定，它是不可逆的:即使P后来为假，Q仍然必须发生。）
+			- Unlike <>, ~> is “triggered” every time P is true.（与 <> 不同，每当 P 为真时，~> 将被“触发”。）
+		- You can also do P ~> []Q. If P is true, then there is some state where Q becomes true and forever stays true.（你也可以使用 P ~> []Q。如果 P 为真，那么就存在某个状态使 Q 变为真，并且永远保持真。）
 	- [ ]<> and <>[ ]
 		- []<>P means that P is always eventually true, <>[]P means that P is eventually always true.
 			- For a finite spec, these mean the same thing: P is true at termination.
