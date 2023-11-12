@@ -1,3 +1,4 @@
+- Tags: [[TLA+]]
 - Fairness, Weak and Strong
 	- There are two kinds of fairness: weak and strong.
 		- A weakly fair action will, if it stays enabled, eventually happen.
@@ -33,17 +34,14 @@
 -
 - [[MapReduce]]
 	- 三种不同假设下的形式描述
-		-
-		  1. A first spec that assumes all workers always succeed.（假设所有的worker都能成功。）
-		-
-		  id:: 6382c9cc-e87d-447e-96d1-46835002201c
+		- 1. A first spec that assumes all workers always succeed.（假设所有的worker都能成功。）
+		- id:: 6382c9cc-e87d-447e-96d1-46835002201c
 		  2. A second, fault tolerant spec that allows workers to fail.（允许worker出错的容错规范。）
 			- The reducer is fair. If it’s not, we can’t guarantee anything happens.
 			- There is at least one fair worker. If there’s none, then we can easily see the algorithm couldn’t possible succeed: just have every worker keep crashing and you’ll never meet Liveness.
 			- It doesn’t matter which worker is the fair one. This assumption significantly reduces our state space, since we can arbitrarily pick one with CHOOSE.
 			- The reducer may or may not detect an unfair worker failing, but it will never falsely decide a fair worker has failed. This is the biggest assumption here, but it’s an assumption that makes our system a lot easier to design.
-		-
-		  3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
+		- 3. A final spec that works even if the recovery mechanism partially fails, too.（即使恢复机制部分失败也能工作）
 			- In theory, we don’t have a way of distinguishing failing nodes from passing ones. In practice, we can do things that give us a reasonable amount of confidence.
 				- For example, we can ping all the servers every N seconds and assume that the ones that don’t answer in time are failing. Of course, the node might not be failing, and it could be that our reducer is acting up.
 			- Before, the server could move the queue of an unfair worker to a fair one. Now, the server can still move the assignments of an unfair worker but does not know which ones are fair. Instead, it must decide which worker to pick.
