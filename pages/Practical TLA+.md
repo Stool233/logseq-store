@@ -37,6 +37,12 @@
 			- `[]<>P` 允许 `P` 反复在真和假之间变化，只要它最终总是变回真即可；
 			- 而 `<>[]P` 要求 `P` 在某个时刻之后保持真，不能再变为假。
 -
+- `InvalidationMessage == [key: KEYS]`
+	- 定义了一个名为 `InvalidationMessage` 的运算符，它表示一个具有单一字段 `key` 的记录（类似于其他编程语言中的对象或字典），`key` 的取值范围为 `KEYS`。
+	- 这个定义的含义取决于 `KEYS` 的定义，`KEYS` 可以是任何集合，例如，如果 `KEYS` 被定义为 `{1, 2, 3}`，那么 `InvalidationMessage` 就表示包含所有 `key` 字段值为 `{1, 2, 3}` 中某个元素的记录的集合。
+	- 以下是一些可能的 `InvalidationMessage` 的值的示例：
+		- 如果 `KEYS` = `{1, 2, 3}`，那么 `InvalidationMessage` 可能表示为 `[key |-> 1]`，`[key |-> 2]` 或 `[key |-> 3]`。
+		- 如果 `KEYS` 是集合 `{a, b, c}`，那么 `InvalidationMessage` 可能表示为 `[key |-> a]`，`[key |-> b]` 或 `[key |-> c]`。
 -
 -
 - [[MapReduce]]
