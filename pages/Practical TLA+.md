@@ -19,8 +19,8 @@
 		- <> is eventually.
 		- <>P means that for every behavior, there is at least one state where P is true.（<>P表示对于每个行为，至少有一个状态P为真。）
 			- It may be false before, and it may be false after, but what matters is that it was at some point true. （它之前可能是假的，之后也可能是假的，但重要的是它在某个时刻是真的。）
-		- You can also write ~<>P, which means that P is never true.
-			- Note that this is the same as saying []~P, and in fact <>P is formally defined as ~[]~P.
+		- You can also write ~<>P, which means that P is never true.（你也可以写~<>P，这意味着P永远不为真。）
+			- Note that this is the same as saying []~P, and in fact <>P is formally defined as ~[]~P. （注意，这与说[]~P是一样的，事实上<>P被正式定义为~[]~P。）
 	- ~>
 		- ~> is leads-to. P ~> Q means that if there is some state where P is true, then either Q is true either now or in some future state.
 		- Once this is set, it’s irreversible: even if P is later false, Q still must happen.
