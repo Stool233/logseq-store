@@ -28,11 +28,11 @@
 		- You can also do P ~> []Q. If P is true, then there is some state where Q becomes true and forever stays true.（你也可以使用 P ~> []Q。如果 P 为真，那么就存在某个状态使 Q 变为真，并且永远保持真。）
 	- [ ]<> and <>[ ]
 		- []<>P means that P is always eventually true, <>[]P means that P is eventually always true.（[]<>P 表示 P 最终总是为真，<>[]P 表示 P 最后始终为真。）
-			- For a finite spec, these mean the same thing: P is true at termination.
-			- For an infinite spec,
-				- <>[]P means that there is some point where P becomes true and forever stays true
-				- []<>P means that if P ever becomes false, it will eventually become true again.
-					- Another way to think about it is that []<>P <=> (~P ~> P): P being false leads to P being true later.
+			- For a finite spec, these mean the same thing: P is true at termination.（对于有限的规范，这些意味着同样的事情：P 在终止时为真。）
+			- For an infinite spec,（对于无限的规范）
+				- <>[]P means that there is some point where P becomes true and forever stays true（<>[]P 表示存在某个点，P 变为真并且永远保持为真）
+				- []<>P means that if P ever becomes false, it will eventually become true again.（[]<>P 表示，如果 P 曾经变为假，它最终将再次变为真）
+					- Another way to think about it is that []<>P <=> (~P ~> P): P being false leads to P being true later.（另一种理解方式是，[]<>P <=> (~P ~> P)：P 的假导致 P 在后来变为真。）
 -
 - [[MapReduce]]
 	- 三种不同假设下的形式描述
