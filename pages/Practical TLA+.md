@@ -1,8 +1,8 @@
 - Tags: [[TLA+]]
 - Fairness, Weak and Strong
-	- There are two kinds of fairness: weak and strong.
-		- A weakly fair action will, if it stays enabled, eventually happen.
-			- We can declare every label in a process weakly fair by calling it a fair process.
+	- There are two kinds of fairness: weak and strong.（公平性有两种：弱公平性和强公平性。）
+		- A weakly fair action will, if it stays enabled, eventually happen.（如果一个动作保持可执行，那么弱公平性将最终发生）
+			- We can declare every label in a process weakly fair by calling it a fair process.（我们可以通过称其为公平过程，来声明流程中的每个标签都具有弱公平性）
 		- A strongly fair action, if it’s repeatedly enabled, will eventually happen.
 			- There can be gaps in between, but as long as there’s some cycle where it keeps getting enabled again, it will happen.
 			- In practice, people don’t often use strong fairness; it’s a much safer to assume the system is only weakly fair.
