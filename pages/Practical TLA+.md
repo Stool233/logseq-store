@@ -12,11 +12,13 @@
 	- []
 		- [] is always.
 		- []P means that for P is true for all states in all behaviors.
+			- []P表示对于所有行为的所有状态P都成立。
 		- You can also write ~[]P, which means that P will be false for at least one state.
+			- 你也可以写~[]P，这意味着P至少在一个状态下为假。
 	- <>
 		- <> is eventually.
-		- <>P means that for every behavior, there is at least one state where P is true.
-			- It may be false before, and it may be false after, but what matters is that it was at some point true.
+		- <>P means that for every behavior, there is at least one state where P is true.（<>P表示对于每个行为，至少有一个状态P为真。）
+			- It may be false before, and it may be false after, but what matters is that it was at some point true. （它之前可能是假的，之后也可能是假的，但重要的是它在某个时刻是真的。）
 		- You can also write ~<>P, which means that P is never true.
 			- Note that this is the same as saying []~P, and in fact <>P is formally defined as ~[]~P.
 	- ~>
