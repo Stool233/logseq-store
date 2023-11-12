@@ -3,10 +3,10 @@
 	- There are two kinds of fairness: weak and strong.（公平性有两种：弱公平性和强公平性。）
 		- A weakly fair action will, if it stays enabled, eventually happen.（如果一个动作保持可执行，那么弱公平性将最终发生）
 			- We can declare every label in a process weakly fair by calling it a fair process.（我们可以通过称其为公平过程，来声明流程中的每个标签都具有弱公平性）
-		- A strongly fair action, if it’s repeatedly enabled, will eventually happen.
-			- There can be gaps in between, but as long as there’s some cycle where it keeps getting enabled again, it will happen.
-			- In practice, people don’t often use strong fairness; it’s a much safer to assume the system is only weakly fair.
-				- However, it’s worth knowing about for the cases where it is useful.
+		- A strongly fair action, if it’s repeatedly enabled, will eventually happen.（如果一个动作反复地变为可执行，那么强公平性将最终发生。）
+			- There can be gaps in between, but as long as there’s some cycle where it keeps getting enabled again, it will happen.（之间可能会有间隙，但只要存在某个循环使其不断再次变为可执行，那么它就会发生。）
+			- In practice, people don’t often use strong fairness; it’s a much safer to assume the system is only weakly fair.（在实践中，人们往往不常使用强公平性；假设系统只具有弱公平性是更安全的。）
+				- However, it’s worth knowing about for the cases where it is useful.（然而，对于它有用的情况，了解强公平性是值得的。）
 -
 - The Temporal Operators
 	- []
