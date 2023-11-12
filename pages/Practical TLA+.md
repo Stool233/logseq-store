@@ -27,7 +27,7 @@
 			- Unlike <>, ~> is “triggered” every time P is true.（与 <> 不同，每当 P 为真时，~> 将被“触发”。）
 		- You can also do P ~> []Q. If P is true, then there is some state where Q becomes true and forever stays true.（你也可以使用 P ~> []Q。如果 P 为真，那么就存在某个状态使 Q 变为真，并且永远保持真。）
 	- [ ]<> and <>[ ]
-		- []<>P means that P is always eventually true, <>[]P means that P is eventually always true.
+		- []<>P means that P is always eventually true, <>[]P means that P is eventually always true.（[]<>P 表示 P 最终总是为真，<>[]P 表示 P 最后始终为真。）
 			- For a finite spec, these mean the same thing: P is true at termination.
 			- For an infinite spec,
 				- <>[]P means that there is some point where P becomes true and forever stays true
