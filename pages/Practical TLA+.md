@@ -33,6 +33,10 @@
 				- <>[]P means that there is some point where P becomes true and forever stays true（<>[]P 表示存在某个点，P 变为真并且永远保持为真）
 				- []<>P means that if P ever becomes false, it will eventually become true again.（[]<>P 表示，如果 P 曾经变为假，它最终将再次变为真）
 					- Another way to think about it is that []<>P <=> (~P ~> P): P being false leads to P being true later.（另一种理解方式是，[]<>P <=> (~P ~> P)：P 的假导致 P 在后来变为真。）
+		- 这两个表达式的主要区别在于它们的持续性和反复性。
+			- `[]<>P` 允许 `P` 反复在真和假之间变化，只要它最终总是变回真即可；
+			- 而 `<>[]P` 要求 `P` 在某个时刻之后保持真，不能再变为假。
+	-
 -
 - [[MapReduce]]
 	- 三种不同假设下的形式描述
