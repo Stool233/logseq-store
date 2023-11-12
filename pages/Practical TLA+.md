@@ -40,10 +40,12 @@
 - `InvalidationMessage == [key: KEYS]`
 	- 定义了一个名为 `InvalidationMessage` 的运算符，它表示一个具有单一字段 `key` 的记录（类似于其他编程语言中的对象或字典），`key` 的取值范围为 `KEYS`。
 	- 这个定义的含义取决于 `KEYS` 的定义，`KEYS` 可以是任何集合，例如，如果 `KEYS` 被定义为 `{1, 2, 3}`，那么 `InvalidationMessage` 就表示包含所有 `key` 字段值为 `{1, 2, 3}` 中某个元素的记录的集合。
-	- 以下是一些可能的 `InvalidationMessage` 的值的示例：
-		- 如果 `KEYS` = `{1, 2, 3}`，那么 `InvalidationMessage` 可能表示为 `[key |-> 1]`，`[key |-> 2]` 或 `[key |-> 3]`。
-		- 如果 `KEYS` 是集合 `{a, b, c}`，那么 `InvalidationMessage` 可能表示为 `[key |-> a]`，`[key |-> b]` 或 `[key |-> c]`。
--
+		- 以下是一些可能的 `InvalidationMessage` 的值的示例：
+			- 如果 `KEYS` = `{1, 2, 3}`，那么 `InvalidationMessage` 可能表示为 `[key |-> 1]`，`[key |-> 2]` 或 `[key |-> 3]`。
+			- 如果 `KEYS` 是集合 `{a, b, c}`，那么 `InvalidationMessage` 可能表示为 `[key |-> a]`，`[key |-> b]` 或 `[key |-> c]`。
+	- 在 TLA+ 中，你可以使用 `:` 来定义一个记录的可取值范围。
+		- 例如，`[x : S]` 表示一个字段为 `x` 的记录，其中 `x` 的值可以是集合 `S` 中的任何元素。
+		-
 -
 - [[MapReduce]]
 	- 三种不同假设下的形式描述
