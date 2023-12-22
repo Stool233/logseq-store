@@ -151,7 +151,7 @@
 			- 这是一个高级的描述，具体来看，假设你有以下的Rust代码片段：
 				- ```rust
 				  use std::sync::atomic::{AtomicUsize, Ordering};
-				  - let value = AtomicUsize::new(0);
+				  let value = AtomicUsize::new(0);
 				  let result = value.compare_exchange(0, 1, Ordering::Acquire, Ordering::Relaxed);
 				  ```
 			- 在x86平台，这段代码大致对应的汇编指令可能是：
@@ -160,5 +160,6 @@
 				  mov edx, 1         ; 将新值放入edx寄存器
 				  lock cmpxchg [rbx], edx ; rbx寄存器里是value变量的地址，cmpxchg比较eax与[rbx]的值，并在它们相等时将edx的值存入[rbx]
 				  ```
-			- `lock` 前缀是确保`cmpxchg`操作在多处理器环境中原子执行
+			- `lock` 前缀是确保`cmpxchg`操作在多处理器环境中原子执行的关键。
+				- 它会锁定总线，防止其他处理器同时访问相同的内存地址，从而确保这个比较和交换操作的原子性。
 			-
