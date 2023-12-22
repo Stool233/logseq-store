@@ -177,22 +177,22 @@
 			  ```
 			- 在ARM架构中，特别是ARMv8，`compare_exchange` 操作通常会使用 `ldxr`/`stxr` 指令对来实现。`Ordering::AcqRel` 要求成功时的操作具备获取和释放语义，而失败时需要获取语义。
 			- ARMv8的汇编代码可能像这样：
-			- assembly
-			- ```assembly
-			  ; 假设 x0 寄存器包含 current_capacity 的地址
-			  ; x1 寄存器包含预期的 current_capacity
-			  ; x2 寄存器包含 new_capacity
-			  - retry:
-			  ldaxr x3, [x0]      ; 加载 current_capacity 并添加 acquire 语义
-			  cmp x1, x3           ; 比较 x1 和 x3
-			  b.ne fail            ; 如果不相等，跳转到 fail
-			  stlxr w4, x2, [x0]   ; 尝试用 new_capacity 更新 current_capacity 并添加 release 语义
-			  cbnz w4, retry       ; 如果 stlxr 报告冲突，重试
-			  dmb ish              ; 数据内存屏障，确保之前的存储在此指令之前完成
-			  ...
-			  fail:
-			  ; cmpxchg 失败后的代码路径
-			  dmb ishld            ; 数据内存屏障（仅加载），确保失败时的 acquire 语义
-			  ...
-			  ```
+				- ```assembly
+				  ; 假设 x0 寄存器包含 current_capacity 的地址
+				  ; x1 寄存器包含预期的 current_capacity
+				  ; x2 寄存器包含 new_capacity
+				  - retry:
+				  ldaxr x3, [x0]      ; 加载 current_capacity 并添加 acquire 语义
+				  cmp x1, x3           ; 比较 x1 和 x3
+				  b.ne fail            ; 如果不相等，跳转到 fail
+				  stlxr w4, x2, [x0]   ; 尝试用 new_capacity 更新 current_capacity 并添加 release 语义
+				  cbnz w4, retry       ; 如果 stlxr 报告冲突，重试
+				  dmb ish              ; 数据内存屏障，确保之前的存储在此指令之前完成
+				  ...
+				  fail:
+				  ; cmpxchg 失败后的代码路径
+				  dmb ishld            ; 数据内存屏障（仅加载），确保失败时的 acquire 语义
+				  ...
+				  ```
 			- 在ARM上，`ldaxr` 指令加载值并提供获取语义，而`stlxr` 尝试存储一个新值并提供释放语义。如果 `stlxr` 返回一个非零值，这意味着更新失败，重试整个过程。`dmb ish` 指令用来确保存储操作在内存屏障之前完成。在失败的情况下，我们使用 `dmb ishld` 来确保加载操作的获取语义。
+-
