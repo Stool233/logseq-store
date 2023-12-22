@@ -145,4 +145,20 @@
 			- 在无锁数据结构中，`compare_exchange` 方法能够帮助实现多个线程对共享数据的安全访问。
 			- 它特别适用于那些只有在共享数据没有被其他线程修改的情况下才需要更新的场景。
 		- 具体到x86
+			- 在Rust中，`compare_exchange` 操作会编译成处理器特定的汇编指令，它执行原子的比较和交换操作。
+				- 在x86架构上，通常会使用`cmpxchg`指令来实现这一操作。
+				- 这个指令会比较累加器（例如`eax`、`rax`等）中的值与目标内存位置的值，如果它们相等，则将一个新值写入内存位置；如果不相等，则将内存位置的值加载到累加器中。
+			- 这是一个高级的描述，具体来看，假设你有以下的Rust代码片段：
+				- ```rust
+				  use std::sync::atomic::{AtomicUsize, Ordering};
+				  - let value = AtomicUsize::new(0);
+				  let result = value.compare_exchange(0, 1, Ordering::Acquire, Ordering::Relaxed);
+				  ```
+			- 在x86平台，这段代码大致对应的汇编指令可能是：
+				- ```assembly
+				  mov eax, 0         ; 将期望的值放入eax寄存器
+				  mov edx, 1         ; 将新值放入edx寄存器
+				  lock cmpxchg [rbx], edx ; rbx寄存器里是value变量的地址，cmpxchg比较eax与[rbx]的值，并在它们相等时将edx的值存入[rbx]
+				  ```
+			- `lock` 前缀是确保`cmpxchg`操作在多处理器环境中原子执行
 			-
