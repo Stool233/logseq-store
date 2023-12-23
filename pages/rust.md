@@ -207,5 +207,8 @@
 	- `Box<T>`
 		- `Box<T>` 允许你将一个值分配到堆上，然后在栈上保留一个智能指针指向堆上的数据
 		- `Box` 背后是调用 `jemalloc` 来做内存管理，所以堆上的空间无需我们的手动管理。
+-
+- `#[async_trait]` 是 Rust 语言中一个常用的宏，它来源于 `async-trait` crate，这个 crate 为 Rust 异步特性提供支持，使得开发者能在 trait 方法中使用 `async fn`。
+	- 因为 Rust 语言的特性（traits）没有内置对异步函数的支持，所以 `async-trait` crate 提供了一种方便的方式来实现这一点。
 	-
-		-
+	-
