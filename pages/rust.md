@@ -210,5 +210,6 @@
 -
 - `#[async_trait]` 是 Rust 语言中一个常用的宏，它来源于 `async-trait` crate，这个 crate 为 Rust 异步特性提供支持，使得开发者能在 trait 方法中使用 `async fn`。
 	- 因为 Rust 语言的特性（traits）没有内置对异步函数的支持，所以 `async-trait` crate 提供了一种方便的方式来实现这一点。
+	- 当你在 trait 定义中使用 `async fn` 的时候，你需要在 trait 的定义前加上 `#[async_trait]` 属性。这个宏会为你处理一些背后的工作，例如将异步的 trait 方法转换为返回 `Pin<Box<dyn Future<Output = Result<T, E>>>>` 类型的同步方法。这是必要的，因为当前 Rust 的类型系统和 trait 系统不支持直接返回 `Future` 类型。
 	-
 	-
