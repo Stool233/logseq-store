@@ -7,6 +7,8 @@
 	- ![image.png](../assets/image_1709790244639_0.png)
 	- ![image.png](../assets/image_1709790335198_0.png)
 	- ![image.png](../assets/image_1709790377020_0.png)
+	- ![image.png](../assets/image_1709790450276_0.png)
+	-
 -
 - 一个playground：
 	- https://www.skobelevs.ie/BayesTheorem/
