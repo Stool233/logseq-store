@@ -128,7 +128,7 @@
 				- ![image.png](../assets/image_1677475302846_0.png){:height 285, :width 374}
 				- ![image.png](../assets/image_1677475319098_0.png){:height 240, :width 366}
 			- ![image.png](../assets/image_1677475219985_0.png){:height 229, :width 416}
-		- Bayes's Theorem
+		- [[Bayes's Theorem
 			-
 - Teaching Materials
 	- What is a Proof
