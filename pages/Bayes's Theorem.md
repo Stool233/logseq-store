@@ -4,6 +4,7 @@
 - When to use Bayes' rule
 	- ![image.png](../assets/image_1709790168094_0.png)
 - ![image.png](../assets/image_1709790244639_0.png)
+- ![image.png](../assets/image_1709790335198_0.png)
 -
 - 一个playground：
 	- https://www.skobelevs.ie/BayesTheorem/
