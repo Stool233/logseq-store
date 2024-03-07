@@ -1,0 +1,5 @@
+- {{video https://www.youtube.com/watch?v=HZGCoVF3YvM}}
+-
+- 一个playground：
+	- https://www.skobelevs.ie/BayesTheorem/
+-
