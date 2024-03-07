@@ -1,7 +1,8 @@
 - {{video https://www.youtube.com/watch?v=HZGCoVF3YvM}}
 - Heart of Bayes' theorem
 	- ![image.png](../assets/image_1709790055325_0.png)
--
+- When to use Bayes' rule
+	- ![image.png](../assets/image_1709790168094_0.png)
 -
 - 一个playground：
 	- https://www.skobelevs.ie/BayesTheorem/
