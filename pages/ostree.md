@@ -1,3 +1,7 @@
 - ostree —— 用 git 的方式更新系统
 - 熟悉git和linux的同学可能会想过一个问题：能不能用git的方式来更新系统呢？包括建立分支、回滚等功能，用在操作系统会如何？
+- 而 [#ostree](https://twitter.com/hashtag/ostree?src=hashtag_click) 则是这种想法的实践。它的实现方法非常简单却巧妙。首先所有文件计算出sha值然后以该值作为文件名储存在本地repo里（续
+- twitter
+	- {{twitter https://twitter.com/hemashushu/status/1761924476135194673/photo/1}}
+- ![](https://pbs.twimg.com/media/GHOZSuYbQAAj1ty?format=png&name=900x900)
 -
