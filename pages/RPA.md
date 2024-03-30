@@ -22,3 +22,5 @@
 				- 解决一些[[抽象泄漏]]的情况
 				-
 - zapier也尝试下看看
+	- zapier用途与影刀有些区别
+		- 更适合用来监控hacker news、twitter，然后做通知或与notion结合
