@@ -23,5 +23,8 @@
 		    function(error) { /* 失败时执行 */ }
 		  );
 		  ```
-		  
-		  在现代JavaScript中，`async/await` 语法允许以更同步的方式写异步代码，它背后仍然使用`Promise`。
+	- 在现代JavaScript中，`async/await` 语法允许以更同步的方式写异步代码，它背后仍然使用`Promise`。
+-
+- 一个简单的go的实现
+	- https://github.com/Stool233/snippets-hub/tree/main/go-simple-promise
+	-
