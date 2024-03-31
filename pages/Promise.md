@@ -1,5 +1,5 @@
 - Tags: [[异步编程]]
-- `Promise` 通常出现在[[JavaScript]]这样的异步编程环境中。一个`Promise`是一个代表了异步操作的最终完成或失败的对象。它允许你为异步操作的成功值或失败原因添加处理方法（handlers）。
+- `Promise` 通常出现在[[JavaScript]]这样的[[异步编程]]环境中。一个`Promise`是一个代表了异步操作的最终完成或失败的对象。它允许你为异步操作的成功值或失败原因添加处理方法（handlers）。
 - 一个`Promise`对象有以下几种状态：
 	- **Pending**: 初始状态，既不是成功，也不是失败。
 	- **Fulfilled**: 意味着操作成功完成。
@@ -59,7 +59,7 @@
 	  ```
 - 通过使用 `Promise`，上述代码展示了如何执行异步操作并在完成时处理结果或错误。这种模式在现代 web 开发中非常常见，用于处理 HTTP 请求、文件操作、数据库交互等异步任务。
 -
-- [[Java中类似的概念是CompletableFuture
+- [[Java]]中类似的概念是CompletableFuture
 	- `CompletableFuture` 提供了非阻塞的方法，异常处理机制，以及能够通过一系列的转换和组合方法来表达复杂的异步流程，如 `thenApply`, `thenCompose`, 和 `thenCombine` 等。
 	- 以下是一个 `CompletableFuture` 的示例：
 		- ```java
@@ -78,10 +78,9 @@
 		  ```
 	- `CompletableFuture` 与 `Promise` 相比，它提供了更多的控制和更强大的错误处理能力，允许开发者构建复杂的异步逻辑，并能够与 Java 的函数式编程特性很好地结合。
 -
-- 一个简单的go的实现
+- 一个简单的[[golang]]的实现demo
 	- https://github.com/Stool233/snippets-hub/tree/main/go-simple-promise
-- 复杂一点的go实现，结合了goroutines pool
+- 复杂一点的[[golang]]实现demo，结合了goroutines pool
 	- https://github.com/Stool233/snippets-hub/tree/main/go-promise
 -
-	-
 	-
