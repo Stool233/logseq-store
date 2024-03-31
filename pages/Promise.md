@@ -59,6 +59,24 @@
 	  ```
 - 通过使用 `Promise`，上述代码展示了如何执行异步操作并在完成时处理结果或错误。这种模式在现代 web 开发中非常常见，用于处理 HTTP 请求、文件操作、数据库交互等异步任务。
 -
+- Java中类似的概念是CompletableFuture
+	- `CompletableFuture` 提供了非阻塞的方法，异常处理机制，以及能够通过一系列的转换和组合方法来表达复杂的异步流程，如 `thenApply`, `thenCompose`, 和 `thenCombine` 等。
+	- 以下是一个 `CompletableFuture` 的示例：
+		- ```java
+		  CompletableFuture.supplyAsync(() -> {
+		    // 异步执行代码
+		    return "Hello";
+		  }).thenApply(s -> s + " World")
+		  .thenAccept(System.out::println); // 输出 "Hello World"
+		  ```
+	- `CompletableFuture` 还提供了合并多个异步任务的能力，例如：
+		- ```java
+		  CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> "Hello");
+		  CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> "World");
+		  future1.thenCombine(future2, (s1, s2) -> s1 + " " + s2)
+		       .thenAccept(System.out::println); // 输出 "Hello World"
+		  ```
+	- `CompletableFuture` 与 `Promise` 相比，它提供了更多的控制和更强大的错误处理能力，允许开发者构建复杂的异步逻辑，并能够与 Java 的函数式编程特性很好地结合。
 - 一个简单的go的实现
 	- https://github.com/Stool233/snippets-hub/tree/main/go-simple-promise
 - 复杂一点的go实现
