@@ -1,4 +1,4 @@
-- Tags: [[异步]]
+- Tags: [[异步编程]]
 - `Promise` 通常出现在JavaScript这样的异步编程环境中。一个`Promise`是一个代表了异步操作的最终完成或失败的对象。它允许你为异步操作的成功值或失败原因添加处理方法（handlers）。
 - 一个`Promise`对象有以下几种状态：
 	- **Pending**: 初始状态，既不是成功，也不是失败。
@@ -24,7 +24,7 @@
 	  ```
 - 在现代JavaScript中，`async/await` 语法允许以更同步的方式写异步代码，它背后仍然使用`Promise`。
 - `Promise` 在 JavaScript 中扮演了极其重要的角色。其主要作用包括但不限于以下几点：
-	- 1. **异步编程的简化**: `Promise` 提供了一种更简洁而强大的方式来进行异步编程。通过使用 `Promise`，开发者可以避免所谓的“[回调地狱]]”（callback hell），这是指嵌套多层回调函数而导致代码难以理解和维护的情况。
+	- 1. **异步编程的简化**: `Promise` 提供了一种更简洁而强大的方式来进行异步编程。通过使用 `Promise`，开发者可以避免所谓的“[[回调地狱]]”（callback hell），这是指嵌套多层回调函数而导致代码难以理解和维护的情况。
 	- 2. **链式调用**: `Promise` 支持链式调用（thenable），允许开发者以接近同步代码的方式书写异步操作，通过 `.then()` 和 `.catch()` 方法来顺序执行异步任务，并在每个步骤处理成功或失败的结果。
 	- 3. **状态管理**: `Promise`对象代表一个异步操作的最终完成（或失败）及其结果值。它有三种状态：pending（等待中），fulfilled（已成功），和 rejected（已失败）。这个状态模型允许开发者编写更健壮的代码来处理异步操作的多种可能性。
 	- 4. **错误处理**: `Promise` 提供了 `.catch()` 方法来集中处理异步操作中可能出现的错误，这样开发者可以更容易地管理异常。
@@ -47,7 +47,8 @@
 	        }, 1000);
 	    });
 	  }
-	  - asyncOperation().then((message) => {
+	  
+	  asyncOperation().then((message) => {
 	    console.log(message); // 当操作成功时执行
 	  }).catch((error) => {
 	    console.error(error); // 当操作失败时执行
@@ -57,4 +58,6 @@
 -
 - 一个简单的go的实现
 	- https://github.com/Stool233/snippets-hub/tree/main/go-simple-promise
+- 复杂一点的go实现
+	-
 	-
