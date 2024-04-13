@@ -469,7 +469,10 @@
 			  ```
 			- flatmap 需要更多的工作，以及使用递归操作符（由于 TLA+ 不允许带有操作符参数的递归操作符，因此需要内部辅助操作符）：
 			- ```
-			  FlatMap(F(_), seq) ≜ LET RECURSIVE Helper(_) Helper(s) ≜ IF Len(s) = 0 THEN ⟨⟩ ELSE F(Head(s)) ∘ Helper(Tail(s)) IN Helper(seq)
+			  FlatMap(F(_), seq) ≜ LET RECURSIVE Helper(_) 
+			  						Helper(s) ≜ IF Len(s) = 0 THEN ⟨⟩ 
+			                          		                  ELSE F(Head(s)) ∘ Helper(Tail(s)) 
+			                       IN Helper(seq)
 			  ```
 			- TLA+ 对有限序列字面量有特殊的语法，也称为元组（或者如果你愿意，可以称之为列表）。元组 `⟨10, ‘‘hi", [x ∈ N ↦ x + 1]⟩` 仅仅是语法糖：
 			- ```
