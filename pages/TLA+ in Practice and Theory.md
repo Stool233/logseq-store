@@ -369,4 +369,41 @@
 			          IN [(x ∈ DOMAIN f ∩ Preimage(g, Image(f))) ↦ g[f[x]]]
 			  ```
 			- 与 `g ∙ f` 不同，`g ⋆ f` 总是一个函数，但它不一定是在 `DOMAIN f` 上的函数，而是可能只在其子集上，如果 `Image(f) ∩ DOMAIN g = {}`，它甚至可能是空函数（在空集上的函数，任何参数都未定义的函数）。
+			- 以下运算符定义了任意集合上的恒等函数：
+			- ```
+			  Identity(S) ≜ [x ∈ S ↦ x]
+			  ```
+			- 以下是关于`Identity`的一个定理：
+			- ```
+			  ∀S: ∀x ∈ S: Identity(S)[x] = x
+			  ```
+			- 我们还定义了一个`Inverse`运算符，用于任何可逆函数的逆（定义如下：对于函数图像中的任何`y`，选择一个映射到`y`的定义域中的`x`，前提是`x`是唯一映射到`y`的点）：
+			- ```
+			  Inverse(f) ≜ [y ∈ Image(f) ↦ ChooseOne(DOMAINf, LAMBDA x: f[x] = y)]
+			  ```
+			- 如果一个函数的值域中的每个元素在其定义域中有且只有一个对应元素映射到它，即它是一个双射，则该函数是可逆的。我们希望将这作为一个关于函数的一般定理，但这里有一个问题：所有函数的集合不是一个集合（而是一个正确的类），所以我们不能写`∀f ∈ Function: ...`（与类型化的函数式语言中的类型 forall a b. a → b 表示所有函数不同）。然而，我们可以定义谓词`Fn`，它的定义看似愚蠢，当且仅当其参数是任何函数时为真：
+			- ```
+			  Fn(f) ≜ f = [x ∈ DOMAINf ↦ f[x]]
+			  ```
+			- 接下来是一个定理：
+			- ```
+			  ∀S, f: Fn(f) ∧ Bijection(f, S) ⇒ ∧ Inverse(f) ∙ f = Identity(DOMAINf) ∧ f ∙ Inverse(f) = Identity(S)
+			  ```
+			- 如下：
+			- ```
+			  ∀f: Fn(f) ∧ Injection(f) ⇒ ∧ Inverse(f) ∙ f = Identity(DOMAINf) ∧ f ∙ Inverse(f) = Identity(Image(f))
+			  ```
+			- 我们可以通过各种方式操纵函数。例如，如果`inc`是上面定义的将每个自然数增加一的函数，我们当然可以定义以下内容：
+			- ```
+			  g ≜ [x ∈ Nat ↦ IF x ≥ 1 ∧ x ≤ 2 THEN inc[x] * 10 ELSE inc[x]]
+			  ```
+			- 但是`EXCEPT`构造使得“更改”特定函数值变得更容易：
+			- ```
+			  g ≜ [inc EXCEPT ![1] = inc[1] * 10, ![2] = inc[2] * 10]
+			  ```
+			- 上述也可以这样写：
+			- ```
+			  g ≜ [inc EXCEPT ![1] = @ * 10, ![2] = @ * 10]
+			  ```
+			- 其中`@`指的是该点原始函数的值。
 -
