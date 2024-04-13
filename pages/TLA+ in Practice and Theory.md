@@ -463,4 +463,16 @@
 			- Seq(S) ≜ UNION { [1..n → S] : n ∈ 自然数 }
 			  Len(s) 操作符是序列的长度（可以定义为 CHOOSE n ∈ 自然数 : DOMAIN s = 1..n）；∘ 操作符用于连接两个序列，Append(seq, x) 操作符将值x追加到序列seq的末尾，Head(seq) 操作符是序列的第一个元素（seq[1]），而 Tail(seq) 是尾部（[i ∈ 1..Len(seq) - 1 ↦ seq[i + 1]]）。SubSeq(seq, i, j) 是序列seq中从i到j（包括i和j）的子序列，而 SelectSeq(seq, P(_)) 是过滤后只包含满足P(x)为真的元素x的序列。
 			- 由于字符串只是字符的序列，序列模块的∘操作符也用于连接字符串，SubSeq用于选择子字符串等。
-			-
+			- 在序列上定义熟悉的函数式编程中的 map 操作很简单：
+			- ```
+			  Map(F(_), seq) ≜ [i ∈ DOMAIN seq ↦ F(seq[i])]
+			  ```
+			- flatmap 需要更多的工作，以及使用递归操作符（由于 TLA+ 不允许带有操作符参数的递归操作符，因此需要内部辅助操作符）：
+			- ```
+			  FlatMap(F(_), seq) ≜ LET RECURSIVE Helper(_) Helper(s) ≜ IF Len(s) = 0 THEN ⟨⟩ ELSE F(Head(s)) ∘ Helper(Tail(s)) IN Helper(seq)
+			  ```
+			- TLA+ 对有限序列字面量有特殊的语法，也称为元组（或者如果你愿意，可以称之为列表）。元组 `⟨10, ‘‘hi", [x ∈ N ↦ x + 1]⟩` 仅仅是语法糖：
+			- ```
+			  [i ∈ 1..3 ↦ CASE i = 1 → 10 □ i = 2 → ‘‘hi" □ i = 3 → [x ∈ N ↦ x + 1]]
+			  ```
+			- 如果 `A` 和 `B` 是集合，那么 `A×B` 是它们的笛卡尔积，`{⟨a, b⟩ : a ∈ A, b ∈ B}`。类似地，`A×B×C = {⟨a, b, c⟩ : a ∈ A, b ∈ B, c ∈ C}` 等等。在 TLA+ 中，笛卡尔积不是关联的，所以 `A×B×C ≠ (A×B)×C ≠ A×(B×C)`，因为 `⟨a, b, c⟩ ≠ ⟨⟨a, b⟩, c⟩ ≠ ⟨a, ⟨b, c⟩⟩`（因此 `×` 不是一个普通的二元中缀运算符——尽管它的行为几乎如此——而是一个特殊的构造）。
