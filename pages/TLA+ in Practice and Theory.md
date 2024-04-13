@@ -86,8 +86,10 @@
 			- 同样重要的是要记住，**CHOOSE** 只是选择值，它不构造值；你不能 **CHOOSE** 一个在值的宇宙中不存在的值，即其存在没有被逻辑理论的公理假设的值，这一点我将在章节“集合”中介绍。
 			- TLA+ 中的 **IF/THEN/ELSE** 和 **CASE** 构造实际上是通过 **CHOOSE** 来定义的：
 				- ```
+				  IF p THEN e1 ELSE e2 ≜ CHOOSE v: (p ⇒ (v = e1)) ∧ (¬p ⇒ (v = e2)) 
+				                       = CHOOSE v: (p ∧ (v = e1)) ∨ (¬p ∧ (v = e2))
+				                       
+				  CASE p1 → e1 □ … □ pn → en ≜ CHOOSE v: (p1 ∧ (v = e1)) ∨ ⋯ ∨ (pn ∧ (v = en))
 				  ```
-				- **IF p THEN e1 ELSE e2** ≜ **CHOOSE v: (p ⇒ (v = e1)) ∧ (¬p ⇒ (v = e2))** = **CHOOSE v: (p ∧ (v = e1)) ∨ (¬p ∧ (v = e2))**
-				- **CASE p1 → e1 □ … □ pn → en** ≜ **CHOOSE v: (p1 ∧ (v = e1)) ∨ ⋯ ∨ (pn ∧ (v = en))**
 			- 我们现在可以看到 **CHOOSE** 是多么基础。我们迄今为止看到的所有 TLA+ 构造——除了命题逻辑的联结词之外的量词、**IF/THEN/ELSE** 和 **CASE**——都可以用它来定义。
 			- 对于一个值未定义，不必须在其定义中使用 **CHOOSE**。正如我们将在 **CONSTANT** 部分看到的，当特定值无法通过公理和定义确定时，就可能出现未定义的值。
