@@ -452,6 +452,7 @@
 			  ```
 			- 导数的定义为：
 			- ```
-			  Derivative(f, a) ≜ LET e ≜ CHOOSE e ∈ PosReal : OpenBall(a, e) ⊆ DOMAINf IN Limit([x ∈ OpenBall(a, e) \ {a} ↦ (f[x] − f[a]) / (x − a)], a)
+			  Derivative(f, a) ≜ LET e ≜ CHOOSE e ∈ PosReal : OpenBall(a, e) ⊆ DOMAIN f 
+			  				   IN Limit([x ∈ OpenBall(a, e) \ {a} ↦ (f[x] − f[a]) / (x − a)], a)
 			  ```
 			- 虽然我们可以定义任何可计算的函数（甚至许多不可计算的函数），但这些函数并不是我们在 TLA+ 中描述计算的方式。与基于函数式编程的规范语言不同，TLA+ 中的计算不是函数而是动态系统（如常微分方程）。相反，我们将函数用作数据结构（关联数组）或者像操作符一样，作为我们计算的基本操作。例如，当我们编写高层规范时，如果我们不希望模拟比如阶乘子程序的动态行为，而是将其视为原始操作，我们会将其指定为一个函数。
