@@ -365,6 +365,7 @@
 			  ```
 			- 注意 `g ∙ f` 只有在 `f` 和 `g` 可组合时才定义，这意味着 `Image(f) ⊆ DOMAIN g` —— 记住，至少在普通数学中，没有所谓的部分函数，至少不是与编程中相同的意义。如果我们想要像编程中的部分函数那样工作的函数复合，我们可以定义：
 			- ```plaintext
-			  g ⋆ f ≜ LET Preimage(h, S) ≜ {x ∈ DOMAIN h : h[x] ∈ S} IN [(x ∈ DOMAIN f ∩ Preimage(g, Image(f))) ↦ g[f[x]]]
+			  g ⋆ f ≜ LET Preimage(h, S) ≜ {x ∈ DOMAIN h : h[x] ∈ S} 
+			          IN [(x ∈ DOMAIN f ∩ Preimage(g, Image(f))) ↦ g[f[x]]]
 			  ```
 			- 与 `g ∙ f` 不同，`g ⋆ f` 总是一个函数，但它不一定是在 `DOMAIN f` 上的函数，而是可能只在其子集上，如果 `Image(f) ∩ DOMAIN g = {}`，它甚至可能是空函数（在空集上的函数，任何参数都未定义的函数）。
