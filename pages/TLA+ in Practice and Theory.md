@@ -553,7 +553,13 @@
 			- 我们在指定实际软件系统时看到的非可计算函数或运算符（如 `Inverse` 或 `dirichlet`）有什么用呢？就此而言，即使定义是可计算的，它也可能不暗示一种可行（易处理）的计算方式，这同样糟糕。正如我们将在接下来的内容中看到的，这样的定义可以是实际可执行算法的便捷抽象表示。它们指定了我们的程序或其某小部分的‘什么’而非‘如何’，然后我们可以选择定义‘如何’并验证它是否符合‘什么’，或者选择就此打住，不担心实现。
 			- 例如，在指定依赖于排序函数的一些复杂算法时，我们可能知道我们已经有了一个高效的排序子程序库，我们对其实现的细节不感兴趣。因此，我们可以选择仅定义其行为，而不是将排序子程序指定为算法或以模仿高效实现的方式定义它：
 			- ```
-			  Permutations(seq) ≜ LET N ≜ Len(seq) PermsOfNums ≜ { f ∈ [1..N → 1..N] : Injection(f) } IN { seq ∙ perm : perm ∈ PermsOfNums }
+			  Permutations(seq) ≜ LET N ≜ Len(seq) 
+			  						PermsOfNums ≜ { f ∈ [1..N → 1..N] : Injection(f) } 
+			                      IN { seq ∙ perm : perm ∈ PermsOfNums }
+			                      
 			  - Ordered(seq, _⪯_) ≜ ∀ i, j ∈ 1..Len(seq) : i < j ⇒ seq[i] ⪯ seq[j]
+			  
 			  - Sort(seq, _⪯_) ≜ CHOOSE out ∈ Permutations(seq) : Ordered(out, ⪯)
 			  ```
+		-
+-
