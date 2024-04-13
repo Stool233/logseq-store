@@ -557,9 +557,9 @@
 			  						PermsOfNums ≜ { f ∈ [1..N → 1..N] : Injection(f) } 
 			                      IN { seq ∙ perm : perm ∈ PermsOfNums }
 			                      
-			  - Ordered(seq, _⪯_) ≜ ∀ i, j ∈ 1..Len(seq) : i < j ⇒ seq[i] ⪯ seq[j]
+			  Ordered(seq, _⪯_) ≜ ∀ i, j ∈ 1..Len(seq) : i < j ⇒ seq[i] ⪯ seq[j]
 			  
-			  - Sort(seq, _⪯_) ≜ CHOOSE out ∈ Permutations(seq) : Ordered(out, ⪯)
+			  Sort(seq, _⪯_) ≜ CHOOSE out ∈ Permutations(seq) : Ordered(out, ⪯)
 			  ```
 		-
 -
