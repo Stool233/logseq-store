@@ -528,12 +528,13 @@
 	- ## **综合起来**
 		- 我们学到的逻辑使我们能够定义计算机程序操作的数据的任何信息。
 		- ### 更复杂的定义
-			- 更复杂的定义
-			  现在让我们使用我们所见过的一切来定义 `Cardinality(S)` 运算符，该运算符是有限集合 `S` 中元素的数量（该运算符由标准模块 FiniteSets 提供）。
+			- 现在让我们使用我们所见过的一切来定义 `Cardinality(S)` 运算符，该运算符是有限集合 `S` 中元素的数量（该运算符由标准模块 FiniteSets 提供）。
 			- 我们可以使用计算机科学的定义，基于这样的观察：有限集合的基数是去掉一个任意元素后集合的基数加一：
 			- ```
 			  RECURSIVE Cardinality(_)
-			  Cardinality(s) ≜ IF s = {} THEN 0 ELSE LET x ≜ CHOOSE x ∈ s : TRUE IN 1 + Cardinality(s \ {x})
+			  Cardinality(s) ≜ IF s = {} THEN 0 
+			  						   ELSE LET x ≜ CHOOSE x ∈ s : TRUE
+			                             		IN 1 + Cardinality(s \ {x})
 			  ```
 			- 我们也可以选择更“数学化”的定义。我们将通过找到一个从自然数范围到集合的双射来定义基数。
 			- ```
