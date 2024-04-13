@@ -297,6 +297,7 @@
 			- ```
 			  THEOREM AbelianGroup(Int, +)
 			  
+			  THEOREM ∀n ∈ Nat \ {0}: LET a ∼ b ≜ a % n = b % n 
 			  ```
 			-
 			-
