@@ -298,6 +298,7 @@
 			  THEOREM AbelianGroup(Int, +)
 			  
 			  THEOREM ∀n ∈ Nat \ {0}: LET a ∼ b ≜ a % n = b % n 
+			  						LET a ⊕ b ≜ ClassOf(AnyOf(a) + AnyOf(b), Int, ∼) 
 			  ```
 			-
 			-
