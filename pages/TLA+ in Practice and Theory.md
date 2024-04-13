@@ -392,7 +392,8 @@
 			  ```
 			- 如下：
 			- ```
-			  ∀f: Fn(f) ∧ Injection(f) ⇒ ∧ Inverse(f) ∙ f = Identity(DOMAINf) ∧ f ∙ Inverse(f) = Identity(Image(f))
+			  ∀f: Fn(f) ∧ Injection(f) ⇒ ∧ Inverse(f) ∙ f = Identity(DOMAINf) 
+			  						   ∧ f ∙ Inverse(f) = Identity(Image(f))
 			  ```
 			- 我们可以通过各种方式操纵函数。例如，如果`inc`是上面定义的将每个自然数增加一的函数，我们当然可以定义以下内容：
 			- ```
@@ -407,4 +408,21 @@
 			  g ≜ [inc EXCEPT ![1] = @ * 10, ![2] = @ * 10]
 			  ```
 			- 其中`@`指的是该点原始函数的值。
--
+			- `EXCEPT` 表达式还支持函数可以“嵌套”的情况（即，一个函数返回另一个函数，或多维数组）。因此，如果我们想表达增加二维数组中（1,2）坐标的值，而不是写：
+			- ```
+			  [f EXCEPT ![1] = [@ EXCEPT [2] = @ + 1]]
+			  ```
+			- 我们可以写成：
+			- ```
+			  [f EXCEPT ![1][2] = @ + 1]
+			  ```
+			- 我们还有语法糖来定义和应用具有多个参数的函数。我们将在学习了元组之后讨论这个问题。
+			- 定义不可计算的函数和定义可计算的函数一样容易。这里是一个不可计算函数的例子：
+			- ```
+			  dirichlet[x ∈ Real] ≜ LET IsRational(z) ≜ ∃p ∈ Int, q ∈ Nat \ {0} : z = p / q IN IF IsRational(x) THEN 1 ELSE 0
+			  ```
+			- 顺便说一下，尽管初看起来非常简单自然，这个函数也是如此：
+			- ```
+			  step[x ∈ Real] ≜ IF x < 0 THEN 0 ELSE 1
+			  ```
+			- 这些例子展示了如何定义涉及条件逻辑和存在性量词的函数，以及如何用`EXCEPT`表达式修改函数的特定值或行为。
