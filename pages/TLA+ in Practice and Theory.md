@@ -387,7 +387,8 @@
 			  ```
 			- 接下来是一个定理：
 			- ```
-			  ∀S, f: Fn(f) ∧ Bijection(f, S) ⇒ ∧ Inverse(f) ∙ f = Identity(DOMAINf) ∧ f ∙ Inverse(f) = Identity(S)
+			  ∀S, f: Fn(f) ∧ Bijection(f, S) ⇒ ∧ Inverse(f) ∙ f = Identity(DOMAINf) 
+			  								 ∧ f ∙ Inverse(f) = Identity(S)
 			  ```
 			- 如下：
 			- ```
