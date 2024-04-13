@@ -542,5 +542,10 @@
 			  ```
 			- 我们可以通过使用以下数学定义来展示一些其他的 TLA+ 特性，该定义找到最大的自然数 `n`，使得从 `1..n` 到 `s` 有一个注入（一对一映射）：
 			- ```
-			  Cardinality(s) ≜ LET TheLargestSuch(S, _≻_, P(_)) ≜ CHOOSE x ∈ S : P(x) ∧ ∀y ∈ S : y ≻ x ⇒ ¬P(y) IN TheLargestSuch(Nat, >, LAMBDA n : ∃f ∈ [1..n → s] : Injection(f))
+			  Cardinality(s) ≜ 
+			  	LET TheLargestSuch(S, _≻_, P(_)) ≜
+			      		CHOOSE x ∈ S : P(x) ∧ ∀y ∈ S : y ≻ x ⇒ ¬P(y) 
+			      IN TheLargestSuch(Nat, >, LAMBDA n : ∃f ∈ [1..n → s] : Injection(f))
 			  ```
+		- ### 描述数据的属性
+			-
