@@ -428,4 +428,28 @@
 			  step[x ∈ Real] ≜ IF x < 0 THEN 0 ELSE 1
 			  ```
 			- 这些例子展示了如何定义涉及条件逻辑和存在性量词的函数，以及如何用`EXCEPT`表达式修改函数的特定值或行为。
-			-
+			- 现在让我们使用函数和我们之前见过的一些集合来正式定义一些更重要的数学概念：
+			- ```
+			  RealFunction ≜ UNION { [S → Real] : S ∈ SUBSET Real }
+			  ```
+			- 绝对值函数定义为：
+			- ```
+			  AbsoluteValue(a) ≜ IF a ≥ 0 THEN a ELSE −a
+			  ```
+			- 开球（在实数线上的开区间）定义为：
+			- ```
+			  OpenBall(a, e) ≜ { x ∈ Real : AbsoluteValue(x − a) < e }
+			  ```
+			- 正实数集定义为：
+			- ```
+			  PosReal ≜ { x ∈ Real : x > 0 }
+			  ```
+			- 极限的定义（使用著名的（ϵ, δ）定义）：
+			- ```
+			  Limit(f, a) ≜ CHOOSE l ∈ Real : ∀e ∈ PosReal : ∃d ∈ PosReal : ∀x ∈ OpenBall(a, d) \ {a} : f[x] ∈ OpenBall(l, e)
+			  ```
+			- 导数的定义为：
+			- ```
+			  Derivative(f, a) ≜ LET e ≜ CHOOSE e ∈ PosReal : OpenBall(a, e) ⊆ DOMAINf IN Limit([x ∈ OpenBall(a, e) \ {a} ↦ (f[x] − f[a]) / (x − a)], a)
+			  ```
+			- 虽然我们可以定义任何可计算的函数（甚至许多不可计算的函数），但这些函数并不是我们在 TLA+ 中描述计算的方式。与基于函数式编程的规范语言不同，TLA+ 中的计算不是函数而是动态系统（如常微分方程）。相反，我们将函数用作数据结构（关联数组）或者像操作符一样，作为我们计算的基本操作。例如，当我们编写高层规范时，如果我们不希望模拟比如阶乘子程序的动态行为，而是将其视为原始操作，我们会将其指定为一个函数。
