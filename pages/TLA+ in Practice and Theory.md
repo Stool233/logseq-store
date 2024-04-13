@@ -195,5 +195,46 @@
 			- 如果 S 是一个集合，则 UNION S 是包含 S 的所有成员的成员的集合（并集公理），即 ∀x : x ∈ UNION S ≡ ∃s ∈ S : x ∈ s。例如，UNION {{1, 2}, {2, 3}} = {1, 2, 3}。
 			- 如果 S 是一个集合，则 SUBSETS 是 S 的幂集，即 S 的所有子集的集合（幂集公理），或 ∀x : x ∈ SUBSETS ≡ ∀z ∈ x : z ∈ S（注意对于任何集合 S，空集是 SUBSETS 的成员，因为 ∀z ∈ {} : z ∈ S）。例如，SUBSET {1, 2, 3} = {{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}。
 			- TLA+ 有常见的集合运算符 ∪（并集）、∩（交集）、⊆（子集或相等）、⊂（严格子集）、\（集合差）等，全部使用上述基本操作简单地定义（例如 a ⊆ b ≜ ∀x : x ∈ a ⇒ x ∈ b，以及 a ∩ b ≜ {x ∈ a : x ∈ b}）。
-			-
+			- 根据 ZFC 公理定义的上述操作完全确定了我们宇宙中存在的集合。因为 CHOOSE 只选择值，你不能选择罗素悖论“集合”，因为这样的集合不存在，它不能使用任何集合构造操作来构建。因此，CHOOSE x : ∀s : s ∈ x ≡ s ∉ s（这表明 x 是所有不包含自身的集合——一个悖论）的值是未定义的，因为不存在这样的集合 x；CHOOSE 表达式的右侧对 ZFC 中的所有集合都是假的。
+			- 让我们看一些使用集合的 TLA+ 定义的例子。这里是一个有用的运算符的例子，它表明一个集合中存在且仅存在一个成员满足某个谓词：
+			- ```tla
+			  ExistsOne(S, P(_)) ≜ ∃x ∈ S : P(x) ∧ ∀y ∈ S : P(y) ⇒ y = x
+			  ```
+			  （这是逻辑中表达唯一值的常见模式；如果两个变量指向它必须相等，那么一个值是唯一的）。
+			- 请注意，我们可以定义一个无界的运算符，ExistsOne0，
+			- ```tla
+			  ExistsOne0(P(_)) ≜ ∃x : P(x) ∧ ∀y : P(y) ⇒ y = x
+			  ```
+			  然后这样定义 ExistsOne：
+			- ```tla
+			  ExistsOne(S, P(_)) ≜ ExistsOne0(LAMBDA x : x ∈ S ∧ P(x))
+			  ```
+			  现在让我们定义一些更丰富的数学概念。我们将定义一个有预序的集合（proset）、一个部分有序集（poset）和一个全序集（toset）：
+			- ```tla
+			  Proset(S, _⪯_) ≜
+			  ∧ ∀a ∈ S : a ⪯ a  // Reflexivity
+			  ∧ ∀a, b, c ∈ S : (a ⪯ b ∧ b ⪯ c) ⇒ a ⪯ c  // Transitivity
+			  - Poset(S, _⪯_) ≜
+			  ∧ Proset(S, ⪯)
+			  ∧ ∀a, b ∈ S : (a ⪯ b ∧ b ⪯ a) ⇒ a = b  // Antisymmetry
+			  - Toset(S, _⪯_) ≜
+			  ∧ Poset(S, ⪯)
+			  ∧ ∀a, b ∈ S : a ⪯ b ∨ b ⪯ a  // Totality
+			  ```
+			  这里是一些重要的代数结构，半群、幺半群和群：
+			- ```tla
+			  Semigroup(S, _⋅_) ≜
+			  ∧ ∀a, b ∈ S : a ⋅ b ∈ S  // Closure
+			  ∧ ∀a, b, c ∈ S : (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c)  // Associativity
+			  - Monoid(M, _⋅_) ≜
+			  ∧ Semigroup(M, ⋅)
+			  ∧ ∃id ∈ M : ∀a ∈ M : id ⋅ a = a ∧ a ⋅ id = a  // Identity element
+			  - Group(G, _⋅_) ≜
+			  ∧ Monoid(G, ⋅)
+			  ∧ ∃id ∈ G : ∀a ∈ G : id ⋅ a = a ∧ a ⋅ id = a ∧ ∃b ∈ G : a ⋅ b = id ∧ b ⋅ a = id  // Inverse element
+			  - AbelianGroup(G, _⋅_) ≜
+			  ∧ Group(G, _⋅_)
+			  ∧ ∀a, b ∈ G : a ⋅ b = b ⋅ a  // Commutativity
+			  ```
+			- 尽管我可以直接根据 Semigroup 定义 Group，因为我们必须重复身份条件（或使用我们尚未学到的结构），但我想强调群是一个幺半群。身份元素是唯一的，这是我们将来正式陈述和证明的定理。
 		-
