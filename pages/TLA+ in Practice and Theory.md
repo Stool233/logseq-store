@@ -297,8 +297,9 @@
 			- ```
 			  THEOREM AbelianGroup(Int, +)
 			  
-			  THEOREM ∀n ∈ Nat \ {0}: LET a ∼ b ≜ a % n = b % n 
-			  						LET a ⊕ b ≜ ClassOf(AnyOf(a) + AnyOf(b), Int, ∼) 
+			  THEOREM ∀n ∈ Nat \ {0}: LET a ∼ b ≜ a % n = b % n 							Equality modulo n
+			  						    a ⊕ b ≜ ClassOf(AnyOf(a) + AnyOf(b), Int, ∼) 	Sum on equiv. classes
+			                          IN  AbelianGroup(Quotient(Int,~),⊕)
 			  ```
 			-
 			-
