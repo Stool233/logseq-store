@@ -108,11 +108,15 @@
 				- a ⪯ b ≜ a % b = 0
 			- 与其他一些语言不同，TLA+ 只允许从预定列表的符号中定义符号运算符，其元数、位置（前缀/中缀/后缀）和优先级是固定的。我们可以为运算符参数使用符号名称，如下例中的中缀运算符：
 				- Foo(x, y, _ ≺ _) ≜ IF x ≺ y THEN x ELSE y
-				- 也允许递归运算符：
-				  RECURSIVE Fact(_) Fact(n) ≜ IF n ≤ 1 THEN 1 ELSE n * Fact(n - 1)
+			- 也允许递归运算符：
+			  RECURSIVE Fact(_) Fact(n) ≜ IF n ≤ 1 THEN 1 ELSE n * Fact(n - 1)
 			- 可以使用 LAMBDA 内联定义匿名运算符，如 ApplyTwice(LAMBDA x: x^2, 3)。
 			- 定义的范围是其被定义的模块（我们将在第四部分学习模块），并且定义必须在其使用之前。局部于表达式的定义是用 LET..IN 构造引入的：
-				- Foo(a, b) ≜ LET x ≜ IF a ≤ b THEN a ELSE b y ≜ x * a IN y * b
+				- ```
+				  Foo(a, b) ≜ LET x ≜ IF a ≤ b THEN a ELSE b 
+				  				y ≜ x * a 
+				              IN y * b
+				  ```
 			- LET 定义可以在任何表达式内进行。
 			-
 			-
