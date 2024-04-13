@@ -578,21 +578,22 @@
 			- 由于 CHOOSE 选择任何满足方程的集合，上面的行可能代表所有有限链接列表的集合，或者所有有限和无限链接列表的集合，这是另一个解决方案。如果我们想要具体一点，例如，只表示有限列表的集合，我们可以改为定义：
 			- ```
 			  List ≜ LET ListUpToLength[n ∈ Nat] ≜
-			  IF n = 0 THEN {EMPTY}
-			  ELSE [value: S, next: ListUpToLength[n−1]] ∪ ListUpToLength[n−1]
-			  IN UNION {ListUpToLength[n] : n ∈ Nat}
+			  			IF n = 0 THEN {EMPTY}
+			  					 ELSE [value: S, next: ListUpToLength[n−1]] ∪ ListUpToLength[n−1]
+			  	   IN UNION {ListUpToLength[n] : n ∈ Nat}
 			  ```
 			- 实际上，我们可以将这个想法推广：
 			- ```
 			  InductiveDataType(base, Cons(_)) ≜
-			  LET upToSize[n ∈ Nat] ≜
-			    IF n = 0 THEN base
-			    ELSE Cons(upToSize[n−1]) ∪ upToSize[n−1]
-			  IN UNION {upToSize[n] : n ∈ Nat}
+			  	LET upToSize[n ∈ Nat] ≜
+			    		IF n = 0 THEN base
+			    				 ELSE Cons(upToSize[n−1]) ∪ upToSize[n−1]
+			  	IN UNION {upToSize[n] : n ∈ Nat}
 			  ```
 			- 然后：
 			- ```
-			  List ≜ InductiveDataType({EMPTY}, LAMBDA List: [value: S, next: List])
+			  List ≜ InductiveDataType({EMPTY}, 
+			  						 LAMBDA List: [value: S, next: List])
 			  ```
 			- 注意，LAMBDA 中的 List 不是我们正在定义的集合，即左侧的 List，而仅仅是 LAMBDA 参数的名称。
 -
