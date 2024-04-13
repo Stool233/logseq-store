@@ -567,8 +567,7 @@
 			- 我们可能会被诱惑去定义列表的“类型”——即所有列表的集合，像这样：
 			- ```
 			  CONSTANTS
-			  EMPTY ≜ ⟨⟩
-			  或者任何可以与节点记录比较的值
+			  EMPTY ≜ ⟨⟩ // 或者任何可以与节点记录比较的值
 			  RECURSIVE List
 			  List ≜ {EMPTY} ∪ [value: S, next: List]
 			  ```
