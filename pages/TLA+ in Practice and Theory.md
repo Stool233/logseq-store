@@ -446,7 +446,9 @@
 			  ```
 			- 极限的定义（使用著名的（ϵ, δ）定义）：
 			- ```
-			  Limit(f, a) ≜ CHOOSE l ∈ Real : ∀e ∈ PosReal : ∃d ∈ PosReal : ∀x ∈ OpenBall(a, d) \ {a} : f[x] ∈ OpenBall(l, e)
+			  Limit(f, a) ≜ CHOOSE l ∈ Real : 
+			  				∀e ∈ PosReal : ∃d ∈ PosReal :
+			                  	∀x ∈ OpenBall(a, d) \ {a} : f[x] ∈ OpenBall(l, e)
 			  ```
 			- 导数的定义为：
 			- ```
