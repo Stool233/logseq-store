@@ -419,10 +419,13 @@
 			- 我们还有语法糖来定义和应用具有多个参数的函数。我们将在学习了元组之后讨论这个问题。
 			- 定义不可计算的函数和定义可计算的函数一样容易。这里是一个不可计算函数的例子：
 			- ```
-			  dirichlet[x ∈ Real] ≜ LET IsRational(z) ≜ ∃p ∈ Int, q ∈ Nat \ {0} : z = p / q IN IF IsRational(x) THEN 1 ELSE 0
+			  dirichlet[x ∈ Real] ≜
+			  	LET IsRational(z) ≜ ∃p ∈ Int, q ∈ Nat \ {0} : z = p / q
+			      IN IF IsRational(x) THEN 1 ELSE 0
 			  ```
 			- 顺便说一下，尽管初看起来非常简单自然，这个函数也是如此：
 			- ```
 			  step[x ∈ Real] ≜ IF x < 0 THEN 0 ELSE 1
 			  ```
 			- 这些例子展示了如何定义涉及条件逻辑和存在性量词的函数，以及如何用`EXCEPT`表达式修改函数的特定值或行为。
+			-
