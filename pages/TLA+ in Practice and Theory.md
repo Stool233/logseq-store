@@ -748,20 +748,31 @@
 		- 请注意，证明中可能包含具有相同名称的多个步骤（例如，概述上述中 `⟨2⟩1`、`⟨2⟩2`、`⟨2⟩3` 都出现了两次），然而，当引用步骤时不会有歧义，因为您只能引用同一序列中之前出现的步骤或更高层次的步骤。分层证明的理念是，每个嵌套序列提供了如何证明其目标（即父命题）的详细信息，直到叶节点足够明显。如果作为读者，你对细节不感兴趣或者步骤足够明显而不需要更详细的步骤，你可以在 TLA+ 工具箱中折叠这棵树。这种层次结构结果在非常可读的证明，因为你可以轻松掌握证明的概要，然后如果你愿意，可以深入了解更多细节。
 		- 证明语言中有一些构造，允许更自然地表达证明（类似于散文证明中的常见技术），或者提高可读性。不是列出一组应该包含目标的事实和定义，关键字 `USE` 引入事实和定义，然后这些事实和定义被隐式地添加到同一步骤序列中的所有后续步骤。匹配的 `HIDE` 关键字则相反，它移除考虑中的隐式事实。因为 `USE` 不引入一个命题，它通常写在一个未命名的步骤中（例如 `⟨2⟩` 而不是说 `⟨2⟩5`），因为从未有理由去引用它。
 		- 一个更有趣的人体工程学构造是 **SUFFICES**。假设我们想要在假定 A 的情况下证明 C，并且我们可以通过首先证明 A ⊢ B，然后证明 B ⊢ C 来完成。有时候，为了引导读者理解证明的意图，首先证明 B ⊢ C 然后再证明 A ⊢ B 更为方便。在散文证明中，我们通常会说“只需证明 B，因为……”，然后继续证明 B。在 TLA+ 中，我们可以使用 **SUFFICES** 构造做同样的事情。当在未命名的步骤中使用时，它会改变当前的目标，如下面从超级书中摘录的示例所示，该示例展示了 **SUFFICES** 的使用，并让你了解真实证明的样子。该示例证明了一些可以通过 TLAPS 机械检查的定理，关于我们在“一些重要集合”一节中定义的 GCD 运算符：
+		  id:: 661b7327-10e5-4c93-ac90-c78b0c03317d
 		- ```tla
 		  THEOREM ∀m, n ∈ Nat \ {0} : GCD(m, n) = GCD(n, m) 
 		  	BY DEF GCD
+		      
 		  THEOREM ∀m ∈ Nat \ {0} : GCD(m, m) = m
 		  	⟨1⟩ SUFFICES ASSUME NEW m ∈ Nat \ {0} 
 		      			 PROVE GCD(m, m) = m 
 		          OBVIOUS
-		  ⟨1⟩ 1. Divides(m, m) BY DEF Divides
-		  ⟨1⟩ 2. ∀i ∈ Nat : Divides(i, m) ⇒ i ≤ m BY DEF Divides
-		  ⟨1⟩ QED BY ⟨1⟩1, ⟨1⟩2 DEF GCD, SetMax, DivisorOf
+		  	⟨1⟩ 1. Divides(m, m) 
+		      	BY DEF Divides
+		  	⟨1⟩ 2. ∀i ∈ Nat : Divides(i, m) ⇒ i ≤ m 
+		      	BY DEF Divides
+		  	⟨1⟩ QED 
+		      	BY ⟨1⟩1, ⟨1⟩2 DEF GCD, SetMax, DivisorOf
+		          
 		  THEOREM ∀m, n ∈ Nat \ {0} : n > m ⇒ GCD(m, n) = GCD(m, m − n)
-		  ⟨1⟩ SUFFICES ASSUME NEW m ∈ Nat \ {0}, NEW n ∈ Nat \ {0}, n > m PROVE GCD(m, n) = GCD(n, n − m) OBVIOUS
-		  ⟨1⟩ ∀i ∈ Int : Divides(i, m) ∧ Divides(i, n) ≡ Divides(i, m) ∧ Divides(i, n − m) BY DEF Divides
-		  ⟨1⟩ QED BY DEF GCD, SetMax, DivisorOf
+		  	⟨1⟩ SUFFICES ASSUME NEW m ∈ Nat \ {0}, NEW n ∈ Nat \ {0}, 
+		      					n > m 
+		                   PROVE GCD(m, n) = GCD(n, n − m) 
+		          OBVIOUS
+		  	⟨1⟩ ∀i ∈ Int : Divides(i, m) ∧ Divides(i, n) ≡ Divides(i, m) ∧ Divides(i, n − m) 
+		      	BY DEF Divides
+		  	⟨1⟩ QED 
+		      	BY DEF GCD, SetMax, DivisorOf
 		  ```
 		- **CASE** 构造有助于分情况写证明。例如，可以这样写：
 		- ```tla
