@@ -697,4 +697,17 @@
 		      PROVE ∀n ∈ Nat: P(n)
 		  ```
 		- 与上面的 `∀n ∈ Nat: P(n) ⇒ P(n+1)` 不同，我们可以使用嵌套的 `ASSUME NEW n ∈ Nat, P(n) PROVE P(n+1)`。
-		-
+		- 我们可以使用该定理来证明以下（有些无聊的）定理：
+		- ```
+		  THEOREM ASSUME NEW x ∈ Nat 
+		  			   PROVE x = 0 ∨ x − 1 ≥ 0 
+		    BY NatInduction 
+		  
+		  (OBVIOUS would have sufficed in this case, 
+		  both for a human reader as well as for TLAPS, 
+		  and we could have stated the theorem more simply 
+		  as the formula ∀x ∈ Nat: x = 0 ∨ x − 1 ≥ 0).
+		  ```
+		- 注意，实际上无需定义形如 `P(n)` 的操作符；从公式 `x = 0 ∨ x − 1 ≥ 0` 可以自动推断出它可以被理解为一个由 `x` 参数化的操作符。
+		- 我们所见的此类定理可以被引入作为公理，以定义新逻辑连接词（例如，用于诸如分离逻辑之类的东西）的推理规则。然而，内置的公理不能被移除（因此我们不能移除排中律作为公理以确保我们的推理是建设性的）。公理用关键字 `AXIOM` 或 `ASSUME` 声明，这是我们在有关常量部分所讨论的结构。
+		- 虽然 TLAPS 被设计为完全与后端无关，但在使用它时，你可能有时会发现有必要使用特定的求解器功能。例如，`BY Z3` 可以告诉 TLAPS 使用 Z3 SMT 求解器来处理（验证）特定的证明，你甚至可以（虽然不推荐，而且在实践中你不太可能需要它）使用 Isabelle 策略。实际上，上面提供的 `NatInduction` 定理的证明是 `BY Isar('' (inductnatInduct, auto) '')`。
