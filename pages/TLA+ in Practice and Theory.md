@@ -670,6 +670,12 @@
 		  ```
 		- 或者：
 		- ```
-		  THEOREM ImplicationIntr ≜ ASSUME NEW P, NEW Q, ASSUME P PROVE Q PROVE P⇒Q OBVIOUS
+		  THEOREM ImplicationIntr ≜ 
+		  	ASSUME NEW P, NEW Q, 
+		      	   ASSUME P 
+		             PROVE Q 
+		      PROVE P⇒Q 
+		     OBVIOUS
 		  ```
 		- 关键字 `NEW` 引入新变量，如“设 P 是任意...”。`NEW` 本身是 `NEW CONSTANT` 的简写，或者只是 `CONSTANT`，表示该变量是一个常量而非在算法中可以在不同时间指代不同值的时态变量；这是我们在上面的常量部分学到的确切意义上的 `CONSTANT`。如果是无界的，它意味着任何值或任何（非时态的）运算符或公式。它是一个二阶自由变量。`ASSUME A PROVE B` 是一个命题，但它不是一个 TLA+ 公式；它在 TLA+ 逻辑中没有模型，因此该逻辑的公式仍然都是一阶的。有关这种设计背后的推理，请参阅后续的讨论以及“一阶逻辑与其他阶”的部分。
+		-
