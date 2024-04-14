@@ -711,4 +711,12 @@
 		- 注意，实际上无需定义形如 `P(n)` 的操作符；从公式 `x = 0 ∨ x − 1 ≥ 0` 可以自动推断出它可以被理解为一个由 `x` 参数化的操作符。
 		- 我们所见的此类定理可以被引入作为公理，以定义新逻辑连接词（例如，用于诸如分离逻辑之类的东西）的推理规则。然而，内置的公理不能被移除（因此我们不能移除排中律作为公理以确保我们的推理是建设性的）。公理用关键字 `AXIOM` 或 `ASSUME` 声明，这是我们在有关常量部分所讨论的结构。
 		- 虽然 TLAPS 被设计为完全与后端无关，但在使用它时，你可能有时会发现有必要使用特定的求解器功能。例如，`BY Z3` 可以告诉 TLAPS 使用 Z3 SMT 求解器来处理（验证）特定的证明，你甚至可以（虽然不推荐，而且在实践中你不太可能需要它）使用 Isabelle 策略。实际上，上面提供的 `NatInduction` 定理的证明是 `BY IsaM('' (intor natInduct, auto) '')`。
-		-
+		- 让我们来看一个需要在证明中展开定义的例子。TLAPS 求解器足够强大，可以直接从我们在“集合基础”部分定义的代数结构的定义证明下列定理，无需任何额外帮助：
+		- ```
+		  THEOREM UniqueIdentity ≜ ASSUME NEW M, NEW _⋅_, Monoid(M, ⋅) PROVE ∀x, y ∈ M: (∧ ∀a ∈ M: x ⋅ a = a ∧ a ⋅ x = a ∧ ∀a ∈ M: y ⋅ a = a ∧ a ⋅ y = a) ⇒ x = y BY DEF Monoid
+		  ```
+		- 这个定理说明，如果在一个幺半群（Monoid）中，两个元素分别作为左右单位元素，那么这两个元素必须相等。证明依赖于 `Monoid` 的定义，除非我们明确说明（在长证明中 —— 我们将立即讨论 —— 有设计用来节省在多个证明步骤中重复提及事实或定义的人体工程学构造）。
+		- ```
+		  THEOREM UniqueInverse ≜ ASSUME NEW G, NEW _⋅_, Group(G, ⋅), NEW id ∈ G, ∀a ∈ G: id ⋅ a = a ∧ a ⋅ id = a PROVE ∀a, b, c ∈ G: (a ⋅ b = id ∧ b ⋅ a = id ∧ a ⋅ c = id) ⇒ b = c BY DEF Group, Monoid, Semigroup
+		  ```
+		- 第二个定理要求检查用于定义 `Group` 的 `Monoid` 和 `Semigroup` 的内部定义，因为它需要在 `Semigroup` 中定义的结合性属性。
