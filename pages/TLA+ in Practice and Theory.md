@@ -798,13 +798,15 @@
 		- 最后，让我们来看看 **PICK** 构造。如果我们有形式为 ∃x: P(x) 的假设，我们可以通过为哪个 P(x) 成立的新变量 x **PICK** 来使用它（它的工作方式类似于 NEW x, P(x)）。这里有一个从 TLAPS 文档中改编的示例。除了 **PICK**，它还使用了 **SUFFICES**，并且展示了一个矛盾证明：
 		- ```tla
 		  THEOREM ¬∃x ∈ Nat : x + 1 = 0
-		  ⟨1⟩ SUFFICES ASSUME ∃x ∈ Nat : x + 1 = 0 PROVE FALSE OBVIOUS
-		    Goal is now FALSE, i.e., a contradiction
-		    The assumption ∃x ∈ Nat : x + 1 = 0 is now in the implied list of facts
+		  ⟨1⟩ SUFFICES ASSUME ∃x ∈ Nat : x + 1 = 0 
+		  			 PROVE FALSE OBVIOUS
+		    \\ Goal is now FALSE, i.e., a contradiction
+		    \\ The assumption ∃x ∈ Nat : x + 1 = 0 is now in the implied list of facts
 		  ⟨1⟩ PICK u ∈ Nat : u = −1
-		  ⟨2⟩ 1. ∀n ∈ Nat : n + 1 = 0 ⇒ n = −1 OBVIOUS
-		  ⟨2⟩ 2. QED BY ⟨2⟩1
-		  We now have u ∈ Nat : u = −1 in the implied list of facts
+		  	⟨2⟩ 1. ∀n ∈ Nat : n + 1 = 0 ⇒ n = −1 
+		      	OBVIOUS
+		  	⟨2⟩ 2. QED BY ⟨2⟩1
+		  	\\ We now have u ∈ Nat : u = −1 in the implied list of facts
 		  ⟨1⟩ QED BY −1 ∉ Nat
 		  ```
 		- 这些构造捕获了常见的证明技巧；你可以在这里找到它们的列表（正如你所看起来你的消息被截断了，并没有完整地提供问题或想要讨论的主题。如果你有具体的问题或需要讨论的点，请补充详细信息，我很乐意帮助你！
