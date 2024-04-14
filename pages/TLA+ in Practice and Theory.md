@@ -680,11 +680,21 @@
 		- 关键字 `NEW` 引入新变量，如“设 P 是任意...”。`NEW` 本身是 `NEW CONSTANT` 的简写，或者只是 `CONSTANT`，表示该变量是一个常量而非在算法中可以在不同时间指代不同值的时态变量；这是我们在上面的常量部分学到的确切意义上的 `CONSTANT`。如果是无界的，它意味着任何值或任何（非时态的）运算符或公式。它是一个二阶自由变量。`ASSUME A PROVE B` 是一个命题，但它不是一个 TLA+ 公式；它在 TLA+ 逻辑中没有模型，因此该逻辑的公式仍然都是一阶的。有关这种设计背后的推理，请参阅后续的讨论以及“一阶逻辑与其他阶”的部分。
 		- 例如，以下定理展示了一个有界的 `NEW`，同时引入了参数化公式：
 		- ```
-		  THEOREM ForallIntr ≜ ASSUME NEW P(_), NEW S, ASSUME NEW x ∈ S PROVE P(x) PROVE ∀x ∈ S: P(x) OBVIOUS
+		  THEOREM ForallIntr ≜ 
+		  	ASSUME NEW P(_), NEW S, 
+		      	   ASSUME NEW x ∈ S 
+		             PROVE P(x) 
+		      PROVE ∀x ∈ S: P(x) 
+		  OBVIOUS
 		  ```
 		- 注意我们是如何在嵌套的 `ASSUME/PROVE` 中假设一个定理（一个真实的命题）的存在。
 		- 能够编写二阶定理在证明系统中非常重要，因为它允许用户制作通用的、可重用的引理以用于证明。例如，一个重要的定理（由 TLAPS 提供的 NaturalsInduction 模块导出）可以在许多情况下使用，它定义了自然数上的归纳：
 		- ```
-		  THEOREM NatInduction ≜ ASSUME NEW P(_), P(0), ∀n ∈ Nat: P(n) ⇒ P(n+1) PROVE ∀n ∈ Nat: P(n)
+		  THEOREM NatInduction ≜ 
+		  	ASSUME NEW P(_), 
+		      	   P(0), 
+		             ∀n ∈ Nat: P(n) ⇒ P(n+1) 
+		      PROVE ∀n ∈ Nat: P(n)
 		  ```
 		- 与上面的 `∀n ∈ Nat: P(n) ⇒ P(n+1)` 不同，我们可以使用嵌套的 `ASSUME NEW n ∈ Nat, P(n) PROVE P(n+1)`。
+		-
