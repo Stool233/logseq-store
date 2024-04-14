@@ -777,7 +777,10 @@
 		- **CASE** 构造有助于分情况写证明。例如，
 		- ```
 		  ⟨1⟩1. ∀n ∈ Int : P(n)
-		  	⟨2⟩1. ASSUME n 
+		  	⟨2⟩1. ASSUME n ≥ 0 PROVE P(n)
+		      	...
+		      ⟨2⟩2. ASSUME 
+		  
 		  ```
 		- 可以这样写：
 		- ```tla
