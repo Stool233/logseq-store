@@ -813,15 +813,19 @@
 		- 例如，如果TLAPS无法自动证明定理 **UniqueInverse** ——或者即使机械证明器认为证明显而易见，但人类读者不这么认为——我们可以通过编写以下详细证明来帮助系统或读者，其中@代表前一步提到的关系的右侧：
 		- ```
 		  THEOREM UniqueInverse ≜
-		  ASSUME NEW G, NEW _⋅_, Group(G, ⋅), NEW id ∈ G, ∀a ∈ G: id⋅a = a ∧ a⋅id = a 
-		  **PROVE ∀a, b, c ∈ G: (a⋅b = id ∧ b⋅a = id ∧ a⋅c = id) ⇒ b = c**  
-		  ⟨1⟩ **SUFFICES ASSUME NEW a ∈ G, NEW b ∈ G, NEW c ∈ G, a⋅b = id, b⋅a = id, a⋅c = id**  
-		  **PROVE b = c**  
-		  **OBVIOUS** ⟨1⟩ b = b⋅id  
-		  **OBVIOUS** ⟨1⟩ @ = b⋅(a⋅c)  
-		  **OBVIOUS** ⟨1⟩ @ = (b⋅a)⋅c  
-		  **BY DEF Group, Monoid, Semigroup** ⟨1⟩ @ = c  
-		  **OBVIOUS** ⟨1⟩ QED
+		  	ASSUME NEW G, NEW _⋅_, Group(G, ⋅), 
+		      	   NEW id ∈ G, ∀a ∈ G: id⋅a = a ∧ a⋅id = a 
+		  	PROVE ∀a, b, c ∈ G: (a⋅b = id ∧ b⋅a = id ∧ a⋅c = id) ⇒ b = c
+		  ⟨1⟩ SUFFICES ASSUME NEW a ∈ G, NEW b ∈ G, NEW c ∈ G,
+		  					a⋅b = id, b⋅a = id, a⋅c = id  
+		  			 PROVE b = c 
+		  	OBVIOUS
+		  ⟨1⟩ b = b⋅id  	 OBVIOUS 
+		  ⟨1⟩ @ = b⋅(a⋅c)  OBVIOUS 
+		  ⟨1⟩ @ = (b⋅a)⋅c  BY DEF Group, Monoid, Semigroup 
+		  ⟨1⟩ @ = c 		 OBVIOUS
+		  ⟨1⟩ QED			 OBVIOUS
 		  ```
 		- 《如何编写21世纪的证明》的附录包含了一个简单的微积分定理的完整的、机械验证的TLA+证明，以及所有必要的定义。
 		- 虽然TLA+可以用来证明一般数学定理，但它并非为此任务设计。对形式化证明感兴趣的数学家更适合使用为该任务设计的工具，如Isabelle或Coq。选择编写形式化证明的工程师被鼓励不要浪费时间证明数学定理，而是应使用TLAPS附带的已证明的数学定理库，或者仅仅陈述一个数学定理并省略证明。他们应该专注于证明他们的算法或系统设计的正确性。在第三部分我们将看到如何做到这一点。
+-
