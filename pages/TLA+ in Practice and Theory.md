@@ -647,10 +647,13 @@
 		- ```
 		  THEOREM FermatsLastTheorem ≜ 
 		  			¬∃a, b, c, n ∈ ℕ{0} : n > 2 ∧ a^n + b^n = c^n
-		  PROOF BY Peano Axioms
+		  PROOF BY PeanoAxioms
 		  ```
 		- 但是，这当然不会说服任何数学家，也肯定不会说服机械化证明系统，因为它无法从输入到输出推导出步骤。然而，下面这个：
 		- ```
-		  THEOREM GoldbachConjecture ≜ ∀n ∈ ℕ : n > 2 ∧ n % 2 = 0 ⇒ ∃p, q ∈ ℕ : IsPrime(p) ∧ IsPrime(q) ∧ p + q = n
-		  PROOF BY Peano Axioms
+		  THEOREM GoldbachConjecture ≜ 
+		  	∀n ∈ ℕ : n > 2 ∧ n % 2 = 0 ⇒ 
+		      				∃p, q ∈ ℕ : IsPrime(p) ∧ IsPrime(q) ∧ p + q = n
+		  PROOF BY PeanoAxioms
 		  ```
+		- 可能是也可能不是一个有效的证明，因为我们不知道哥德巴赫猜想是否是一个定理，如果是，皮亚诺公理是否足以证明它。
