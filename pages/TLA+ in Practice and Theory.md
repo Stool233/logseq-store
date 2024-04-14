@@ -663,7 +663,10 @@
 		- 在TLA+的任何证明点，都有一个当前的证明义务，它声称一个证明目标由一组事实（其他定理、公理或证明步骤）和称为上下文的定义所蕴含。证明目标是任何需要证明的东西。它可以是用关键词 `THEOREM`（或其同义词 `LEMMA`, `COROLLARY`, `PROPOSITION`）引入的定理，或者递归地是其一个证明步骤。一个（声明式）证明要么被省略（使用 `OMITTED` 子句），要么被声明为 `OBVIOUS`（如果它是逻辑推理规则和其他内置公理的直接结果，不需要进一步的假设），或者在 `BY`（或可选的 `PROOF BY`）子句中提供，该子句列出了所有可以推导出该义务的事实以及义务依赖的任何定义，这些定义必须被检查（“展开”）。
 		- 一个定理可以用两种方式表述。它可以是给出的逻辑命题（如公式 `∀r,s,t: r⊆s ∧ s⊆t ⇒ r⊆t` 或上述费马大定理的陈述），或者作为更有力、更通用的 `ASSUME/PROVE` 对，其中 `ASSUME` 子句列出了一些假设，如果这些假设成立，则会蕴含 `PROVE` 子句中的结果。`ASSUME/PROVE` 对基本上意味着 `(ASSUME 子句) ⊢ (PROVE 子句)`。例如：
 		- ```
-		  THEOREM ModusPonens ≜ ASSUME NEW P, NEW Q, P, P⇒Q PROVE Q PROOF OBVIOUS
+		  THEOREM ModusPonens ≜ ASSUME NEW P, NEW Q, 
+		  							 P, P⇒Q 
+		                        PROVE Q 
+		          PROOF OBVIOUS
 		  ```
 		- 或者：
 		- ```
