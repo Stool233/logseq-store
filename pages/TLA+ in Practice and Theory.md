@@ -779,7 +779,10 @@
 		  ⟨1⟩1. ∀n ∈ Int : P(n)
 		  	⟨2⟩1. ASSUME n ≥ 0 PROVE P(n)
 		      	...
-		      ⟨2⟩2. ASSUME 
+		      ⟨2⟩2. ASSUME n < 0 PROVE P(n)
+		      	...
+		      ⟨2⟩3. QED
+		      	BY ⟨2⟩1,⟨2⟩2
 		  
 		  ```
 		- 可以这样写：
