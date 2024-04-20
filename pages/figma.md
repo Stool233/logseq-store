@@ -72,7 +72,9 @@
 					- Stark 插件的 Check Contrast 功能是 Figma 用户在设计过程中一个极具价值的工具，它帮助设计师确保他们的产品不仅外观美观，而且对所有用户都是可访问的。通过简单的几步操作，设计师可以快速检测并调整设计，确保它们满足必要的可访问性标准。
 -
 - Figma DEV模式
-	- 适合开发者理解设计，以及生成了从设计转成代码相关的一些CSS配置，以及
+	- 适合从开发者角度理解设计/原型图
+	- 生成了从设计转成代码相关的一些CSS配置与预览，以及assert的下载，便于开发。
+	-
 -
 - Figma vscode插件
 	- https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension
