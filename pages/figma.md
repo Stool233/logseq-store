@@ -48,6 +48,7 @@
 -
 - Plugin
 	- Stark
+	  collapsed:: true
 		- Check Contrast
 			- ### Figma 插件 Stark：检查对比度功能介绍
 				- **Stark** 是一款可以在 Figma 中使用的插件，专注于提升设计的可访问性，其中一个重要的功能就是检查颜色对比度。
@@ -69,3 +70,10 @@
 					- **改善用户体验：** 良好的对比度不仅有助于视觉障碍者，它也能提升整体的用户体验，使内容对所有人都更易读。
 				- #### 结论
 					- Stark 插件的 Check Contrast 功能是 Figma 用户在设计过程中一个极具价值的工具，它帮助设计师确保他们的产品不仅外观美观，而且对所有用户都是可访问的。通过简单的几步操作，设计师可以快速检测并调整设计，确保它们满足必要的可访问性标准。
+-
+- Figma vscode插件
+	- https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension
+	- 可以
+		- **实时查看并回复评论和活动**
+		- **根据设计获取代码建议**
+			-
