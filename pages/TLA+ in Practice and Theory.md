@@ -971,5 +971,13 @@
 			- 我们将递归地定义格式良好的公式。如果 \( F \) 和 \( G \) 是公式，那么 \( F \land G \) 也是一个公式，一个行为 \( \sigma \) 满足 \( F \land G \) 当且仅当它同时满足 \( F \) 和 \( G \)（形式上 \( \sigma \models (F \land G) \equiv (\sigma \models F) \land (\sigma \models G) \)）。\( \neg F \) 是一个公式，并且当且仅当 \( \sigma \) 不满足 \( F \) 时由行为 \( \sigma \) 满足。类似地，我们可以定义所有其他连接词的意义，但让我们看一下 \( \Rightarrow \)：
 			  \( \sigma \models (F \Rightarrow G) \equiv (\sigma \models F) \Rightarrow (\sigma \models G) \)。这意味着如果 \( F \) 和 \( G \) 是公式，\( F \Rightarrow G \) 当且仅当每一个满足 \( F \) 的行为也满足 \( G \)，或者换句话说，由 \( F \) 定义的行为集是 \( G \) 的行为集的子集。这种关系构成了算法实现另一个或满足属性的核心含义，我们稍后将更仔细地看这个问题。
 			- 现在，如果 \( P \) 是一个状态谓词，那么它也是一个公式，并且 \( \sigma \models P \) 当且仅当谓词由行为的第一个状态满足。例如，如果 \( x \) 是一个时态变量，公式 \( x = 3 \) 表示所有在第一个状态中 \( x \) 为 3 的行为。
+			- 如果 \( A \) 是一个动作 — 即一个转换谓词，或者是一个两个状态的谓词 — 那么它也可以作为一个公式，而且 \( \sigma \models A \) 当且仅当动作由行为的前两个状态满足。例如，如果 \( x \) 是一个时态变量，公式 \( x = 3 \land x' = x + 1 \) 表示所有在第一个状态中 \( x \) 为 3 而在第二个状态中为 4 的行为。公式 \( x \in \mathbb{N} \land x' = x + 1 \) 表示所有在第一个状态中 \( x \) 是某个自然数并且在第二个状态增加了 1 的行为。
+			- 现在让我们介绍时间算子 \( \Box \)，借用自 LTL。如果 \( F \) 是一个公式，那么 \( \Box F \) 也是一个公式，并且 \( \sigma \models \Box F \) 当且仅当对所有 \( n \)，\( \sigma + n \models F \)（即 \( \sigma \models \Box F \equiv \forall n \in \mathbb{N} : \sigma + n \models F \)）。
+			- 因此，如果 \( P \) 是一个状态谓词，那么 \( \Box P \) 表示 \( P \) 在每个状态都是真的，因为 \( \sigma \models \Box P \) 当且仅当对所有 \( n \)，\( \sigma + n \models P \)，并且 \( \sigma + n \) 的第一个状态是 \( \sigma_n \)。如果 \( A \) 是一个动作，那么 \( \Box A \) 是一个表示 \( A \) 在每一对连续状态 \( \langle \sigma_i, \sigma_{i+1} \rangle \) 都为真的公式，因为 \( \sigma \models \Box A \equiv \forall n \in \mathbb{N} : \sigma + n \models A \)，并且 \( \sigma + n \) 的前两个状态是 \( \langle \sigma_n, \sigma_{n+1} \rangle \)。
+			- 关于 \( \Box \) 算子如何作用于一般公式，以及如何快速理解时间公式，将在我们分析这个从《Specifying Systems》中取的例子时变得清晰：
+			- \[ \sigma \models \Box ((x = 1) \implies \Box (y > 0)) \equiv \forall n \in \mathbb{N} : (\sigma + n \models (x = 1)) \implies (\sigma + n \models \Box (y > 0)) \]
+			- 根据 \( \Box \) 的含义 \( \equiv \forall n \in \mathbb{N} : (\sigma + n \models (x = 1)) \implies (\forall m \in \mathbb{N} : (\sigma + n) + m \models (y > 0)) \)
+			- 因此，一个行为满足 \( \Box ((x = 1) \implies \Box (y > 0)) \) 当且仅当如果在某个状态 \( n \) \( x = 1 \)，那么从那时起对所有 \( m \)，在状态 \( m + n \) \( y > 0 \)。方块算子因此意味着“始终如一”或“从此以后”，上述公式意味着如果 \( x \) 曾经为一，那么 \( y \) 将从那时起始终大于0。
+				-
 			-
 				-
