@@ -967,5 +967,9 @@
 				  ```
 			- 那么 `A` 可以被理解为“如果当前状态下 `x` 是偶数，那么在下一个状态中，`x` 可能是 `x / 2` 或 `-x / 2`”。`A` 仅在 `x` 当前为偶数时指定下一个状态，因此，在这种情况下，`ENABLED A ≡ x % 2 = 0`。
 			- 为了完整性，我还将提及动作组合运算符 `⋅`，尽管它没有被任何TLA+工具支持，且不推荐使用。如果 `A` 和 `B` 都是动作，那么 `A ⋅ B` 是对于转换 `s ⇀ t` 来说为真的动作，当且仅当存在一个状态 `u`，使得 `A` 对于 `s ⇀ u` 为真且 `B` 对于 `u ⇀ t` 为真；基本上，它是一个 `A` 步骤后跟一个 `B` 步骤合成的单个转换。
-				-
+			- 到目前为止，我们一直在讨论表达式，但现在我们已经有了开始讨论公式的基本组件。如果 \( F \) 是一个公式，\( \sigma \) 是一个行为，我们将写作 \( \sigma \models F \) 如果 \( F \) 对于行为是真的，或者 \( \sigma \) 满足 \( F \)。\( F \) 的意义，或语义（我们写作 \(\llbracket F \rrbracket\)）是所有这样的行为 \( \sigma \) 使得 \( \sigma \models F \)。我将表示——与前一节不同——\( \sigma \) 的第 (i+1) 个状态为 \( \sigma_i \)，所以 \( \sigma = \sigma_0 \rightarrow \sigma_1 \rightarrow \sigma_2 \rightarrow \ldots \) 同样地，\( \sigma + n = \sigma_n \rightarrow \sigma_{n+1} \rightarrow \ldots \)，即 \( \sigma \) 的后缀，移除了其前 \( n \) 个状态。
+			- 我们将递归地定义格式良好的公式。如果 \( F \) 和 \( G \) 是公式，那么 \( F \land G \) 也是一个公式，一个行为 \( \sigma \) 满足 \( F \land G \) 当且仅当它同时满足 \( F \) 和 \( G \)（形式上 \( \sigma \models (F \land G) \equiv (\sigma \models F) \land (\sigma \models G) \)）。\( \neg F \) 是一个公式，并且当且仅当 \( \sigma \) 不满足 \( F \) 时由行为 \( \sigma \) 满足。类似地，我们可以定义所有其他连接词的意义，但让我们看一下 \( \Rightarrow \)：
+			  \( \sigma \models (F \Rightarrow G) \equiv (\sigma \models F) \Rightarrow (\sigma \models G) \)。这意味着如果 \( F \) 和 \( G \) 是公式，\( F \Rightarrow G \) 当且仅当每一个满足 \( F \) 的行为也满足 \( G \)，或者换句话说，由 \( F \) 定义的行为集是 \( G \) 的行为集的子集。这种关系构成了算法实现另一个或满足属性的核心含义，我们稍后将更仔细地看这个问题。
+			- 现在，如果 \( P \) 是一个状态谓词，那么它也是一个公式，并且 \( \sigma \models P \) 当且仅当谓词由行为的第一个状态满足。例如，如果 \( x \) 是一个时态变量，公式 \( x = 3 \) 表示所有在第一个状态中 \( x \) 为 3 的行为。
+			-
 				-
