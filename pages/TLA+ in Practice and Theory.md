@@ -1008,7 +1008,7 @@
 			- 最后，就像除了用 CONSTANT 声明自由的普通变量，即刚性或常量变量一样，我们也可以用量词 ∀ 和 ∃ 引入有界的普通变量；同样的，除了用 VARIABLE 声明自由的时间变量，我们还可以用时间量词引入有界的或量化的时间变量。
 			- 时间存在量词 ∃，是常规存在量化的时间类比。对于时间变量 \( x \)，表达式 \( \exists x : F \) 基本上表达的意思是“存在某个 \( x \) 的时间赋值使得 \( F \) 成立”；它不是为 \( x \) 断言一个单一的值，而是在行为的每个状态中都断言 \( x \) 的一个值的存在。
 			- 对于那些对形式逻辑细节感兴趣的人来说，时间存在量词的行为类似于存在量词，因为它满足相同的引入和消除规则：
-			- \[ F[t/v] \Rightarrow \exists v : F \quad (\text{存在引入，}\exists I) \]
+			- \[ F[t/v] \Rightarrow \exists v : F \quad (\exists I) \]
 			  \[ F \Rightarrow G \quad (v \text{ 不在 } G \text{ 中自由}) \Rightarrow (\exists v : F) \Rightarrow G \quad (\text{存在消除，}\exists E) \]
 			- 还有对偶的时间全称量词 \( \forall x : F \triangleq \neg \exists x : \neg F \)。时间存在量词用于隐藏内部状态；我们将在第四部分详细讨论这个问题。时间全称量词几乎从不使用。
 			- 与普通量词一样，变量的元组也可以与时间量词一起使用，所以我通常会写 \( \exists v : \ldots \) 来表示带有某个变量元组的时间存在量词的一般形式。然而，与普通量词不同，TLA+ 语法不支持有界的时间量化（例如 \( \exists x \in \text{Int} : F \) 是非法的）。
