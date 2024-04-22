@@ -976,7 +976,7 @@
 			- 因此，如果 \( P \) 是一个状态谓词，那么 \( \Box P \) 表示 \( P \) 在每个状态都是真的，因为 \( \sigma \models \Box P \) 当且仅当对所有 \( n \)，\( \sigma + n \models P \)，并且 \( \sigma + n \) 的第一个状态是 \( \sigma_n \)。如果 \( A \) 是一个动作，那么 \( \Box A \) 是一个表示 \( A \) 在每一对连续状态 \( \langle \sigma_i, \sigma_{i+1} \rangle \) 都为真的公式，因为 \( \sigma \models \Box A \equiv \forall n \in \mathbb{N} : \sigma + n \models A \)，并且 \( \sigma + n \) 的前两个状态是 \( \langle \sigma_n, \sigma_{n+1} \rangle \)。
 			- 关于 \( \Box \) 算子如何作用于一般公式，以及如何快速理解时间公式，将在我们分析这个从《Specifying Systems》中取的例子时变得清晰：
 			- $$ 
-			  \sigma \models \Box ((x = 1) \implies \Box (y > 0))   \\ 
+			  \sigma \models \Box ((x = 1) \implies \Box (y > 0))   \\
 			  \hspace{4.2cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\Box (y > 0))   \\
 			  \hspace{4.6cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\sigma^{+n} \models \Box (y > 0)) \\
 			  \hspace{4.6cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (  \forall m \in \mathbb{N} : (\sigma^{+n})^{+m} \models  (y > 0))
