@@ -1038,5 +1038,19 @@
 			  \text{THEOREM HourClock} \Rightarrow \text{WithinBounds}
 			  $$
 			- 这意味着“HourClock”算法满足“WithinBounds”属性，但你也可以从行为的角度来考虑它。"HourClock" 是所有行为的集合，其中 `h` 计数小时数，而 "WithinBounds" 是所有行为的集合，其中 `h` 在每一步都取值在 1 到 12 之间。"HourClock" 的行为是属性的所有行为，或者用集合表示为：\( [[\text{HourClock}]] \subseteq [[\text{WithinBounds}]] \)
-		-
+			- 但请记住，算法的属性与算法之间实际上没有真正的区别；两者都只是行为的集合。为了帮助你更清楚地看到这一点，我们将以不同的方式定义相同的属性：
+			- $$
+			  \text{CrazyClock} \triangleq h \in 1..12 \land \Box (h' \in 1..12)
+			  $$
+			- "CrazyClock" 和 "WithinBounds" 是等价的，即：
+			- $$
+			  \text{WithinBounds} \equiv \text{CrazyClock}
+			  $$
+			- 它们指定了完全相同的行为集合——但 "CrazyClock" 的定义方式使我们更容易将其视为（非确定性的）算法：它通过非确定性地选择一个介于 1 到 12 之间的起始值，然后在每一步都选择一个介于 1 到 12 之间的新值。
+			- 因此，确实有：
+			- $$
+			  \text{HourClock} \Rightarrow \text{CrazyClock}
+			  $$
+			- 但两者都是算法！我们说 "HourClock" 实现了或是 "CrazyClock" 的一个实例，并且 "CrazyClock" 是 "HourClock" 的规范，或者说 "HourClock" 细化了 "CrazyClock"，而 "CrazyClock" 是 "HourClock" 的抽象。但这一切都意味着相同的事情：所有 "HourClock" 的行为也是 "CrazyClock" 的行为。
+			- 在 TLA 中，逻辑蕴含对应于实现的概念。在第四部分中，我们将更详细地探讨这一概念，并看到蕴含可以通过操纵蕴含连接符右侧的子公式来表示非常复杂的实现形式。
 -
