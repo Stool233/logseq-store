@@ -1033,5 +1033,12 @@
 			  x \in \text{Int} \land \Box (x' = x + 1)
 			  $$
 			- 这仍然是一个单一的算法，但现在它有许多可能的行为，每个初始值或输入各有一个。
-			-
+			- 现在我们可以做出以下声明：
+			- $$
+			  \text{THEOREM HourClock} \Rightarrow \text{WithinBounds}
+			  $$
+			- 这意味着“HourClock”算法满足“WithinBounds”属性，但你也可以从行为的角度来考虑它。"HourClock" 是所有行为的集合，其中 `h` 计数小时数，而 "WithinBounds" 是所有行为的集合，其中 `h` 在每一步都取值在 1 到 12 之间。"HourClock" 的行为是属性的所有行为，或者用集合表示为：
+			- $$
+			  [[\text{HourClock}]] \subseteq [[\text{WithinBounds}]]
+			  $$
 -
