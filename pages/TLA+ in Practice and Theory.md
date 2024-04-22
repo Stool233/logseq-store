@@ -1013,4 +1013,5 @@
 			- \[ \dfrac{F \Rightarrow G \quad (v \text{ is not fee in } G )} {(\exists v : F) \Rightarrow G} \quad (\exists E) \]
 			- 还有对偶的时间全称量词 \( \forall x : F \triangleq \neg \exists x : \neg F \)。时间存在量词用于隐藏内部状态；我们将在第四部分详细讨论这个问题。时间全称量词几乎从不使用。
 			- 与普通量词一样，变量的元组也可以与时间量词一起使用，所以我通常会写 \( \exists v : \ldots \) 来表示带有某个变量元组的时间存在量词的一般形式。然而，与普通量词不同，TLA+ 语法不支持有界的时间量化（例如 \( \exists x \in \text{Int} : F \) 是非法的）。
+			-
 -
