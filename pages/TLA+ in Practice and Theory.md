@@ -1037,8 +1037,6 @@
 			- $$
 			  \text{THEOREM HourClock} \Rightarrow \text{WithinBounds}
 			  $$
-			- 这意味着“HourClock”算法满足“WithinBounds”属性，但你也可以从行为的角度来考虑它。"HourClock" 是所有行为的集合，其中 `h` 计数小时数，而 "WithinBounds" 是所有行为的集合，其中 `h` 在每一步都取值在 1 到 12 之间。"HourClock" 的行为是属性的所有行为，或者用集合表示为：
-			- $$
-			  [[\text{HourClock}]] \subseteq [[\text{WithinBounds}]]
-			  $$
+			- 这意味着“HourClock”算法满足“WithinBounds”属性，但你也可以从行为的角度来考虑它。"HourClock" 是所有行为的集合，其中 `h` 计数小时数，而 "WithinBounds" 是所有行为的集合，其中 `h` 在每一步都取值在 1 到 12 之间。"HourClock" 的行为是属性的所有行为，或者用集合表示为：\( [[\text{HourClock}]] \subseteq [[\text{WithinBounds}]] \)
+		-
 -
