@@ -991,5 +991,19 @@
 			  □⋄F，或者“总是最终 \( F \)”意味着在任何时间点 \( F \) 都将在未来的某个时刻为真，换句话说，\( F \) 会无限次地为真。或者我们可以定义一个运算符（内置于 TLA+），表示“\( F \) 导致 \( G \)”，意味着如果 \( F \) 曾经为真，那么之后的某个时刻 \( G \) 必须变为真，如下所示：
 			- \[ F \rightsquigarrow G \triangleq \Box (F \Rightarrow \diamond G) \]
 			  因为 □ 表示“总是”，⋄ 表示“最终”，你可能会很自然地认为 □ 仅定义安全属性，而 ⋄ 仅定义活跃属性，但如果公式包含动作，这两个想法都是错误的（这是一个需要解决的问题！），正如我们将在下一节中看到的。
-			-
+			- 下列时间算子的公式对是重言式：
+			- \[ \Box (F \land G) \equiv (\Box F) \land (\Box G) \]
+			  \[ \diamond (F \lor G) \equiv (\diamond F) \lor (\diamond G) \]
+			  \[ (\Box F) \lor (\Box G) \Rightarrow \Box (F \lor G) \]
+			  \[ \diamond (F \land G) \Rightarrow (\diamond F) \land (\diamond G) \]
+			  \[ \Box \diamond (F \lor G) \equiv (\Box \diamond F) \lor (\Box \diamond G) \]
+			  \[ \diamond \Box (F \land G) \equiv (\diamond \Box F) \land (\diamond \Box G) \]
+			  算子 □ 和 ⋄ 是对偶的，从任何时间重言式，我们可以通过替换
+			- \[ \Box \leftarrow \diamond \]
+			  \[ \diamond \leftarrow \Box \]
+			  \[ \land \leftarrow \lor \]
+			  \[ \lor \leftarrow \land \]
+			  并且反转所有蕴含的方向来获得另一个重言式。
+			- TLA 还有另一个很少使用的时间算子 \( +\!\!-\!\!\triangleright \)，这个算子不能直接用我们介绍的算子来定义，我们将在第四部分详细讲解。
+			- 最后，就像除了用 CONSTANT 声明自由的普通变量，即刚性或常量变量一样，我们也可以用量词 ∀ 和 ∃ 引入有界的普通变量；同样的，除了用 VARIABLE 声明自由的时间变量，我们还可以用时间量词引入有界的或量化的时间变量。
 				-
