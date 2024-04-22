@@ -973,7 +973,7 @@
 			- 现在，如果 \( P \) 是一个状态谓词，那么它也是一个公式，并且 \( \sigma \models P \) 当且仅当谓词由行为的第一个状态满足。例如，如果 \( x \) 是一个时态变量，公式 \( x = 3 \) 表示所有在第一个状态中 \( x \) 为 3 的行为。
 			- 如果 \( A \) 是一个动作 — 即一个转换谓词，或者是一个两个状态的谓词 — 那么它也可以作为一个公式，而且 \( \sigma \models A \) 当且仅当动作由行为的前两个状态满足。例如，如果 \( x \) 是一个时态变量，公式 \( x = 3 \land x' = x + 1 \) 表示所有在第一个状态中 \( x \) 为 3 而在第二个状态中为 4 的行为。公式 \( x \in \mathbb{N} \land x' = x + 1 \) 表示所有在第一个状态中 \( x \) 是某个自然数并且在第二个状态增加了 1 的行为。
 			- 现在让我们介绍时间算子 \( \Box \)，借用自 LTL。如果 \( F \) 是一个公式，那么 \( \Box F \) 也是一个公式，并且 \( \sigma \models \Box F \) 当且仅当对所有 \( n \)，\( \sigma + n \models F \)（即 \( \sigma \models \Box F \equiv \forall n \in \mathbb{N} : \sigma + n \models F \)）。
-			- 因此，如果 \( P \) 是一个状态谓词，那么 \( \Box P \) 表示 \( P \) 在每个状态都是真的，因为 \( \sigma \models \Box P \) 当且仅当对所有 \( n \)，\( \sigma + n \models P \)，并且 \( \sigma + n \) 的第一个状态是 \( \sigma_n \)。如果 \( A \) 是一个动作，那么 \( \Box A \) 是一个表示 \( A \) 在每一对连续状态 \( \langle \sigma_i, \sigma_{i+1} \rangle \) 都为真的公式，因为 \( \sigma \models \Box A \equiv \forall n \in \mathbb{N} : \sigma + n \models A \)，并且 \( \sigma + n \) 的前两个状态是 \( \langle \sigma_n, \sigma_{n+1} \rangle \)。
+			- 因此，如果 \( P \) 是一个状态谓词，那么 \( \Box P \) 表示 \( P \) 在每个状态都是真的，因为 \( \sigma \models \Box P \) 当且仅当对所有 \( n \)，\( \sigma + n \models P \)，并且 \( \sigma + n \) 的第一个状态是 \( \sigma_n \)。如果 \( A \) 是一个动作，那么 \( \Box A \) 是一个表示 \( A \) 在每一对连续状态 \( \langle \sigma_i, \sigma_{i+1} \rangle \) 都为真的公式，因为 \( \sigma \models \Box A \equiv \forall n \in \mathbb{N} : \sigma^{+n} \models A \)，并且 \( \sigma^{+n} \) 的前两个状态是 \( \langle \sigma_n, \sigma_{n+1} \rangle \)。
 			- 关于 \( \Box \) 算子如何作用于一般公式，以及如何快速理解时间公式，将在我们分析这个从《Specifying Systems》中取的例子时变得清晰：
 			- $$ 
 			  \sigma \models \Box ((x = 1) \implies \Box (y > 0))   \\
