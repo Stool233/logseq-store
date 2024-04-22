@@ -977,8 +977,8 @@
 			- 关于 \( \Box \) 算子如何作用于一般公式，以及如何快速理解时间公式，将在我们分析这个从《Specifying Systems》中取的例子时变得清晰：
 			- $$ 
 			  \sigma \models \Box ((x = 1) \implies \Box (y > 0))   \\ 
-			  \hspace{4.2cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\Box (y > 0))  % By the meaning of 
-			  \hspace{4.2cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\sigma^{+n} \models \Box (y > 0)) 
+			  \hspace{4.2cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\Box (y > 0))   \\
+			  \hspace{4.6cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\sigma^{+n} \models \Box (y > 0)) 
 			  $$
 			- 根据 \( \Box \) 的含义 \( \equiv \forall n \in \mathbb{N} : (\sigma + n \models (x = 1)) \implies (\forall m \in \mathbb{N} : (\sigma + n) + m \models (y > 0)) \)
 			- 因此，一个行为满足 \( \Box ((x = 1) \implies \Box (y > 0)) \) 当且仅当如果在某个状态 \( n \) \( x = 1 \)，那么从那时起对所有 \( m \)，在状态 \( m + n \) \( y > 0 \)。方块算子因此意味着“始终如一”或“从此以后”，上述公式意味着如果 \( x \) 曾经为一，那么 \( y \) 将从那时起始终大于0。
