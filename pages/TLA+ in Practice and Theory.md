@@ -975,7 +975,7 @@
 			- 现在让我们介绍时间算子 \( \Box \)，借用自 LTL。如果 \( F \) 是一个公式，那么 \( \Box F \) 也是一个公式，并且 \( \sigma \models \Box F \) 当且仅当对所有 \( n \)，\( \sigma + n \models F \)（即 \( \sigma \models \Box F \equiv \forall n \in \mathbb{N} : \sigma + n \models F \)）。
 			- 因此，如果 \( P \) 是一个状态谓词，那么 \( \Box P \) 表示 \( P \) 在每个状态都是真的，因为 \( \sigma \models \Box P \) 当且仅当对所有 \( n \)，\( \sigma + n \models P \)，并且 \( \sigma + n \) 的第一个状态是 \( \sigma_n \)。如果 \( A \) 是一个动作，那么 \( \Box A \) 是一个表示 \( A \) 在每一对连续状态 \( \langle \sigma_i, \sigma_{i+1} \rangle \) 都为真的公式，因为 \( \sigma \models \Box A \equiv \forall n \in \mathbb{N} : \sigma + n \models A \)，并且 \( \sigma + n \) 的前两个状态是 \( \langle \sigma_n, \sigma_{n+1} \rangle \)。
 			- 关于 \( \Box \) 算子如何作用于一般公式，以及如何快速理解时间公式，将在我们分析这个从《Specifying Systems》中取的例子时变得清晰：
-			- \[ \sigma \models \Box ((x = 1) \implies \Box (y > 0)) \\ \hspace{0.7cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\sigma + n \models \Box (y > 0)) \]
+			- \[ \sigma \models \Box ((x = 1) \implies \Box (y > 0))   \\ \hspace{0.7cm}   \\ \hspace{0.7cm}  \equiv \forall n \in \mathbb{N} : (\sigma^{+n} \models (x = 1)) \implies (\sigma^{+n} \models \Box (y > 0)) \]
 			- 根据 \( \Box \) 的含义 \( \equiv \forall n \in \mathbb{N} : (\sigma + n \models (x = 1)) \implies (\forall m \in \mathbb{N} : (\sigma + n) + m \models (y > 0)) \)
 			- 因此，一个行为满足 \( \Box ((x = 1) \implies \Box (y > 0)) \) 当且仅当如果在某个状态 \( n \) \( x = 1 \)，那么从那时起对所有 \( m \)，在状态 \( m + n \) \( y > 0 \)。方块算子因此意味着“始终如一”或“从此以后”，上述公式意味着如果 \( x \) 曾经为一，那么 \( y \) 将从那时起始终大于0。
 			-
