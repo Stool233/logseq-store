@@ -1102,4 +1102,5 @@
 			  \vdash (t = 0 \land x = 0 \land \Box(t' = t + 1 \land x' = x + 10)) \text{‘‘algorithm"} \Rightarrow \Box(t = 10 \Rightarrow x = 100) \text{‘‘property"}
 			  $$
 			- 但如果能够辨别一个公式是否是一个“合适的”算法那将会很好。
+			-
 -
