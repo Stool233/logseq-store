@@ -1111,7 +1111,10 @@
 			- 如果
 			  $$
 			  \text{VARIABLES } x, t \\
-			  \text{RandomWalkForTenSteps} \triangleq t = 10 \land x = 0 \land \Box(t > 0 \land t' = t - 1 \land (x' = x + 1 \lor x' = x - 1)) \land t = 0 \land \text{UNCHANGED} \langle t, x \rangle
+			  \text{RandomWalkForTenSteps} \triangleq \\
+			  t = 10 \land x = 0 \land \\
+			  \Box(t > 0 \land t' = t - 1 \land (x' = x + 1 \lor x' = x - 1)) \\
+			  \land t = 0 \land \text{UNCHANGED} \langle t, x \rangle
 			  $$
 			- 则
 			- $$
