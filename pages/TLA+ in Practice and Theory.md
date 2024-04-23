@@ -1114,7 +1114,7 @@
 			  \text{RandomWalkForTenSteps} \triangleq \\
 			  t = 10 \land x = 0 \land \\
 			  \hspace{6.2cm}  \Box \land t > 0 \land t' = t - 1 \land (x' = x + 1 \lor x' = x - 1) \\
-			  \hspace{6.0cm}  \land t = 0 \land \text{UNCHANGED} \langle t, x \rangle
+			  \hspace{5.7cm}  \land t = 0 \land \text{UNCHANGED} \langle t, x \rangle
 			  $$
 			- 则
 			- $$
