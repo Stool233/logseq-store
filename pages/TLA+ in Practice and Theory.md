@@ -1139,6 +1139,6 @@
 			  [A]e \triangleq A \lor e' = e \\
 			  \langle A \rangle e \triangleq A \land e' \neq e
 			  $$
-			- 在实践中，$e$ 几乎总是仅仅是一个变量或一组变量。在 TLA+ 规范中，定义所有时态变量的元组是常见的，例如 $vars \triangleq \langle x, y, z \rangle$，并写作 $[A]vars$。
+			- 在实践中，$e$ 几乎总是仅仅是一个变量或一组变量。在 TLA+ 规范中，定义所有时态变量的元组是常见的，例如 $vars \triangleq \langle x, y, z \rangle$，并写作 $[A]_{vars}$。
 			-
 -
