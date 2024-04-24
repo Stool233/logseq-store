@@ -1136,8 +1136,8 @@
 			- 因为添加的 $\Diamond$ 子句只要求 $x$ 至少在某个时刻发生一次增加，即 $x$ 不总是 1。它仍然无法区分处于停顿等价的行为。
 			- 如果 $A$ 是我们迄今为止看到的那种动作，$e$ 是某个状态函数，我们将定义动作：
 			- $$
-			  [A]e \triangleq A \lor e' = e \\
-			  \langle A \rangle e \triangleq A \land e' \neq e
+			  [A]_e \triangleq A \lor e' = e \\
+			  \langle A \rangle _e \triangleq A \land e' \neq e
 			  $$
 			- 在实践中，$e$ 几乎总是仅仅是一个变量或一组变量。在 TLA+ 规范中，定义所有时态变量的元组是常见的，例如 $vars \triangleq \langle x, y, z \rangle$，并写作 $[A]_{vars}$。
 			-
