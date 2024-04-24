@@ -1055,7 +1055,7 @@
 			- 在 TLA 中，逻辑蕴含对应于实现的概念。在第四部分中，我们将更详细地探讨这一概念，并看到蕴含可以通过操纵蕴含连接符右侧的子公式来表示非常复杂的实现形式。
 		- ### 两个严重问题
 			- 我们定义的逻辑，rTLA，存在两个问题。假设我们想为一个同时显示小时和分钟的时钟编写一个算法（记住，出现在 □ 操作符后的连词列表，读起来就像被括号包围一样）：
-			- ![image.png](../assets/image_1713937924950_0.png)
+			- ![image.png](../assets/image_1713937924950_0.png){:height 152, :width 562}
 			- 我们非常希望能够证明：
 			- $$
 			  ⊢ \text{Clock} ⇒ \text{HourClock}
@@ -1097,7 +1097,7 @@
 			  \Box(x' = x + 1) \Rightarrow \Diamond(x > 10)
 			  $$
 			- 如果
-			  ![image.png](../assets/image_1713937851845_0.png)
+			  ![image.png](../assets/image_1713937851845_0.png){:height 166, :width 514}
 			- 则
 			- $$
 			  \text{RandomWalk} \land \Diamond(x = 10) \Rightarrow \Box(x \geq 0)
