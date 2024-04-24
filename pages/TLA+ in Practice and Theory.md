@@ -1129,5 +1129,16 @@
 			- 对于一个行为 $\sigma$，我们定义 $\natural \sigma$ —— $\sigma$ 的无停顿形式 —— 通过将任何连续重复状态的有限子序列替换为该状态的单一实例来获得。例如，$\natural \langle a, b, b, b, c, d, d, \dots, d, \dots \rangle = \langle a, b, c, d, d, \dots, d, \dots \rangle$。注意，无限序列 d 的尾部重复不被替换。我们现在定义一个行为上的等价关系。如果 $\natural \sigma = \natural \tau$，则行为 $\sigma$ 和 $\tau$ 在停顿下是等价的（我们写作 $\sigma \approx \tau$）。此外，对于行为集合 $S$，$\Gamma(S)$ 是所有与 $S$ 中的行为停顿等价的行为集合。如果 $\Gamma(S) = S$，即如果 $S$ 中的每个行为的所有停顿等价行为也在 $S$ 中（$\sigma \in S \land \sigma \approx \tau \Rightarrow \tau \in S$），我们说 $S$ 在停顿下是封闭的。
 			- 现在来看句法。我们说一个公式 $F$ 在停顿下是不变的，当且仅当其模型——即满足它的所有行为的集合——在停顿下是封闭的。一个在停顿下不变的公式不能区分两个停顿等价的行为（意味着，它对一个是真（TRUE），对另一个是假（FALSE））。
 			- 因为状态函数/谓词一次只讨论一个状态，因此它们本质上是停顿不变的，只有动作可能会打破停顿不变性。公式 $x = 1 \land \Box (x' = x + 1)$ 在停顿下不是不变的，因为它区分了 $\langle 1, 2, 3, 4, \dots \rangle$ 和 $\langle 1, 1, 1, 2, 3, \dots \rangle$，因为它接受前者而不接受后者。然而，公式 $x = 1 \land \Box (x' = x + 1 \lor x' = x)$ 并不区分，并且确实是停顿不变的。
+			- 以下公式也在停顿下是不变的：
+			- $$
+			  x = 1 \land \Box (x' = x + 1 \lor x' = x) \land \Diamond (x' = x + 1)
+			  $$
+			- 因为添加的 $\Diamond$ 子句只要求 $x$ 至少在某个时刻发生一次增加，即 $x$ 不总是 1。它仍然无法区分处于停顿等价的行为。
+			- 如果 $A$ 是我们迄今为止看到的那种动作，$e$ 是某个状态函数，我们将定义动作：
+			- $$
+			  [A]e \triangleq A \lor e' = e \\
+			  \langle A \rangle e \triangleq A \land e' \neq e
+			  $$
+			- 在实践中，$e$ 几乎总是仅仅是一个变量或一组变量。在 TLA+ 规范中，定义所有时态变量的元组是常见的，例如 $vars \triangleq \langle x, y, z \rangle$，并写作 $[A]vars$。
 			-
 -
