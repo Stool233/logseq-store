@@ -1258,6 +1258,8 @@
 			- $\text{VARIABLE } \text{depth} \\ Space \triangleq \text{depth} = 0 \land [ \text{depth}' = \text{depth} + (\text{Len}(\text{stack})' - \text{Len}(\text{stack}))] _{\langle \text{depth}, \text{stack} \rangle}$
 			- 现在我们可以对最坏情况下的空间复杂度进行一些描述：
 			- $\forall n \in \text{Nat}: N = n \land \text{Fact3} \land \text{Space} \Rightarrow \Box [\text{depth} \leq n]$
+			- 注意我们是如何通过与 `N = n` 结合来限制 **Fact3** 对单个输入的单一计算，这限制了 **Fact3** 的初始条件 `N \in \text{Nat}`。
+			- 尽管这已经足够，但让我们做一些更通用的事情（但可能不那么有用 — 我的目的是展示形式主义的力量，而不是教授最佳实践），这涵盖了复杂度的确切定义：
 			-
 		-
 		-
