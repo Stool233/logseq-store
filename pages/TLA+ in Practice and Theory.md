@@ -1220,8 +1220,9 @@
 			- 我们现在可以用 TLA+ 写出 Collatz 猜想：
 			- $$\forall n \in \text{Nat} \setminus \{0\} : (x = n \land \Box[C]_x \land \text{WF}_x(C)) \Rightarrow \Diamond (x = 1)$$
 			- 在 TLA+ 中，类似于类型编程语言中的（简单）类型正确性的属性被模型化为一个简单的不变量（一个在每个状态都被断言为成立的状态谓词）。大多数 TLA+ 规格包含一个看起来像这样的定义：
-			-
+				- ![image.png](../assets/image_1714206835261_0.png){:height 98, :width 436}
 				-
+					-
 		-
 		-
 		-
