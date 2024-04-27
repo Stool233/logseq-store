@@ -1255,6 +1255,7 @@
 				- ![image.png](../assets/image_1714209153674_0.png)
 			- 毕竟，谁来决定哪些细节是重要的，哪些是相关的？答案是你自己，这取决于你想要建模的内容，以及你想要建模的内容取决于你想要推理的系统或算法的哪些属性。无论如何，TLA+ 给出了细节的精确含义，正如我们将在第四部分看到的，**Fact3** 是 **Fact1** 的一种实现 — 它是对 **Fact1** 更详细（细化）的描述 — 但不是 **Fact2** 的。额外细节是否重要，取决于我们想要用它做什么。
 			- 例如，如果我们想要讨论算法的空间复杂度，建模栈可能很重要。首先，我们需要增加一个空间复杂度的度量：
+			- $\text{VARIABLE } \text{depth} \\ Space \triangleq \text{depth} = 0 \land [ \text{depth}' = \text{depth} + (\text{Len}(\text{stack})' - \text{Len}(\text{stack}))] \langle \text{depth}, \text{stack} \rangle$
 			-
 		-
 		-
