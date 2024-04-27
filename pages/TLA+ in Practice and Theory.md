@@ -1277,6 +1277,9 @@
 				- ![image.png](../assets/image_1714218190823_0.png){:height 247, :width 456}
 			- 规范 SpecX ∧ SpecY 是什么意思？好吧，我们把它写下来，并对公式进行一些基本的操作。
 				- ![image.png](../assets/image_1714218254358_0.png){:height 82, :width 618}
+			- 所以最初，x 和 y 都是 0。然后，每个动作都必须同时满足 \([NextX]x\) 和 \([NextY]y\)，因此在每一步中，x 要么增加，要么保持不变；y 也是要么增加，要么保持不变。这意味着每一步增加的是 x、y、两者都增加，或者都不增加（如果都不增加，那么就是对于 \(\langle x, y \rangle\) 的停滞步骤）。\(SpecX \wedge SpecY\) 指定了本质上是两个并行运行的过程，\(SpecX\) 和 \(SpecY\)。
+			- 顺便说一下，由于 \(SpecX\) 和 \(SpecY\) 实际上是在不同变量上操作的相同过程，我们本可以这样写一个参数化的规范：
+				- ![image.png](../assets/image_1714218364086_0.png){:height 206, :width 513}
 			-
 		-
 		-
