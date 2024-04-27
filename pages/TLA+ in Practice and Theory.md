@@ -1215,7 +1215,12 @@
 			- 但这只是因为对于所有的 `x`，`x%2 = 0 ∨ x%2 ≠ 0` 总是成立，所以在任何时候，一个且仅有一个 `⇒` 连接符的左操作数被保证为真。
 			- 当然，那个动作也可以等价地写作：
 				- ![image.png](../assets/image_1714197090493_0.png){:height 118, :width 403}
-			-
+			- 或者写作
+			- $$C \triangleq x' = \text{IF } x\%2 = 0 \text{ THEN } x/2 \text{ ELSE } 3x + 1$$
+			- 我们现在可以用 TLA+ 写出 Collatz 猜想：
+			- $$\forall n \in \text{Nat} \setminus \{0\} : (x = n \land \Box[C]_x \land \text{WF}_x(C)) \Rightarrow \Diamond (x = 1)$$
+			- 在 TLA+ 中，类似于类型编程语言中的（简单）类型正确性的属性被模型化为一个简单的不变量（一个在每个状态都被断言为成立的状态谓词）。大多数 TLA+ 规格包含一个看起来像这样的定义：
+				-
 		-
 		-
 		-
