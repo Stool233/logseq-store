@@ -1265,6 +1265,9 @@
 				- ![image.png](../assets/image_1714216197770_0.png){:height 122, :width 437}
 			- 然而，正如我们将在第4部分看到的，**Fact1**（因此 **Fact3** 也是）和 **Fact2** 都是以下 **FactAlg** 规范的实现：
 				- ![image.png](../assets/image_1714216242110_0.png)
+			- 因为它们在外延上是相等的（注意，fact 不是一个算法，而是一个函数）。
+			- 顺便说一下，将阶乘的规范写成以下形式会更好：
+				- ![image.png](../assets/image_1714217362197_0.png){:height 220, :width 390}
 			-
 		-
 		-
