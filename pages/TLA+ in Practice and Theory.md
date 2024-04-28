@@ -1284,6 +1284,9 @@
 				- ![image.png](../assets/image_1714283547440_0.png){:height 149, :width 558}
 			- 但为了简化，我们将继续使用非参数化版本，并更仔细地查看规范中的动作部分，现在重复我们之前使用语法操作所做的推理：
 				- ![image.png](../assets/image_1714283600637_0.png)
+			- 因此，我们可以定义：
+				- ![image.png](../assets/image_1714283687655_0.png){:height 200, :width 537}
+			- 其中 Spec 等同于 SpecX∧SpecY。
 			-
 		-
 		-
