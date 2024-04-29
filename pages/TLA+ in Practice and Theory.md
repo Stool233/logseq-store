@@ -1288,6 +1288,9 @@
 				- ![image.png](../assets/image_1714283687655_0.png){:height 200, :width 537}
 			- 其中 Spec 等同于 SpecX∧SpecY。
 			- 我们也可以将 \(WF_x(NextX) \wedge WF_y(NextY)\) 合并成 \(WF_{\langle x, y \rangle}(Next)\) 吗？绝对不行！后者指出，如果 \(Next\) 持续被启用，它最终会发生——由于 \(Next\) 总是被启用，这意味着它会无限次地发生——这只会保证 \(x\) 或 \(y\) 中的一个会被无限次增加，但可能只有 \(x\)。如果我们的过程由一个公平的调度器调度，那么 \(x\) 和 \(y\) 都将被无限次增加，这正是 \(WF_x(NextX) \wedge WF_y(NextY)\) 所指定的。
+			- 如果我们希望禁止同时改变 x 和 y，以获得一个交错的规范，我们可以从 Next 中移除第一个析取项 \(NextX \wedge NextY\)。这将导致 Spec 等同于：
+			- $$SpecX \wedge SpecY \wedge \Box [x' = x \vee y' = y] _{\langle x, y \rangle}$$
+			- 最后一个连词禁止了 x 和 y 的同时改变。
 			-
 		-
 		-
