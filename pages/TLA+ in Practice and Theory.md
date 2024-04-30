@@ -1291,6 +1291,9 @@
 			- 如果我们希望禁止同时改变 x 和 y，以获得一个交错的规范，我们可以从 Next 中移除第一个析取项 \(NextX \wedge NextY\)。这将导致 Spec 等同于：
 			- $$SpecX \wedge SpecY \wedge \Box [x' = x \vee y' = y] _{\langle x, y \rangle}$$
 			- 最后一个连词禁止了 x 和 y 的同时改变。
+			- 更一般来说，如果 \(v_A\) 是代表进程 A 内部状态的状态函数（例如，A 的内部状态变量的元组），\(v_B\) 是代表进程 B 内部状态的状态函数，而 \(v_S\) 是代表它们共享状态的状态函数（模拟某些通信通道）。它们的联合规范将是：
+			- \[ InitA \wedge InitB \wedge \Box [NextA] v_A \wedge \Box [NextB] v_B \wedge \Box [NextA \vee NextB] v_S \wedge WF_{v_A}(NextA) \wedge WF_{v_B}(NextB) \]
+			- 其中 \(\Box [NextA \vee NextB] v_S\) 指定共享状态只能由这些进程中的一个修改。
 			-
 		-
 		-
