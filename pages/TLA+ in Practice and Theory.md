@@ -1306,6 +1306,7 @@
 				- ![image.png](../assets/image_1714454049237_0.png){:height 166, :width 530}
 			- 注意到 \(A \Rightarrow Next\) 和 \(B \Rightarrow Next\)，因此我们的公平性条件 \(WF_{vars}(A) \wedge WF_{vars}(B)\) 满足了在“机器封闭性和公平性”部分给出的条件，保证了我们的规范是机器封闭的。
 			- 通常情况下，我们会有多个实例的进程（或机器）各自运行相同的程序。我们可以这样建模：
+				- ![image.png](../assets/image_1714454710661_0.png){:height 215, :width 490}
 			-
 			-
 		-
