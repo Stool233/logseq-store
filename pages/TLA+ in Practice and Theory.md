@@ -1297,8 +1297,9 @@
 			- 通常我们会对一个交错的规范感兴趣，在这种规范中，A 步骤不能同时是 B 步骤。在这样的规范中，我们有 \(NextA \Rightarrow v'_B = v_B\) 和 \(NextB \Rightarrow v'_A = v_A\)，因此我们有：
 				- ![image.png](../assets/image_1714450413408_0.png)
 			- 同样，我们得到
-			- \[ \Box [NextA \vee NextB]_{\langle v_A, v_B} \rangle \wedge \Box [NextA \vee NextB] v_S \equiv \Box [NextA \vee NextB] \langle v_A, v_B, v_S \rangle \]
+			- \[ \Box [NextA \vee NextB]_{\langle v_A, v_B \rangle} \wedge \Box [NextA \vee NextB]_{v_S} \equiv \Box [NextA \vee NextB]_{\langle v_A, v_B, v_S \rangle} \]
 			- 这两个规范的结合，然后，表示进程的并行组合，但它等同于看起来像是单个进程的规范，具有非确定性动作，这种动作是作为子动作的析取来指定的。
+			-
 			-
 		-
 		-
