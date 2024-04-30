@@ -1296,7 +1296,7 @@
 			- 其中 \(\Box [NextA \vee NextB] v_S\) 指定共享状态只能由这些进程中的一个修改。
 			- 通常我们会对一个交错的规范感兴趣，在这种规范中，A 步骤不能同时是 B 步骤。在这样的规范中，我们有 \(NextA \Rightarrow v'_B = v_B\) 和 \(NextB \Rightarrow v'_A = v_A\)，因此我们有：
 				- ![image.png](../assets/image_1714450413408_0.png)
-				-
+			-
 		-
 		-
 		-
