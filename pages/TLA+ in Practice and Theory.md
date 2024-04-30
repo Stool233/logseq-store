@@ -1294,7 +1294,9 @@
 			- 更一般来说，如果 \(v_A\) 是代表进程 A 内部状态的状态函数（例如，A 的内部状态变量的元组），\(v_B\) 是代表进程 B 内部状态的状态函数，而 \(v_S\) 是代表它们共享状态的状态函数（模拟某些通信通道）。它们的联合规范将是：
 			- \[ InitA \wedge InitB \wedge \Box [NextA] _{v_A} \wedge \Box [NextB] _{v_B} \wedge \Box [NextA \vee NextB] _{v_S} \wedge WF_{v_A}(NextA) \wedge WF_{v_B}(NextB) \]
 			- 其中 \(\Box [NextA \vee NextB] v_S\) 指定共享状态只能由这些进程中的一个修改。
-			-
+			- 通常我们会对一个交错的规范感兴趣，在这种规范中，A 步骤不能同时是 B 步骤。在这样的规范中，我们有 \(NextA \Rightarrow v'_B = v_B\) 和 \(NextB \Rightarrow v'_A = v_A\)，因此我们有：
+				- ![image.png](../assets/image_1714450413408_0.png)
+				-
 		-
 		-
 		-
