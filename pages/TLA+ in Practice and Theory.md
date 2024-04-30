@@ -1298,7 +1298,7 @@
 				- ![image.png](../assets/image_1714450413408_0.png)
 			- 同样，我们得到
 			- \[ \Box [NextA \vee NextB]_{\langle v_A, v_B \rangle} \wedge \Box [NextA \vee NextB]_{v_S} \equiv \Box [NextA \vee NextB]_{\langle v_A, v_B, v_S \rangle} \]
-			- 这两个规范的结合，然后，表示进程的并行组合，但它等同于看起来像是单个进程的规范，具有非确定性动作，这种动作是作为子动作的析取来指定的。
+			- 这两个规范的结合，然后，表示进程的并行（parallel）组合，但它等同于看起来像是单个进程的规范，具有非确定性动作，这种动作是作为子动作的析取来指定的。
 			-
 			-
 		-
