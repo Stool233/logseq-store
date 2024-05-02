@@ -1310,7 +1310,7 @@
 			- 注意存在量词是如何被用来非确定性地选择其中一个进程的。这是有效的，因为动作是转换谓词。让我们通过一个具体的例子来看这一点：
 				- ![image.png](../assets/image_1714627552759_0.png){:height 225, :width 476}
 			- 现在，转换 \(\langle 7, 5, 8, 19 \rangle \rightharpoonup  \langle 7, 6, 8, 19 \rangle\) 是一个可能的转换，因为存在一个 \(p \in Processes\) — 在这个案例中是 \(p = 2\) — 使得 \(x' = [x \, \text{EXCEPT} ![self] = @ + 1]\)。这个规范要求交错执行还是允许多个进程同时运行？毕竟，包含存在量词的表达式如果有多于一个元素满足谓词时可能为真。这个例子不允许多个进程同时增加它们的计数器，因为表达式 \(x' = [x \, \text{EXCEPT} ![self] = @ + 1]\) 表明序列中只有一个索引被改变，并且对于两个不同的 \(self\) 值来说不能同时为真。再次注意，对于每一个 \(p \in Processes\)，\(Run(p) \Rightarrow Next\)，因此我们的公平性条件满足“机器封闭性和公平性”中的条件，所以我们的规范是机器封闭的。
-			- 一般来说，对于交错规范（这通常是我们所希望的）在正常条件下，两个规范的组合 \(A \wedge B\) 变成 \((\text{Init}A \wedge \text{Init}B) \wedge \Box[\text{Next}A \vee \text{Next}B]v \wedge (\text{WF}_{vars}(A) \wedge \text{WF}_{vars}(B))\) — 即，时态公式中的合取在动作中变成析取 — 同样地，任意数量的规范组合，\(\forall i \in Component: P(i)\)，变成 \((\forall i \in Component: \text{Init}P(i)) \wedge \Box[\exists i \in Component: \text{Next}P(i)]v\) — 即，时态公式中的全称量化在动作中变成存在量化。
+			- 一般来说，对于交错规范（这通常是我们所希望的）在正常条件下，两个规范的组合 \(A \wedge B\) 变成 \((\text{Init}A \wedge \text{Init}B) \wedge \Box[\text{Next}A \vee \text{Next}B]v \wedge (\text{WF}_{vars}(A) \wedge \text{WF}_{vars}(B))\) — 即，时态公式中的合取在动作中变成析取 — 同样地，任意数量的规范组合，\(\forall i \in Component: P(i)\)，变成 \((\forall i \in Component: \text{Init}P(i)) \wedge \Box[\exists i \in Component: \text{Next}P(i)]_v\) — 即，时态公式中的全称量化在动作中变成存在量化。
 			- 并发是另一个例子，展示了编程语言在目标是高效编译时强调重要的细节差异，而这些细节对于推理来说并不重要，并且模糊了帮助算法推理的相似性。因为规范的组合等同于具有单一动作的规范，通常来说，当一个复杂系统以单一动作表达时，推理（而不是编程！）会更简单。Lemport 在他的论文《组合：让证明更困难的方法》中提出了这一论点。
 			- 现在让我们考虑一个更复杂的并发示例。我们有一个生产者向 FIFO 队列添加元素，消费者则移除它们：
 			-
