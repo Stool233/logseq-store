@@ -1316,6 +1316,8 @@
 				- ![image.png](../assets/image_1714651149015_0.png)
 			- 当我们将两个规范结合时会发生什么？显然，初始条件不构成问题，因为 \( \text{ProducerInit} \wedge \text{ConsumerInit} \equiv buf = \langle \rangle \)。但是，\(\text{ProducerNext}\) 表明在每一步中，\(buf\) 必须被追加或保持不变，而 \(\text{ConsumerNext}\) 表明在每一步中，\(buf\) 必须被移除一个元素或保持不变。正式地说：
 				- ![image.png](../assets/image_1714651876992_0.png){:height 392, :width 448}
+			- 结果是，\( \text{ProducerSpec} \wedge \text{ConsumerSpec} \) 只允许 \(buf\) 永不改变的行为。这两个规范必须更加灵活以允许彼此改变它们共享的状态。我们将进行以下调整：
+				- ![image.png](../assets/image_1714651953858_0.png)
 			-
 			-
 			-
