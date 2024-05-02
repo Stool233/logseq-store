@@ -1342,7 +1342,8 @@
 			- 对于分区操作，规范依赖于以下数学定义：所有可能的合法分区的集合，即通过对 $B[\text{low}] \ldots B[\text{hi}]$ 进行排列获得的序列集合，使得 $\text{pivot}$ 左边的子数组只包含小于右边子数组中的元素：
 				- ![image.png](../assets/image_1714668002347_0.png)
 			- 下面是Spec：
-				-
+				- ![image.png](../assets/image_1714668189088_0.png)
+			-
 			-
 			-
 		-
