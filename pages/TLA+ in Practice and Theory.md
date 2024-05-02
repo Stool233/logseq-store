@@ -1313,6 +1313,8 @@
 			- 一般来说，对于交错规范（这通常是我们所希望的）在正常条件下，两个规范的组合 \(A \wedge B\) 变成 \((\text{Init}A \wedge \text{Init}B) \wedge \Box[\text{Next}A \vee \text{Next}B]v \wedge (\text{WF}_{vars}(A) \wedge \text{WF}_{vars}(B))\) — 即，时态公式中的合取在动作中变成析取 — 同样地，任意数量的规范组合，\(\forall i \in Component: P(i)\)，变成 \((\forall i \in Component: \text{Init}P(i)) \wedge \Box[\exists i \in Component: \text{Next}P(i)]_v\) — 即，时态公式中的全称量化在动作中变成存在量化。
 			- 并发是另一个例子，展示了编程语言在目标是高效编译时强调重要的细节差异，而这些细节对于推理来说并不重要，并且模糊了帮助算法推理的相似性。因为规范的组合等同于具有单一动作的规范，通常来说，当一个复杂系统以单一动作表达时，推理（而不是编程！）会更简单。Lemport 在他的论文《组合：让证明更困难的方法》中提出了这一论点。
 			- 现在让我们考虑一个更复杂的并发示例。我们有一个生产者向 FIFO 队列添加元素，消费者则移除它们：
+				- ![image.png](../assets/image_1714651149015_0.png)
+			-
 			-
 			-
 		-
