@@ -1319,9 +1319,7 @@
 			- 结果是，\( \text{ProducerSpec} \wedge \text{ConsumerSpec} \) 只允许 \(buf\) 永不改变的行为。这两个规范必须更加灵活以允许彼此改变它们共享的状态。我们将进行以下调整：
 				- ![image.png](../assets/image_1714651953858_0.png){:height 212, :width 476}
 			- 注意每个动作如何保护其自己的“私有”变量（put/get），同时允许对共享变量 \(buf\) 进行修改，前提是这些修改符合其行为，即一次添加或移除一个元素。现在
-			- \[
-			  [\text{ProducerNext1}] pvars \wedge [\text{ConsumerNext1}] cvars \equiv [\text{ProducerNext} \vee \text{ConsumerNext}] \langle get, put, buf \rangle
-			  \]
+			- \[ [\text{ProducerNext1}] _{pvars} \wedge [\text{ConsumerNext1}] _{cvars} \equiv [\text{ProducerNext} \vee \text{ConsumerNext}] _{\langle get, put, buf \rangle} \]
 			- 从消费者的角度（生产者的角度类似），当我们在 \(\text{ConsumerNext1}\) 中添加了析取项时，我们实际上只是用非确定性来模拟输入。我们没有对输入施加任何限制，而实际的生产者只在队列中放入整数；生产字符串的生产者也同样有效。你可以将 IO、并发和非确定性视为查看同一事物的不同方式。一个交互式算法是一个并发算法；用户行为是被建模为一个独立的过程，还是作为单一动作中的“内联”非确定性，这只是符号表示的问题。
 			-
 			-
