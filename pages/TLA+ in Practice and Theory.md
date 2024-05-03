@@ -1438,7 +1438,10 @@
 			- ![image.png](../assets/image_1714757081428_0.png)
 		- 我们希望验证的属性是 `AtLeastOne1`：
 			- ![image.png](../assets/image_1714757111482_0.png){:height 131, :width 447}
-			-
+		- 挑战在于找到一个归纳不变量，但是 TLC 模型检查器可以协助完成这一任务。我们首先猜测一个 \( \text{Inv} \)。假设我们的算法是以标准形式编写的，\( \text{Spec} \triangleq \text{Init} \wedge [\text{Next}]_v \wedge \text{Fairness} \)，首先我们确保 \( \text{Inv} \) 真正是一个不变量，让模型检查器验证 \( \text{Spec} \Rightarrow \Box \text{Inv} \)。然后，\( \text{Inv} \) 是一个归纳不变量当且仅当 \( \text{Init} \Rightarrow \text{Inv} \)（也容易检查）和 \( \text{Inv} \wedge [\text{Next}]_v \Rightarrow \Box \text{Inv} \)。因为 \( \text{Inv} \wedge [\text{Next}]_v \) 本身就是以标准形式编写的，只有一个条件是 \( \text{Inv} \) 是初始条件，这也可以由模型检查器（TLC，TLA+ 工具中包含的模型检查器只能检查以标准形式编写的包含动作的时态公式）来检查。
+		- 在我们的案例中，归纳不变量 \( \text{Inv} \) 是：
+			- ![image.png](../assets/image_1714757180038_0.png){:height 202, :width 480}
+		-
 		-
 		-
 		-
