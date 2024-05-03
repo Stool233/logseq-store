@@ -1369,10 +1369,7 @@
 		- $$ \text{THEOREM} ~ Spec \Rightarrow P $$
 		- 即，\( \vdash \text{Spec} \Rightarrow P \)，其中 \( P \) 可以是我们的规格说明应该满足的属性，或者是它实现的另一个系统规格说明（我们将在第四部分详细讨论 TLA 中算法的关系）。
 		- 我们想要验证哪些类型的属性？这些通常会是简单的安全属性，比如 \( \Box I \)，其中 \( I \) 是状态谓词，例如部分正确性，像 \( \Box (\text{done} \Rightarrow \text{Ordered}(A)) \) 或 \( \exists c \in \text{Nat} : \Box (x+y=c) \)。这样的属性称为不变量。我们还可以做一些更有趣的陈述。例如，\( \Box [x' > x]_x \)，这表明变量 \( x \) 的值只能增加。
-		- 我们还可以编写诸如终止 $\Diamond done$ 这样的活性属性，或者“每个请求最终都会得到响应”——对于所有自然数 \( n \)：\[ \forall n \in \text{Nat} : \Box (\text{request.id} = n \Rightarrow \Diamond (\text{response.id} = n)) \]
-		- 这可以写为：
-		- \[ \forall n \in \text{Nat} : (\text{request.id} = n \rightsquigarrow \text{response.id} = n) \]
-		- 然而，我们可能会将 `request` 和 `response` 建模为序列，请求和响应被添加到这些序列中，所以如下所示：
+		- 我们还可以编写诸如终止 $\Diamond done$ 这样的活性属性，或者“每个请求最终都会得到响应”——对于所有自然数 \( n \)：\[ \forall n \in \text{Nat} : \Box (\text{request.id} = n \Rightarrow \Diamond (\text{response.id} = n)) \]。 这可以写为： \[ \forall n \in \text{Nat} : (\text{request.id} = n \rightsquigarrow \text{response.id} = n) \] 。然而，我们可能会将 `request` 和 `response` 建模为序列，请求和响应被添加到这些序列中，所以如下所示：
 		-
 		-
 		-
