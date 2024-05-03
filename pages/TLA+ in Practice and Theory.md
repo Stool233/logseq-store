@@ -1402,6 +1402,10 @@
 			- ![image.png](../assets/image_1714755493467_0.png){:height 63, :width 395}
 		- 其中 \( P(c) \) 可以假定写为：
 			- ![image.png](../assets/image_1714755524918_0.png){:height 133, :width 421}
+		- 其中断言不提及变量 \( pc \)（因为 Hoare 三元组不能提及）。
+		- Floyd-Hoare 方法对于简单的编程语言是相对完备的，即如果可以证明单个断言，则也可以证明部分正确性，但对于具有过程的语言则不是相对完备的，因为部分正确性可能需要证明，而这种证明需要使用调用栈的状态，而 Floyd-Hoare 方法无法直接提及这一点。
+		- Floyd-Hoare 方法已被 Owicki-Gries 方法推广用于并发程序，该方法为每个进程的每个控制点附加谓词。与 Floyd-Hoare 方法类似，Owicki-Gries 断言可以在 TLA 中写为：
+			- ![image.png](../assets/image_1714755592470_0.png){:height 74, :width 257}
 		-
 		-
 		-
