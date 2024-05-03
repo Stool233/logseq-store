@@ -1419,9 +1419,9 @@
 		- 让我们来看一个非常简单的例子。假设我们的算法是：
 			- ![image.png](../assets/image_1714756138440_0.png){:height 155, :width 404}
 		- 我们希望证明的安全性属性也是一个简单的：
-		- \( P \triangleq x \geq 0 \)
+		- $$ P \triangleq x \geq 0 $$
 		- 虽然 \( P \) 是一个不变量（在这个简单的情况下我们可以通过观察得出结论），不幸的是，它不是一个归纳不变量，因为 $P \wedge \text{Next} \nRightarrow  P'$，例如当 \( x = 3 \) 时。相反，我们用来证明 \( P \) 的归纳不变量将是：
-		- \( \text{Inv} \triangleq x \in \{0, 1\} \)
+		- $$ \text{Inv} \triangleq x \in \{0, 1\} $$
 		- 现在，形式化的证明（可以由 TLAPS 机械地检查）：
 		-
 		-
