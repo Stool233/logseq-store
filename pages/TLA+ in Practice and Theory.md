@@ -1415,7 +1415,11 @@
 			- ![image.png](../assets/image_1714755979499_0.png){:height 97, :width 523}
 		- 如果 \( \text{Init} \Rightarrow \text{Inv} \)，使用上述证明规则我们可以得出 \( \text{Init} \wedge \Box [\text{Next}]_v \Rightarrow \Box \text{Inv} \)。换句话说，如果 \( \text{Inv} \) 是一个归纳性质，那么它就是一个不变量。既然它是一个不变量并且 \( \text{Inv} \Rightarrow P \)，那么 \( P \) 也是如此，我们得出结论 \( \text{Spec} \Rightarrow \Box P \)。
 		- 基于归纳不变量的正式 TLA+ 证明都具有以下结构：
-			-
+			- ![image.png](../assets/image_1714756083171_0.png){:height 319, :width 419}
+		- 其中 PTL 代表命题时态逻辑，并意味着使用时态推理规则。具体来说，机械证明系统 TLAPS 使用一个命题时态逻辑求解器来检查通过 PTL 的证明。
+		- 让我们来看一个非常简单的例子。假设我们的算法是：
+			- ![image.png](../assets/image_1714756138440_0.png){:height 155, :width 404}
+		-
 		-
 		-
 		-
