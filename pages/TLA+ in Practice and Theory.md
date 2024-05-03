@@ -1437,6 +1437,7 @@
 		- 当在一个特殊的注释框中编写这个 PlusCal 算法时，TLA+ 工具箱会将其转换为以下 TLA+ 规范：
 			- ![image.png](../assets/image_1714757081428_0.png)
 		- 我们希望验证的属性是 `AtLeastOne1`：
+			- ![image.png](../assets/image_1714757111482_0.png){:height 131, :width 447}
 			-
 		-
 		-
