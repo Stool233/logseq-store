@@ -1413,7 +1413,9 @@
 		- 由于 TLA 允许我们全局地推理程序的状态，没有必要仅使用上述形式的不变量——这些适用于推理用编程语言编写的程序——相反，我们可以完全推广断言推理。这种推理对并发和顺序程序同样有效，因为在我们的模型中它们是同一类对象（进程取决于观察者等）。一种通用的证明方法，对许多类型的算法都很有效，是归纳不变量方法，其工作原理如下。
 		- 假设我们有一个规范 \( \text{Spec} \triangleq \text{Init} \wedge \Box [\text{Next}]_v \wedge \text{Fairness} \)，并且想要证明某个不变量（安全性属性）\( P \) — 即 \( \text{Spec} \Rightarrow \Box P \) — 类似于部分正确性。我们找到一个状态谓词 \( \text{Inv} \)，使得 \( \text{Inv} \Rightarrow P \)，但也有 \( \text{Init} \Rightarrow \text{Inv} \) 和 \( \text{Inv} \wedge \text{Next} \Rightarrow \text{Inv}' \)。换句话说，\( \text{Inv} \) 在初始状态中成立，并且通过状态转换被保留。然后 \( \text{Inv} \) 被称为归纳不变量。我们使用以下证明规则：
 			- ![image.png](../assets/image_1714755979499_0.png){:height 97, :width 523}
-		-
+		- 如果 \( \text{Init} \Rightarrow \text{Inv} \)，使用上述证明规则我们可以得出 \( \text{Init} \wedge \Box [\text{Next}]_v \Rightarrow \Box \text{Inv} \)。换句话说，如果 \( \text{Inv} \) 是一个归纳性质，那么它就是一个不变量。既然它是一个不变量并且 \( \text{Inv} \Rightarrow P \)，那么 \( P \) 也是如此，我们得出结论 \( \text{Spec} \Rightarrow \Box P \)。
+		- 基于归纳不变量的正式 TLA+ 证明都具有以下结构：
+			-
 		-
 		-
 		-
