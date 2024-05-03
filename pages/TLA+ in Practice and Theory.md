@@ -1441,6 +1441,8 @@
 		- 挑战在于找到一个归纳不变量，但是 TLC 模型检查器可以协助完成这一任务。我们首先猜测一个 \( \text{Inv} \)。假设我们的算法是以标准形式编写的，\( \text{Spec} \triangleq \text{Init} \wedge [\text{Next}]_v \wedge \text{Fairness} \)，首先我们确保 \( \text{Inv} \) 真正是一个不变量，让模型检查器验证 \( \text{Spec} \Rightarrow \Box \text{Inv} \)。然后，\( \text{Inv} \) 是一个归纳不变量当且仅当 \( \text{Init} \Rightarrow \text{Inv} \)（也容易检查）和 \( \text{Inv} \wedge [\text{Next}]_v \Rightarrow \Box \text{Inv} \)。因为 \( \text{Inv} \wedge [\text{Next}]_v \) 本身就是以标准形式编写的，只有一个条件是 \( \text{Inv} \) 是初始条件，这也可以由模型检查器（TLC，TLA+ 工具中包含的模型检查器只能检查以标准形式编写的包含动作的时态公式）来检查。
 		- 在我们的案例中，归纳不变量 \( \text{Inv} \) 是：
 			- ![image.png](../assets/image_1714757180038_0.png){:height 202, :width 480}
+		- 算法确保 **AtLeastOne1** 成立的秘诀在于 **Inv** 的最后一个连词。
+		- 因为 TLA 允许我们在归纳不变量中明确提到程序的控制状态（例如，控制点——程序计数器——或调用堆栈的状态），这比 Floyd-Hoare 或 Owicki-Gries 方法更方便。归纳不变量方法在证明不变量方面相对完整（即，如果关于动作的断言可以被证明，那么不变量也可以被证明）。关于归纳不变量方法的完整性以及与其他方法的比较的更深入讨论，请参见 Lamport 的《计算与状态机》。
 		-
 		-
 		-
