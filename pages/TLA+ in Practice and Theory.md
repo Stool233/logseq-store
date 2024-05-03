@@ -1367,7 +1367,7 @@
 	- ## **我们能指定什么以及不能指定什么**
 		- 一旦我们有了系统规格说明，我们就会对其行为进行陈述，这些陈述通常形式如下：
 		  
-		  \( THEOREM  \text{Spec} \Rightarrow P \)
+		  \( THEOREM Spec \Rightarrow P \)
 		  
 		  即，\( \vdash \text{Spec} \Rightarrow P \)，其中 \( P \) 可以是我们的规格说明应该满足的属性，或者是它实现的另一个系统规格说明（我们将在第四部分详细讨论 TLA 中算法的关系）。
 		  
