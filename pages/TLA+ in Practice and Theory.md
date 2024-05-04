@@ -1491,4 +1491,18 @@
 			- ![image.png](../assets/image_1714814501453_0.png){:height 57, :width 486}
 		- 其中 `d1…dn` 是 `Foo` 模块中的声明，而 `e1…en` 是赋予它们的含义。如果在写 `INSTANCE` 的作用域中已经定义或声明了同名的符号，则不需要在 `WITH` 子句中显式提及，但默认情况下会将其赋给实例化作用域中同名的符号。
 		- 如果没有为模块的所有声明赋值，则不能实例化模块（这是一个语法错误）。赋值将给定的含义替换为声明。就像参数化定义（操作符）一样，实例化是替换，只不过是在模块级别上的。从逻辑的角度看，实例化绑定了实例化模块中的自由变量（尽管它可能将它们绑定到实例化模块中的自由变量，从而使它们保持自由）。
-	-
+		- 一旦模块被实例化后，就可以通过实例名称后接感叹号来访问其定义，例如 `MyFoo!Ordered(...)`（中缀运算符可以这样引用：`MyFoo!\leq(a, b)`）。对于 `MyFoo` 中的每一个定义，`MyFoo!Def` 与 `Foo` 中的 `Def` 相同，除了所有的 `Foo` 声明都被替换为在 `WITH` 子句中（或隐式地）赋予的含义。为了讨论的简洁，如果模块 `Foo` 包含某个定义 `X`，有时我们可能会称替换后的定义为 $\overline{X}$，而不是 `MyInstance!X`。
+		- 例如，在第三部分中，我们定义了具有常量 `S` 和 `\_⪯\_` 的“多态”排序算法。如果 `QuickSort` 算法存在于 `QS` 模块中，那么我们可以这样实例化模块（假设时间变量 `A`，`A0`，`done` 在实例化模块中声明，因此被隐式替换）：
+		- ```markdown
+		  IntegerQS \triangleq \text{INSTANCE } QS \text{ WITH } S \leftarrow \text{Int}, \preceq \leftarrow \leq
+		  ```
+		- 然后，`IntegerQS!QuickSort` 将是一个针对整数序列的排序算法。
+		- 我们还可以在参数化定义内部实例化一个模块，如下所示：
+		- ```markdown
+		  IntQS(\preceq) \triangleq \text{INSTANCE } QS \text{ WITH } S \leftarrow \text{Int}
+		  ```
+		- 然后 `IntQS(\leq)!QuickSort` 按升序排序，而 `IntQS(\geq)!QuickSort` 按降序排序。注意我们不需要写 `WITH…, \preceq \leftarrow \preceq`，因为名称 $\preceq$ 在 `INSTANCE` 构造的范围内存在，这种情况下作为运算符 `IntQS` 的一个参数。
+		- 接着，我们可以写出定理：
+		- ```markdown
+		  \text{THEOREM } IntQS(\geq)!QuickSort \Rightarrow \Box (done \Rightarrow \text{Ordered}(A, \geq))
+		  ```
