@@ -1544,6 +1544,10 @@
 			- 现在我们来到了 TLA+ 中的另一个细微之处，这在实际应用中的重要性非常小，但由于我们正在深入探讨 TLA+ 的理论，我们应该探索其最深的角落（但如果你愿意，可以跳过这一节）。然而，这一细节为我们提供了一些关于一般程序数学操作的理解。
 			- 我们探讨替代操作，或者说“禁止”，是否对各种逻辑操作具有分配性。让我用一个例子来解释我的意思。假设我们有以下模块：
 				- ![image.png](../assets/image_1714828425873_0.png)
+			- 我们接着实例化它如下：
+			- $$ M \triangleq \text{INSTANCE } M \text{ WITH } \ldots $$
+			- 我们询问，\( M!A \land M!B \) 是否等同于 \( M!C \)? 换句话说，\(\overline{A} \land \overline{B} \equiv \overline{A \land B}\) 吗？如果是，我们说替换，或者说“禁止”，在 \(\land\) 上是分配的。
+			- 在《行动的时间逻辑》中，Lamport 指出禁止在大多数 TLA+ 操作上都是分配的。例如，对于任何公式 \( F \) 和 \( G \)，$\overline{\Box (F \lor G)} \equiv \Box (\overline{F} \lor \overline{G})$ 。实际上，对于算法规范的标准形式，$ \overline{\text{Init} \land \Box [\text{Next}]_v \land \text{Fairness}} \equiv \overline{\text{Init}} \land \Box [\overline{\text{Next}}]_{\overline{v}} \land \overline{\text{Fairness}} $
 			-
 			-
 			-
