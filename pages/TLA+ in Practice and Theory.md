@@ -1548,7 +1548,57 @@
 			- $$ M \triangleq \text{INSTANCE } M \text{ WITH } \ldots $$
 			- 我们询问，\( M!A \land M!B \) 是否等同于 \( M!C \)? 换句话说，\(\overline{A} \land \overline{B} \equiv \overline{A \land B}\) 吗？如果是，我们说替换，或者说“禁止”，在 \(\land\) 上是分配的。
 			- 在《行动的时间逻辑》中，Lamport 指出禁止在大多数 TLA+ 操作上都是分配的。例如，对于任何公式 \( F \) 和 \( G \)，$\overline{\Box (F \lor G)} \equiv \Box (\overline{F} \lor \overline{G})$ 。实际上，对于算法规范的标准形式，$\overline{\text{Init} \land \Box [\text{Next}]_v \land \text{Fairness}} \equiv \overline{\text{Init}} \land \Box [\overline{\text{Next}}]_{\overline{v}} \land \overline{\text{Fairness}}$
-			-
+			- 然而，替换可能无法分配进入构成 `Fairness` 的公平条件中。即，
+			- $$
+			  \overline{WF_v(A)} \text{ 可能不等同于 } WF_{\overline{v}}(\overline{A})
+			  $$
+			- 原因是弱公平性和强公平性操作符 `WF` 和 `SF` 是根据 `ENABLED` 操作符定义的。`ENABLED` 特殊在于它是一个状态谓词，但使用两个状态定义（如果存在某个状态 `t` 使得转换 \(s \rightarrow t\) 满足动作 `A`，则在状态 `s` 中 `ENABLED A` 为真），并且不一定总是有
+			- $$
+			  \overline{ENABLED\langle A \rangle_v} \text{ 等同于 } ENABLED\langle \overline{A} \rangle_{\overline{v}}
+			  $$
+			- 例如，如果
+			- $$
+			  A \triangleq (x' = x) \land (y' \neq y) \quad \text{且} \quad v \triangleq \langle x, y \rangle
+			  $$
+			- 则
+			- $$
+			  ENABLED\langle A \rangle_v \text{ 永远为真（因为无论 } x \text{ 和 } y \text{ 的当前值如何，总存在可能的下一个状态）}
+			  $$
+			- 因此它等同于 `TRUE`。如果我们的替换是
+			- $$
+			  \overline{x} = z \quad \text{和} \quad \overline{y} = z
+			  $$
+			- 那么
+			- $$
+			  \overline{ENABLED\langle A \rangle_v} \equiv \overline{TRUE} \equiv TRUE
+			  $$
+			- 但
+			- $$
+			  ENABLED\langle \overline{A} \rangle_{\overline{v}} \equiv ENABLED\langle (z' = z) \land (z' \neq z) \rangle_z \text{ 总是假}
+			  $$
+			- 这是因为替换的公式中的带撇号的变量不再是自由的，绑定它们的替换可能对它们施加约束。因此，禁止并不分配给 `ENABLED` 和使用它定义的公平性操作符。
+			- 这是一个技术细节，但在实际中不是问题，因为我们可以通过非盲目替换所有变量的方式从
+			- $$
+			  ENABLED\langle A \rangle_v
+			  $$
+			- 计算
+			- $$
+			  \overline{ENABLED\langle A \rangle_v}
+			  $$
+			- 计算等同于
+			- $$
+			  ENABLED\langle A \rangle_v
+			  $$
+			- 但不提及带撇号变量的状态谓词很容易。
+			- 让我们将这个案例放入一个规范中，并分析后果。该示例还将演示为什么我们必须定义
+			- $$
+			  \overline{ENABLED\langle A \rangle_v}
+			  $$
+			- 使其在上述情况下仍然是 `TRUE`，而不是定义它等同于
+			- $$
+			  ENABLED\langle \overline{A} \rangle_{\overline{v}}
+			  $$
+			- 换句话说，它将帮助理解为什么禁止不能分配给 `ENABLED`。考虑以下嵌套模块（并注意模块 `Inner` 包含在定义 `Inner` 之前的外围模块中定义的自由时间变量 `x`）：
 			-
 			-
 			-
