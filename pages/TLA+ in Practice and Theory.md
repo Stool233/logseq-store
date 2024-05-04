@@ -1547,7 +1547,7 @@
 			- 我们接着实例化它如下：
 			- $$ M \triangleq \text{INSTANCE } M \text{ WITH } \ldots $$
 			- 我们询问，\( M!A \land M!B \) 是否等同于 \( M!C \)? 换句话说，\(\overline{A} \land \overline{B} \equiv \overline{A \land B}\) 吗？如果是，我们说替换，或者说“禁止”，在 \(\land\) 上是分配的。
-			- 在《行动的时间逻辑》中，Lamport 指出禁止在大多数 TLA+ 操作上都是分配的。例如，对于任何公式 \( F \) 和 \( G \)，$\overline{\Box (F \lor G)} \equiv \Box (\overline{F} \lor \overline{G})$ 。实际上，对于算法规范的标准形式，$ \overline{\text{Init} \land \Box [\text{Next}]_v \land \text{Fairness}} \equiv \overline{\text{Init}} \land \Box [\overline{\text{Next}}]_{\overline{v}} \land \overline{\text{Fairness}} $
+			- 在《行动的时间逻辑》中，Lamport 指出禁止在大多数 TLA+ 操作上都是分配的。例如，对于任何公式 \( F \) 和 \( G \)，$\overline{\Box (F \lor G)} \equiv \Box (\overline{F} \lor \overline{G})$ 。实际上，对于算法规范的标准形式，$\overline{\text{Init} \land \Box [\text{Next}]_v \land \text{Fairness}} \equiv \overline{\text{Init}} \land \Box [\overline{\text{Next}}]_{\overline{v}} \land \overline{\text{Fairness}}$
 			-
 			-
 			-
