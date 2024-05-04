@@ -1552,17 +1552,10 @@
 			- 例如，如果$A \triangleq (x' = x) \land (y' \neq y)$ 且 $v \triangleq \langle x, y \rangle$, 则
 			  $ENABLED\langle A \rangle_v$  永远为真（因为无论  x 和  y  的当前值如何，总存在可能的下一个状态）因此它等同于 `TRUE`。如果我们的替换是$\overline{x} = z$ 和 $\overline{y} = z$
 			- 那么$\overline{ENABLED\langle A \rangle_v} \equiv \overline{TRUE} \equiv TRUE$，但$ENABLED\langle \overline{A} \rangle_{\overline{v}} \equiv ENABLED\langle (z' = z) \land (z' \neq z) \rangle_z$ 总是假，这是因为替换的公式中的带撇号的变量不再是自由的，绑定它们的替换可能对它们施加约束。因此，禁止并不分配给 `ENABLED` 和使用它定义的公平性操作符。
-			- 这是一个技术细节，但在实际中不是问题，因为我们可以通过非盲目替换所有变量的方式从$ENABLED\langle A \rangle_v$计算$\overline{ENABLED\langle A \rangle_v}$。计算等同于$ENABLED\langle A \rangle_v$
-			- 但不提及带撇号变量的状态谓词很容易。
-			- 让我们将这个案例放入一个规范中，并分析后果。该示例还将演示为什么我们必须定义
-			- $$
-			  \overline{ENABLED\langle A \rangle_v}
-			  $$
-			- 使其在上述情况下仍然是 `TRUE`，而不是定义它等同于
-			- $$
-			  ENABLED\langle \overline{A} \rangle_{\overline{v}}
-			  $$
+			- 这是一个技术细节，但在实际中不是问题，因为我们可以通过非盲目替换所有变量的方式从$ENABLED\langle A \rangle_v$计算$\overline{ENABLED\langle A \rangle_v}$。计算等同于$ENABLED\langle A \rangle_v$，但不提及带撇号变量的状态谓词很容易。
+			- 让我们将这个案例放入一个规范中，并分析后果。该示例还将演示为什么我们必须定义$\overline{ENABLED\langle A \rangle_v}$。使其在上述情况下仍然是 `TRUE`，而不是定义它等同于$ENABLED\langle \overline{A} \rangle_{\overline{v}}$
 			- 换句话说，它将帮助理解为什么禁止不能分配给 `ENABLED`。考虑以下嵌套模块（并注意模块 `Inner` 包含在定义 `Inner` 之前的外围模块中定义的自由时间变量 `x`）：
+			-
 			-
 			-
 			-
