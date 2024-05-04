@@ -1556,6 +1556,23 @@
 			- 让我们将这个案例放入一个规范中，并分析后果。该示例还将演示为什么我们必须定义$\overline{ENABLED\langle A \rangle_v}$。使其在上述情况下仍然是 `TRUE`，而不是定义它等同于$ENABLED\langle \overline{A} \rangle_{\overline{v}}$
 			- 换句话说，它将帮助理解为什么禁止不能分配给 `ENABLED`。考虑以下嵌套模块（并注意模块 `Inner` 包含在定义 `Inner` 之前的外围模块中定义的自由时间变量 `x`）：
 			- ![image.png](../assets/image_1714830388197_0.png)
+			- 如果我们单独观察模块 `Inner`，那么显然 `P` 是一个定理。但是对于模块 `Outer` 的 `I!Spec` 呢？它指定了哪些行为？如果不存在公平条件，那么在 `x` 和 `y` 开始时相等并且永远停滞的行为将满足规范。但是我们确实有一个公平条件，因此请回顾其定义：
+			- $$
+			  WF_e(A) \triangleq \diamondsuit \Box ENABLED\langle A \rangle_e \Rightarrow \Box \diamondsuit \langle A \rangle_e
+			  $$
+			- 它意味着如果动作持续被启用，则它必须无限次发生。有一点是肯定的：动作 `Next` 不能无限次发生——甚至不能发生一次——在 `I!Spec` 中。如果替换可以分配给 `ENABLED`，那么
+			- $$
+			  \overline{ENABLED\langle Next \rangle \langle x, y \rangle}
+			  $$
+			- 将等同于
+			- $$
+			  ENABLED\langle \overline{Next} \rangle \overline{\langle x, y \rangle}
+			  $$
+			- 正如我们在上面的讨论中看到的，这在我们的“禁止”公式 `I!Spec` 中总是假的。但如果是这样的话，那么
+			- $$
+			  WF_{\langle x, y \rangle}(Next)
+			  $$
+			- 将是真的（当其左操作数为假时，蕴含是真的），这将使 `I!Spec` 为真，尽管 `Next` 动作永远不会发生；其中 `x` 和 `y` 保持不变的停滞行为会满足它。这显然不是我们想要的，更糟糕的是，如果真是这样，那么 `I!P` 不是一个定理，因为在 `x` 和 `y` 总是相等的行为中，不能最终达到一个它们不同的状态。我们不能接受替换自由变量的情况使一个定理变为假的情况。
 			-
 			-
 			-
