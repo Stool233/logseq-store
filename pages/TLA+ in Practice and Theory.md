@@ -1555,6 +1555,7 @@
 			- 这是一个技术细节，但在实际中不是问题，因为我们可以通过非盲目替换所有变量的方式从$ENABLED\langle A \rangle_v$计算$\overline{ENABLED\langle A \rangle_v}$。计算等同于$ENABLED\langle A \rangle_v$，但不提及带撇号变量的状态谓词很容易。
 			- 让我们将这个案例放入一个规范中，并分析后果。该示例还将演示为什么我们必须定义$\overline{ENABLED\langle A \rangle_v}$。使其在上述情况下仍然是 `TRUE`，而不是定义它等同于$ENABLED\langle \overline{A} \rangle_{\overline{v}}$
 			- 换句话说，它将帮助理解为什么禁止不能分配给 `ENABLED`。考虑以下嵌套模块（并注意模块 `Inner` 包含在定义 `Inner` 之前的外围模块中定义的自由时间变量 `x`）：
+			- ![image.png](../assets/image_1714830388197_0.png)
 			-
 			-
 			-
