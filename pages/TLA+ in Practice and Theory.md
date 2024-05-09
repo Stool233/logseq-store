@@ -1688,11 +1688,11 @@
 			- $$ A \Rightarrow B $$
 			- 即使你对前一段的内容理解不多，你也可以认识到在布尔代数中，$\Rightarrow$ 是一个“小于”顺序关系：看一下它的真值表，将 0 视为假，1 视为真，你会发现它与 $\leq$ 是相同的。
 			- 例如，一个发出类型为 int 的值的网络服务可以表示为：
-			- $$ x \in \text{Int} \land \Box [x' \in \text{Int}]x $$
+			- $$ x \in \text{Int} \land \Box [x' \in \text{Int}]_x $$
 			- 或仅为：
 			- $$ \Box (x \in \text{Int}) $$
 			- 这就形成了一个发出递增整数值的服务的抽象。确实：
-			- $$ (x = 0 \land \Box [x' = x + 1]x) \Rightarrow (x \in \text{Int} \land \Box [x' \in \text{Int}]x) $$
+			- $$ (x = 0 \land \Box [x' = x + 1]_x) \Rightarrow (x \in \text{Int} \land \Box [x' \in \text{Int}]_x) $$
 			-
 		-
 		-
