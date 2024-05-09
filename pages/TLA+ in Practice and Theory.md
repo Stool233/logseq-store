@@ -1696,12 +1696,7 @@
 			- $$ (\exists w : F) \Rightarrow (\exists v : G) $$
 			- 其中 **w** 是我们希望在 **F** 中隐藏的变量的元组，而 **v** 是我们希望在 **G** 中隐藏的变量的元组。就像任何允许自由变量的逻辑中的存在量化一样，上述陈述在逻辑上等价于：
 			- $$ F \Rightarrow (\exists v : G) $$
-			- 通常情况下，$(\exists v : \Psi) \Rightarrow \Phi$ 。在变量 **v** 在 **Φ** 中不自由出现的条件下，等价于$$ \Psi \Rightarrow \Phi $$，直观地讲，如果仅仅存在适当的值就足以推出右侧，则每一个具体满足的赋值也能如此；例如，命题$$ (\exists x : x > 0 \land y \geq x) \Rightarrow y > 0 $$ 等价于命题
-			- $$ x > 0 \land y \geq x \Rightarrow y \geq 0 $$
-			- 使用相同的普通逻辑类比，很容易看出逆命题不成立，即，
-			- $$ \Psi \Rightarrow (\exists w : \Phi) $$
-			- 不等同于
-			- $$ \Psi \Rightarrow \Phi $$
+			- 通常情况下，$(\exists v : \Psi) \Rightarrow \Phi$ 。在变量 **v** 在 **Φ** 中不自由出现的条件下，等价于$$ \Psi \Rightarrow \Phi $$，直观地讲，如果仅仅存在适当的值就足以推出右侧，则每一个具体满足的赋值也能如此；例如，命题$$ (\exists x : x > 0 \land y \geq x) \Rightarrow y > 0 $$ 等价于命题$$ x > 0 \land y \geq x \Rightarrow y \geq 0 $$。使用相同的普通逻辑类比，很容易看出逆命题不成立，即，$$ \Psi \Rightarrow (\exists w : \Phi) $$ 不等同于$$  \Psi \Rightarrow \Phi $$ 。
 			- 为了给上述公式一个更具体的意义，回想一下我们关于基于模型的规格说明的讨论。我们声明一个规格 **MyStack** 实现了一个栈，正如我们的模型所指定，用下面的命题表示：
 			- $$ MyStack \Rightarrow (\exists buf : IStack) $$
 			- 这显然是我们感兴趣的验证内容，但我们如何进行验证呢？不幸的是，TLC 模型检查器无法检查包含时间量化的公式。问题在于，一般而言，这是一个在状态数目上是 co-NP-hard 的问题，而状态数目一开始就很大，尽管可能找到一个在实践中效率较高的算法。直接证明也很困难。
