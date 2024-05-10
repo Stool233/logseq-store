@@ -1797,11 +1797,11 @@
 				- ![image.png](../assets/image_1715344816130_0.png){:height 289, :width 564}
 			- 我们可以使用以下方式来建模，确保滴答之间的时间不超过 \(3600 + k\) 秒的要求：
 			- $$
-			  \text{MaxTime} \triangleq \Box (\text{elapsed} \leq 3600 + k)
+			  \text{MaxTime} \triangleq \Box (elapsed \leq 3600 + k)
 			  $$
 			  我们还想要指定连续滴答之间至少有 \(3600 - k\) 秒的时间间隔：
 			  $$
-			  \text{MinTime} \triangleq \Box [\text{Next} \Rightarrow (t \geq 3600 - k)]_h
+			  \text{MinTime} \triangleq \Box [Next \Rightarrow (t \geq 3600 - k)]_h
 			  $$
 			- （记住，一个操作只能在方括号 $[]_e$ 内随着永久性运算符 `□` 出现，以确保在停顿下的不变性；在这种情况下 `e` 就是 `h`，因为我们不关心不改变 `h` 值的操作）。
 			-
