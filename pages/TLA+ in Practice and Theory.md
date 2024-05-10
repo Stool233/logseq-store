@@ -1716,6 +1716,7 @@
 			- 使用历史变量的情况比较简单，因为如果 \( F\_h \) 是添加了历史变量的 **F**，并且我们定义：
 			- $$ H \triangleq h = \text{vars} \land \Box [h' = \text{Append}(h, \text{vars})]_{\langle \text{vars}, h \rangle} $$
 			- （其中 \( \text{vars} \) 是 **F** 中的变量元组），那么：
+				- ![image.png](../assets/image_1715318301285_0.png)
 			-
 		-
 		-
