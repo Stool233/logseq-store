@@ -1712,9 +1712,9 @@
 				- ![image.png](../assets/image_1715318053131_0.png){:height 307, :width 296}
 			- 这里是添加了预言变量 **p** 的算法：
 				- ![image.png](../assets/image_1715318083620_0.png){:height 359, :width 322}
-			- 但我们如何证明添加辅助变量并不限制 **F** 的行为，并且我们的精化映射是可靠的呢？我们需要证明 \( F \Rightarrow \exists \text{aux} : F_{\text{aux}} \)，这使我们回到了原始问题。
-			- 使用历史变量的情况比较简单，因为如果 \( F_h \) 是添加了历史变量的 **F**，并且我们定义：
-			- $$ H \triangleq h = \text{vars} \land \Box [h' = \text{Append}(h, \text{vars})] \langle \text{vars}, h \rangle $$
+			- 但我们如何证明添加辅助变量并不限制 **F** 的行为，并且我们的精化映射是可靠的呢？我们需要证明 \( F \Rightarrow \exists \text{aux} : F\_aux \)，这使我们回到了原始问题。
+			- 使用历史变量的情况比较简单，因为如果 \( F\_h \) 是添加了历史变量的 **F**，并且我们定义：
+			- $$ H \triangleq h = \text{vars} \land \Box [h' = \text{Append}(h, \text{vars})]_{\langle \text{vars}, h \rangle} $$
 			- （其中 \( \text{vars} \) 是 **F** 中的变量元组），那么：
 			-
 		-
