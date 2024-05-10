@@ -1772,7 +1772,8 @@
 			- ![image.png](../assets/image_1715341910046_0.png)
 			  id:: 663e0a3e-3e68-4109-8da4-fb0426e6e2bf
 		- 您可以将前一种表述视为对单一参数化计算的描述，而将后一种表述视为对所有可能计算的描述，或者作为一个非确定性算法的描述，但在这两种表述中，定理是等价的。非确定性只是参数化的另一种表达方式。
-		- 从形式逻辑的角度来看，区别在于一种形式主义要求所有变量都被绑定（通过量词或 lambda 表达式），而另一种允许自由变量。例如，在后者中，可以写成 $$x \in \text{Int} \wedge x > 0 \Rightarrow -x < 0$$ （所有变量都被绑定），而不是写成$$ \forall x \in \text{Int} : x > 0 \Rightarrow -x < 0$$ 。同样，可以写成$$ x \in \text{Real} \wedge y \in \text{Real} \wedge x > 0 \wedge y \geq x \Rightarrow y > 0$$，而不是写成 $$\forall y \in \text{Real} : (\exists x \in \text{Real} : x > 0 \wedge y \geq x) \Rightarrow y > 0$$
+		- 从形式逻辑的角度来看，区别在于一种形式主义要求所有变量都被绑定（通过量词或 lambda 表达式），而另一种允许自由变量。例如，在后者中，可以写成 $$ x \in \text{Int} \wedge x > 0 \Rightarrow -x < 0$$ （所有变量都被绑定），而不是写成$$ \forall x \in \text{Int} : x > 0 \Rightarrow -x < 0$$ 。同样，可以写成$$ x \in \text{Real} \wedge y \in \text{Real} \wedge x > 0 \wedge y \geq x \Rightarrow y > 0$$，而不是写成 $$\forall y \in \text{Real} : (\exists x \in \text{Real} : x > 0 \wedge y \geq x) \Rightarrow y > 0$$
 		-
 		-
 		-
+-
