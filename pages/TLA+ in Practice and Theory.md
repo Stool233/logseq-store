@@ -1811,12 +1811,12 @@
 			- 时间规范的安全部分将是 $$ (t \in Real) \wedge \Box [TNext]_t $$ ，但活性（liveness）又如何呢？仅仅要求 \(TNext\) 无限次发生，从而确保 \(t\) 无限增长是不够的。因为 \(t\) 是一个实数变量，尽管 \(TNext\) 要求 \(h\) 保持不变，因此 \(t\) 每次增长不能超过 \(3600 + k\)，\(TNext\) 仍然可以无限次发生，且 \(t\) 可以无限增长，而不会达到 \(3600 + k\)，也不会引起时钟的任何滴答。这就是所谓的泽诺行为，来源于泽诺的阿基里斯和乌龟的悖论。为了排除这种情况，并确保 \(t\) 无限增长，我们将使用以下公平性条件：
 				- ![image.png](../assets/image_1715345781199_0.png){:height 59, :width 360}
 			- 这等同于 $$ \forall r \in \text{Real} : \Diamond (t' > r) $$，但它明确表明这确实是一个公平性属性。我们现在可以完成规格说明中的时间流动部分：
-				- ![image.png](../assets/image_1715345942907_0.png){:height 112, :width 438}
+				- ![image.png](../assets/image_1715345942907_0.png){:height 121, :width 397}
 			- 完整的规格说明将是：
 			- $$
 			  RTHourClock \triangleq RT \wedge HCTime
 			  $$
-			- 同时也是真的，即$$ RTHourClock \Rightarrow HourClock $$，我们的实时钟实现了更少细节的 \(HourClock\) 规格说明，这作为实时钟的一个抽象。
+			- 同时也是真的，即 $$ RTHourClock \Rightarrow HourClock $$，我们的实时钟实现了更少细节的 \(HourClock\) 规格说明，这作为实时钟的一个抽象。
 			- 《指定系统》展示了我们如何定义仅两个通用的实时操作符，然后可以与非定时规格结合，创建一个实时规格。这两个操作符负责我们已经看到的两个角色：指定动作在截止时间阈值内发生，以及指定时间无限增长。关于使用 TLA+ 指定实时系统的更多信息，可以参考 Lamport 和 Abadi 的 1993 年论文《An Old-Fashioned Recipe for Real Time》，或者 Lamport 的 2005 年论文《Real Time is Really Simple》。
 			-
 		-
