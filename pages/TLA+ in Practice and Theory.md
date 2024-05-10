@@ -1709,7 +1709,10 @@
 			- 考虑以下算法，它输出十个非确定性选择的数字：
 				- ![image.png](../assets/image_1715317962681_0.png){:height 270, :width 300}
 			- 这里是添加了历史变量 **h** 的算法：
-				-
+				- ![image.png](../assets/image_1715318053131_0.png){:height 307, :width 296}
+			- 这里是添加了预言变量 **p** 的算法：
+				- ![image.png](../assets/image_1715318083620_0.png){:height 359, :width 322}
+			-
 		-
 		-
 		-
