@@ -1812,6 +1812,12 @@
 				- ![image.png](../assets/image_1715345781199_0.png){:height 59, :width 360}
 			- 这等同于 $$ \forall r \in \text{Real} : \Diamond (t' > r) $$，但它明确表明这确实是一个公平性属性。我们现在可以完成规格说明中的时间流动部分：
 				- ![image.png](../assets/image_1715345942907_0.png){:height 112, :width 438}
+			- 完整的规格说明将是：
+			- $$
+			  RTHourClock \triangleq RT \wedge HCTime
+			  $$
+			- 同时也是真的，即$$ RTHourClock \Rightarrow HourClock $$，我们的实时钟实现了更少细节的 \(HourClock\) 规格说明，这作为实时钟的一个抽象。
+			- 《指定系统》展示了我们如何定义仅两个通用的实时操作符，然后可以与非定时规格结合，创建一个实时规格。这两个操作符负责我们已经看到的两个角色：指定动作在截止时间阈值内发生，以及指定时间无限增长。关于使用 TLA+ 指定实时系统的更多信息，可以参考 Lamport 和 Abadi 的 1993 年论文《An Old-Fashioned Recipe for Real Time》，或者 Lamport 的 2005 年论文《Real Time is Really Simple》。
 			-
 		-
 		-
