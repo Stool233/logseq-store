@@ -1735,6 +1735,9 @@
 				- ![image.png](../assets/image_1715320013340_0.png){:height 331, :width 430}
 			- Milner 提出的用于表示实现的顺序关系称为模拟（simulation）。给定两个事件标记的状态机 \(P\) 和 \(Q\)，在 \(\langle P, Q \rangle\) 上的一个模拟是一个关系 \(R \subseteq P \times Q\)，使得对于每个 \( \langle p, q \rangle \in R\)，如果 \(p\) 是 \(P\) 的初始状态，则 \(q\) 是 \(Q\) 的初始状态；并且如果存在 \(p \xrightarrow{a} p'\)，那么 \(q \xrightarrow{a} q'\) 并且 \( \langle p', q' \rangle \in R\)。如果存在这样的关系，我们说 \(Q\) 模拟了 \(P\)，或者说 \(P\) 类似于 \(Q\)。直观地，我们可以将模拟视为一种游戏：如果对于 \(P\) 所做的每一个行动，\(Q\) 都能用相同的行动匹配，则 \(Q\) 模拟了 \(P\)。
 			- 模拟可以用来定义一种等价关系，称为双模拟（bisimulation）：如果 \(R\) 和 \(R^{-1}\)（关系对调换后的关系）都是模拟，那么 \(R\) 被称为双模拟。如果系统 \(P\) 和 \(Q\) 之间存在双模拟，那么它们被称为互模拟（bisimilar）。使用我们的游戏类比，如果在每一轮，无论谁先行，另一方都能匹配对方的行动，那么 \(P\) 和 \(Q\) 是互模拟的。注意，如果 \(P\) 模拟 \(Q\) 并且 \(Q\) 模拟 \(P\)，它们不一定是互模拟的，因为互模拟性要求相同的关系及其逆都是模拟。这就是为什么模拟是一个预排序（preorder）而不是偏序（partial order），因为它不是反对称的——如果两个过程相互模拟，它们不一定等价。
+			- Milner 的模拟关系有时也被称为前向模拟（forward simulation），其对偶概念可以定义如下：一个关系 \( R \subseteq P \times Q \) 是一个后向模拟（backward simulation），如果对于每个 \( \langle p', q' \rangle \in R \)，如果存在 \( p \xrightarrow{a} p' \)，那么就存在一个 \( q \)，使得 \( q \xrightarrow{a} q' \) 并且 \( \langle p, q \rangle \in R \)。
+			- 考虑以下三个状态机：
+				- ![image.png](../assets/image_1715320238849_0.png)
 			-
 		-
 		-
