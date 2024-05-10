@@ -1781,15 +1781,7 @@
 		- 然而，正如我们所见，尽管所有 TLA 公式都是一阶的，TLA+ 的证明语言确实允许我们写出本身不是公式的二阶命题。因此，我们可以这样表达这个命题：
 			- ![image.png](../assets/image_1715344315027_0.png){:height 77, :width 423}
 		- 但这既是过度处理，也无法通过 TLC 模型检查器进行检查。更重要的是，这个命题关于算法正确性的陈述非常普通且合理，理应有一个良好的形式化方法能直接将其指定为一个公式。
-		- 事实证明，这很简单。因为从逻辑上讲， 
-		  $$
-		  \forall A : (A \Rightarrow B) \Rightarrow (A \Rightarrow C)
-		  $$
-		  等同于 
-		  $$
-		  B \Rightarrow C
-		  $$
-		  ，所以上述内容等同于更简单的一阶命题：
+		- 事实证明，这很简单。因为从逻辑上讲， $$ \forall A : (A \Rightarrow B) \Rightarrow (A \Rightarrow C) $$，等同于  $$ B \Rightarrow C $$，所以上述内容等同于更简单的一阶命题：
 		-
 		-
 		-
