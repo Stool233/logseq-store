@@ -1,4 +1,8 @@
 - https://pron.github.io/posts/tlaplus_part1
+	- *思考并不能保证我们不会犯错，但不思考则肯定会犯错。*
+		- 莱斯利·兰波特（Leslie Lamport）：为什么我们应该像建造房屋一样构建软件
+	- *思路清晰很难，我们能得到的所有帮助都会很有用。*
+		- 莱斯利·兰波特，《系统规范》
 	-
 - https://pron.github.io/posts/tlaplus_part2
   collapsed:: true
