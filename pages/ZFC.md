@@ -11,21 +11,42 @@
 			  $$
 		- 2. **空集公理（Axiom of Empty Set）**
 			- 存在一个没有任何元素的集合，称为空集，通常表示为∅。
-			-
+			- $$
+			  \exists B \forall x (x \notin B)
+			  $$
 		- 3. **配对公理（Axiom of Pairing）**
 			- 对任何两个集合A和B，存在一个集合，这个集合的元素正是A和B。
+			- $$
+			  \forall A \forall B \exists C \forall x (x \in C \leftrightarrow (x = A \lor x = B))
+			  $$
 		- 4. **并集公理（Axiom of Union）**
 			- 对于任何一个集合的集合，存在一个集合，包含所有原集合的元素。
+			- $$
+			  \forall A \exists B \forall x (x \in B \leftrightarrow \exists C (x \in C \land C \in A))
+			  $$
 		- 5. **幂集公理（Axiom of Power Set）**
 			- 对于任何集合A，存在一个集合，包含A的所有子集。
+			- $$
+			  \forall A \exists B \forall x (x \in B \leftrightarrow x \subseteq A)
+			  $$
 		- 6. **替代公理模式（Axiom Schema of Replacement）**
 			- 如果一个函数性质能将一个集合的每个元素映射到一个集合，则存在一个集合，包含所有映射的结果。
+			- $$
+			  \forall A (\forall x \in A \exists ! y \phi(x, y) \rightarrow \exists B \forall y (y \in B \leftrightarrow \exists x \in A \phi(x, y)))
+			  $$
 		- 7. **无穷公理（Axiom of Infinity）**
 			- 存在一个集合，包含空集，并且对每个元素x，该集合也包含x与{x}的并集。
+			- $$
+			  \exists A (\emptyset \in A \land \forall x (x \in A \rightarrow x \cup \{x\} \in A))
+			  $$
 		- 8. **正则公理（Axiom of Regularity）**
 			- 每个非空集合x都包含一个成员y，使得x和y不相交。
+			- $$
+			  \forall A (A \neq \emptyset \rightarrow \exists x (x \in A \land x \cap A = \emptyset))
+			  $$
 		- 9. **选择公理（Axiom of Choice）**
 			- 对于任何集合的集合，如果它们的每个成员都非空且相互不交，那么存在一个集合，它从每一个成员集合中各选一个元素。
+			-
 -
 - 在数学中，将策梅洛-弗兰克尔集合论（ZFC）的公理用形式化的逻辑符号表示是有帮助的，因为这样可以更精确地理解每个公理的意义和作用。下面我将用逻辑和集合论的符号来表示ZFC的几个核心公理：
 - ### 1. 外延公理 (Axiom of Extensionality)
