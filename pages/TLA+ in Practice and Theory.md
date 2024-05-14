@@ -2009,6 +2009,20 @@
 			- 让我们回顾一下第三部分中我们对小时钟的规格说明：
 				- ![image.png](../assets/image_1715344728984_0.png){:height 113, :width 505}
 			- 虽然这描述了小时钟的行为，可能对一些人来说细节级别足够了，但它没有说明时钟滴答之间的实际时间长度，这可能对其他人非常重要。为了模拟真实时间，我们采用科学家通常做的方法，引入一个实数变量 \( t \) 来表示它。变量 \( t \)（以秒为单位）将在时钟的滴答之间变化，但在滴答期间不变——我们假设滴答是瞬时的（这只是一个建模选择）。如果我们想在实时系统中实现我们的时钟，我们会想要指定它大约每小时滴答一次，允许一些误差，我们将这个误差称为 \( k \)。我们将引入一个变量 \( \text{elapsed} \) 来表示从上次滴答到现在的经过时间：
+				- $$$$
+				- ```
+				  CONSTANT \( k \)
+				  - VARIABLES \( h \), \( t \), \( \text{elapsed} \)
+				  \[
+				  \begin{aligned}
+				    \text{HCTInit} &\triangleq h \in 1 \ldots 12 \land \text{elapsed} = 0 \\
+				    \text{HCTNext} &\triangleq \bigvee \left( h' = \text{IF } h \neq 12 \text{ THEN } h + 1 \text{ ELSE } 1 \right) \\
+				    &\quad \land \text{elapsed}' = 0 \\
+				    &\quad \bigvee \land \text{UNCHANGED } h \\
+				    &\quad \land \text{elapsed}' = \text{elapsed} + (t' - t)
+				  \end{aligned}
+				  \]
+				  ```
 				- ![image.png](../assets/image_1715344816130_0.png){:height 289, :width 564}
 			- 我们可以使用以下方式来建模，确保滴答之间的时间不超过 \(3600 + k\) 秒的要求：
 			- $$
