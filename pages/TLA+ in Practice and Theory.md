@@ -325,7 +325,6 @@
 			- $$
 			  Foo(x, y, \_ \prec \_) \triangleq \text{IF } x \prec y \text{ THEN } x \text{ ELSE } y
 			  $$
-			- 也允许递归运算符。
 			- 也允许递归运算符：
 				- ```
 				  RECURSIVE Fact(_) 
