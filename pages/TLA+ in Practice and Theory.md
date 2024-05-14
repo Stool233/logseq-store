@@ -327,12 +327,9 @@
 			  $$
 			- 也允许递归运算符：
 				- ![image.png](../assets/image_1715688398657_0.png){:height 80, :width 531}
-			- 可以使用 LAMBDA 内联定义匿名运算符，如 ApplyTwice(LAMBDA x: x^2, 3)。
+			- 匿名操作符可以使用 \(\text{LAMBDA}\) 内联定义，例如 \(\text{ApplyTwice}(\text{LAMBDA } x: x^2, 3)\)。
 			- 定义的范围是其被定义的模块（我们将在第四部分学习模块），并且定义必须在其使用之前。局部于表达式的定义是用 LET..IN 构造引入的：
 				- ```
-				  Foo(a, b) ≜ LET x ≜ IF a ≤ b THEN a ELSE b 
-				  				y ≜ x * a 
-				              IN y * b
 				  ```
 			- LET 定义可以在任何表达式内进行。
 			- 在 TLA+ 中，您不能命名已在作用范围内绑定的变量（或定义），也不允许使用与其他不同元数的运算符名称重载。
