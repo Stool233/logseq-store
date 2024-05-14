@@ -259,12 +259,19 @@
 			  \forall x : P(x) \Rightarrow \exists y : R(x, y)
 			  $$
 			- 量词绑定它们的变量在一个范围内，该范围“尽可能地远”，即直到一个闭合括号或当前表达式的结束。因此，$\forall x : P(x) \Rightarrow \exists x : Q(x)$ 是非法的，因为它被解析为 $\forall x : (P(x) \Rightarrow \exists x : Q(x))$，所以存在量词引入的变量 $x$ 已经被全称量词绑定。然而，$(\forall x : P(x)) \Rightarrow \exists x : Q(x)$ 是格式正确的。
-			- 此外，TLA+还有一些受编程语言启发的特殊构造。构造
-				- IF p THEN x ELSE y
-			- 其中 p 是某个逻辑谓词，x 和 y 是值，如果 p 是 TRUE，则取值 x，否则取值 y。构造
-				- CASE p1→e1 □ … □ pn→en □ OTHER→e
-			- 等于某个 ei，该 ei 对应的 pi 为真，如果有的话，否则如果存在 OTHER 子句，则等于 e；如果不存在，表达式的值未定义（我们将在下一节详细说明这意味着什么）。更准确地说：
-				- CASE p1→e1 □ … □ pn→en □ ¬(p1∨⋯∨pn)→e
+			- 此外，TLA+ 还包含了一些受编程语言启发的特殊结构。其中的结构
+			- $$
+			  \text{IF } p \text{ THEN } x \text{ ELSE } y
+			  $$
+			- 当 \( p \) 是一些逻辑谓词，以及 \( x \) 和 \( y \) 是值时，如果 \( p \) 为 `TRUE` 则取值 \( x \)，否则取值 \( y \)。另一个结构
+			- $$
+			  \text{CASE } p_1 \rightarrow e_1 \square \ldots \square p_n \rightarrow e_n \square \text{OTHER} \rightarrow e
+			  $$
+			- 等同于某个 \( e_i \)，其中 \( p_i \) 为真（如果存在的话），否则如果存在 `OTHER` 子句，它的值等于 \( e \)；如果没有 `OTHER` 子句，表达式的值是未定义的（我们将在下一节中详细讨论这意味着什么）。更精确地说：
+			- $$
+			  \text{CASE } p_1 \rightarrow e_1 \square \ldots \square p_n \rightarrow e_n \square \neg(p_1 \lor \ldots \lor p_n) \rightarrow e
+			  $$
+			- 如果多于一个谓词为真，表达式的值将是其中之一，但该语言并不承诺具体是哪一个。`IF/THEN` 和 `CASE` 都是基于我们稍后将看到的 `CHOOSE` 操作符来定义的。
 			- 如果有多个谓词为真，表达式的值将是其中之一，但语言不承诺是哪一个。IF/THEN 和 CASE 都是根据我们稍后将看到的 CHOOSE 运算符定义的。
 			- 由于在 TLA+ 中，算法和系统的规范是以公式的形式书写的，因此需要一些人体工程学技巧来编写长公式，使其易于阅读。Lamport 在《如何编写长公式》中设计了这样一种方案。它通过对连接词和析取词的对齐来代替括号，如下所示：
 				- ```
