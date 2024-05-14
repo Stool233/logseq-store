@@ -323,7 +323,7 @@
 			  $$
 			- 与其他一些语言不同，TLA+ 只允许使用预定列表中的符号来定义符号运算符，这些符号的元数、位置（前缀/中缀/后缀）和优先级是固定的。我们可以使用符号名称作为运算符参数，如下面这个中缀运算符的例子：
 			- $$
-			  \text{Foo}(x, y, \_ \prec \_) \triangleq \text{IF } x \prec y \text{ THEN } x \text{ ELSE } y
+			  Foo(x, y, \_ \prec \_) \triangleq \text{IF } x \prec y \text{ THEN } x \text{ ELSE } y
 			  $$
 			- 也允许递归运算符。
 			- 也允许递归运算符：
