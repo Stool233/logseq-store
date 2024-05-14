@@ -326,7 +326,7 @@
 			  Foo(x, y, \_ \prec \_) \triangleq \text{IF } x \prec y \text{ THEN } x \text{ ELSE } y
 			  $$
 			- 也允许递归运算符：
-				- ![image.png](../assets/image_1715688398657_0.png)
+				- ![image.png](../assets/image_1715688398657_0.png){:height 80, :width 531}
 			- 可以使用 LAMBDA 内联定义匿名运算符，如 ApplyTwice(LAMBDA x: x^2, 3)。
 			- 定义的范围是其被定义的模块（我们将在第四部分学习模块），并且定义必须在其使用之前。局部于表达式的定义是用 LET..IN 构造引入的：
 				- ```
