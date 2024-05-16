@@ -16,7 +16,7 @@
 			- $$
 			  \exists B \forall x (x \notin B)
 			  $$
-		- 3. **配对公理（Axiom of Pairing）**
+		- 3. **[[配对公理]]（Axiom of Pairing）**
 			- 对任何两个集合A和B，存在一个集合，这个集合的元素正是A和B。
 			- $$
 			  \forall A \forall B \exists C \forall x (x \in C \leftrightarrow (x = A \lor x = B))
