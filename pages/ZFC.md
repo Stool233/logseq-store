@@ -44,7 +44,7 @@
 			- $$
 			  \forall A (A \neq \emptyset \rightarrow \exists x (x \in A \land x \cap A = \emptyset))
 			  $$
-		- 9. **选择公理（Axiom of Choice）**
+		- 9. **[[选择公理]]（Axiom of Choice）**
 			- 对于任何集合的集合，如果它们的每个成员都非空且相互不交，那么存在一个集合，它从每一个成员集合中各选一个元素。
 			- $$
 			  \forall A (\emptyset \notin A \land \forall x \forall y ((x \in A \land y \in A \land x \neq y) \rightarrow x \cap y = \emptyset) \rightarrow \exists f: A \rightarrow \bigcup A (\forall x \in A (f(x) \in x)))
