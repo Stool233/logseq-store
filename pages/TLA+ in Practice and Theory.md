@@ -403,7 +403,7 @@
 					- 例如，\(\{n \in \text{Nat} : n \% 2 = 0\}\) 是自然数中的偶数集合。
 					- 注意，在集合理解表达式中使用冒号而不是更常见的竖线。
 			- 如果 \(S\) 是一个集合，且 \(F\) 是某个表达式，那么另一种形式的理解，\(U = \{F(x) : x \in S\}\)，是通过将 \(S\) 中每个成员替换为操作符 \(F\) 下的像构成的集合（[[替换公理]]）；形式上，\(\forall x: x \in U \equiv \exists z \in S : F(z) = x\)。例如，\(\{2*n : n \in \text{Nat}\}\) 也是自然数中的偶数集合。
-			- 如果 \(S\) 是一个集合，那么 \(UNION S\) 是一个包含 \(S\) 中所有成员的成员的集合（并集公理），即 \(\forall x: x \in UNION S \equiv \exists s \in S: x \in s\)。例如，\(UNION \{\{1, 2\}, \{2, 3\}\} = \{1, 2, 3\}\)。
+			- 如果 \(S\) 是一个集合，那么 \(\text{UNION} ~ S\) 是一个包含 \(S\) 中所有成员的成员的集合（[[并集公理]]），即 \(\forall x: x \in \text{UNION} S \equiv \exists s \in S: x \in s\)。例如，\(\text{UNION} \{\{1, 2\}, \{2, 3\}\} = \{1, 2, 3\}\)。
 			- 如果 \(S\) 是一个集合，那么 \(SUBSETS S\) 是 \(S\) 的幂集，即 \(S\) 的所有子集的集合（幂集公理），或者 \(\forall x: x \in SUBSETS S \equiv \forall z \in x: z \in S\)（注意对于任何集合 \(S\)，空集是 \(SUBSETS S\) 的成员，因为 \(\forall z \in \{\}: z \in S\)）。例如，\(SUBSETS \{1, 2, 3\} = \{\{\}, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}\)。
 			- TLA+ 中有常用的集合运算符 \(\cup\)（并集）、\(\cap\)（交集）、\(\subseteq\)（子集或相等）、\(\subset\)（严格子集）、\(\backslash\)（集合差）等，所有这些都是使用上述基本操作简单定义的（例如 \(a \subseteq b \triangleq \forall x: x \in a \Rightarrow x \in b\)，以及 \(a \cap b \triangleq \{x \in a : x \in b\}\)）。
 			- 根据 ZFC 公理定义的上述操作完全确定了我们宇宙中存在的集合。因为 CHOOSE 只选择值，你不能选择罗素悖论“集合”，因为这样的集合不存在，它不能使用任何集合构造操作来构建。因此，CHOOSE x : ∀s : s ∈ x ≡ s ∉ s（这表明 x 是所有不包含自身的集合——一个悖论）的值是未定义的，因为不存在这样的集合 x；CHOOSE 表达式的右侧对 ZFC 中的所有集合都是假的。
