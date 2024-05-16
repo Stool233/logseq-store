@@ -413,9 +413,9 @@
 				- ![image.png](../assets/image_1715838837398_0.png)
 					- （这是逻辑中表达唯一值的常见模式；如果两个变量指向它必须相等，那么一个值是唯一的）。
 			- 请注意，我们可以定义一个无界的运算符，ExistsOne0，
-				- ![image.png](../assets/image_1715838935147_0.png){:height 60, :width 504}
+				- ![image.png](../assets/image_1715838935147_0.png){:height 60, :width 481}
 			- 然后这样定义 ExistsOne：
-				- ![image.png](../assets/image_1715838964109_0.png){:height 57, :width 526}
+				- ![image.png](../assets/image_1715838964109_0.png){:height 65, :width 547}
 			- 现在让我们定义一些更丰富的数学概念。我们将定义一个有预序的集合（proset）、一个部分有序集（poset）和一个全序集（toset）：
 			- ```tla
 			  Proset(S, _⪯_) ≜ ∧ ∀a ∈ S : a ⪯ a  							// Reflexivity
