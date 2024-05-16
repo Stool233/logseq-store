@@ -46,7 +46,7 @@
 			  $$
 		- 9. **[[选择公理]]（Axiom of Choice）**
 			- 对于任何集合的集合，如果它们的每个成员都非空且相互不交，那么存在一个集合，它从每一个成员集合中各选一个元素。
-			- 更形式化地说：设 \( \mathcal{C} \) 是非空集合的一个非空集族，且 \( \mathcal{C} \) 中任意两个不同的集合都不相交。则存在一个集合 \( S \)，称为选择集，使得对每个 \( A \in \mathcal{C} \)，集合 \( S \) 与 \( A \) 的交集恰好有一个元素。
+			- 更形式化地说：设 \(\mathcal{C}\) 是一族非空集合。选择公理表明存在一个函数 \(f\)（称为选择函数），使得对于所有 \(A \in \mathcal{C}\)，有 \(f(A) \in A\)。即：
 			- $$
 			  \forall \mathcal{C} (\emptyset \notin \mathcal{C} \rightarrow \exists f (\forall A \in \mathcal{C} (f(A) \in A))) 
 			  $$
