@@ -9,7 +9,7 @@
 			- $$
 			  \forall A \forall B (\forall x (x \in A \leftrightarrow x \in B) \rightarrow A = B)
 			  $$
-		- 2. **空集公理（Axiom of Empty Set）**
+		- 2. **[[空集公理]]（Axiom of Empty Set）**
 			- 存在一个没有任何元素的集合，称为空集，通常表示为∅。
 			- $$
 			  \exists B \forall x (x \notin B)
