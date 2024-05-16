@@ -31,7 +31,7 @@
 			- $$
 			  \forall A \exists B \forall x (x \in B \leftrightarrow x \subseteq A)
 			  $$
-		- 6. **[[替代公理模式]]（Axiom Schema of Replacement）**
+		- 6. **[[替代公理模式]]/[[替换公理]]（Axiom Schema of Replacement）**
 			- 如果一个函数性质能将一个集合的每个元素映射到一个集合，则存在一个集合，包含所有映射的结果。
 			- $$
 			  \forall A (\forall x \in A \exists ! y \phi(x, y) \rightarrow \exists B \forall y (y \in B \leftrightarrow \exists x \in A \phi(x, y)))
