@@ -21,7 +21,7 @@
 			- $$
 			  \forall A \forall B \exists C \forall x (x \in C \leftrightarrow (x = A \lor x = B))
 			  $$
-		- 4. **并集公理（Axiom of Union）**
+		- 4. **[[并集公理]]（Axiom of Union）**
 			- 对于任何一个集合的集合，存在一个集合，包含所有原集合的元素。
 			- $$
 			  \forall A \exists B \forall x (x \in B \leftrightarrow \exists C (x \in C \land C \in A))
