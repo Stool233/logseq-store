@@ -26,22 +26,22 @@
 			- $$
 			  \forall A \exists B \forall x (x \in B \leftrightarrow \exists C (x \in C \land C \in A))
 			  $$
-		- 5. **幂集公理（Axiom of Power Set）**
+		- 5. **[[幂集公理]]（Axiom of Power Set）**
 			- 对于任何集合A，存在一个集合，包含A的所有子集。
 			- $$
 			  \forall A \exists B \forall x (x \in B \leftrightarrow x \subseteq A)
 			  $$
-		- 6. **替代公理模式（Axiom Schema of Replacement）**
+		- 6. **[[替代公理模式]]（Axiom Schema of Replacement）**
 			- 如果一个函数性质能将一个集合的每个元素映射到一个集合，则存在一个集合，包含所有映射的结果。
 			- $$
 			  \forall A (\forall x \in A \exists ! y \phi(x, y) \rightarrow \exists B \forall y (y \in B \leftrightarrow \exists x \in A \phi(x, y)))
 			  $$
-		- 7. **无穷公理（Axiom of Infinity）**
+		- 7. **[[无穷公理]]（Axiom of Infinity）**
 			- 存在一个集合，包含空集，并且对每个元素x，该集合也包含x与{x}的并集。
 			- $$
 			  \exists A (\emptyset \in A \land \forall x (x \in A \rightarrow x \cup \{x\} \in A))
 			  $$
-		- 8. **正则公理（Axiom of Regularity）**
+		- 8. **[[正则公理]]（Axiom of Regularity）**
 			- 每个非空集合x都包含一个成员y，使得x和y不相交。
 			- $$
 			  \forall A (A \neq \emptyset \rightarrow \exists x (x \in A \land x \cap A = \emptyset))
