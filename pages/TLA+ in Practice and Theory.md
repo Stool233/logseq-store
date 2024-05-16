@@ -408,7 +408,7 @@
 			- 如果 \(S\) 是一个集合，那么 \(\text{SUBSET} ~ S\) 是 \(S\) 的幂集，即 \(S\) 的所有子集的集合（[[幂集公理]]），或者 \(\forall x: x \in \text{SUBSET} ~ S \equiv \forall z \in x: z \in S\)（注意对于任何集合 \(S\)，空集是 \(\text{SUBSET} ~ S\) 的成员，因为 \(\forall z \in \{\}: z \in S\)）。
 				- 例如，\(\text{SUBSET} \{1, 2, 3\} = \{\{\}, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}\)。
 			- 在TLA+中，有通常的集合运算符 \(\cup\)（并集）、\(\cap\)（交集）、\(\subseteq\)（子集或等于）、\(\subset\)（严格子集）、\(\backslash\)（集合差）等，这些都是基于上述基本操作简单定义的（例如 \(a \subseteq b \triangleq \forall x: x \in a \Rightarrow x \in b\)，以及 \(a \cap b \triangleq \{x \in a : x \in b\}\)）。
-			- 上述操作基于ZFC公理定义，充分指定了我们宇宙中存在哪些集合。由于 \(\text{CHOOSE}\) 只是选择值，你不能 \(\text{CHOOSE}\) 罗素悖论“集合”，因为这样的集合不存在，它不能使用任何集合构造操作来构建。因此，\(\text{CHOOSE} ~ x: \forall s: s \in x \equiv s \notin s\)（这表明 \(x\) 是所有不包含自身的集合的集合——一个悖论）的值是未定义的，因为没有这样的集合 \(x\) 存在；\(\text{CHOOSE}\) 表达式的右侧对于ZFC中的所有集合来说都是假的。
+			- 上述操作基于ZFC公理定义，充分指定了我们宇宙中存在哪些集合。由于 \(\text{CHOOSE}\) 只是选择值，你不能 \(\text{CHOOSE}\) [[罗素悖论]]“集合”，因为这样的集合不存在，它不能使用任何集合构造操作来构建。因此，\(\text{CHOOSE} ~ x: \forall s: s \in x \equiv s \notin s\)（这表明 \(x\) 是所有不包含自身的集合的集合——一个悖论）的值是未定义的，因为没有这样的集合 \(x\) 存在；\(\text{CHOOSE}\) 表达式的右侧对于ZFC中的所有集合来说都是假的。
 			- 让我们看一些使用集合的 TLA+ 定义的例子。这里是一个有用的运算符的例子，它表明一个集合中存在且仅存在一个成员满足某个谓词：
 			- ```tla
 			  ExistsOne(S, P(_)) ≜ ∃x ∈ S : P(x) ∧ ∀y ∈ S : P(y) ⇒ y = x
