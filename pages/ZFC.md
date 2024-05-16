@@ -4,7 +4,7 @@
 	- 集合论的发展初期，由Georg Cantor在19世纪末提出，但早期集合论面临一些悖论，最著名的是罗素悖论。为解决这些问题，Zermelo在1908年提出了一套集合论公理，后来Fraenkel和Thoralf Skolem对其进行了改进和扩展，形成了现在所称的ZFC。
 - ### 公理系统
 	- ZFC包括以下几个基本公理（或公理模式）：
-		- 1. **外延公理（Axiom of Extensionality）**
+		- 1. **[[外延公理]]（Axiom of Extensionality）**
 			- 两个集合相等当且仅当它们含有相同的元素。
 			- $$
 			  \forall A \forall B (\forall x (x \in A \leftrightarrow x \in B) \rightarrow A = B)
