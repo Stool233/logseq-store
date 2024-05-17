@@ -417,6 +417,7 @@
 			- 然后这样定义 ExistsOne：
 				- ![image.png](../assets/image_1715838964109_0.png){:height 65, :width 547}
 			- 现在让我们定义一些更丰富的数学概念。我们将定义一个有预序的集合（proset）、一个部分有序集（poset）和一个全序集（toset）：
+			-
 			- ```tla
 			  Proset(S, _⪯_) ≜ ∧ ∀a ∈ S : a ⪯ a  							// Reflexivity
 			  				 ∧ ∀a, b, c ∈ S : (a ⪯ b ∧ b ⪯ c) ⇒ a ⪯ c  	// Transitivity
