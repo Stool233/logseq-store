@@ -419,7 +419,7 @@
 			- 现在让我们定义一些更丰富的数学概念。我们将定义 [[预序集]]（proset）、[[部分有序集]]（poset）和 [[全序集]]（toset）：
 			- ![image.png](../assets/image_1715921516280_0.png)
 				- Reflexivity: [[自反性]]；Transitivity: [[传递性]]；Antisymmetry: [[反对称性]]；[[完全性]]：Totality
-			- 这里是一些重要的代数结构，[[半群]]（Semigroup）、[[幺半群]]（Monoid）和[[群]]（Group）：
+			- 这里是一些重要的代数结构，[[半群]]（Semigroup）、[[幺半群]]（Monoid）\[[群]]（Group）：
 				- ![image.png](../assets/image_1715923624712_0.png)
 					- Closure: [[封闭性]]；Associativity：[[结合律]]；Identity element：[[单位元]]；Inverse element：[[逆元]]；Commutativity：[[交换律]]
 			- 尽管我可以直接根据 Semigroup 定义 Group，因为我们必须重复单位元（Identity element）（或使用我们尚未学到的结构），但我想强调[[群]]是一个[[幺半群]]。[[单位元]]是唯一的，这是我们将来正式陈述和证明的定理。
