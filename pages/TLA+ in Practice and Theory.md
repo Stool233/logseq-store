@@ -422,8 +422,8 @@
 			- 这里是一些重要的代数结构，[[半群]]（Semigroup）、[[幺半群]]（Monoid）和[[群]]（Group）：
 				- ![image.png](../assets/image_1715923624712_0.png)
 					- Closure: [[封闭性]]；Associativity：[[结合律]]；Identity element：[[单位元]]；Inverse element：[[逆元]]；Commutativity：[[交换律]]
-			- 尽管我可以直接根据 Semigroup 定义 Group，因为我们必须重复身份条件（或使用我们尚未学到的结构），但我想强调[[群]]是一个[[幺半群]]。[[单位元]]是唯一的，这是我们将来正式陈述和证明的定理。
-			- 最终，集合 S 的商集包含其相对于等价关系 ∼ 的等价类（通常写作 S/∼），可以如下定义：
+			- 尽管我可以直接根据 Semigroup 定义 Group，因为我们必须重复单位元（Identity element）（或使用我们尚未学到的结构），但我想强调[[群]]是一个[[幺半群]]。[[单位元]]是唯一的，这是我们将来正式陈述和证明的定理。
+			- 最后，一个集合 \( S \) 的商集（quotient set）包含了与等价关系 \( \sim \)（通常写作 \( S / \sim \)）相关的等价类，可以这样定义：
 			- ```tla
 			  Quotient(S, _∼_) ≜ { x ∈ SUBSET S : ∧ ∀a, b ∈ x : a ∼ b
 			    									∧ x ≠ {}
