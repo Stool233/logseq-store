@@ -418,8 +418,8 @@
 				- ![image.png](../assets/image_1715838964109_0.png){:height 65, :width 547}
 			- 现在让我们定义一些更丰富的数学概念。我们将定义一个有预序的集合（proset）、一个部分有序集（poset）和一个全序集（toset）：
 			- ![image.png](../assets/image_1715921516280_0.png)
-				- Reflexivity: 自反性；Transitivity: 传递性；Antisymmetry:
-			-
+				- Reflexivity: 自反性；Transitivity: 传递性；Antisymmetry: 反对称性；完全性：Totality
+				-
 			- 这里是一些重要的代数结构，半群、幺半群和群：
 			- ```tla
 			  Semigroup(S, _⋅_) ≜ ∧ ∀a, b ∈ S : a ⋅ b ∈ S  // Closure
