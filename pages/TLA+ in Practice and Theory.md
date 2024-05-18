@@ -516,11 +516,11 @@
 			  $$
 			- 由于这个原因，以这种形式定义的函数可以是递归的：
 			- $$
-			  fact[n \in \text{Nat}] \triangleq \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n \times fact[n-1]
+			  fact[n \in \text{Nat}] \triangleq \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n * fact[n-1]
 			  $$
-			  这其实是下面定义的简写形式：
+			- 这其实是下面定义的简写形式：
 			- $$
-			  fact \triangleq \text{CHOOSE} f : f = [n \in \text{Nat} \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n \times f[n-1]]
+			  fact \triangleq \text{CHOOSE}~f : f = [n \in \text{Nat} \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n * f[n-1]]
 			  $$
 			  这样定义了 \(fact\) 作为一个固定点（或不动点）。为了更清楚地理解，我们可以定义：
 			- $$
