@@ -497,25 +497,25 @@
 			  3 \in f
 			  \] 这样的语句对于某些函数 \(f\) 来说是未定义的，也没有意义。
 			- 函数的像可以定义为：
-			  \[
+			- $$
 			  \text{Image}(f) \triangleq \{f[x] : x \in \text{DOMAIN}(f)\}
-			  \]
-			  函数的相等性是外延的，意味着对于两个函数 \(f\) 和 \(g\)，
-			- \[
+			  $$
+			- 函数的相等性是外延的，意味着对于两个函数 \(f\) 和 \(g\)，
+			- $$
 			  (f = g) \equiv (\text{DOMAIN}(f) = \text{DOMAIN}(g) \land \forall x \in \text{DOMAIN}(f) : f[x] = g[x])
-			  \]
+			  $$
 			  我们可以定义一个特定的函数 \(double\) 在自然数上如下，
-			- \[
+			- $$
 			  double \triangleq \text{CHOOSE} f \in [\text{Nat} \to \text{Nat}] : \forall n \in \text{Nat} : f[n] = 2 \times n
-			  \]
+			  $$
 			  但这样做非常笨重，因此TLA+允许我们像这样定义它：
-			- \[
+			- $$
 			  double \triangleq [n \in \text{Nat} \mapsto 2 \times n]
-			  \]
+			  $$
 			  或者像这样，
-			- \[
+			- $$
 			  double[n \in \text{Nat}] \triangleq 2 \times n
-			  \]
+			  $$
 			- 后一种形式是语法糖，
 			- double ≜ CHOOSE f : f = [n ∈ Nat ↦ 2*n]
 			- 因此，以这种形式定义的函数可以是递归的：
