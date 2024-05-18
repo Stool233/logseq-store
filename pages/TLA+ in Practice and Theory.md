@@ -500,7 +500,7 @@
 			  $$
 			  我们可以定义一个特定的函数 \(double\) 在自然数上如下，
 			- $$
-			  double \triangleq \text{CHOOSE} f \in [\text{Nat} \to \text{Nat}] : \forall n \in \text{Nat} : f[n] = 2 \times n
+			  double \triangleq \text{CHOOSE}~ f \in [Nat \to Nat] : \forall n \in Nat : f[n] = 2 \times n
 			  $$
 			  但这样做非常笨重，因此TLA+允许我们像这样定义它：
 			- $$
