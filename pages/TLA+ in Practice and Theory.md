@@ -442,7 +442,7 @@
 			- $$
 			  AnyOf(S) \triangleq \text{CHOOSE } x \in S : \text{TRUE}
 			  $$
-			- 在讨论 \(\text{CHOOSE}\) 时，由于我们现在知道 TLA+ 中所有的值都是集合，且关系符 \(\in\) 和 \(=\) 在所有集合上都有定义，我们应该重新审视“未定义”的定义，因为现在我们可以在表达式中使用一个未定义的值，但仍然可以知道一些关于表达式的值的信息。例如，\(\text{CHOOSE } x : \text{FALSE}\) 是未定义的，这意味着它是某个无法知晓的值。但由于该值是一个集合，那么例如 \(10 \in (\text{CHOOSE } x : \text{FALSE})\) 必须是 \(\text{TRUE}\) 或 \(\text{FALSE}\)（同样地，\(\text{IF } 3 \in (\text{CHOOSE } x : \text{FALSE}) \text{ THEN } 3 \text{ ELSE } 5\) 必须是3或5）。在这种情况下，我还会说表达式是未定义的，尽管已知它在某个集合中，因为逻辑不允许我们确定其确切的值。
+			- 在讨论 \(\text{CHOOSE}\) 时，由于我们现在知道 TLA+ 中所有的值都是集合，且关系符 \(\in\) 和 \(=\) 在所有集合上都有定义，我们应该重新审视“未定义(undefined)”的定义，因为现在我们可以在表达式中使用一个未定义的值，但仍然可以知道一些关于表达式的值的信息。例如，\(\text{CHOOSE } x : \text{FALSE}\) 是未定义的，这意味着它是某个无法知晓的值。但由于该值是一个集合，那么例如 \(10 \in (\text{CHOOSE } x : \text{FALSE})\) 必须是 \(\text{TRUE}\) 或 \(\text{FALSE}\)（同样地，\(\text{IF } 3 \in (\text{CHOOSE } x : \text{FALSE}) \text{ THEN } 3 \text{ ELSE } 5\) 必须是3或5）。在这种情况下，我还会说表达式是未定义的，尽管已知它在某个集合中，因为逻辑不允许我们确定其确切的值。
 			- 我们可以使用 \(\text{CONSTANT}\) 以及我们刚刚学到的定义如下：
 			- ![image.png](../assets/image_1716025618735_0.png){:height 87, :width 273}
 			- 我们现在可以将 $S$ 视为具有定义在其上的偏序关系的类型参数，类似于某些函数式编程语言中的类型类，或面向对象语言中的接口。
