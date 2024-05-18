@@ -500,15 +500,15 @@
 			  $$
 			  我们可以定义一个特定的函数 \(double\) 在自然数上如下，
 			- $$
-			  double \triangleq \text{CHOOSE}~ f \in [Nat \to Nat] : \forall n \in Nat : f[n] = 2 \times n
+			  double \triangleq \text{CHOOSE}~ f \in [Nat \to Nat] : \forall n \in Nat : f[n] = 2 * n
 			  $$
 			  但这样做非常笨重，因此TLA+允许我们像这样定义它：
 			- $$
-			  double \triangleq [n \in \text{Nat} \mapsto 2 \times n]
+			  double \triangleq [n \in \text{Nat} \mapsto 2 * n]
 			  $$
 			  或者像这样，
 			- $$
-			  double[n \in \text{Nat}] \triangleq 2 \times n
+			  double[n \in \text{Nat}] \triangleq 2 * n
 			  $$
 			- 后一种形式是语法糖，
 			- double ≜ CHOOSE f : f = [n ∈ Nat ↦ 2*n]
