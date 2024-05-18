@@ -522,7 +522,7 @@
 			- $$
 			  fact \triangleq \text{CHOOSE}~f : f = [n \in \text{Nat} \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n * f[n-1]]
 			  $$
-			  这样定义了 \(fact\) 作为一个固定点（或不动点）。为了更清楚地理解，我们可以定义：
+			  这样定义了 \(fact\) 作为一个[固定点](https://en.wikipedia.org/wiki/Fixed_point_(mathematics))（或不动点）。为了更清楚地理解，我们可以定义：
 			- $$
 			  \text{Fixpoint}(F(\_)) \triangleq \text{CHOOSE} x : x = F(x)
 			  $$
