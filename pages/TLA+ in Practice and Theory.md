@@ -450,10 +450,10 @@
 			- 集合 \(\text{BOOLEAN} \triangleq \{\text{TRUE}, \text{FALSE}\}\) 是 TLA+ 的一个基本组成部分。它的存在是至关重要的，因为 TLA+ 不区分这个集合的元素和逻辑真值——\(\text{TRUE}\) 和 \(\text{FALSE}\) 是普通的值，即集合，如果 \(p\) 是某个谓词（例如 \(p \triangleq a \in b\)），则 \(p \equiv (p = \text{TRUE})\) —— 因此，一个公式（和一个谓词）是任何其值为 \(\text{BOOLEAN}\) 的表达式。例如，\(\forall p \in \text{BOOLEAN} : p \lor (5 < 6)\) 是真的，我们可以写 \((3 < 4) = (8 > 2)\)，使用 \(=\) 而不是 \(\equiv\)，尽管后者是逻辑连接词而前者是集合上的关系，\((1 > 0) \in \text{BOOLEAN}\) 是真的，而不是 \((A \Rightarrow B) \land (\neg A \Rightarrow C)\)，或等价的 \((A \land B) \lor (\neg A \land C)\)，我们可以写 \(\text{IF } A \text{ THEN } B \text{ ELSE } C\)，尽管你可能记得，\(\text{IF/THEN/ELSE}\) 是根据 \(\text{CHOOSE}\) 定义的。
 			- \(\text{STRING}\) 是另一个内置集合，它是所有有限字符字符串的集合。字符串是字符序列（我们将在下一节中讨论序列），字符是具有不透明编码的原始值；TLA+ 没有字符字面量的语法。
 			- 模块 Naturals、Integers 和 Reals 分别定义了集合 \(\mathbb{N}\)（Nat(N)）、\(\mathbb{Z}\)（Int(Z)）和 \(\mathbb{R}\)（Real(R)），并且满足 \(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}\)，这些模块还包括了熟悉的算术运算符（自然数和整数定义了加法、减法、乘法、整数除法 \(\div\) 和取模 \%；除法仅对实数定义），顺序关系（\(\leq\)）等。从模块中导入公共定义是通过 \(\text{EXTENDS}\) 语句完成的，如 \(\text{EXTENDS Naturals}\)。除非你导入了定义了这些运算符的模块，否则你不能在 TLA+ 规范中使用算术运算符（数字字面量是内置的）。目前，TLA+ 没有用于复数或矩阵的特殊语法，也没有包含定义有理数 \(\mathbb{Q}\) 的标准模块。
-			- 特殊语法 \(a..b\) 定义了集合 \(\{n \in \mathbb{Z} : n \geq a \wedge n \leq b\}\)，所以 \(-1..1 = \{-1, 0, 1\}\)，\(2..5 = \{2, 3, 4, 5\}\) 而 \(5..2 = \{\}\)。
+			- 特殊语法 \(a..b\) 定义了集合 \(\{n \in Int : n \geq a \wedge n \leq b\}\)，所以 \(-1..1 = \{-1, 0, 1\}\)，\(2..5 = \{2, 3, 4, 5\}\) 而 \(5..2 = \{\}\)。
 			- 实数除法（在 Reals 模块中定义）可以这样定义：
 			- $$
-			  {a} / {b} \triangleq \text{CHOOSE } c \in \mathbb{R} : a = b \cdot c
+			  {a} / {b} \triangleq \text{CHOOSE } c \in Real : a = b \cdot c
 			  $$
 			- 这个定义通过 \(\text{CHOOSE}\) 运算符的含义立即告诉我们，\(\frac{1}{0}\) 是未定义的，这种未定义的含义在我们讨论 \(\text{CHOOSE}\) 时已经非常明确地解释过了。
 			- 有了数字、算术运算和数字上的顺序关系，我们可以开始进行更具体的数学计算。我们将从一个简单的定义开始：运算符 \(\text{Prime}\)，这是一个判断一个数是否为质数的谓词（也可以有其他定义）：
