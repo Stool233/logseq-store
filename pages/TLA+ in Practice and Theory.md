@@ -510,7 +510,7 @@
 			- $$
 			  double[n \in \text{Nat}] \triangleq 2 * n
 			  $$
-			- 后一种形式是语法糖，
+			- 后一种形式实质上是对下面定义的一种语法简化方法：
 			- $$
 			  double \triangleq \text{CHOOSE}~ f : f = [n \in \text{Nat} \mapsto 2 \times n]
 			  $$
