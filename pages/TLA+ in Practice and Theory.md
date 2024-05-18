@@ -528,7 +528,7 @@
 			  $$
 			- 然后定义：
 			- $$
-			  fact \triangleq Fixpoint(\text{LAMBDA } f : [n \in \text{Nat} \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n * f[n-1]])
+			  fact \triangleq Fixpoint(\text{LAMBDA } f : [n \in Nat \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n * f[n-1]])
 			  $$
 			- 这种方法通过 \( \text{CHOOSE} \) 和 \( \text{LAMBDA} \) 构造出 \(fact\) 函数的递归形式，确保了其在逻辑上的一致性和数学上的正确性。
 			- 请注意，递归函数因为实际上被指定为不动点，如果不动点不存在，可能会变成未定义的，如以下情况：
