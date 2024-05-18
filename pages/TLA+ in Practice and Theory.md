@@ -496,7 +496,7 @@
 			  $$
 			- 函数的相等性是外延的，意味着对于两个函数 \(f\) 和 \(g\)，
 			- $$
-			  (f = g) \equiv (\text{DOMAIN}(f) = \text{DOMAIN}(g) \land \forall x \in \text{DOMAIN}(f) : f[x] = g[x])
+			  (f = g) \equiv (\text{DOMAIN}~f = \text{DOMAIN}~g \land \forall x \in \text{DOMAIN}~f : f[x] = g[x])
 			  $$
 			  我们可以定义一个特定的函数 \(double\) 在自然数上如下，
 			- $$
