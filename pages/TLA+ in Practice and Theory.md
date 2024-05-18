@@ -435,14 +435,13 @@
 				- ![image.png](../assets/image_1715947150921_0.png){:height 97, :width 503}
 			- TLA+ 标准模块库中的 FiniteSets 模块定义了一些有用的集合操作符，例如 `IsFiniteSet(S)`，如果集合 \( S \) 是有限的，则该表达式为真；以及 `Cardinality(S)`，如果 \( S \) 是有限的，这代表集合 \( S \) 中元素的数量（我们稍后会自行定义 `Cardinality`）。
 			- `ChooseOne` 是一个非常有用的操作符，其值仅在给定集合中恰好有一个元素满足断言时定义：
-			- \[
-			  \text{ChooseOne}(S, P(\_)) \triangleq \text{CHOOSE } x \in S : P(x) \land (\forall y \in S : P(y) \Rightarrow y = x)
-			  \]
+			- $$
+			  ChooseOne(S, P(\_)) \triangleq \text{CHOOSE } x \in S : P(x) \land (\forall y \in S : P(y) \Rightarrow y = x)
+			  $$
 			- 另一个有用的操作符是 `AnyOf`，它从集合中随机选择一个元素（如果集合为空，则未定义）：
-			- \[
-			  \text{AnyOf}(S) \triangleq \text{CHOOSE } x \in S : \text{TRUE}
-			  \]
-			- 这些操作符为处理集合中的元素提供了强大的工具，特别是在进行形式化验证和计算时非常有用。
+			- $$
+			  AnyOf(S) \triangleq \text{CHOOSE } x \in S : \text{TRUE}
+			  $$
 			- 说到 `CHOOSE`，因为我们现在知道 TLA+ 中所有值都是集合，并且关系 ∈ 和 = 在所有集合上都有定义，我们应该重新审视“未定义”的定义，因为我们现在可以在表达式中使用一个未定义的值，但仍然可以知道表达式的值。例如，`CHOOSE x : FALSE` 是未定义的，这意味着它是某个无法知晓的值。但由于该值是一个集合，那么例如 `10 ∈ (CHOOSE x : FALSE)` 必须是 TRUE 或 FALSE（因此，类似地，`IF 3 ∈ (CHOOSE x : FALSE) THEN 3 ELSE 5` 必须是 3 或 5）。在这种情况下，我也会说表达式是未定义的，尽管它已知属于某个集合，因为逻辑不允许我们确定其精确值。
 			- 我们可以如下使用 `CONSTANT` 和我们刚刚学到的定义：
 			- ```tla
