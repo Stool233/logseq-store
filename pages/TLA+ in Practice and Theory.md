@@ -506,7 +506,7 @@
 			- $$
 			  double \triangleq [n \in \text{Nat} \mapsto 2 * n]
 			  $$
-			  或者像这样，
+			- 或者像这样，
 			- $$
 			  double[n \in \text{Nat}] \triangleq 2 * n
 			  $$
@@ -514,7 +514,7 @@
 			- $$
 			  double \triangleq \text{CHOOSE}~ f : f = [n \in \text{Nat} \mapsto 2 \times n]
 			  $$
-			  由于这个原因，以这种形式定义的函数可以是递归的：
+			- 由于这个原因，以这种形式定义的函数可以是递归的：
 			- $$
 			  fact[n \in \text{Nat}] \triangleq \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n \times fact[n-1]
 			  $$
