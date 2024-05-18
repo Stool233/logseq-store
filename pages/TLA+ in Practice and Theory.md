@@ -511,15 +511,26 @@
 			  double[n \in \text{Nat}] \triangleq 2 * n
 			  $$
 			- 后一种形式是语法糖，
-			- double ≜ CHOOSE f : f = [n ∈ Nat ↦ 2*n]
-			- 因此，以这种形式定义的函数可以是递归的：
-			  fact[n ∈ Nat] ≜ IF n ≤ 1 THEN 1 ELSE n * fact[n - 1]
-			- 这只是下面表达式的简写，
-			  fact ≜ CHOOSE f : f = [n ∈ Nat ↦ IF n ≤ 1 THEN 1 ELSE n * f[n - 1]]
-			- 这将 fact 定义为一个不动点（或固定点）。为了更清楚地看到这一点，我们可以定义：
-			- Fixpoint(F(_)) ≜ CHOOSE x : x = F(x)
-			- 然后：
-			  fact ≜ Fixpoint(LAMBDA f : [n ∈ Nat ↦ IF n ≤ 1 THEN 1 ELSE n * f[n - 1]])
+			- $$
+			  double \triangleq \text{CHOOSE} f : f = [n \in \text{Nat} \mapsto 2 \times n]
+			  $$
+			  由于这个原因，以这种形式定义的函数可以是递归的：
+			- \[
+			  fact[n \in \text{Nat}] \triangleq \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n \times fact[n-1]
+			  \]
+			  这其实是下面定义的简写形式：
+			- \[
+			  fact \triangleq \text{CHOOSE} f : f = [n \in \text{Nat} \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n \times f[n-1]]
+			  \]
+			  这样定义了 \(fact\) 作为一个固定点（或不动点）。为了更清楚地理解，我们可以定义：
+			- \[
+			  \text{Fixpoint}(F(\_)) \triangleq \text{CHOOSE} x : x = F(x)
+			  \]
+			  然后定义：
+			- \[
+			  fact \triangleq \text{Fixpoint}(\text{LAMBDA } f : [n \in \text{Nat} \mapsto \text{IF } n \leq 1 \text{ THEN } 1 \text{ ELSE } n \times f[n-1]])
+			  \]
+			  这种方法通过 \( \text{CHOOSE} \) 和 \( \text{LAMBDA} \) 构造出 \(fact\) 函数的递归形式，确保了其在逻辑上的一致性和数学上的正确性。
 			- 请注意，递归函数因为实际上被指定为不动点，如果不动点不存在，可能会变成未定义的，如以下情况：
 			- f[n ∈ Nat] ≜ 1 + f[n]
 			- 因此，在证明中使用递归函数定义时，您可能需要证明它们确实定义了实际的函数，通过显示它们确实在其域的每个值上匹配一个值（或用计算机科学的话来说，它们是完全的）。
