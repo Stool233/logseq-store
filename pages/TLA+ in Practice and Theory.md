@@ -457,12 +457,9 @@
 			  $$
 			- 这个定义通过 \(\text{CHOOSE}\) 运算符的含义立即告诉我们，\(\frac{1}{0}\) 是未定义的，这种未定义的含义在我们讨论 \(\text{CHOOSE}\) 时已经非常明确地解释过了。
 			- 有了数字、算术运算和数字上的顺序关系，我们可以开始进行更具体的数学计算。我们将从一个简单的定义开始：运算符 \(\text{Prime}\)，这是一个判断一个数是否为质数的谓词（也可以有其他定义）：
-			- Divides(p, n) ≜ ∃q ∈ Int: p * q = n
-			  Prime(n) ≜ n > 1 ∧ ∀p ∈ Nat: Divides(p, n) ⇒ p = n ∨ p = 1
+			- ![image.png](../assets/image_1716031126038_0.png){:height 81, :width 561}
 			- 现在让我们定义 GCD 操作符，两个自然数的最大公约数：
-			- DivisorsOf(n) ≜ {p ∈ Int : Divides(p, n)}
-			  SetMax(S) ≜ CHOOSE x ∈ S : ∀y ∈ S : x ≥ y
-			  GCD(m, n) ≜ SetMax(DivisorsOf(m) ∩ DivisorsOf(n))
+			- ![image.png](../assets/image_1716031143055_0.png){:height 109, :width 519}
 			- 注意 GCD 定义的直接性：首先我们定义了什么是除数；然后定义了一个数的除数。两个数的公共除数就是这两个数除数的交集，GCD 是其中最大的一个。
 			- 我们可以使用我们之前看到的集合和一些定义来陈述几个有趣的定理：
 			- ```
