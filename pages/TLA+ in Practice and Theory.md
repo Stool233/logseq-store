@@ -557,7 +557,11 @@
 			- 请注意，\(g \bullet f\) 只有在 \(f\) 和 \(g\) 可组合时才有定义，意味着 \(Image(f) \subseteq DOMAIN \ g\) —— 记住，在普通数学中，至少在编程意义上没有所谓的部分函数。如果我们想要定义像编程中部分函数那样工作的函数复合，我们可以定义如下：
 				- ![image.png](../assets/image_1716093550497_0.png)
 			-
-			-
+			- 不同于 \( g \bullet f \)，\( g \star f \) 总是一个函数，但它不一定是在 \( \text{DOMAIN}_f \) 上的函数，可能只是其子集上的函数，如果 \( \text{Image}(f) \cap \text{DOMAIN}_g = \emptyset \)，它甚至可能是空函数（定义在空集上的函数，对任何参数都是未定义的）。
+			- 以下运算符定义了一个在任意集合上的恒等函数：
+			- \[ \text{Identity}(S) \triangleq [x \in S \mapsto x] \]
+			- 关于恒等函数的一个定理如下：
+			- \[ \forall S: \forall x \in S: \text{Identity}(S)[x] = x \]
 			- 我们还定义了一个`Inverse`运算符，用于任何可逆函数的逆（定义如下：对于函数图像中的任何`y`，选择一个映射到`y`的定义域中的`x`，前提是`x`是唯一映射到`y`的点）：
 			- ```
 			  Inverse(f) ≜ [y ∈ Image(f) ↦ ChooseOne(DOMAINf, LAMBDA x: f[x] = y)]
