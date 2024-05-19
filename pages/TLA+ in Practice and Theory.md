@@ -548,11 +548,11 @@
 				- ![image.png](../assets/image_1716090249721_0.png)
 			- 在这里，变量 \(S\) 代表函数的陪域。请注意，我们也可以这样定义 \(Injection\)：
 			- $$
-			  \forall y \in Image(f) : ExistsOne(\text{DOMAIN} \ f, \ LAMBDA \ x : f[x] = y)
+			  \forall y \in Image(f) : ExistsOne(\text{DOMAIN} \ f, \ \text{LAMBDA} \ x : f[x] = y)
 			  $$
 			- 现在，让我们定义一个函数复合运算符（我将使用 \(\bullet\) 运算符，因为 \(\circ\)，常用于表示函数复合的符号，在 TLA+ 中通常用于序列的连接）：
 			- $$
-			  g \bullet f \triangleq [x \in DOMAIN \ f \mapsto g[f[x]]]
+			  g \bullet f \triangleq [x \in \text{DOMAIN} \ f \mapsto g[f[x]]]
 			  $$
 			- 请注意，\(g \bullet f\) 只有在 \(f\) 和 \(g\) 可组合时才有定义，意味着 \(Image(f) \subseteq DOMAIN \ g\) —— 记住，在普通数学中，至少在编程意义上没有所谓的部分函数。如果我们想要定义像编程中部分函数那样工作的函数复合，我们可以定义如下：
 			- 假设我们要处理可能不完全可组合的函数 \(f\) 和 \(g\)，在编程中，我们可能对函数的定义域和陪域进行约束，以保证只在有效输入上操作。在 TLA+ 中，我们可以通过限制定义域来模拟这一点：
