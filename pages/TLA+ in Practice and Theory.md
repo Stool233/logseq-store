@@ -545,11 +545,7 @@
 			  $$
 			- 但是，正式来说，与类型化形式主义不同，像 \(add\) 这样的函数在 TLA+ 中实际上并不是真正的高阶函数，因为所有函数——实际上所有的值——都具有相同的类型；它们都是集合宇宙中的值。
 			- 现在我们可以定义一些函数的常见重要属性：单射（一对一映射）、满射（到达映射）和双射：
-			- ```plaintext
-			  Injection(f)     ≜ ∀x, y ∈ DOMAIN f : x ≠ y ⇒ f[x] ≠ f[y]
-			  Surjection(f, S) ≜ ∀y ∈ S : ∃x ∈ DOMAIN f : f[x] = y
-			  Bijection(f, S)  ≜ Surjection(f, S) ∧ Injection(f)
-			  ```
+				-
 			- 其中变量 `S` 表示函数的陪域。注意我们也可以将 `Injection` 定义为：
 			- ```plaintext
 			  ∀y ∈ Image(f) : ExistsOne(DOMAIN f, LAMBDA x : f[x] = y)
