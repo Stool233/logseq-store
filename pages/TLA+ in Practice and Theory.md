@@ -559,7 +559,7 @@
 			-
 			- 不同于 \( g \bullet f \)，\( g \star f \) 总是一个函数，但它不一定是在 \( \text{DOMAIN}~f \) 上的函数，可能只是其子集上的函数，如果 \( \text{Image}(f) \cap \text{DOMAIN}~g = \emptyset \)，它甚至可能是空函数（定义在空集上的函数，对任何参数都是未定义的）。
 			- 以下运算符定义了一个在任意集合上的恒等函数：
-			- \[ \text{Identity}(S) \triangleq [x \in S \mapsto x] \]
+			- $$ Identity(S) \triangleq [x \in S \mapsto x] $$
 			- 关于恒等函数的一个定理如下：
 			- \[ \forall S: \forall x \in S: \text{Identity}(S)[x] = x \]
 			- 我们还定义了一个`Inverse`运算符，用于任何可逆函数的逆（定义如下：对于函数图像中的任何`y`，选择一个映射到`y`的定义域中的`x`，前提是`x`是唯一映射到`y`的点）：
