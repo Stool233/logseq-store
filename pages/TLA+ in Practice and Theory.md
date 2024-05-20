@@ -573,14 +573,14 @@
 			- 我们可以通过各种方式处理函数。例如，如果 \( inc \) 是上面定义的函数，它将每个自然数增加一，我们当然可以定义如下函数：
 			- $$ g \triangleq [x \in Nat \mapsto \text{IF } x \geq 1 \land x \leq 2 \text{ THEN } inc[x] * 10 \text{ ELSE } inc[x]] $$
 			- 但是，`EXCEPT` 构造，允许我们“改变”特定函数值，使得定义更为简单：
-			- $$ g \triangleq [inc ~ \text{EXCEPT} ![1] = \text{inc}[1] \times 10, ![2] = inc[2] * 10] $$
+			- $$ g \triangleq [inc ~~ \text{EXCEPT} ~~ ![1] = \text{inc}[1] \times 10, ![2] = inc[2] * 10] $$
 			- 上述也可以写为：
-			- $$ g \triangleq [inc ~ \text{EXCEPT} ![1] = @ * 10, ![2] = @ * 10] $$
+			- $$ g \triangleq [inc ~~ \text{EXCEPT} ~~ ![1] = @ * 10, ![2] = @ * 10] $$
 			- 其中 \( @ \) 指代原函数在该点的值。
 			- `EXCEPT` 表达式还支持可以“嵌套”的情况（即，一个函数返回一个函数，或者一个多维数组），因此，如果我们想表达增加二维数组中（1,2）坐标的值，而不是写：
-			- $$ [f ~~ \text{EXCEPT} ![1] = [@ \, \text{EXCEPT} [2] = @ + 1]] $$
+			- $$ [f ~~ \text{EXCEPT} ~~![1] = [@ \, \text{EXCEPT} ~~[2] = @ + 1]] $$
 			- 我们可以写：
-			- $$ [f ~~ \text{EXCEPT} ![1][2] = @ + 1] $$
+			- $$ [f ~~ \text{EXCEPT}~~ ![1][2] = @ + 1] $$
 			- 我们还有语法糖可以定义和应用具有多个参数的函数。我们将在学习了元组之后讨论这个话题。
 			- 定义不可计算的函数和定义可计算的函数一样容易。这里是一个不可计算函数的例子：
 			- ![image.png](../assets/image_1716098055458_0.png)
