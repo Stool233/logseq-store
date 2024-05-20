@@ -603,14 +603,9 @@
 			- \( \text{Len}(s) \) 操作符表示序列的长度（可以定义为 \( \text{CHOOSE} n \in \text{Nat} : \text{DOMAIN} s = 1..n \)）；\( \circ \) 操作符连接两个序列；\( \text{Append}(seq, x) \) 操作符将值 \( x \) 添加到序列 \( seq \) 的末尾；\( \text{Head}(seq) \) 操作符是序列的第一个元素（\( seq[1] \)）；\( \text{Tail}(seq) \) 是尾部（\[ [i \in 1..\text{Len}(seq)-1 \mapsto seq[i+1]] \]）；\( \text{SubSeq}(seq, i, j) \) 是序列 \( seq \) 从 \( i \) 到 \( j \)（包括 \( j \)）的子序列；\( \text{SelectSeq}(seq, P(\_)) \) 是过滤后的序列，仅包含满足 \( P(x) \) 为真的元素 \( x \)。
 			- 由于字符串只是字符的序列，因此 Sequences 模块的 \( \circ \) 操作符也用于连接字符串，\( \text{SubSeq} \) 用于选择子字符串等。
 			- 在序列上定义熟悉的函数式编程中的 map 操作很简单：
-			- \[ Map(F(\_), seq) \triangleq [i \in \text{DOMAIN} ~ seq \mapsto F(seq[i])] \]
+			- $$ Map(F(\_), seq) \triangleq [i \in \text{DOMAIN} ~ seq \mapsto F(seq[i])] $$
 			- flatmap 需要更多的工作，并使用递归操作符（需要内部辅助操作符，因为 TLA+ 不允许带有操作符参数的递归操作符）：
-			- ```
-			  FlatMap(F(_), seq) ≜ LET RECURSIVE Helper(_) 
-			  						Helper(s) ≜ IF Len(s) = 0 THEN ⟨⟩ 
-			                          		                  ELSE F(Head(s)) ∘ Helper(Tail(s)) 
-			                       IN Helper(seq)
-			  ```
+			- ![image.png](../assets/image_1716227615610_0.png)
 			- TLA+ 对有限序列字面量有特殊的语法，也称为元组（或者如果你愿意，可以称之为列表）。元组 `⟨10, ‘‘hi", [x ∈ N ↦ x + 1]⟩` 仅仅是语法糖：
 			- ```
 			  [i ∈ 1..3 ↦ CASE i = 1 → 10 □ i = 2 → ‘‘hi" □ i = 3 → [x ∈ N ↦ x + 1]]
