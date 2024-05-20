@@ -601,12 +601,10 @@
 			- Sequences 模块包含了几个用于处理序列的实用定义。\(Seq(S) \) 是集合 \( S \) 上所有有限序列的集合（无限序列的集合则为 \( [Nat \setminus \{0\} \rightarrow S] \)），定义如下：
 			- $$Seq(S) \triangleq \text{UNION} \{ [1..n \rightarrow S] : n \in \text{Nat} \} $$
 			- \( \text{Len}(s) \) 操作符表示序列的长度（可以定义为 \( \text{CHOOSE} n \in \text{Nat} : \text{DOMAIN} s = 1..n \)）；\( \circ \) 操作符连接两个序列；\( \text{Append}(seq, x) \) 操作符将值 \( x \) 添加到序列 \( seq \) 的末尾；\( \text{Head}(seq) \) 操作符是序列的第一个元素（\( seq[1] \)）；\( \text{Tail}(seq) \) 是尾部（\[ [i \in 1..\text{Len}(seq)-1 \mapsto seq[i+1]] \]）；\( \text{SubSeq}(seq, i, j) \) 是序列 \( seq \) 从 \( i \) 到 \( j \)（包括 \( j \)）的子序列；\( \text{SelectSeq}(seq, P(\_)) \) 是过滤后的序列，仅包含满足 \( P(x) \) 为真的元素 \( x \)。
-			- 由于字符串只是字符的序列，序列模块的∘操作符也用于连接字符串，SubSeq用于选择子字符串等。
+			- 由于字符串只是字符的序列，因此 Sequences 模块的 \( \circ \) 操作符也用于连接字符串，\( \text{SubSeq} \) 用于选择子字符串等。
 			- 在序列上定义熟悉的函数式编程中的 map 操作很简单：
-			- ```
-			  Map(F(_), seq) ≜ [i ∈ DOMAIN seq ↦ F(seq[i])]
-			  ```
-			- flatmap 需要更多的工作，以及使用递归操作符（由于 TLA+ 不允许带有操作符参数的递归操作符，因此需要内部辅助操作符）：
+			- \[ Map(F(\_), seq) \triangleq [i \in \text{DOMAIN} ~ seq \mapsto F(seq[i])] \]
+			- flatmap 需要更多的工作，并使用递归操作符（需要内部辅助操作符，因为 TLA+ 不允许带有操作符参数的递归操作符）：
 			- ```
 			  FlatMap(F(_), seq) ≜ LET RECURSIVE Helper(_) 
 			  						Helper(s) ≜ IF Len(s) = 0 THEN ⟨⟩ 
