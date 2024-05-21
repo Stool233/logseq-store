@@ -706,27 +706,12 @@
 		- 关键词 \( \text{NEW} \) 用于引入新变量，如同“设 P 是任意的……”。单独的 \( \text{NEW} \) 是 \( \text{NEW CONSTANT} \)，或仅 \( \text{CONSTANT} \) 的缩写，表示该变量是常量而不是临时变量，临时变量在算法的不同时间可以指向不同的值；这里的 \( \text{CONSTANT} \) 正如我们在上文“常量”部分学到的那样确切的意义。如果是无界的，它意味着任何值或任何（非临时的）运算符或公式。它是一个二阶自由变量。\( \text{ASSUME} ~A ~ \text{PROVE} ~ B \) 是一个命题，但它不是一个 TLA+ 公式；它在 TLA+ 逻辑中没有模型，因此该逻辑的公式仍然都是一阶的。有关此设计背后的原因，请参阅接下来的讨论，以及“一阶逻辑和其他阶”的部分。
 		- 例如，以下定理展示了一个有界的 \( \text{NEW} \)，同时引入了参数化公式：
 		- ![image.png](../assets/image_1716309739868_0.png){:height 222, :width 389}
-		- 注意我们是如何在嵌套的 `ASSUME/PROVE` 中假设一个定理（一个真实的命题）的存在。
+		- 注意我们是如何在嵌套的 $\text{ASSUME}/\text{PROVE}$ 中假设一个定理（一个真实的命题）的存在。
 		- 能够编写二阶定理在证明系统中非常重要，因为它允许用户制作通用的、可重用的引理以用于证明。例如，一个重要的定理（由 TLAPS 提供的 NaturalsInduction 模块导出）可以在许多情况下使用，它定义了自然数上的归纳：
-		- ```
-		  THEOREM NatInduction ≜ 
-		  	ASSUME NEW P(_), 
-		      	   P(0), 
-		             ∀n ∈ Nat: P(n) ⇒ P(n+1) 
-		      PROVE ∀n ∈ Nat: P(n)
-		  ```
+		- ![image.png](../assets/image_1716309787760_0.png){:height 189, :width 439}
 		- 与上面的 `∀n ∈ Nat: P(n) ⇒ P(n+1)` 不同，我们可以使用嵌套的 `ASSUME NEW n ∈ Nat, P(n) PROVE P(n+1)`。
 		- 我们可以使用该定理来证明以下（有些无聊的）定理：
-		- ```
-		  THEOREM ASSUME NEW x ∈ Nat 
-		  			   PROVE x = 0 ∨ x − 1 ≥ 0 
-		    BY NatInduction 
-		  
-		  (OBVIOUS would have sufficed in this case, 
-		  both for a human reader as well as for TLAPS, 
-		  and we could have stated the theorem more simply 
-		  as the formula ∀x ∈ Nat: x = 0 ∨ x − 1 ≥ 0).
-		  ```
+		- ![image.png](../assets/image_1716309816594_0.png){:height 161, :width 502}
 		- 注意，实际上无需定义形如 `P(n)` 的操作符；从公式 `x = 0 ∨ x − 1 ≥ 0` 可以自动推断出它可以被理解为一个由 `x` 参数化的操作符。
 		- 我们所见的此类定理可以被引入作为公理，以定义新逻辑连接词（例如，用于诸如分离逻辑之类的东西）的推理规则。然而，内置的公理不能被移除（因此我们不能移除排中律作为公理以确保我们的推理是建设性的）。公理用关键字 `AXIOM` 或 `ASSUME` 声明，这是我们在有关常量部分所讨论的结构。
 		- 虽然 TLAPS 被设计为完全与后端无关，但在使用它时，你可能有时会发现有必要使用特定的求解器功能。例如，`BY Z3` 可以告诉 TLAPS 使用 Z3 SMT 求解器来处理（验证）特定的证明，你甚至可以（虽然不推荐，而且在实践中你不太可能需要它）使用 Isabelle 策略。实际上，上面提供的 `NatInduction` 定理的证明是 `BY IsaM('' (intor natInduct, auto) '')`。
