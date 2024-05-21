@@ -709,7 +709,7 @@
 		- 注意我们是如何在嵌套的 $\text{ASSUME}/\text{PROVE}$ 中假设一个定理（一个真实的命题）的存在。
 		- 能够编写二阶定理在证明系统中非常重要，因为它允许用户制作通用的、可重用的引理以用于证明。例如，一个重要的定理（由 TLAPS 提供的 NaturalsInduction 模块导出）可以在许多情况下使用，它定义了自然数上的归纳：
 		- ![image.png](../assets/image_1716309787760_0.png){:height 189, :width 439}
-		- 与上面的 `∀n ∈ Nat: P(n) ⇒ P(n+1)` 不同，我们可以使用嵌套的 `ASSUME NEW n ∈ Nat, P(n) PROVE P(n+1)`。
+		- 与上面的 \( \forall n \in \text{Nat} : P(n) \Rightarrow P(n+1) \) 相比，我们可以使用嵌套的 \( \text{ASSUME NEW} \, n \in \text{Nat}, P(n) \, \text{PROVE} \, P(n+1) \)。
 		- 我们可以使用该定理来证明以下（有些无聊的）定理：
 		- ![image.png](../assets/image_1716309816594_0.png){:height 161, :width 502}
 		- 注意，实际上无需定义形如 `P(n)` 的操作符；从公式 `x = 0 ∨ x − 1 ≥ 0` 可以自动推断出它可以被理解为一个由 `x` 参数化的操作符。
@@ -734,21 +734,7 @@
 		- ![image.png](../assets/image_1716309998320_0.png)
 		- 这里有许多其他的结构可以捕捉常见的证明技巧；你可以在这里找到它们的列表（如你所见，它们的含义通过我们已经讨论过的更基本的结构得到了精确定义）。还有一些结构允许在证明中添加局部定义，一种允许命名和引用公式部分的方案，以及一种通过一系列等式或不等式编写证明的便捷语法。
 		- 例如，如果TLAPS无法自动证明定理 **UniqueInverse** ——或者即使机械证明器认为证明显而易见，但人类读者不这么认为——我们可以通过编写以下详细证明来帮助系统或读者，其中@代表前一步提到的关系的右侧：
-		- ```
-		  THEOREM UniqueInverse ≜
-		  	ASSUME NEW G, NEW _⋅_, Group(G, ⋅), 
-		      	   NEW id ∈ G, ∀a ∈ G: id⋅a = a ∧ a⋅id = a 
-		  	PROVE ∀a, b, c ∈ G: (a⋅b = id ∧ b⋅a = id ∧ a⋅c = id) ⇒ b = c
-		  ⟨1⟩ SUFFICES ASSUME NEW a ∈ G, NEW b ∈ G, NEW c ∈ G,
-		  					a⋅b = id, b⋅a = id, a⋅c = id  
-		  			 PROVE b = c 
-		  	OBVIOUS
-		  ⟨1⟩ b = b⋅id  	 OBVIOUS 
-		  ⟨1⟩ @ = b⋅(a⋅c)  OBVIOUS 
-		  ⟨1⟩ @ = (b⋅a)⋅c  BY DEF Group, Monoid, Semigroup 
-		  ⟨1⟩ @ = c 		 OBVIOUS
-		  ⟨1⟩ QED			 OBVIOUS
-		  ```
+		- ![image.png](../assets/image_1716310014184_0.png)
 		- 《如何编写21世纪的证明》的附录包含了一个简单的微积分定理的完整的、机械验证的TLA+证明，以及所有必要的定义。
 		- 虽然TLA+可以用来证明一般数学定理，但它并非为此任务设计。对形式化证明感兴趣的数学家更适合使用为该任务设计的工具，如Isabelle或Coq。选择编写形式化证明的工程师被鼓励不要浪费时间证明数学定理，而是应使用TLAPS附带的已证明的数学定理库，或者仅仅陈述一个数学定理并省略证明。他们应该专注于证明他们的算法或系统设计的正确性。在第三部分我们将看到如何做到这一点。
 	- ## **结论**
