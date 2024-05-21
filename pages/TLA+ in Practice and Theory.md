@@ -609,7 +609,7 @@
 			- 在 TLA+ 中，有一种特殊的语法用于表示有限序列字面量，这也被称为元组（或者如果您愿意，也可以称为列表）。元组 \(\langle 10, \text{‘‘hi"}, [x \in N \mapsto x+1] \rangle\) 实际上是以下构造的语法糖：
 			- ![image.png](../assets/image_1716227688765_0.png)
 			- 如果 \( A \) 和 \( B \) 是集合，那么 \( A \times B \) 是它们的笛卡尔积，即 \(\{ \langle a, b \rangle : a \in A, b \in B \}\)。类似地，\( A \times B \times C = \{ \langle a, b, c \rangle : a \in A, b \in B, c \in C \}\) 等等。在 TLA+ 中，笛卡尔积不是结合的，所以 \( A \times B \times C \neq (A \times B) \times C \neq A \times (B \times C) \)，因为 \( \langle a, b, c \rangle \neq \langle \langle a, b \rangle, c \rangle \neq \langle a, \langle b, c \rangle \rangle\)（因此 \( \times \) 不是普通的二元中缀运算符——尽管它的行为几乎像一个——而是一个特殊的构造）。
-			- 为了方便，元组可以用作量化变量：代替写 \( \exists pair \in A \times B : pair[1] > pair[2] \)，我们可以写 \( \exists \langle a, b \rangle \in A \times B : a > b \)。
+			- 为了方便，元组可以用作量化变量：代替写 \( \exists ~pair \in A \times B : pair[1] > pair[2] \)，我们可以写 \( \exists \langle a, b \rangle \in A \times B : a > b \)。
 			- 接受多个参数的函数是以元组为基础定义的语法糖。我们可以写：
 			- $$ [x \in \text{Nat}, y \in \text{STRING} \mapsto x + Len(y) ] $$
 			- 这只是语法糖，其实等同于
