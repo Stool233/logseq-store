@@ -512,7 +512,7 @@
 			  $$
 			- 后一种形式实质上是对下面定义的一种语法简化方法：
 			- $$
-			  double \triangleq \text{CHOOSE}~ f : f = [n \in \text{Nat} \mapsto 2 \times n]
+			  double \triangleq \text{CHOOSE}~ f : f = [n \in \text{Nat} \mapsto 2 * n]
 			  $$
 			- 由于这个原因，以这种形式定义的函数可以是递归的：
 			- $$
