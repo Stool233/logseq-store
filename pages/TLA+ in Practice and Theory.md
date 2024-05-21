@@ -669,21 +669,7 @@
 			- 用文字来说，集合List是最小的集合，它包含EMPTY，并且在添加一个新头部到列表时是封闭的（即对于List中的任何列表，通过将值为x的元素添加为头部得到的列表也在List中）。使用Least的这个定义对于非逻辑学家来说太抽象了，很难明显理解。事实上，正如我们将在第四部分看到的，通常不鼓励以如此抽象的方式指定程序，因为它很快会变得非常复杂。TLA+ 提供了替代方案。
 			- 稍后在我们定义链表上的算法时，我们可以使用这个定义来展示列表的类型是被保留的。这将熟悉的类型概念转变为我们可以指定和验证的另一种相对简单的属性。例如，`x ∈ List` 就是另一个命题，就像 `a + b = 0`。
 			- 现在，我们来定义一个视图，将链表展示为一个序列。为了简化，我们假设只允许有限的列表。记住，有限序列只是一个从 1 到 n 的函数：
-			- ```
-			  RECURSIVE LenList(_)
-			  
-			  LenList(ll) ≜ IF ll = EMPTY THEN 0 ELSE 1 + LenList(ll.next)
-			  
-			  ListAsSeq(ll) ≜ LET RECURSIVE View(_, _) 
-			  						View(i, node) ≜ IF i = 1 THEN node.value 
-			                          						 ELSE View(i-1, node.next) 
-			                  IN [i ∈ 1..LenList(ll) ↦ View(i, ll)]
-			                  
-			  RECURSIVE SeqAsList(_) 
-			  
-			  SeqAsList(s) ≜ IF s = ⟨⟩ THEN EMPTY
-			  						 ELSE [value ↦ s[1], next ↦ SeqAsList(Tail(s))]
-			  ```
+			- ![image.png](../assets/image_1716309138851_0.png)
 			- 操作符 `ListAsSeq` 和 `SeqAsList` 允许我们在两个抽象层次之间转换，并编写像这样的定理：
 			- ```
 			  THEOREM ∀s ∈ Seq(S) : s = ListAsSeq(SeqAsList(s))
