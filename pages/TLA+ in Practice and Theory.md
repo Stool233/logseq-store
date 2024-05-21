@@ -652,23 +652,11 @@
 			- 为了使事情更具体化，让我们考虑链接列表的一个规格说明。假设我们决定将列表模型化为链接节点，但我们选择不涉及实际的指针运算，因此我们不会直接模型化内存。
 			- 虽然在TLA+中不是必需的，我们可以从指定我们的链接列表节点的“类型”开始，这里的类型我指的是节点的一般结构（不涉及内存布局）。我们列表的元素可以是集合 S 中的任何成员。
 			- 我们可能会被诱惑去定义列表的“类型”——即所有列表的集合，像这样：
-			- ```
-			  CONSTANTS
-			  EMPTY ≜ ⟨⟩ // 或者任何可以与节点记录比较的值
-			  RECURSIVE List
-			  List ≜ {EMPTY} ∪ [value: S, next: List]
-			  ```
+			- ![image.png](../assets/image_1716308948375_0.png)
 			- 然而，与任何递归（即自我引用）定义一样，存在一些微妙之处，因为递归意味着一个固定点方程，但许多递归有多个解决方案，而TLA+并不承诺特定的一个。上面定义的最后两行可以对应以下一行：
-			- ```
-			  List ≜ CHOOSE List: List = {EMPTY} ∪ [value: S, next: List]
-			  ```
+			- ![image.png](../assets/image_1716308967699_0.png)
 			- 由于 CHOOSE 选择任何满足方程的集合，上面的行可能代表所有有限链接列表的集合，或者所有有限和无限链接列表的集合，这是另一个解决方案。如果我们想要具体一点，例如，只表示有限列表的集合，我们可以改为定义：
-			- ```
-			  List ≜ LET ListUpToLength[n ∈ Nat] ≜
-			  			IF n = 0 THEN {EMPTY}
-			  					 ELSE [value: S, next: ListUpToLength[n−1]] ∪ ListUpToLength[n−1]
-			  	   IN UNION {ListUpToLength[n] : n ∈ Nat}
-			  ```
+			- ![image.png](../assets/image_1716308980886_0.png)
 			- 实际上，我们可以将这个想法推广：
 			- ```
 			  InductiveDataType(base, Cons(_)) ≜
