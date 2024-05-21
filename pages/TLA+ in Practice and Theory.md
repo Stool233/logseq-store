@@ -656,21 +656,12 @@
 			- 然而，与任何递归（即自我引用）定义一样，存在一些微妙之处，因为递归意味着一个固定点方程，但许多递归有多个解决方案，而TLA+并不承诺特定的一个。上面定义的最后两行可以对应以下一行：
 			- ![image.png](../assets/image_1716308967699_0.png)
 			- 由于 CHOOSE 选择任何满足方程的集合，上面的行可能代表所有有限链接列表的集合，或者所有有限和无限链接列表的集合，这是另一个解决方案。如果我们想要具体一点，例如，只表示有限列表的集合，我们可以改为定义：
-			- ![image.png](../assets/image_1716308980886_0.png)
+			- ![image.png](../assets/image_1716309006103_0.png)
 			- 实际上，我们可以将这个想法推广：
-			- ```
-			  InductiveDataType(base, Cons(_)) ≜
-			  	LET upToSize[n ∈ Nat] ≜
-			    		IF n = 0 THEN base
-			    				 ELSE Cons(upToSize[n−1]) ∪ upToSize[n−1]
-			  	IN UNION {upToSize[n] : n ∈ Nat}
-			  ```
+			- ![image.png](../assets/image_1716308993229_0.png)
 			- 然后：
-			- ```
-			  List ≜ InductiveDataType({EMPTY}, 
-			  						 LAMBDA List: [value: S, next: List])
-			  ```
-			- 注意，LAMBDA 中的 List 不是我们正在定义的集合，即左侧的 List，而仅仅是 LAMBDA 参数的名称。
+			- ![image.png](../assets/image_1716309024548_0.png)
+			- 注意，LAMBDA 中的 $List$ 不是我们正在定义的集合，即左侧的 $List$，而仅仅是 LAMBDA 参数的名称。
 			- 另一种更“集合论”的方式定义归纳数据类型是通过精确指定我们想要的递归方程的解决方案。在列表的情况下，如果我们只想允许有限列表，我们需要最小的或者说是最小的解决方案。我们可以一般性地定义如下：
 			- ```
 			  Least(C(_)) ≜ CHOOSE T : ∧ C(T) 
