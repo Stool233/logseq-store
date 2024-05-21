@@ -709,9 +709,9 @@
 		- 注意我们是如何在嵌套的 $\text{ASSUME}/\text{PROVE}$ 中假设一个定理（一个真实的命题）的存在。
 		- 能够编写二阶定理在证明系统中非常重要，因为它允许用户制作通用的、可重用的引理以用于证明。例如，一个重要的定理（由 TLAPS 提供的 NaturalsInduction 模块导出）可以在许多情况下使用，它定义了自然数上的归纳：
 		- ![image.png](../assets/image_1716309787760_0.png){:height 189, :width 439}
-		- 与上面的 \( \forall n \in \text{Nat} : P(n) \Rightarrow P(n+1) \) 相比，我们可以使用嵌套的 \( \text{ASSUME NEW} \, n \in \text{Nat}, P(n) \, \text{PROVE} \, P(n+1) \)。
+		- 与上面的 \( \forall n \in \text{Nat} : P(n) \Rightarrow P(n+1) \) 相比，我们可以使用嵌套的 \( \text{ASSUME NEW} \, n \in \text{Nat}, P(n) \, ~ \text{PROVE} \, ~ P(n+1) \)。
 		- 我们可以使用该定理来证明以下（有些无聊的）定理：
-		- ![image.png](../assets/image_1716309816594_0.png){:height 161, :width 502}
+		- ![image.png](../assets/image_1716309816594_0.png){:height 125, :width 390}
 		- 注意，实际上无需定义形如 `P(n)` 的操作符；从公式 `x = 0 ∨ x − 1 ≥ 0` 可以自动推断出它可以被理解为一个由 `x` 参数化的操作符。
 		- 我们所见的此类定理可以被引入作为公理，以定义新逻辑连接词（例如，用于诸如分离逻辑之类的东西）的推理规则。然而，内置的公理不能被移除（因此我们不能移除排中律作为公理以确保我们的推理是建设性的）。公理用关键字 `AXIOM` 或 `ASSUME` 声明，这是我们在有关常量部分所讨论的结构。
 		- 虽然 TLAPS 被设计为完全与后端无关，但在使用它时，你可能有时会发现有必要使用特定的求解器功能。例如，`BY Z3` 可以告诉 TLAPS 使用 Z3 SMT 求解器来处理（验证）特定的证明，你甚至可以（虽然不推荐，而且在实践中你不太可能需要它）使用 Isabelle 策略。实际上，上面提供的 `NatInduction` 定理的证明是 `BY IsaM('' (intor natInduct, auto) '')`。
