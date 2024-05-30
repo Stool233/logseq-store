@@ -958,7 +958,7 @@
 			- 如果 $\sigma$ 是某个行为，我们将让 $\sigma_n$ 表示行为的长度为 $n$ 的前缀。如果我们有一个无限的行为序列，$\sigma_1, \sigma_2, \ldots$ 我们将说行为 $\sigma$ 是它们的极限，即 $\sigma = \lim_{i \to \infty} \sigma_i$ ；或者只是 $\sigma = \lim \sigma_i$，当且仅当 直观上，行为的前缀收敛于 $\sigma$。
 				- 更精确地说，$\sigma = \lim \sigma_i$  当且仅当 对于每个 $n \geq 0$， 存在 $m \geq 0$ 使得 $i > m \Rightarrow \sigma_n^i = \sigma_n$。
 					- 这意味着对于任何固定长度 $n$，你可以找到某个具体的 $m$，使得所有 $i > m$ 时，$\sigma_i$ 的前 $n$ 个元素与 $\sigma$ 的前 $n$ 个元素完全一致。换句话说，随着 $i$ 的增加，$\sigma_i$ 的前缀越来越接近 $\sigma$。
-					- $\sigma_n^i$ 表示行为序列中第 $i$ 个序列的前 $n$ 个状态。这里，$\sigma_i$ 代表整个序列中的第 $i$ 个状态序列，而 $\sigma_n^i$ 则是这个状态序列的前 $n$ 个状态的子序列。
+					- $\sigma_n^i$ 表示无限的行为序列$\sigma_1, \sigma_2, \ldots$中第 $i$ 个行为的长度为$n$的前缀 。这里，$\sigma_i$ 代表整个序列中的第 $i$ 个状态序列，而 $\sigma_n^i$ 则是这个状态序列的前 $n$ 个状态的子序列。
 					-
 				- 如果 $S$ 是一组行为，我们说行为 $\sigma$ 是 $S$ 的极限点（*limit point*），当且仅当 存在元素 $\sigma_1, \sigma_2, \ldots$ 在 $S$ 中使得 $\sigma = \lim \sigma_i$。
 					- 这意味着 $\sigma$ 可以通过 $S$ 中的元素序列逐渐“逼近”得到。即使 $\sigma$ 本身不必然是 $S$ 的成员，但它可以通过 $S$ 中元素的无限逼近来实现。
