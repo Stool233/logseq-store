@@ -962,7 +962,7 @@
 				- 相比之下，活性属性 —— 某些“好事”最终必须发生 —— 具有这样的特质：任何行为的有限前缀都可以通过添加最终满足属性的适当状态来扩展，以符合属性。
 			- 如果 $\sigma$ 是某个行为，我们将让 $\sigma^n$ 表示行为的长度为 $n$ 的前缀。如果我们有一个无限的行为序列，$\sigma_1, \sigma_2, \ldots$ 我们将说行为 $\sigma$ 是它们的极限，即 $\sigma = \lim_{i \to \infty} \sigma_i$（ 或者只是 $\sigma = \lim \sigma_i$），当且仅当 直观上，行为的前缀收敛于 $\sigma$。
 				- 更精确地说，$\sigma = \lim \sigma_i$  当且仅当 对于每个 $n \geq 0$， 存在 $m \geq 0$ 使得 $i > m \Rightarrow \sigma_i^n = \sigma^n$。
-				- 如果 $S$ 是一组行为，我们说行为 $\sigma$ 是 $S$ 的极限点（*limit point*），当且仅当 存在元素 $\sigma_1, \sigma_2, \ldots$ 在 $S$ 中使得 $\sigma = \lim \sigma_i$。
+				- 如果 $S$ 是一组行为，我们说行为 $\sigma$ 是 $S$ 的[[极限点]]（*limit point*），当且仅当 存在元素 $\sigma_1, \sigma_2, \ldots$ 在 $S$ 中使得 $\sigma = \lim \sigma_i$。
 			- 这个极限的定义允许我们将行为的宇宙转化为一个拓扑空间，
 				- 通过定义一组行为 $S$ 为闭合的（*closed*），当且仅当 它包含了所有的极限点。
 				- 然后我们定义任何行为集 $S$ 的闭包（*closure*），记为 $\overline{S}$，定义为 $S$ 的所有极限点的集合。
