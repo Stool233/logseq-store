@@ -1437,6 +1437,7 @@
 		- 可以这样在 TLA+ 中指定一个概率机：
 			- ![image.png](../assets/image_1714727915644_0.png){:height 165, :width 527}
 		- 其中 **A**、**B** 和 **C** 是动作。然而，不幸的是，无法指定概率属性，如“**x** 大于 0 的概率为 0.75”。我认为，这是形式主义的一个明显遗漏。根据 Zoran Ognjanović 在 2006 年的论文《离散线性时间概率逻辑：完备性、可判定性和复杂性》中的描述，通过添加一个概率运算符，似乎有可能在保持 TLA 为一阶逻辑的同时增加这种能力。
+			- [Discrete Linear-time Probabilistic Logics: Completeness, Decidability and Complexity](https://academic.oup.com/logcom/article-abstract/16/2/257/955431/Discrete-Linear-time-Probabilistic-Logics) (2006).
 	- ## **不变量和证明**
 	  collapsed:: true
 		- TLA 拥有相对完整的用于处理标准形式公式的证明理论。如果 \( F \) 和 \( G \) 是这样的公式，并且 \( F \Rightarrow G \) 是有效的，即 \( \models F \Rightarrow G \)，那么如果可以证明关于 \( F \) 和 \( G \) 中的动作的必要声明——这些声明用数据逻辑书写——它可以通过 TLA 的证明规则来证明，即 \( \vdash F \Rightarrow G \)。
