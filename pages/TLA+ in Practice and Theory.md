@@ -444,6 +444,7 @@
 			- ![image.png](../assets/image_1716025618735_0.png){:height 87, :width 273}
 			- 我们现在可以将 $S$ 视为具有定义在其上的偏序关系的类型参数，类似于某些函数式编程语言中的类型类，或面向对象语言中的接口。
 		- ### 一些重要的集合
+		  collapsed:: true
 			- 集合 \(\text{BOOLEAN} \triangleq \{\text{TRUE}, \text{FALSE}\}\) 是 TLA+ 的一个基本组成部分。
 				- 它的存在是至关重要的，因为 TLA+ 不区分这个集合的元素和逻辑真值——\(\text{TRUE}\) 和 \(\text{FALSE}\) 是普通的值，即集合，如果 \(p\) 是某个谓词（例如 \(p \triangleq a \in b\)），则 \(p \equiv (p = \text{TRUE})\) —— 因此，一个公式（和一个谓词）是任何其值为 \(\text{BOOLEAN}\) 的表达式。
 					- 例如，\(\forall p \in \text{BOOLEAN} : p \lor (5 < 6)\) 是真的，我们可以写 \((3 < 4) = (8 > 2)\)，使用 \(=\) 而不是 \(\equiv\)，尽管后者是逻辑连接词而前者是集合上的关系，\((1 > 0) \in \text{BOOLEAN}\) 是真的，而不是 \((A \Rightarrow B) \land (\neg A \Rightarrow C)\)，或等价的 \((A \land B) \lor (\neg A \land C)\)，我们可以写 \(\text{IF } A \text{ THEN } B \text{ ELSE } C\)，尽管你可能记得，\(\text{IF/THEN/ELSE}\) 是根据 \(\text{CHOOSE}\) 定义的。
