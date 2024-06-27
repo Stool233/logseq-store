@@ -509,8 +509,12 @@
 	- submodule对应到.git里面，路径在.git/modules/{module}，里面的内容就是另一个完整的.git
 	- 当你首次运行 `git submodule update` 命令时，尽管你使用了 `--no-fetch` 选项，Git 仍然会尝试从原始的远程仓库（origin repo）获取数据
 		- 为了避免 Git 尝试从原始的远程仓库获取数据，你可以更改子模块的远程仓库 URL。这会"欺骗" Git，使其认为远程仓库的位置已经改变，从而避免不必要的数据获取。
-	- 获取submodule的commit
-		-
+	- 获取submodule的commit（可以获取submodule上级的tree对象获取）
+		- ```
+		  root_tree=$(git rev-parse HEAD^{tree})
+		  git cat-file -p $root_tree
+		  
+		  ```
 	-
 -
 - git 启动file协议：
