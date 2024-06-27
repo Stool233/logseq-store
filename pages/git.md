@@ -525,6 +525,10 @@
 		  040000 tree 86ccc5a8ffa40f3429b3272e23daeba442cbeac8	src
 		  ```
 		- ```
+		  root_tree=$(git rev-parse HEAD^{tree})
+		  dir=src/main
+		  dir_tree=$(git ls-tree -d $root_tree src/main | awk '{print $3}')
+		  git cat-file -p $dir_tree
 		  ```
 -
 - git 启动file协议：
