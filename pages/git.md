@@ -506,11 +506,11 @@
 	- 但是，如果你的本地有未提交的修改，或者你想要对合并有更多的控制，那么 `git pull` 可能就不是最佳选择了。在这种情况下，你可能首选 `git fetch`，然后决定如何手动合并或重构。
 -
 - git submodule
-  collapsed:: true
 	- submodule对应到.git里面，路径在.git/modules/{module}，里面的内容就是另一个完整的.git
 	- 当你首次运行 `git submodule update` 命令时，尽管你使用了 `--no-fetch` 选项，Git 仍然会尝试从原始的远程仓库（origin repo）获取数据
 		- 为了避免 Git 尝试从原始的远程仓库获取数据，你可以更改子模块的远程仓库 URL。这会"欺骗" Git，使其认为远程仓库的位置已经改变，从而避免不必要的数据获取。
-	-
+	- 获取submodule的commit
+		-
 	-
 -
 - git 启动file协议：
