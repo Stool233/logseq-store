@@ -530,6 +530,11 @@
 		  dir_tree=$(git ls-tree -d $root_tree src/main | awk '{print $3}')
 		  git cat-file -p $dir_tree
 		  ```
+	- 拉取主仓库更新并初始化、更新子模块
+		- ```
+		  git pull --recurse-submodules
+		  git submodule update --init --recursive
+		  ```
 -
 - git 启动file协议：
   collapsed:: true
