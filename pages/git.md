@@ -174,9 +174,11 @@
 		- **内存映射文件**：Git 使用内存映射文件（memory-mapped files）来处理 `.idx` 文件。这意味着整个 `.idx` 文件会被映射到内存中，这使得访问 `.idx` 文件就像访问内存一样快。
 -
 - Git UNDO — how to rewrite Git history with confidence
+  collapsed:: true
 	- 来源：
 		- https://medium.com/@Omer_Rosenbaum/git-undo-how-to-rewrite-git-history-with-confidence-d4452e2969c2
 	- Undoing the changes
+	  collapsed:: true
 		- git reset
 			- `git reset --soft`
 				- So the very last step you did before was to `git commit`, which actually means two things — Git created a commit object, and moved `main`, the active branch.
@@ -238,6 +240,7 @@
 				- ![image.png](../assets/image_1693495849230_0.png)
 				- 每次reset都会创建一个reflog
 	- The most important tool, even more important than the five tools listed in this toolbox, is **to whiteboard the current situation vs the desired one.** Trust me on this, it will make every situation seem less daunting and the solution more clear.
+	  collapsed:: true
 		- ![image.png](../assets/image_1693495994077_0.png)
 	-
 	-
