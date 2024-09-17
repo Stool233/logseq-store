@@ -1,6 +1,7 @@
 - **Tags**: [[Code Intelligence]] [[Code Navigation]] [[tree-sitter]]
 -
 - Stack graphs（Name resolution at scale）
+  collapsed:: true
 	- 来源：
 		- https://arxiv.org/pdf/2211.01224.pdf
 	- abstact

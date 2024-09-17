@@ -15,6 +15,6 @@
 	- [[LSP]]
 	- [[LSIF]]
 	- [[SCIP]]（灵感来自 SemanticDB）
-	- Stack graph（灵感来自Scope graph）
+	- [[Stack Graph]]（灵感来自Scope graph）
 -
 -
