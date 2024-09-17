@@ -18,25 +18,25 @@
 	- [[Stack Graph]]（灵感来自Scope graph）
 -
 - 参考资料
-- stack-graph相关的文章、论文（github 的代码语义智能/代码导航（precise code navigation）实现方案）
-  [Introducing stack graphs - The GitHub Blog](https://github.blog/2021-12-09-introducing-stack-graphs/)
-- 一篇介绍
-- [https://dcreager.net/talks/stack-graphs/](https://dcreager.net/talks/stack-graphs/)
-- 会议分享video
-- [https://media.dcreager.net/dcreager-2022-ucsc-lsd-slides.pdf](https://media.dcreager.net/dcreager-2022-ucsc-lsd-slides.pdf)
-- 会议分享video相关的PPT
-  [GitHub - github/stack-graphs: Rust implementation of stack graphs](https://github.com/github/stack-graphs)
-- 相关源码
-- [https://news.ycombinator.com/item?id=29500602](https://news.ycombinator.com/item?id=29500602)
-- 作者在黑客论坛上的讨论
-- [https://arxiv.org/pdf/2211.01224.pdf](https://arxiv.org/pdf/2211.01224.pdf)
-- 相关发表的论文
-- [https://github.github.io/stack-graph-docs/](https://github.github.io/stack-graph-docs/)
-- 内部文档
-- sourcegraph（专注于代码搜索/代码语义感知的公司，21年估值26.25亿美元）的方案
-  [Code navigation - Sourcegraph docs](https://docs.sourcegraph.com/code_navigation)
-  [Precise code navigation - Sourcegraph docs](https://docs.sourcegraph.com/code_navigation/explanations/precise_code_navigation)
-  [SCIP - a better code indexing format than LSIF](https://about.sourcegraph.com/blog/announcing-scip)
+	- stack-graph相关的文章、论文（github 的代码语义智能/代码导航（precise code navigation）实现方案）
+	- [Introducing stack graphs - The GitHub Blog](https://github.blog/2021-12-09-introducing-stack-graphs/)
+		- 一篇介绍
+	- [https://dcreager.net/talks/stack-graphs/](https://dcreager.net/talks/stack-graphs/)
+		- 会议分享video
+	- [https://media.dcreager.net/dcreager-2022-ucsc-lsd-slides.pdf](https://media.dcreager.net/dcreager-2022-ucsc-lsd-slides.pdf)
+		- 会议分享video相关的PPT
+	- [GitHub - github/stack-graphs: Rust implementation of stack graphs](https://github.com/github/stack-graphs)
+		- 相关源码
+	- [https://news.ycombinator.com/item?id=29500602](https://news.ycombinator.com/item?id=29500602)
+		- 作者在黑客论坛上的讨论
+	- [https://arxiv.org/pdf/2211.01224.pdf](https://arxiv.org/pdf/2211.01224.pdf)
+		- 相关发表的论文
+	- [https://github.github.io/stack-graph-docs/](https://github.github.io/stack-graph-docs/)
+		- 内部文档
+	- sourcegraph（专注于代码搜索/代码语义感知的公司，21年估值26.25亿美元）的方案
+	  [Code navigation - Sourcegraph docs](https://docs.sourcegraph.com/code_navigation)
+	  [Precise code navigation - Sourcegraph docs](https://docs.sourcegraph.com/code_navigation/explanations/precise_code_navigation)
+	  [SCIP - a better code indexing format than LSIF](https://about.sourcegraph.com/blog/announcing-scip)
 - [https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/](https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/)
 - 国内的一些实践
 - [Alibaba Code代码索引技术实践：为Code Review提供本地IDE的阅读体验](https://mp.weixin.qq.com/s/7ZFezyneFADZ7_unAZWUEg)
