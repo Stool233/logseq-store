@@ -51,9 +51,10 @@
 				- [https://github.com/unit-mesh/auto-dev](https://github.com/unit-mesh/auto-dev)
 					- 作者其他的一些相关项目
 				- [https://github.com/modernizing/modernization](https://github.com/modernizing/modernization)
-- [Modernizing · GitHub](https://github.com/modernizing)
-- 其他相关的
-- 基于tree-sitter的重构工具
-- [https://github.com/ast-grep/ast-grep](https://github.com/ast-grep/ast-grep)
-- 基于tree-sitter的漏洞检测
-- [https://github.com/Bearer/bearer](https://github.com/Bearer/bearer)
+				- [Modernizing · GitHub](https://github.com/modernizing)
+	- 其他相关的
+		- 基于tree-sitter的重构工具
+			- [https://github.com/ast-grep/ast-grep](https://github.com/ast-grep/ast-grep)
+		- 基于tree-sitter的漏洞检测
+			- [https://github.com/Bearer/bearer](https://github.com/Bearer/bearer)
+-
