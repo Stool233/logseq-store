@@ -309,15 +309,11 @@
 			- 好的方面，方案是纯粹的，维护成本低，也不需要去折腾各种编译器。
 			- 坏的方面，堆栈图DSL的表达力虽然很强，但跟原生编译器可能还是有差距，有可能有支持不了的场景
 				- （不过Stack Graph也提供了通过具体代码补充定义图的能力，而不是完全依赖DSL，也许可以作为补充）
-				  
-				  （目前github支持python的code intelligence，ts、java孵化中）
-				  
-				  Stack Graph与SCIP在 代码关联 定制化需求上的对比：
-				  
-				  （对于代码关联的建立，定制化需求几乎是不可避免的，例如我想对XML的配置定义与Java类做关联，等等，有各种需求）
-				  
-				  （1）SCIP如果要做定制化需求，一般看它当前的协议定义能不能满足，如果不行，会改一下协议定义，例如为了支持 call hierarchies，给SCIP协议加了个字段。 [https://github.com/sourcegraph/scip/blob/main/scip.proto#L619](https://github.com/sourcegraph/scip/blob/main/scip.proto#L619)
-				  
-				  然后就是各种语言的支持上，对齐这个变更后的协议。
-				  
-				  （2）Stack Graph的话，会去调整 DSL图定义（添加新节点，建立新边之类），以及相关的图遍历方式。
+				- （目前github支持python的code intelligence，ts、java孵化中）
+			- Stack Graph与SCIP在 代码关联 定制化需求上的对比：
+				- （对于代码关联的建立，定制化需求几乎是不可避免的，例如我想对XML的配置定义与Java类做关联，等等，有各种需求）
+				- （1）SCIP如果要做定制化需求，一般看它当前的协议定义能不能满足，如果不行，会改一下协议定义，例如为了支持 call hierarchies，给SCIP协议加了个字段。
+					- [https://github.com/sourcegraph/scip/blob/main/scip.proto#L619](https://github.com/sourcegraph/scip/blob/main/scip.proto#L619)
+					- 然后就是各种语言的支持上，对齐这个变更后的协议。
+				- （2）Stack Graph的话，会去调整 DSL图定义（添加新节点，建立新边之类），以及相关的图遍历方式。
+				-
