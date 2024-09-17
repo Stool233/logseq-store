@@ -1,0 +1,9 @@
+- Code Navigation（代码导航）相关的一些智能化的能力有：
+- （1）悬停提示（hover）
+- （2）转到定义（definition）
+- （3）查看引用（reference）
+- （4）1～3功能的跨文件（cross file）
+- （5）1～3功能的跨仓库（cross repository）
+- （6）1～3功能的跨语言（cross language）：
+- 例如 能够在Protobuf和生成的Java/Go Protobuf绑定之间导航，帮助他们找到相关的代码示例。
+- 这些功能一般会在本地IDE中比较常见，特别是（1）～（4）的功能。
