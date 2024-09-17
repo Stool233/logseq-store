@@ -1,0 +1,6 @@
+- [Official page for Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+- 定义了一套统一的协议，在特定语言和特定编辑器的工具之间提供了一个抽象层。
+- 例如不同的编辑器只要支持LSP标准，都能享受LSP服务器提供的服务。
+- LSP服务器上运行着具体的编译器，实时做一些语法解析的工作。
+- 这种设计使得 LSP 服务器不适合大型场景，因为它需要维护足够大的 LSP 服务器群来处理预期的最大并发用户查询数量。
+- 此外，还必须为每种支持的语言维护单独的 LSP 服务器群。

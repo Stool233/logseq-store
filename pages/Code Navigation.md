@@ -12,9 +12,9 @@
 	- 也有基于这些能力（或者是这些能力相关的底层能力），做 依赖分析、漏洞扫描 之类的 静态分析的功能。
 -
 - 这里主要看看相关技术与发展方向
-	- [[]]LSP
+	- [[LSP]]
 	- [[LSIF]]
-	- SCIP（灵感来自 SemanticDB）
+	- [[SCIP]]（灵感来自 SemanticDB）
 	- Stack graph（灵感来自Scope graph）
 -
 -
