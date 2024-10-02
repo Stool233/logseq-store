@@ -1,0 +1,4 @@
+- 古德哈特定律
+- When a measure becomes a target, it ceases to be a good measure.
+	- 当一项指标成为目标时，它就不再是一个好的指标了。
+-
