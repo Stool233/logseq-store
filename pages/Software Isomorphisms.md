@@ -1,0 +1,2 @@
+- https://buttondown.com/hillelwayne/archive/software-isomorphisms/
+	-
