@@ -23,7 +23,7 @@
 			- （Once a quorum has been gathered, the participant will choose a value for the quorum to vote on. The choice is made by taking the previous vote with the highest number in the quorum, or, if there were no previous votes, by taking any value. After making this choice, the participant will ask each member of the quorum to vote on the chosen value.）
 		- 3. 当参与者收到上述第2步发出的提议时，除非它已经承诺了一个更高编号的投票，否则它将对该提议进行投票。
 			- 成功的投票结果会被传达回提议的参与者。
-			- 需要注意的是，参与者在投票后仍然可以承诺新的投票，但在这种情况下，之前的投票将会被考虑在为新投票提议选择值时（如上述第2点所述）。
+			- 需要注意的是，参与者在投票后仍然可以承诺新的投票，但在这种情况下，之前的投票将会被考虑在新投票提议的选择中（如上述第2点所述）。
 			- （When a participant receives a proposal issued by 2 above, it will vote on it, unless it has already committed to a higher numbered ballot. A successful vote is communicated back to the participant who proposed it. Note that a participant can still commit to a new ballot **after having voted**, but that then the previous vote will be taken account in the choice of value to be proposed for that new ballot(2 above).）
 		- 4. 只有当法定人数中的所有成员都回复了肯定的投票后，提议的参与者才会将该值写入其账本。
 			- （The proposing participant will only write the value to its ledger if all members of the quorum reply with a positive vote.）
