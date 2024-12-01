@@ -14,16 +14,18 @@
 	- 这个过程可以非正式地分解为以下几个阶段来描述：
 		- 1. 参与者首先要试图让一定数量的参与者（法定人数）承诺接受一个特定的投票，
 			- 该投票由唯一的编号标识。
+			- （A participant first tries to get a quorum of participants to commit to a given ballot, identified by a unique number.）
 		- 2. 一旦集齐了法定人数，参与者将选择一个值让这个法定人数的成员进行投票。
 			- 选择的方式是：
 				- 要么采用法定人数中编号最高的先前投票值，
 				- 要么在没有先前投票的情况下选择任意值。
 			- 做出选择后，参与者将请求法定人数中的每个成员对所选的值进行投票。
+			- （Once a quorum has been gathered, the participant will choose a value for the quorum to vote on. The choice is made by taking the previous vote with the highest number in the quorum, or, if there were no previous votes, by taking any value. After making this choice, the participant will ask each member of the quorum to vote on the chosen value.
 		- 3. 当参与者收到上述第2步发出的提议时，除非它已经承诺了一个更高编号的投票，否则它将对该提议进行投票。
 			- 成功的投票结果会被传达回提议的参与者。
 			- 需要注意的是，参与者在投票后仍然可以承诺新的投票，但在这种情况下，之前的投票将会被考虑在为新投票提议选择值时（如上述第2点所述）。
 		- 4. 只有当法定人数中的所有成员都回复了肯定的投票后，提议的参与者才会将该值写入其账本。
 		- 5. 一旦参与者在其账本中写入了一个值，它就会将这个信息传达给所有其他参与者，其他参与者也会将该值写入他们的账本中。
-		-
+	- 在这个非正式且相当模糊的描述之后，我们将直接切入正题，通过编写TLA+规范，为规范定义安全性属性，并尝试找到一个能推导出该安全性属性的归纳不变量。
 -
 -
