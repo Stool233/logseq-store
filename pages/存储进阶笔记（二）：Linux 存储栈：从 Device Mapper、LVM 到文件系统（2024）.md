@@ -9,4 +9,6 @@
 			- 还提供了诸如**==文件系统快照==**等功能，
 			- 还可以在传递数据的同时进行修改，例如，在提供磁盘加密，或者模拟不可靠的硬件行为。
 	- 1.2 在内核存储栈中的位置
+		- ![](https://arthurchiao.art/assets/img/how-hdd-works/Linux-storage-stack-diagram_v6.9.png)
+	- 1.3 使用场景及典型应用
 		-
