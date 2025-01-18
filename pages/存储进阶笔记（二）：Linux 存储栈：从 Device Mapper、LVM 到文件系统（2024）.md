@@ -1,3 +1,6 @@
 - 来源：
 	- https://arthurchiao.art/blog/storage-advanced-notes-2-zh/
+- Tags: [[Computer Science]] [[存储]] [[Storage]] [[文件系统]] [[File System]]
 -
+- Device Mapper：内核存储基础设施
+	- ## 1.1 内核框架： `物理块设备 -> 虚拟块设备`
