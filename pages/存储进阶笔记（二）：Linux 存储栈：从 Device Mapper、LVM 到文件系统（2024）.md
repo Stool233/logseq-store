@@ -5,7 +5,7 @@
 - 1 Device Mapper：内核存储基础设施
 	- 1.1 内核框架： `物理块设备 -> 虚拟块设备`
 		- [Device mapper](https://en.wikipedia.org/wiki/Device_mapper)（**==设备映射器==**） 是 Linux 内核提供的一个框架，用于将**==物理块设备==**（physical block devices） 映射到更上层的**==虚拟块设备==**（virtual block devices）。
-			- 是逻辑卷管理器（**==LVM==**）、**==`software RAID`==** 和 dm-crypt 磁盘加密技术的**==基础==**，
+			- 是逻辑卷管理器（**==LVM==**）、**==software RAID==** 和 dm-crypt 磁盘加密技术的**==基础==**，
 			- 还提供了诸如**==文件系统快照==**等功能，
 			- 还可以在传递数据的同时进行修改，例如，在提供磁盘加密，或者模拟不可靠的硬件行为。
 		-
