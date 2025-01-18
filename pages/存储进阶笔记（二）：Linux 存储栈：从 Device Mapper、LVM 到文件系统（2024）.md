@@ -11,4 +11,6 @@
 	- 1.2 在内核存储栈中的位置
 		- ![](https://arthurchiao.art/assets/img/how-hdd-works/Linux-storage-stack-diagram_v6.9.png)
 	- 1.3 使用场景及典型应用
-		-
+		- **==dm-cache==**：组合使用 SSD 和 HDD 的**==混合卷==**（hybrid volume）
+			- A [hybrid volume](https://en.wikipedia.org/wiki/Logical_volume_management) is any volume that intentionally and opaquely makes use of two separate physical volumes. For instance, a workload may consist of random seeks so an SSD may be used to permanently store frequently used or recently written data, while using higher-capacity rotational magnetic media for long-term storage of rarely needed data. On Linux, **==bcache==** or **==dm-cache==** may be used for this purpose.
+			-
