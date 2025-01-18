@@ -13,4 +13,6 @@
 	- 1.3 使用场景及典型应用
 		- **==dm-cache==**：组合使用 SSD 和 HDD 的**==混合卷==**（hybrid volume）
 			- A [hybrid volume](https://en.wikipedia.org/wiki/Logical_volume_management) is any volume that intentionally and opaquely makes use of two separate physical volumes. For instance, a workload may consist of random seeks so an SSD may be used to permanently store frequently used or recently written data, while using higher-capacity rotational magnetic media for long-term storage of rarely needed data. On Linux, **==bcache==** or **==dm-cache==** may be used for this purpose.
-			-
+				- 混合卷指的是有意识且不透明地使用两个独立物理卷的任何卷。例如，对于包含随机读写的工作负载，可以使用 SSD 来永久存储经常使用或最近写入的数据，同时使用容量更大的机械硬盘来长期存储很少需要访问的数据。在 Linux 系统中，可以使用 bcache 或 dm-cache 来实现这个目的。
+		- **==Docker==** – 基于 device mapper 给容器创建 **==`copy-on-write`==** 存储；
+		- **==`LVM2`==** – 内核最常用的一种逻辑卷管理器（logical volume manager）
