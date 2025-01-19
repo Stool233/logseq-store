@@ -67,5 +67,16 @@
 					- 非常基本的元数据结构，确保了在数据传输过程中的最小开销。
 					- 搜索、查找和检索数据时，使用每个 block 的唯一标识符。
 				- 块存储**==不依赖文件系统，也不需要独立的进程==**（例如，区别于 JuiceFS [4]），由**==操作系统直接管理==**。
-		- ## 4.5 Ceph 块存储（RBD）的设计
+		- 4.5 Ceph 块存储（RBD）的设计
+			- ### 4.5.1 概念
+				- [Pool](https://docs.ceph.com/en/reef/rados/operations/pools/)：存储对象的逻辑分区（**==`ogical partitions used to store objects==**），有独立的 resilience/placement-groups/CRUSH-rules/snaphots 管理能力；
+				- **==Image==**: 一个块，类似 LVM 中的一个 **==logical volume==**
+				- PG (placement group): 存储 objects 的副本的基本单位，一个 PG 包含很多 objects，例如 3 副本的话就会有 3 个 PG，存放在三个 OSD 上；
+				- 创建一个 RBD 块设备的大致步骤：
+					- ```
+					  $ ceph osd pool create **{**pool-name**}** **[{**pg-num**}** **[{**pgp-num**}]]** **[**replicated] \
+					         **[**crush-rule-name] **[**expected-num-objects]
+					  $ rbd pool init **{**pool-name**}**
+					  $ rbd create --size **{**size MB**}** **{**pool-name**}**/**{**image-name**}**
+					  ```
 			-
