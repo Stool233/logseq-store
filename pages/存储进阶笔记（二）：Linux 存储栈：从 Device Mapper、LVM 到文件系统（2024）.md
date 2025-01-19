@@ -59,5 +59,13 @@
 					- Storage Decision. [Image Source](https://aws.amazon.com/compare/the-difference-between-block-file-object-storage/)
 			- 在这个块设备上初始化文件系统（例如初始化一个 **==ext4==** 文件系统），然后就可以像普通硬盘一样使用了。
 		- 4.4 基本设计
-			-
+			- AWS 对文件存储、对象存储和块存储有一个不错的[介绍文档](https://aws.amazon.com/compare/the-difference-between-block-file-object-storage/)。 其中提到的块存储的设计：
+				- 块存储**==将数据划分为固定大小的 block==**进行存储。Block 的大小在初始化块设备时指定，可以是**==几 KB 到几 MB==**；
+				- 操作系统**==为每个 block 分配一个唯一的地址/序号，记录在一个表中==**。寻址使用这个序号，因此非常快；
+				- 每个 Block 独立，可以直接访问或修改某个 block，不影响其他 blocks；
+				- **==存储元数据的设计非常紧凑，以保持高效==**。
+					- 非常基本的元数据结构，确保了在数据传输过程中的最小开销。
+					- 搜索、查找和检索数据时，使用每个 block 的唯一标识符。
+				- 块存储**==不依赖文件系统，也不需要独立的进程==**（例如，区别于 JuiceFS [4]），由**==操作系统直接管理==**。
+		- ## 4.5 Ceph 块存储（RBD）的设计
 			-
