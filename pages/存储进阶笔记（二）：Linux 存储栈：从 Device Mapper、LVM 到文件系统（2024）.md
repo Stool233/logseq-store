@@ -82,4 +82,6 @@
 				- 对象存储（object storage），类似 AWS S3；
 				- 文件存储（file storage），类似 JuiceFS [4]；
 				- 块存储（block storage），类似 AWS EBS。
-					- 背后，**==每个块存储中的 “block”（4.4 节中介绍的 block 概念）==**， 实际上最后是一个 Ceph 对象存储中的 **==`object`==**。 也就是 **==Ceph 的块存储是基于 Ceph 的对象存储==**。
+					- 背后，**==每个块存储中的 “block”（4.4 节中介绍的 block 概念）==**， 实际上最后是一个 Ceph 对象存储中的 **==object==**。 也就是 **==Ceph 的块存储是基于 Ceph 的对象存储==**。
+			- ### 4.5.3 读写流程
+				-
