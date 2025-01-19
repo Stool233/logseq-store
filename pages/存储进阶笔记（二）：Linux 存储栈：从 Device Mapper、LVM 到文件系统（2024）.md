@@ -54,5 +54,10 @@
 			- **==数据库磁盘==**
 		- 使用方式：
 			- 1. 在块存储系统（例如 AWS EBS）中创建一个块设备，
-			- 2. 将这个块挂载到想使用的机器上，这时呈现给这台机器的操作系统的是一个块设备（**==/dev/xxx`==**），
+			- 2. 将这个块挂载到想使用的机器上，这时呈现给这台机器的操作系统的是一个块设备（**==/dev/xxx==**），
+				- ![](https://arthurchiao.art/assets/img/storage-advanced-notes/storage-decision-matrix.png)
+					- Storage Decision. [Image Source](https://aws.amazon.com/compare/the-difference-between-block-file-object-storage/)
+			- 在这个块设备上初始化文件系统（例如初始化一个 **==ext4==** 文件系统），然后就可以像普通硬盘一样使用了。
+		- 4.4 基本设计
+			-
 			-
