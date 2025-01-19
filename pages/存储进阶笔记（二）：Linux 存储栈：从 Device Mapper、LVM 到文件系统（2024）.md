@@ -94,5 +94,12 @@
 					- 内核态库：将 RBD 挂载到主机之后，在系统中就可以看到一个 **==`/dev/rbd{N}`==** 的设备，
 						- 可以像使用本地盘一样，在这个设备上**==初始化一个文件系统==**，然后就能在这个文件系统里面读写文件了；
 						- **==RBD 驱动==**会将这些文件操作转换为对 Ceph 集群的操作，比如**==满 4MB 的文件作为一个 object==** 写到 Ceph 对象存储中；
-						-
-				-
+						- 内核驱动源码：[drivers/block/brd.c](https://github.com/torvalds/linux/blob/v5.15/drivers/block/brd.c)。
+						- 源码解读：[2,3]
+- 参考资料
+	- [What’s the Difference Between Block, Object, and File Storage?](https://aws.amazon.com/compare/the-difference-between-block-file-object-storage/), aws.amazon.com, 2024
+	- [Ceph-RBD 源码阅读](https://blog.shunzi.tech/post/ceph-rbd-src/), blog.shunzi.tech, 2019
+	- [Deep Dive Into Ceph’s Kernel Client](https://engineering.salesforce.com/deep-dive-into-cephs-kernel-client-edea75787528/), engineering.salesforce.com, 2024
+	- [JuiceFS 元数据引擎初探：高层架构、引擎选型、读写工作流（2024）](https://arthurchiao.art/blog/juicefs-metadata-deep-dive-1-zh/)
+-
+-
