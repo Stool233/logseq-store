@@ -73,10 +73,13 @@
 				- **==Image==**: 一个块，类似 LVM 中的一个 **==logical volume==**
 				- PG (placement group): 存储 objects 的副本的基本单位，一个 PG 包含很多 objects，例如 3 副本的话就会有 3 个 PG，存放在三个 OSD 上；
 				- 创建一个 RBD 块设备的大致步骤：
-					- ```shell
-					  $ ceph osd pool create **{**pool-name**}** **[{**pg-num**}** **[{**pgp-num**}]]** **[**replicated] \
-					         **[**crush-rule-name] **[**expected-num-objects]
+					- $ ceph osd pool create **{**pool-name**}** **[{**pg-num**}** **[{**pgp-num**}]]** **[**replicated] \
+					           **[**crush-rule-name] **[**expected-num-objects]
 					  $ rbd pool init **{**pool-name**}**
 					  $ rbd create --size **{**size MB**}** **{**pool-name**}**/**{**image-name**}**
-					  ```
-			-
+			- ### 4.5.2 RBD 的后端存储：Ceph 对象存储
+				- Ceph 的设计比较特殊，同时支持三种存储类型：
+				- 对象存储（object storage），类似 AWS S3；
+				- 文件存储（file storage），类似 JuiceFS [4]；
+				- 块存储（block storage），类似 AWS EBS。
+					- 背后，**==每个块存储中的 “block”（4.4 节中介绍的 block 概念）==**， 实际上最后是一个 Ceph 对象存储中的 **==`object`==**。 也就是 **==Ceph 的块存储是基于 Ceph 的对象存储==**。
