@@ -73,7 +73,7 @@
 				- **==Image==**: 一个块，类似 LVM 中的一个 **==logical volume==**
 				- PG (placement group): 存储 objects 的副本的基本单位，一个 PG 包含很多 objects，例如 3 副本的话就会有 3 个 PG，存放在三个 OSD 上；
 				- 创建一个 RBD 块设备的大致步骤：
-					- ```
+					- ```shell
 					  $ ceph osd pool create **{**pool-name**}** **[{**pg-num**}** **[{**pgp-num**}]]** **[**replicated] \
 					         **[**crush-rule-name] **[**expected-num-objects]
 					  $ rbd pool init **{**pool-name**}**
