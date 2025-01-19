@@ -87,5 +87,12 @@
 				- ![](https://arthurchiao.art/assets/img/storage-advanced-notes/rbd-io.png)
 					- Fig. Ceph RBD IO. Each object is ==fix-sized==, e.g. 4MB by default. [Image Source](https://blog.shunzi.tech/post/ceph-rbd-src/)
 			- 4.5.4 客户端代码实现
+				- ![](https://arthurchiao.art/assets/img/storage-advanced-notes/rbd-workflow.png)
+					- Fig. Ceph RBD workflow. [Image Source](https://blog.shunzi.tech/post/ceph-rbd-src/)
 				- 两种使用方式，二选一：
+					- 用户态库：librbd，这会直接通过 librados 去访问 Ceph 集群；
+					- 内核态库：将 RBD 挂载到主机之后，在系统中就可以看到一个 **==`/dev/rbd{N}`==** 的设备，
+						- 可以像使用本地盘一样，在这个设备上**==初始化一个文件系统==**，然后就能在这个文件系统里面读写文件了；
+						- **==RBD 驱动==**会将这些文件操作转换为对 Ceph 集群的操作，比如**==满 4MB 的文件作为一个 object==** 写到 Ceph 对象存储中；
+						-
 				-
