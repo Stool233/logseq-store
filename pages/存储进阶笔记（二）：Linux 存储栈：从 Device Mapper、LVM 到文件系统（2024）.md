@@ -23,4 +23,8 @@
 	- 2.2 LVM 中的概念/术语图解
 		- ![](https://arthurchiao.art/assets/img/storage-advanced-notes/lvm-concepts.png){:height 565, :width 719}
 		-
--
+	- 2.3 使用场景
+		- LVM 使用场景：
+			- 将多个物理卷（physical volumes）或物理盘创建为一个逻辑卷（logical volume），**==有点类似于 RAID0，但更像 JBOD==**，好处是方便动态调整卷大小。
+			- 热插拔，能在不停服的情况下添加或替换磁盘，管理非常方便。
+	-
