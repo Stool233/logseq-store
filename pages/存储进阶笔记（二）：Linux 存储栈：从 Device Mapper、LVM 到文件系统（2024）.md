@@ -17,4 +17,10 @@
 		- **==Docker==** – 基于 device mapper 给容器创建 **==copy-on-write==** 存储；
 		- **==LVM2==** – 内核最常用的一种逻辑卷管理器（logical volume manager）
 - 2 LVM：基于 Device Mapper 创建逻辑卷（设备）
-	-
+	- 2.1 功能
+		- [Logical Volume Manager](https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)) （LVM，逻辑卷管理器）1998 年引入内核，是一个**==基于 device mapper 的框架==**， 为内核提供**==逻辑卷管理能力==**。
+		- LVM 可以认为是物理磁盘和分区之上的一个**==很薄的软件层==**， 能方便换盘、重新分区和备份等等管理工作。
+	- 2.2 LVM 中的概念/术语图解
+		- ![](https://arthurchiao.art/assets/img/storage-advanced-notes/lvm-concepts.png){:height 565, :width 719}
+		-
+-
