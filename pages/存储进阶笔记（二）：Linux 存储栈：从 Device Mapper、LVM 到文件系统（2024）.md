@@ -27,4 +27,8 @@
 		- LVM 使用场景：
 			- 将多个物理卷（physical volumes）或物理盘创建为一个逻辑卷（logical volume），**==有点类似于 RAID0，但更像 JBOD==**，好处是方便动态调整卷大小。
 			- 热插拔，能在不停服的情况下添加或替换磁盘，管理非常方便。
-	-
+	- 2.4 使用教程
+		- [What is LVM2 in Linux?](https://medium.com/@The_Anshuman/what-is-lvm2-in-linux-3d28b479e250), medium.com, 2023
+- 3 文件系统：基于物理或逻辑卷（块设备），创建和管理文件层级
+	- 3.1 常规文件系统：不能跨 device
+		-
