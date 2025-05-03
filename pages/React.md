@@ -35,5 +35,7 @@
 				- 1. 通常情况下，你可以直接放置 state 于它们共同的父组件。
 				- 2. 你也可以将 state 放置于它们父组件上层的组件。
 				- 3. 如果你找不到一个合适来放这个 state 的地方，单独创建一个新的组件去管理这个 state，并将它添加到它们父组件上层的某个地方。
+		- 用 [`useState()` Hook](https://zh-hans.react.dev/reference/react/useState) 为组件添加 state。
+			- Hook 可以“钩住”组件的 [渲染周期](https://zh-hans.react.dev/learn/render-and-commit)。
 		-
 	-
