@@ -9,5 +9,12 @@
 		- 构建应用程序的静态版本来渲染你的数据模型，
 			- 将构建 [组件](https://zh-hans.react.dev/learn/your-first-component) 并复用其它的组件，
 			- 然后使用 [props](https://zh-hans.react.dev/learn/passing-props-to-a-component) 进行传递数据。
+				- Props 是从父组件向子组件传递数据的一种方式。
+				- 如果你对 [state](https://zh-hans.react.dev/learn/state-a-components-memory) 章节很熟悉，不要在静态版本中使用 state 进行构建。
+					- state 只是为交互提供的保留功能，即数据会随着时间变化。
+					- 因为这是一个静态应用程序，所以并不需要。
+			- 你既可以通过从层次结构更高层组件（如 `FilterableProductTable`）开始“自上而下”构建，也可以通过从更低层级组件（如 `ProductRow`）“自下而上”进行构建。
+				- 在简单的例子中，自上而下构建通常更简单；
+				- 而在大型项目中，自下而上构建更简单。
 		-
 	-
