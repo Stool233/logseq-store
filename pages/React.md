@@ -21,5 +21,8 @@
 		- 考虑将 state 作为应用程序需要记住改变数据的最小集合。
 			- 组织 state 最重要的一条原则是保持它 [DRY（不要自我重复）](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)。
 				- 计算出你应用程序需要的绝对精简 state 表示，按需计算其它一切。
-		-
+		- 其中哪些是 state 呢？标记出那些不是的:
+			- 随着时间推移 **保持不变**？如此，便不是 state。
+			- 通过 props **从父组件传递**？如此，便不是 state。
+			- 是否可以基于已存在于组件中的 state 或者 props **进行计算**？如此，它肯定不是state！
 	-
