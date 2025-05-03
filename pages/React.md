@@ -38,5 +38,7 @@
 		- 用 [`useState()` Hook](https://zh-hans.react.dev/reference/react/useState) 为组件添加 state。
 			- Hook 可以“钩住”组件的 [渲染周期](https://zh-hans.react.dev/learn/render-and-commit)。
 	- 步骤五：添加反向数据流
+		- 目前你的应用程序可以带着 props 和 state 随着层级结构进行渲染。但是为了支持通过用户输入来改变 state，你需要让数据反向传输。
+			- React 使数据流变得明确，但比双向数据绑定需要多写一些代码。
 		-
 	-
