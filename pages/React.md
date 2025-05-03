@@ -81,7 +81,13 @@
 			    dispatch({ type: 'setName', payload: e.target.value });
 			  }
 			  ```
-		-
+		- useReducer
+			- `useReducer` 这个 Hook 接收两个参数：reducer 函数和初始状态，返回一个数组：
+				- ```js
+				  const [state, dispatch] = useReducer(reducer, initialState);
+				  ```
+				- **state**：当前的状态值
+				- **dispatch**：一个函数，用于“派发”一个 action，告诉 reducer 需要做什么类型的状态更新
 	- 使用 Context 深层传递参数
 		- 通常，你会通过 props 将信息从父组件传递给子组件。
 		- 但是，如果要在组件树中深入传递一些 prop，或者树里的许多组件需要使用相同的 prop，那么传递 prop 可能会变得很麻烦。
