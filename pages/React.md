@@ -92,7 +92,8 @@
 						- 你可以把 `dispatch` 理解为“**通知状态管理器，发生了什么事情**”。
 							- 你调用 `dispatch(action)`，**action** 是一个对象，通常包含 `type` 字段（表示发生了什么）和其他 payload 数据。
 							- React 会把当前 state 和 action 传给你定义的 reducer 函数，然后用 reducer 返回的新 state 更新组件。
-					-
+						- 每次调用 `dispatch(action)`，其实是往内部的“更新队列”里**添加一个 action**，并告诉 React 需要重新渲染。
+						-
 	- 使用 Context 深层传递参数
 		- 通常，你会通过 props 将信息从父组件传递给子组件。
 		- 但是，如果要在组件树中深入传递一些 prop，或者树里的许多组件需要使用相同的 prop，那么传递 prop 可能会变得很麻烦。
