@@ -114,6 +114,8 @@
 					    <Parent />
 					  </UserContext.Provider>
 					  ```
+				- 在 React 中，`Context.Provider` 允许你在组件树中向下传递一个“值”（`value`），让树下的任何子组件都可以方便地获取到这个值，而不需要一层层通过 props 传递。
+					- value甚至可以是一个函数，例如useRecuder返回的dispatch
 			- ③ 消费数据（Consumer 或 useContext）
 				- 在任意深度的子组件中，直接获取：
 					- ```jsx
