@@ -68,4 +68,19 @@
 				- ```js
 				  const UserContext = React.createContext();
 				  ```
-			-
+			- ② 提供数据（Provider）
+				- 用 Provider 组件包裹需要访问数据的组件树，并传入 value：
+					- ```jsx
+					  <UserContext.Provider value="Tom">
+					    <Parent />
+					  </UserContext.Provider>
+					  ```
+			- ③ 消费数据（Consumer 或 useContext）
+				- 在任意深度的子组件中，直接获取：
+					- ```jsx
+					  function Profile() {
+					    const user = React.useContext(UserContext);
+					    return <div>{user}</div>;
+					  }
+					  ```
+		-
