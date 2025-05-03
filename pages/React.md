@@ -81,6 +81,7 @@
 			    dispatch({ type: 'setName', payload: e.target.value });
 			  }
 			  ```
+		-
 	- 使用 Context 深层传递参数
 		- 通常，你会通过 props 将信息从父组件传递给子组件。
 		- 但是，如果要在组件树中深入传递一些 prop，或者树里的许多组件需要使用相同的 prop，那么传递 prop 可能会变得很麻烦。
