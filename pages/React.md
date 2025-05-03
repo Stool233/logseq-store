@@ -63,5 +63,9 @@
 			- **Context** 可以解决“**深层组件需要用到同样的数据**”的问题。
 				- *Context* 允许你**不通过 props**，就能让某个数据从父组件“广播”到所有后代组件。
 				- 这样，**中间层组件不需要再负责转传数据**，只有需要用的组件才“订阅”这个数据。
+		- Context 的基本用法
+			- ① 创建 Context
+				- ```js
+				  const UserContext = React.createContext();
+				  ```
 			-
--
