@@ -6,4 +6,8 @@
 		- 最直接的办法是根据你的数据模型，构建一个不带任何交互的 UI 渲染代码版本…经常是先构建一个静态版本比较简单，然后再一个个添加交互。
 			- 构建一个静态版本需要写大量的代码，并不需要什么思考;
 			- 但添加交互需要大量的思考，却不需要大量的代码。
+		- 构建应用程序的静态版本来渲染你的数据模型，
+			- 将构建 [组件](https://zh-hans.react.dev/learn/your-first-component) 并复用其它的组件，
+			- 然后使用 [props](https://zh-hans.react.dev/learn/passing-props-to-a-component) 进行传递数据。
+		-
 	-
