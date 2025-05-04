@@ -65,6 +65,13 @@
 				- 如果更新后的组件会返回某个另外的组件，那么 React 接下来就会渲染 *那个* 组件，而如果那个组件又返回了某个组件，那么 React 接下来就会渲染 *那个* 组件，以此类推。
 				- 这个过程会持续下去，直到没有更多的嵌套组件并且 React 确切知道哪些东西应该显示到屏幕上为止。
 			- 渲染必须始终是一次 [纯计算](https://zh-hans.react.dev/learn/keeping-components-pure):
+				- **输入相同，输出相同。**
+					- 给定相同的输入，组件应始终返回相同的 JSX。（当有人点了西红柿沙拉时，他们不应该收到洋葱沙拉！）
+				- **只做它自己的事情。**
+					- 它不应更改任何存在于渲染之前的对象或变量。（一个订单不应更改其他任何人的订单。）
+		- 步骤 3: React 把更改提交到 DOM 上
+			- 在渲染（调用）你的组件之后，React 将会修改 DOM。
+				- **对于初次渲染**，React 会使用 [`appendChild()`](https://developer.mozilla.org/docs/Web/API/Node/appendChild) DOM API 将其创建的所有 DOM 节点放在屏幕上。
 				-
 - 状态管理
 	- Reducer和Context
