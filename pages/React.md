@@ -54,8 +54,10 @@
 				- 组件的 **初次渲染。**
 					- 当应用启动时，会触发初次渲染。
 						- 框架和沙箱有时会隐藏这部分代码，但它是通过调用 [`createRoot`](https://zh-hans.react.dev/reference/react-dom/client/createRoot) 方法并传入目标 DOM 节点，然后用你的组件调用 `render` 函数完成的
-					-
 				- 组件（或者其祖先之一）的 **状态发生了改变。**
+					- 一旦组件被初次渲染，你就可以通过使用 [`set` 函数](https://zh-hans.react.dev/reference/react/useState#setstate) 更新其状态来触发之后的渲染。
+						- 更新组件的状态会自动将一次渲染送入队列。（你可以把这种情况想象成餐厅客人在第一次下单之后又点了茶、点心和各种东西，具体取决于他们的胃口。）
+					-
 - 状态管理
 	- Reducer和Context
 	  collapsed:: true
