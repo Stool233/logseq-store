@@ -43,6 +43,8 @@
 			- React 使数据流变得明确，但比双向数据绑定需要多写一些代码。
 		-
 	-
+- 添加交互
+	-
 - 状态管理
 	- Reducer和Context
 	  collapsed:: true
@@ -169,22 +171,22 @@
 		- 在表单和复杂组件中的应用
 			- **key 可以用于重置表单内容**，避免切换对象后保留了上一个对象的输入。
 			- 但如果想**保留多个对象的输入内容**，可以将 state 提升到父组件，或用 localStorage 等持久化方案。
--
-- 使用 ref 引用值
-	- 当你希望组件“记住”某些信息，但又不想让这些信息 [触发新的渲染](https://zh-hans.react.dev/learn/render-and-commit) 时，你可以使用 **ref** 。
-- 使用 Effect 进行同步
-	- 什么是 Effect，它与事件（event）有何不同？
-		- 在接触 Effect 之前，你需要熟悉 React 组件中的两种逻辑类型：
-			- **渲染代码**（在 [描述 UI](https://zh-hans.react.dev/learn/describing-the-ui) 中有介绍）位于组件的顶层。
-				- 你在这里处理 props 和 state，对它们进行转换，并返回希望在页面上显示的 JSX。
-				- [渲染代码必须是纯粹的](https://zh-hans.react.dev/learn/keeping-components-pure)——就像数学公式一样，它只应该“计算”结果，而不做其他任何事情。
-			- **事件处理程序**（在 [添加交互性](https://zh-hans.react.dev/learn/adding-interactivity) 中有介绍）是组件内部的嵌套函数，它们不光进行计算, 还会执行一些操作。
-				- 事件处理程序可能会更新输入字段、提交 HTTP POST 请求来购买产品，或者将用户导航到另一个页面。
-				- 事件处理程序包含由特定用户操作（例如按钮点击或输入）引起的“副作用”（它们改变了程序的状态）。
-		- **Effect 允许你指定由渲染自身，而不是特定事件引起的副作用**。
-			- 在聊天中发送消息是一个“事件”，因为它直接由用户点击特定按钮引起。然而，建立服务器连接是一个 Effect，因为无论哪种交互致使组件出现，它都应该发生。
-		- Effect 在 [提交](https://zh-hans.react.dev/learn/render-and-commit) 结束后、页面更新后运行。
-			- 此时是将 React 组件与外部系统（如网络或第三方库）同步的最佳时机。
-		-
+- 脱围机制
+	- 使用 ref 引用值
+		- 当你希望组件“记住”某些信息，但又不想让这些信息 [触发新的渲染](https://zh-hans.react.dev/learn/render-and-commit) 时，你可以使用 **ref** 。
+	- 使用 Effect 进行同步
+		- 什么是 Effect，它与事件（event）有何不同？
+			- 在接触 Effect 之前，你需要熟悉 React 组件中的两种逻辑类型：
+				- **渲染代码**（在 [描述 UI](https://zh-hans.react.dev/learn/describing-the-ui) 中有介绍）位于组件的顶层。
+					- 你在这里处理 props 和 state，对它们进行转换，并返回希望在页面上显示的 JSX。
+					- [渲染代码必须是纯粹的](https://zh-hans.react.dev/learn/keeping-components-pure)——就像数学公式一样，它只应该“计算”结果，而不做其他任何事情。
+				- **事件处理程序**（在 [添加交互性](https://zh-hans.react.dev/learn/adding-interactivity) 中有介绍）是组件内部的嵌套函数，它们不光进行计算, 还会执行一些操作。
+					- 事件处理程序可能会更新输入字段、提交 HTTP POST 请求来购买产品，或者将用户导航到另一个页面。
+					- 事件处理程序包含由特定用户操作（例如按钮点击或输入）引起的“副作用”（它们改变了程序的状态）。
+			- **Effect 允许你指定由渲染自身，而不是特定事件引起的副作用**。
+				- 在聊天中发送消息是一个“事件”，因为它直接由用户点击特定按钮引起。然而，建立服务器连接是一个 Effect，因为无论哪种交互致使组件出现，它都应该发生。
+			- Effect 在 [提交](https://zh-hans.react.dev/learn/render-and-commit) 结束后、页面更新后运行。
+				- 此时是将 React 组件与外部系统（如网络或第三方库）同步的最佳时机。
 			-
-			-
+				-
+				-
