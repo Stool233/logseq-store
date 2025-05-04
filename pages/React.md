@@ -173,4 +173,11 @@
 - 使用 Effect 进行同步
 	- 什么是 Effect，它与事件（event）有何不同？
 		- 在接触 Effect 之前，你需要熟悉 React 组件中的两种逻辑类型：
-			- **渲染代码**（在 [描述 UI](https://zh-hans.react.dev/learn/describing-the-ui) 中有介绍）位于组件的顶层。你在这里处理 props 和 state，对它们进行转换，并返回希望在页面上显示的 JSX。[渲染代码必须是纯粹的](https://zh-hans.react.dev/learn/keeping-components-pure)——就像数学公式一样，它只应该“计算”结果，而不做其他任何事情。
+			- **渲染代码**（在 [描述 UI](https://zh-hans.react.dev/learn/describing-the-ui) 中有介绍）位于组件的顶层。
+				- 你在这里处理 props 和 state，对它们进行转换，并返回希望在页面上显示的 JSX。
+				- [渲染代码必须是纯粹的](https://zh-hans.react.dev/learn/keeping-components-pure)——就像数学公式一样，它只应该“计算”结果，而不做其他任何事情。
+			- **事件处理程序**（在 [添加交互性](https://zh-hans.react.dev/learn/adding-interactivity) 中有介绍）是组件内部的嵌套函数，它们不光进行计算, 还会执行一些操作。
+				- 事件处理程序可能会更新输入字段、提交 HTTP POST 请求来购买产品，或者将用户导航到另一个页面。
+				- 事件处理程序包含由特定用户操作（例如按钮点击或输入）引起的“副作用”（它们改变了程序的状态）。
+			-
+			-
