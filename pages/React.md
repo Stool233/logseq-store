@@ -223,6 +223,10 @@
 				- 此时是将 React 组件与外部系统（如网络或第三方库）同步的最佳时机。
 		- 你可能不需要 Effect
 			- **不要急着在你的组件中使用 Effect**。记住，Effect 通常用于暂时“跳出” React 并与一些 **外部** 系统进行同步。这包括浏览器 API、第三方小部件，以及网络等等。
-		-
+			- 如果你的 Effect 只是根据其他状态来调整某些状态，那么 [你可能并不需要一个 Effect](https://zh-hans.react.dev/learn/you-might-not-need-an-effect)。
+		- 如何编写 Effect
+			- 要编写一个 Effect, 请遵循以下三个步骤：
+				- 1. **声明 Effect**。通常 Effect 会在每次 [提交](https://zh-hans.react.dev/learn/render-and-commit) 后运行。
+				- 2. **指定 Effect 依赖**。大多数 Effect 应该按需运行，而不是在每次渲染后都运行。例如，淡入动画应该只在组件出现时触发。连接和断开服务器的操作只应在组件出现和消失时，或者切换聊天室时执行。你将通过指定 **依赖项** 来学习如何控制这一点。
 			-
 			-
