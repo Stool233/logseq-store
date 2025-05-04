@@ -44,6 +44,7 @@
 		-
 	-
 - 添加交互
+  collapsed:: true
 	- 渲染和提交
 		- 想象一下，你的组件是厨房里的厨师，把食材烹制成美味的菜肴。在这种场景下，React 就是一名服务员，他会帮客户们下单并为他们送来所点的菜品。这种请求和提供 UI 的过程总共包括三个步骤：
 			- **触发** 一次渲染（把客人的点单分发到厨房）
@@ -74,7 +75,10 @@
 				- **对于初次渲染**，React 会使用 [`appendChild()`](https://developer.mozilla.org/docs/Web/API/Node/appendChild) DOM API 将其创建的所有 DOM 节点放在屏幕上。
 				- **对于重渲染**，React 将应用最少的必要操作（在渲染时计算！），以使得 DOM 与最新的渲染输出相互匹配。
 			- **React 仅在渲染之间存在差异时才会更改 DOM 节点。**
-			-
+		- 尾声：浏览器绘制
+			- 在渲染完成并且 React 更新 DOM 之后，浏览器就会重新绘制屏幕。
+				- 尽管这个过程被称为“浏览器渲染”（“browser rendering”），但我们还是将它称为“绘制”（“painting”），以避免在这些文档的其余部分中出现混淆。
+		-
 - 状态管理
 	- Reducer和Context
 	  collapsed:: true
