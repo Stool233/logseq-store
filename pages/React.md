@@ -50,6 +50,12 @@
 			- **渲染** 组件（在厨房准备订单）
 			- **提交** 到 DOM（将菜品放在桌子上）
 		- 步骤 1: 触发一次渲染
+			- 有两种原因会导致组件的渲染:
+				- 组件的 **初次渲染。**
+					- 当应用启动时，会触发初次渲染。
+						- 框架和沙箱有时会隐藏这部分代码，但它是通过调用 [`createRoot`](https://zh-hans.react.dev/reference/react-dom/client/createRoot) 方法并传入目标 DOM 节点，然后用你的组件调用 `render` 函数完成的
+					-
+				- 组件（或者其祖先之一）的 **状态发生了改变。**
 - 状态管理
 	- Reducer和Context
 	  collapsed:: true
