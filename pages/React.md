@@ -170,5 +170,7 @@
 		- 但如果想**保留多个对象的输入内容**，可以将 state 提升到父组件，或用 localStorage 等持久化方案。
 - 使用 ref 引用值
 	- 当你希望组件“记住”某些信息，但又不想让这些信息 [触发新的渲染](https://zh-hans.react.dev/learn/render-and-commit) 时，你可以使用 **ref** 。
-	-
-	-
+- 使用 Effect 进行同步
+	- 什么是 Effect，它与事件（event）有何不同？
+		- 在接触 Effect 之前，你需要熟悉 React 组件中的两种逻辑类型：
+			- **渲染代码**（在 [描述 UI](https://zh-hans.react.dev/learn/describing-the-ui) 中有介绍）位于组件的顶层。你在这里处理 props 和 state，对它们进行转换，并返回希望在页面上显示的 JSX。[渲染代码必须是纯粹的](https://zh-hans.react.dev/learn/keeping-components-pure)——就像数学公式一样，它只应该“计算”结果，而不做其他任何事情。
