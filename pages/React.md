@@ -239,10 +239,18 @@
 			- 第一步：声明 Effect
 				- **`useEffect` 会“延迟”一段代码的运行，直到渲染结果反映在页面上**。
 					- 默认情况下，Effect 会在 **每次** 渲染后运行。**正因如此，以下代码会陷入死循环**：
-					- ```js```
-					-
-					-
-					-
+					- ```js
+					  const [count, setCount] = useState(0);
+					  useEffect(() => {
+					    setCount(count + 1);
+					  });
+					  ```
+					- Effect 在渲染结束后运行。更新 state 会触发重新渲染。在 Effect 中直接更新 state 就像是把电源插座的插头插回自身：Effect 运行、更新 state、触发重新渲染、于是又触发 Effect 运行、再次更新 state，继而再次触发重新渲染。如此反复，从而陷入死循环。
+					- Effect 应该用于将你的组件与一个 **外部** 的系统保持同步。如果没有外部系统，你只是想根据其他状态调整一些状态，那么 [你也许不需要 Effect](https://zh-hans.react.dev/learn/you-might-not-need-an-effect)。
+			- 第二步：指定 Effect 的依赖项
+				-
+				-
+				-
 			-
 			-
 			-
